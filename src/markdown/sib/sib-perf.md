@@ -14,7 +14,7 @@
 > ```
 > NetworkingInfo:
 > RxBytes:2, RxPackets:80, TxBytes:0, TxPackets:0, TimeStamp:1662269677798960600
-> GPUInfo
+> GPUInfo:
 > TilerUtilization:0, DeviceUtilization:0, RendererUtilization:0, TimeStamp:1662269678378279700
 > FPSInfo:
 > FPS:0, TimeStamp:1662269678378279700
@@ -55,7 +55,7 @@
 | | --men | | 获取内存数据 |
 | | --gpu | | 获取GPU数据 |
 | | --fps | | 获取FPS数据 |
-| | --network | | 获取网络上下行数据 |
+| | --network | | 获取网络上下行数据（全局） |
 | -j  | --json | | json格式输出    |
 | -f  | --format | |  格式化输出    |
 | -h  | --help | |  获取帮助指南  |
