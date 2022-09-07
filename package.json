@@ -1,0 +1,22 @@
+{
+  "name": "sonic-cloud",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "element-plus": "^1.1.0-beta.24",
+    "vue": "^3.2.16",
+    "vue-router": "^4.0.10"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.9.3",
+    "unplugin-auto-import": "^0.6.1",
+    "unplugin-element-plus": "^0.3.1",
+    "unplugin-vue-components": "^0.17.21",
+    "vite": "^2.6.4",
+    "vite-plugin-md": "^0.11.2"
+  }
+}
