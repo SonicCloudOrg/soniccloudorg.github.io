@@ -24,6 +24,7 @@
 
 > 1. 进入 【管理Jenkins】 > 【插件管理】 视图
 > 2. 搜索Sonic CI Helper安装即可
+> 
 > <el-image hide-on-click-modal src="https://img.wenjie.store/2022-07-27/1658886552-595597-9a1d8b2970d61eaebd9b806a13e373c.png"
 > :preview-src-list="['https://img.wenjie.store/2022-07-27/1658886552-595597-9a1d8b2970d61eaebd9b806a13e373c.png']" style="width: 80%"/>
 
