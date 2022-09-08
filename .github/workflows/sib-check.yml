@@ -40,7 +40,7 @@ jobs:
           commit-message: Update sib version file.
           author: GitHub <noreply@github.com>
           signoff: false
-          branch: deploy/sib
+          branch: doc/sib
           base: main
           labels: document
           delete-branch: true
