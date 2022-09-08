@@ -12,10 +12,10 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: tdemin/find-latest-tag@v1
+      - uses: oprypin/find-latest-tag@v1
         id: newtag
         with:
-          repo: https://github.com/SonicCloudOrg/sonic-ios-bridge.git
+          repository: SonicCloudOrg/sonic-ios-bridge
 
       - name: JSON to variables
         uses: antifree/json-to-variables@v1.0.1
