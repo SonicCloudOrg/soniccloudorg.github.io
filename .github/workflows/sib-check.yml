@@ -32,7 +32,7 @@ jobs:
 
       - name: run
         id: ver
-        run: ver=${{ env.TAG }} && new_ver=${ver:1} && sed -i "s/${{steps.newtag.outputs.tag}}/${new_ver}/g" version.json && sed -i "s/${{steps.newtag.outputs.tag}}/${new_ver}/g" src/markdown/sib/re-sib.md
+        run: ver=${{steps.newtag.outputs.tag}} && new_ver=${ver:1} && sed -i "s/${{steps.newtag.outputs.tag}}/${new_ver}/g" version.json && sed -i "s/${{steps.newtag.outputs.tag}}/${new_ver}/g" src/markdown/sib/re-sib.md
 
       - name: Create Pull Request
         id: cpr
