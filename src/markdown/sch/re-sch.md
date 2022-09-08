@@ -47,4 +47,4 @@
 &nbsp;
 &nbsp;
 ***
-不够详细？[点此](https://gitee.com/sonic-cloud/sonic-cloud/edit/master/src/markdown/sgm/re-sch.md) 发起贡献改善此页
+不够详细？[点此](https://github.com/SonicCloudOrg/sonic-offical-website/edit/main/src/markdown/sgm/re-sch.md) 发起贡献改善此页

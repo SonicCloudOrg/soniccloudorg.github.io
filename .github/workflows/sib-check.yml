@@ -1,0 +1,78 @@
+name: sib update
+
+on:
+  workflow_dispatch:
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - uses: tdemin/find-latest-tag@v1
+        id: newtag
+        with:
+          repo: https://github.com/SonicCloudOrg/sonic-ios-bridge.git
+
+      - name: JSON to variables
+        uses: antifree/json-to-variables@v1.0.1
+        with:
+          filename: 'version.json'
+          prefix: test
+
+      - name: compare
+          if: ${{ env.CURRENT == env.TAG }}
+          run: exit 1
+          env:
+            CURRENT: v${{ env.test_sib }}
+            TAG: ${{steps.newtag.outputs.tag}}
+
+      - name: run
+        id: ver
+        run: ver=${{ env.TAG }} && new_ver=${ver:1} && sed -i "s/SONIC_VERSION/${new_ver}/g" version.json && sed -i "s/SONIC_VERSION/${new_ver}/g" src/markdown/sib/re-sib.md
+
+      - name: Create Pull Request
+        id: cpr
+        uses: peter-evans/create-pull-request@v4
+        with:
+          commit-message: Update sib version file.
+          author: GitHub <noreply@github.com>
+          signoff: false
+          branch: deploy
+          base: main
+          labels: document
+          delete-branch: true
+          title: 'doc: update re-sib.md file version to deploy'
+          body: |
+            **在提出此拉取请求时，我确认了以下几点（保存后请点击复选框）：**
+
+            - [x] 标题为fix、feat或doc开头
+            - [x] 我已检查没有与此请求重复的拉取请求。
+            - [x] 我已经考虑过，并确认这份呈件对其他人很有价值。
+            - [x] 我接受此提交可能不会被使用，并根据维护人员的意愿关闭拉取请求。
+
+            **填写PR内容：**
+
+            - Update re-sib.md file to deploy by bot 🚀.
+
+          draft: false
+
+      - name: Auto approve
+        if: steps.cpr.outputs.pull-request-operation == 'created'
+        uses: juliangruber/approve-pull-request-action@v1
+        with:
+          github-token: ${{ secrets.PAT }}
+          number: ${{ steps.cpr.outputs.pull-request-number }}
+
+      - id: automerge
+        name: automerge
+        uses: "pascalgn/automerge-action@v0.15.3"
+        env:
+          MERGE_LABELS: "document"
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          PULL_REQUEST: ${{ steps.cpr.outputs.pull-request-number }}
+          MERGE_RETRIES: 18
+          MERGE_RETRY_SLEEP: 10000

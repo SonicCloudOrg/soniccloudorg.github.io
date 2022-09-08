@@ -36,4 +36,4 @@ sonic-android-apk以Kotlin作为开发语言。
 &nbsp;
 &nbsp;
 ***
-不够详细？[点此](https://gitee.com/sonic-cloud/sonic-cloud/edit/master/src/markdown/saa/dev-saa.md) 发起贡献改善此页
+不够详细？[点此](https://github.com/SonicCloudOrg/sonic-offical-website/edit/main/src/markdown/saa/dev-saa.md) 发起贡献改善此页
