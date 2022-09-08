@@ -1,7 +1,8 @@
 name: sib update
 
 on:
-  workflow_dispatch:
+  schedule:
+    - cron: "0 0/1 * * *"
 
 jobs:
   release:
@@ -22,13 +23,6 @@ jobs:
         with:
           filename: 'version.json'
           prefix: test
-
-      - name: compare
-        if: ${{ env.CURRENT == env.TAG }}
-        run: exit 0
-        env:
-          CURRENT: v${{ env.test_sib }}
-          TAG: ${{ steps.newtag.outputs.tag }}
 
       - name: replace
         run: ver=${{ steps.newtag.outputs.tag }} && new_ver=${ver:1} && sed -i "s/${{ env.test_sib }}/${new_ver}/g" version.json && sed -i "s/${{ env.test_sib }}/${new_ver}/g" src/markdown/sib/re-sib.md
