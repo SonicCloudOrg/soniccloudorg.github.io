@@ -8,7 +8,6 @@ import 'element-plus/es/components/alert/style/css'
 import { ElImage,ElSteps,ElMessage,ElAlert,ElStep } from 'element-plus'
 import 'element-plus/theme-chalk/el-image.css'
 import router from './router/index.js'
-import './styles/index.css'
 
 createApp(App)
     .use(ElImage)
