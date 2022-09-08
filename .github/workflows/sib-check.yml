@@ -24,11 +24,11 @@ jobs:
           prefix: test
 
       - name: compare
-          if: ${{ env.CURRENT == env.TAG }}
-          run: exit 1
-          env:
-            CURRENT: v${{ env.test_sib }}
-            TAG: ${{steps.newtag.outputs.tag}}
+        if: ${{ env.CURRENT == env.TAG }}
+        run: exit 1
+        env:
+          CURRENT: v${{ env.test_sib }}
+          TAG: ${{steps.newtag.outputs.tag}}
 
       - name: run
         id: ver
