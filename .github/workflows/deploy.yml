@@ -95,4 +95,5 @@ jobs:
           gitee-password: ${{ secrets.GITEE_PASSWORD }}
           gitee-repo: sonic-cloud/sonic-cloud
           branch: main
+          directory: dist
           https: false
