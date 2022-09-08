@@ -34,6 +34,7 @@ jobs:
           signoff: false
           branch: doc/deploy
           base: main
+          labels: document
           delete-branch: true
           title: 'doc: update index.html files version to deploy'
           body: |
@@ -43,7 +44,6 @@ jobs:
             - [x] 我已经考虑过，并确认这份呈件对其他人很有价值。
             - [x] 我接受此提交可能不会被使用，并根据维护人员的意愿关闭拉取请求。
             **填写PR内容：**
-            
             - Update index.html files to deploy by bot 🚀.
             
           draft: false
