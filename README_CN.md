@@ -3,7 +3,7 @@
 </p>
 <p align="center">🎉Sonic官方网站</p>
 <p align="center">
-  <a href="https://github.com/SonicCloudOrg/sonic-server/blob/main/README.md">  
+  <a href="https://github.com/SonicCloudOrg/sonic-offical-website/blob/main/README.md">  
     English
   </a>
   <span>| 简体中文</span>
