@@ -28,11 +28,10 @@ jobs:
         run: exit 1
         env:
           CURRENT: v${{ env.test_sib }}
-          TAG: ${{steps.newtag.outputs.tag}}
+          TAG: ${{ steps.newtag.outputs.tag }}
 
-      - name: run
-        id: ver
-        run: ver=${{steps.newtag.outputs.tag}} && new_ver=${ver:1} && sed -i "s/${{steps.newtag.outputs.tag}}/${new_ver}/g" version.json && sed -i "s/${{steps.newtag.outputs.tag}}/${new_ver}/g" src/markdown/sib/re-sib.md
+      - name: replace
+        run: ver=${{ steps.newtag.outputs.tag }} && new_ver=${ver:1} && sed -i "s/${{ env.test_sib }}/${new_ver}/g" version.json && sed -i "s/${{ env.test_sib }}/${new_ver}/g" src/markdown/sib/re-sib.md
 
       - name: Create Pull Request
         id: cpr
