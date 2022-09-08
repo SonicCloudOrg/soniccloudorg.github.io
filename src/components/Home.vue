@@ -21,12 +21,6 @@ import c2 from '../assets/banner2.png'
 import c4 from '../assets/banner3.png'
 import {useRouter} from "vue-router";
 import {onMounted, ref} from "vue";
-import {loadJS} from "../styles/wmtools.js"
-
-onMounted(() => {
-  loadJS("https://cdn.wwads.cn/js/makemoney.js", function () {
-  });
-})
 
 const open = (url) => {
   window.open(url, '_blank')
