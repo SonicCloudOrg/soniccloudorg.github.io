@@ -25,7 +25,7 @@ jobs:
 
       - name: compare
         if: ${{ env.CURRENT == env.TAG }}
-        run: exit 1
+        run: exit 0
         env:
           CURRENT: v${{ env.test_sib }}
           TAG: ${{ steps.newtag.outputs.tag }}
