@@ -45,7 +45,7 @@ export default defineConfig({
         ElementPlus()
     ],
     // base: "sonic-cloud",
-    base: "//sonic-assets-hongkong.oss-cn-hongkong.aliyuncs.com/dist/",
+    base: "//sonic-assets-hongkong.oss-cn-hongkong.aliyuncs.com/",
     build: {
         rollupOptions: {
             output: {
