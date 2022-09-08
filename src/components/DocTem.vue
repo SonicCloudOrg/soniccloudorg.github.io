@@ -4,7 +4,6 @@ import {useRoute, useRouter} from "vue-router";
 import MD from "../components/MD.vue"
 import Sponsor from "../components/Sponsors.vue"
 import {DArrowRight, DArrowLeft} from "@element-plus/icons"
-import {loadJS} from "../styles/wmtools.js"
 import ad1 from '../assets/ad1.jpg'
 import ad3 from '../assets/ad3.jpg'
 
