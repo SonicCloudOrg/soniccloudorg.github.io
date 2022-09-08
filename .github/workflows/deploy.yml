@@ -32,7 +32,7 @@ jobs:
           commit-message: Update index.html file.
           author: GitHub <noreply@github.com>
           signoff: false
-          branch: doc/deploy
+          branch: deploy
           base: main
           labels: document
           delete-branch: true
@@ -63,7 +63,6 @@ jobs:
         uses: "pascalgn/automerge-action@v0.15.3"
         env:
           MERGE_LABELS: "document"
-          MERGE_DELETE_BRANCH: true
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
           PULL_REQUEST: ${{ steps.cpr.outputs.pull-request-number }}
           MERGE_RETRIES: 18
@@ -94,6 +93,6 @@ jobs:
           gitee-username: ${{ secrets.GITEE_USERNAME }}
           gitee-password: ${{ secrets.GITEE_PASSWORD }}
           gitee-repo: sonic-cloud/sonic-cloud
-          branch: main
+          branch: deploy
           directory: dist
           https: false
