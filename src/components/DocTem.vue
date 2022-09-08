@@ -44,8 +44,6 @@ onBeforeMount(() => {
   } else {
     active.value = getDefaultTag(props.tree)
   }
-  loadJS("https://cdn.wwads.cn/js/makemoney.js", function () {
-  });
 })
 
 let showTag = ref(false)
@@ -104,8 +102,6 @@ const switchNav = function () {
             </a>
           </div>
         </div>
-
-        <div class="wwads-cn wwads-vertical" data-id="175"></div>
       </div>
       <m-d :active="active"/>
     </div>
