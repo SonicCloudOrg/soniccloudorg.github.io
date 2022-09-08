@@ -41,7 +41,7 @@ jobs:
           commit-message: Update sib version file.
           author: GitHub <noreply@github.com>
           signoff: false
-          branch: deploy
+          branch: deploy/sib
           base: main
           labels: document
           delete-branch: true
@@ -71,6 +71,7 @@ jobs:
         name: automerge
         uses: "pascalgn/automerge-action@v0.15.3"
         env:
+          MERGE_DELETE_BRANCH: true
           MERGE_LABELS: "document"
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
           PULL_REQUEST: ${{ steps.cpr.outputs.pull-request-number }}
