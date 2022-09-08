@@ -45,29 +45,29 @@
 >
 > > **Linux:**
 > >
->  > 👉<a href="https://download.fastgit.org/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.1.10/sonic-ios-bridge_1.1.10_linux_arm64.tar.gz" target="_blank">linux_arm64.tar.gz</a>
+>  > 👉<a href="https://download.fastgit.org/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.2.0/sonic-ios-bridge_1.2.0_linux_arm64.tar.gz" target="_blank">linux_arm64.tar.gz</a>
 >  >
->  > 👉<a href="https://download.fastgit.org/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.1.10/sonic-ios-bridge_1.1.10_linux_armv6.tar.gz" target="_blank">linux_armv6.tar.gz</a>
+>  > 👉<a href="https://download.fastgit.org/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.2.0/sonic-ios-bridge_1.2.0_linux_armv6.tar.gz" target="_blank">linux_armv6.tar.gz</a>
 >  >
->  > 👉<a href="https://download.fastgit.org/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.1.10/sonic-ios-bridge_1.1.10_linux_x86.tar.gz" target="_blank">linux_x86.tar.gz</a>
+>  > 👉<a href="https://download.fastgit.org/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.2.0/sonic-ios-bridge_1.2.0_linux_x86.tar.gz" target="_blank">linux_x86.tar.gz</a>
 >  >
->  > 👉<a href="https://download.fastgit.org/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.1.10/sonic-ios-bridge_1.1.10_linux_x86_64.tar.gz" target="_blank">linux_x86_64.tar.gz</a>
+>  > 👉<a href="https://download.fastgit.org/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.2.0/sonic-ios-bridge_1.2.0_linux_x86_64.tar.gz" target="_blank">linux_x86_64.tar.gz</a>
 >
 >  > **Macosx:**
 >  >
->  > 👉<a href="https://download.fastgit.org/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.1.10/sonic-ios-bridge_1.1.10_macosx_arm64.tar.gz" target="_blank">macosx_arm64.tar.gz</a>
+>  > 👉<a href="https://download.fastgit.org/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.2.0/sonic-ios-bridge_1.2.0_macosx_arm64.tar.gz" target="_blank">macosx_arm64.tar.gz</a>
 >  >
->  > 👉<a href="https://download.fastgit.org/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.1.10/sonic-ios-bridge_1.1.10_macosx_x86_64.tar.gz" target="_blank">macosx_x86_64.tar.gz</a>
+>  > 👉<a href="https://download.fastgit.org/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.2.0/sonic-ios-bridge_1.2.0_macosx_x86_64.tar.gz" target="_blank">macosx_x86_64.tar.gz</a>
 >
 >  > **Windows:**
 >  >
->  > 👉<a href="https://download.fastgit.org/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.1.10/sonic-ios-bridge_1.1.10_windows_arm64.tar.gz" target="_blank">windows_arm64.tar.gz</a>
+>  > 👉<a href="https://download.fastgit.org/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.2.0/sonic-ios-bridge_1.2.0_windows_arm64.tar.gz" target="_blank">windows_arm64.tar.gz</a>
 >  >
->  > 👉<a href="https://download.fastgit.org/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.1.10/sonic-ios-bridge_1.1.10_windows_armv6.tar.gz" target="_blank">windows_armv6.tar.gz</a>
+>  > 👉<a href="https://download.fastgit.org/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.2.0/sonic-ios-bridge_1.2.0_windows_armv6.tar.gz" target="_blank">windows_armv6.tar.gz</a>
 > >
->  > 👉<a href="https://download.fastgit.org/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.1.10/sonic-ios-bridge_1.1.10_windows_x86.tar.gz" target="_blank">windows_x86.tar.gz</a>
+>  > 👉<a href="https://download.fastgit.org/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.2.0/sonic-ios-bridge_1.2.0_windows_x86.tar.gz" target="_blank">windows_x86.tar.gz</a>
 > >
->  > 👉<a href="https://download.fastgit.org/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.1.10/sonic-ios-bridge_1.1.10_windows_x86_64.tar.gz" target="_blank">windows_x86_64.tar.gz</a>
+>  > 👉<a href="https://download.fastgit.org/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.2.0/sonic-ios-bridge_1.2.0_windows_x86_64.tar.gz" target="_blank">windows_x86_64.tar.gz</a>
 >
 > 2. 执行指令（Windows不需要，但是Windows需要安装iTunes）。
 > ```
