@@ -23,7 +23,66 @@
 > 后续会继续扩展更多新鲜好玩的功能，也欢迎大家一起参与建设~
 
 ## 快速使用
-建设中...
+> 1. 选择下方 **PC对应的平台压缩包** 下载并解压到任意目录。如 **加速链接失效** 或 **想查找旧版本**，请前往 <a href="https://github.com/SonicCloudOrg/sonic-go-mitmproxy/releases" target="_blank">这里</a> 下载
+>
+> > **Linux:**
+> >
+>  > 👉<a href="https://download.fastgit.org/SonicCloudOrg/sonic-go-mitmproxy/releases/download/v1.3.1/sonic-go-mitmproxy_1.3.1_linux_arm64.tar.gz" target="_blank">sonic-go-mitmproxy_1.3.1_linux_arm64.tar.gz</a>
+>  >
+>  > 👉<a href="https://download.fastgit.org/SonicCloudOrg/sonic-go-mitmproxy/releases/download/v1.3.1/sonic-go-mitmproxy_1.3.1_linux_armv6.tar.gz" target="_blank">sonic-go-mitmproxy_1.3.1_linux_armv6.tar.gz</a>
+>  >
+>  > 👉<a href="https://download.fastgit.org/SonicCloudOrg/sonic-go-mitmproxy/releases/download/v1.3.1/sonic-go-mitmproxy_1.3.1_linux_x86.tar.gz" target="_blank">sonic-go-mitmproxy_1.3.1_linux_x86.tar.gz</a>
+>  >
+>  > 👉<a href="https://download.fastgit.org/SonicCloudOrg/sonic-go-mitmproxy/releases/download/v1.3.1/sonic-go-mitmproxy_1.3.1_linux_x86_64.tar.gz" target="_blank">sonic-go-mitmproxy_1.3.1_linux_x86_64.tar.gz</a>
+>
+>  > **Macosx:**
+>  >
+>  > 👉<a href="https://download.fastgit.org/SonicCloudOrg/sonic-go-mitmproxy/releases/download/v1.3.1/sonic-go-mitmproxy_1.3.1_macosx_arm64.tar.gz" target="_blank">sonic-go-mitmproxy_1.3.1_macosx_arm64.tar.gz</a>
+>  >
+>  > 👉<a href="https://download.fastgit.org/SonicCloudOrg/sonic-go-mitmproxy/releases/download/v1.3.1/sonic-go-mitmproxy_1.3.1_macosx_x86_64.tar.gz" target="_blank">sonic-go-mitmproxy_1.3.1_macosx_x86_64.tar.gz</a>
+>
+>  > **Windows:**
+>  >
+>  > 👉<a href="https://download.fastgit.org/SonicCloudOrg/sonic-go-mitmproxy/releases/download/v1.3.1/sonic-go-mitmproxy_1.3.1_windows_arm64.tar.gz" target="_blank">sonic-go-mitmproxy_1.3.1_windows_arm64.tar.gz</a>
+>  >
+>  > 👉<a href="https://download.fastgit.org/SonicCloudOrg/sonic-go-mitmproxy/releases/download/v1.3.1/sonic-go-mitmproxy_1.3.1_windows_armv6.tar.gz" target="_blank">sonic-go-mitmproxy_1.3.1_windows_armv6.tar.gz</a>
+> >
+>  > 👉<a href="https://download.fastgit.org/SonicCloudOrg/sonic-go-mitmproxy/releases/download/v1.3.1/sonic-go-mitmproxy_1.3.1_windows_x86.tar.gz" target="_blank">sonic-go-mitmproxy_1.3.1_windows_x86.tar.gz</a>
+> >
+>  > 👉<a href="https://download.fastgit.org/SonicCloudOrg/sonic-go-mitmproxy/releases/download/v1.3.1/sonic-go-mitmproxy_1.3.1_windows_x86_64.tar.gz" target="_blank">sonic-go-mitmproxy_1.3.1_windows_x86_64.tar.gz</a>
+>
+> 2. 执行指令（Windows不需要）。
+> ```
+> sudo chmod 777 sonic-go-mitmproxy
+> ```
+> 3. 执行指令有输出版本号即可（Windows不需要./）。
+> ```
+> ./sonic-go-mitmproxy -version
+> ```
+> 4. 🎉恭喜！您已经可以开始使用了！。
+> 5. （附）如果想任意目录下都可以使用sonic-go-mitmproxy，需要将sonic-go-mitmproxy路径添加到系统环境变量PATH中。
+> 6. 可用指令如下：
+> >
+> >```
+> >Usage of sonic-go-mitmproxy:
+> >  -addr string
+> >    	proxy listen addr (default ":9080")
+> >  -dump string
+> >    	dump filename
+> >  -dump_level int
+> >    	dump level: 0 - header, 1 - header + body
+> >  -mapper_dir string
+> >    	mapper files dirpath
+> >  -ssl_insecure
+> >    	not verify upstream server SSL/TLS certificates.
+> >  -version
+> >    	show version
+> >  -web_addr string
+> >    	web interface listen addr (default ":9081")
+> >  -cert_path string
+> >    	path of generate cert files
+> >```
+>
 
 ## 本文贡献者
 <div class="cont">
