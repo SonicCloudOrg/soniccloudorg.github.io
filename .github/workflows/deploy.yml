@@ -15,7 +15,7 @@ jobs:
           fetch-depth: 0
           
       - uses: oprypin/find-latest-tag@v1
-        id: newtag
+        id: sib-latest-tag
         with:
           repository: SonicCloudOrg/sonic-ios-bridge
 
@@ -25,8 +25,14 @@ jobs:
           filename: 'version.json'
           prefix: test
 
-      - name: replace
-        run: ver=${{ steps.newtag.outputs.tag }} && new_ver=${ver:1} && sed -i "s/${{ env.test_sib }}/${new_ver}/g" version.json && sed -i "s/${{ env.test_sib }}/${new_ver}/g" src/markdown/sib/re-sib.md
+      - name: replace sib
+        run: |
+          sib_new_ver=${{ steps.sib-latest-tag.outputs.tag }}
+          sib_new_ver_sub=${ver:1}
+          sib_old_ver=${{ env.test_sib }}
+          sib_old_ver_sub=${sib_old_ver:4}
+          sed -i "s/${sib_old_ver}/sib_${sib_new_ver_sub}/g" version.json
+          sed -i "s/${sib_old_ver_sub}/${sib_new_ver_sub}/g" src/markdown/sib/re-sib.md
 
       - name: Use Node.js 16.x
         uses: actions/setup-node@v2
