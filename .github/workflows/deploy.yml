@@ -1,28 +1,36 @@
 name: deploy to gitee
 
 on:
-  push:
-    branches:
-      - main
+  schedule:
+    - cron: "0 0/3 * * *"
   
 jobs:
   release:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [ 16.x ]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
     steps:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
+          
+      - uses: oprypin/find-latest-tag@v1
+        id: newtag
+        with:
+          repository: SonicCloudOrg/sonic-ios-bridge
 
-      - name: Use Node.js ${{ matrix.node-version }}
+      - name: JSON to variables
+        uses: antifree/json-to-variables@v1.0.1
+        with:
+          filename: 'version.json'
+          prefix: test
+
+      - name: replace
+        run: ver=${{ steps.newtag.outputs.tag }} && new_ver=${ver:1} && sed -i "s/${{ env.test_sib }}/${new_ver}/g" version.json && sed -i "s/${{ env.test_sib }}/${new_ver}/g" src/markdown/sib/re-sib.md
+
+      - name: Use Node.js 16.x
         uses: actions/setup-node@v2
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: 16.x
           cache: 'npm'
       - run: npm install
       - run: npm run build
@@ -61,6 +69,7 @@ jobs:
           number: ${{ steps.cpr.outputs.pull-request-number }}
           
       - id: automerge
+        if: steps.cpr.outputs.pull-request-operation == 'created'
         name: automerge
         uses: "pascalgn/automerge-action@v0.15.3"
         env:
@@ -71,6 +80,7 @@ jobs:
           MERGE_RETRY_SLEEP: 10000
           
       - name: upload files to OSS
+        if: steps.cpr.outputs.pull-request-operation == 'created'
         uses: fangbinwei/aliyun-oss-website-action@v1
         with:
           accessKeyId: ${{ secrets.ALIYUN_ACCESS_KEY_ID }}
@@ -81,6 +91,7 @@ jobs:
           incremental: false
           
       - name: sync gitee
+        if: steps.cpr.outputs.pull-request-operation == 'created'
         run: |
          remote_repo="https://${{ secrets.GITEE_USERNAME }}:${{ secrets.GITEE_PASSWORD }}@gitee.com/sonic-cloud/sonic-cloud.git"
          git remote add gitee "${remote_repo}"
@@ -90,6 +101,7 @@ jobs:
          git push --tags --force gitee
 
       - name: Build Gitee Pages
+        if: steps.cpr.outputs.pull-request-operation == 'created'
         uses: yanglbme/gitee-pages-action@main
         with:
           gitee-username: ${{ secrets.GITEE_USERNAME }}
