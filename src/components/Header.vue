@@ -47,12 +47,6 @@ const open = (url) => {
           <el-menu-item index="/SAA" @click="router.push('/SAA')">
             sonic-android-apk
           </el-menu-item>
-          <el-menu-item index="/SDC" @click="router.push('/SDC')" disabled>
-            <div style="display: flex"><span>sonic-driver-core</span>
-              <el-badge type="primary" value="building" class="item" style="margin-top: -2px;margin-left: 5px">
-              </el-badge>
-            </div>
-          </el-menu-item>
           <el-menu-item index="/SGM" @click="router.push('/SGM')">
             sonic-go-mitmproxy
           </el-menu-item>
