@@ -85,7 +85,7 @@ const switchNav = function () {
 
         <div class="a-container">
           <div class="wrap">
-            <a href="https://gitee.com/sonic-cloud/sonic-cloud/raw/master/src/assets/ad3.jpg"
+            <a href="https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/ad3.jpg"
                target="_blank">
               <img :src="ad3"
                    alt=""/>
@@ -94,7 +94,7 @@ const switchNav = function () {
               <img :src="ad1"
                    alt=""/>
             </a>
-            <a href="https://gitee.com/sonic-cloud/sonic-cloud/raw/master/src/assets/ad3.jpg"
+            <a href="https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/ad3.jpg"
                target="_blank">
               <img :src="ad3"
                    alt=""/>
