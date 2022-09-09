@@ -35,8 +35,8 @@ const open = (url) => {
         </el-sub-menu>
         <el-sub-menu index="3">
           <template #title>周边生态</template>
-          <el-menu-item index="/AJC" @click="router.push('/AJC')" disabled>
-            <div style="display: flex"><span>airtest-java-client</span>
+          <el-menu-item index="/SDC" @click="router.push('/SDC')" disabled>
+            <div style="display: flex"><span>sonic-driver-core</span>
               <el-badge type="primary" value="building" class="item" style="margin-top: -2px;margin-left: 5px">
               </el-badge>
             </div>
@@ -47,18 +47,18 @@ const open = (url) => {
           <el-menu-item index="/SAA" @click="router.push('/SAA')">
             sonic-android-apk
           </el-menu-item>
+          <el-menu-item index="/SDC" @click="router.push('/SDC')" disabled>
+            <div style="display: flex"><span>sonic-driver-core</span>
+              <el-badge type="primary" value="building" class="item" style="margin-top: -2px;margin-left: 5px">
+              </el-badge>
+            </div>
+          </el-menu-item>
           <el-menu-item index="/SGM" @click="router.push('/SGM')">
             sonic-go-mitmproxy
           </el-menu-item>
           <el-menu-item index="/SCH" @click="router.push('/SCH')">
             sonic-ci-helper
           </el-menu-item>
-<!--          <el-menu-item index="/Cabinet" @click="router.push('/Cabinet')">-->
-<!--            <div style="display: flex"><span>官方硬件配件</span>-->
-<!--              <el-badge type="primary" value="building" class="item" style="margin-top: -2px;margin-left: 5px">-->
-<!--              </el-badge>-->
-<!--            </div>-->
-<!--          </el-menu-item>-->
         </el-sub-menu>
         <el-sub-menu index="1">
           <template #title>其他</template>
