@@ -1,7 +1,8 @@
 name: deploy to gitee
 
 on:
-  workflow_dispatch:
+  schedule:
+    - cron: "0 0/3 * * *"
   
 jobs:
   release:
