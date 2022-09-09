@@ -17,6 +17,11 @@ jobs:
         id: sib-latest-tag
         with:
           repository: SonicCloudOrg/sonic-ios-bridge
+          
+      - uses: oprypin/find-latest-tag@v1
+        id: sgm-latest-tag
+        with:
+          repository: SonicCloudOrg/sonic-go-mitmproxy
 
       - name: JSON to variables
         uses: antifree/json-to-variables@v1.0.1
@@ -32,6 +37,15 @@ jobs:
           sib_old_ver_sub=${sib_old_ver:4}
           sed -i "s/${sib_old_ver}/sib_${sib_new_ver_sub}/g" version.json
           sed -i "s/${sib_old_ver_sub}/${sib_new_ver_sub}/g" src/markdown/sib/re-sib.md
+          
+      - name: replace sgm
+        run: |
+          sgm_new_ver=${{ steps.sgm-latest-tag.outputs.tag }}
+          sgm_new_ver_sub=${sgm_new_ver:1}
+          sgm_old_ver=${{ env.test_sgm }}
+          sgm_old_ver_sub=${sgm_old_ver:4}
+          sed -i "s/${sgm_old_ver}/sgm_${sgm_new_ver_sub}/g" version.json
+          sed -i "s/${sgm_old_ver_sub}/${sgm_new_ver_sub}/g" src/markdown/sgm/re-sgm.md
 
       - name: Use Node.js 16.x
         uses: actions/setup-node@v2
