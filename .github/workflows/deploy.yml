@@ -28,7 +28,7 @@ jobs:
       - name: replace sib
         run: |
           sib_new_ver=${{ steps.sib-latest-tag.outputs.tag }}
-          sib_new_ver_sub=${ver:1}
+          sib_new_ver_sub=${sib_new_ver:1}
           sib_old_ver=${{ env.test_sib }}
           sib_old_ver_sub=${sib_old_ver:4}
           sed -i "s/${sib_old_ver}/sib_${sib_new_ver_sub}/g" version.json
