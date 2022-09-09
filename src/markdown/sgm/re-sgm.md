@@ -62,26 +62,26 @@
 > 4. 🎉恭喜！您已经可以开始使用了！。
 > 5. （附）如果想任意目录下都可以使用sonic-go-mitmproxy，需要将sonic-go-mitmproxy路径添加到系统环境变量PATH中。
 > 6. 可用指令如下：
-> >
-> >```
-> >Usage of sonic-go-mitmproxy:
-> >  -addr string
-> >    	proxy listen addr (default ":9080")
-> >  -dump string
-> >    	dump filename
-> >  -dump_level int
-> >    	dump level: 0 - header, 1 - header + body
-> >  -mapper_dir string
-> >    	mapper files dirpath
-> >  -ssl_insecure
-> >    	not verify upstream server SSL/TLS certificates.
-> >  -version
-> >    	show version
-> >  -web_addr string
-> >    	web interface listen addr (default ":9081")
-> >  -cert_path string
-> >    	path of generate cert files
-> >```
+> 
+> ```
+> Usage of sonic-go-mitmproxy:
+>   -addr string
+>     	proxy listen addr (default ":9080")
+>   -dump string
+>     	dump filename
+>   -dump_level int
+>     	dump level: 0 - header, 1 - header + body
+>   -mapper_dir string
+>     	mapper files dirpath
+>   -ssl_insecure
+>     	not verify upstream server SSL/TLS certificates.
+>   -version
+>     	show version
+>   -web_addr string
+>     	web interface listen addr (default ":9081")
+>   -cert_path string
+>     	path of generate cert files
+> ```
 >
 
 ## 本文贡献者
