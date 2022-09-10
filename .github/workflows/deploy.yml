@@ -4,30 +4,25 @@ on:
   workflow_dispatch:
   
 jobs:
-  release:
+  check:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
-          
       - uses: oprypin/find-latest-tag@v1
         id: sib-latest-tag
         with:
           repository: SonicCloudOrg/sonic-ios-bridge
-          
       - uses: oprypin/find-latest-tag@v1
         id: sgm-latest-tag
         with:
           repository: SonicCloudOrg/sonic-go-mitmproxy
-
       - name: JSON to variables
         uses: antifree/json-to-variables@v1.0.1
         with:
           filename: 'version.json'
           prefix: test
-
       - name: replace sib
         run: |
           sib_new_ver=${{ steps.sib-latest-tag.outputs.tag }}
@@ -36,7 +31,6 @@ jobs:
           sib_old_ver_sub=${sib_old_ver:4}
           sed -i "s/${sib_old_ver}/sib_${sib_new_ver_sub}/g" version.json
           sed -i "s/${sib_old_ver_sub}/${sib_new_ver_sub}/g" src/markdown/sib/re-sib.md
-          
       - name: replace sgm
         run: |
           sgm_new_ver=${{ steps.sgm-latest-tag.outputs.tag }}
@@ -45,7 +39,10 @@ jobs:
           sgm_old_ver_sub=${sgm_old_ver:4}
           sed -i "s/${sgm_old_ver}/sgm_${sgm_new_ver_sub}/g" version.json
           sed -i "s/${sgm_old_ver_sub}/${sgm_new_ver_sub}/g" src/markdown/sgm/re-sgm.md
-
+  build:
+    needs: check
+    runs-on: ubuntu-latest
+    steps:
       - name: Use Node.js 16.x
         uses: actions/setup-node@v2
         with:
@@ -53,7 +50,6 @@ jobs:
           cache: 'npm'
       - run: npm install
       - run: npm run build
-
       - name: Create Pull Request
         id: cpr
         uses: peter-evans/create-pull-request@v4
@@ -79,16 +75,15 @@ jobs:
             - Update files to deploy by bot 🚀.
             
           draft: false
-          
+      - name: check pr
+        if: steps.cpr.outputs.pull-request-operation != 'created'
+        run: exit 1
       - name: Auto approve
-        if: steps.cpr.outputs.pull-request-operation == 'created'
         uses: juliangruber/approve-pull-request-action@v1
         with:
           github-token: ${{ secrets.PAT }}
           number: ${{ steps.cpr.outputs.pull-request-number }}
-          
       - id: automerge
-        if: steps.cpr.outputs.pull-request-operation == 'created'
         name: automerge
         uses: "pascalgn/automerge-action@v0.15.3"
         env:
@@ -96,10 +91,8 @@ jobs:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
           PULL_REQUEST: ${{ steps.cpr.outputs.pull-request-number }}
           MERGE_RETRIES: 18
-          MERGE_RETRY_SLEEP: 10000
-          
+          MERGE_RETRY_SLEEP: 10000    
       - name: upload files to OSS
-        if: steps.cpr.outputs.pull-request-operation == 'created'
         uses: fangbinwei/aliyun-oss-website-action@v1
         with:
           accessKeyId: ${{ secrets.ALIYUN_ACCESS_KEY_ID }}
@@ -108,9 +101,7 @@ jobs:
           endpoint: oss-cn-hongkong.aliyuncs.com
           folder: dist/
           incremental: false
-          
       - name: sync gitee
-        if: steps.cpr.outputs.pull-request-operation == 'created'
         run: |
          remote_repo="https://${{ secrets.GITEE_USERNAME }}:${{ secrets.GITEE_PASSWORD }}@gitee.com/sonic-cloud/sonic-cloud.git"
          git remote add gitee "${remote_repo}"
@@ -118,9 +109,7 @@ jobs:
          git branch --verbose
          git push --all --force gitee
          git push --tags --force gitee
-
       - name: Build Gitee Pages
-        if: steps.cpr.outputs.pull-request-operation == 'created'
         uses: yanglbme/gitee-pages-action@main
         with:
           gitee-username: ${{ secrets.GITEE_USERNAME }}
