@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   
 jobs:
-  check:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -39,10 +39,6 @@ jobs:
           sgm_old_ver_sub=${sgm_old_ver:4}
           sed -i "s/${sgm_old_ver}/sgm_${sgm_new_ver_sub}/g" version.json
           sed -i "s/${sgm_old_ver_sub}/${sgm_new_ver_sub}/g" src/markdown/sgm/re-sgm.md
-  build:
-    needs: check
-    runs-on: ubuntu-latest
-    steps:
       - name: Use Node.js 16.x
         uses: actions/setup-node@v2
         with:
