@@ -27,25 +27,25 @@
 >
 > > **Linux:**
 > >
->  > 👉<a href="https://download.fastgit.org/SonicCloudOrg/sonic-go-mitmproxy/releases/download/v1.3.1/sonic-go-mitmproxy_1.3.1_linux_arm64.tar.gz" target="_blank">sonic-go-mitmproxy_1.3.1_linux_arm64.tar.gz</a>
+>  > 👉<a href="https://download.fastgit.org/SonicCloudOrg/sonic-go-mitmproxy/releases/download/v1.3.2/sonic-go-mitmproxy_1.3.2_linux_arm64.tar.gz" target="_blank">sonic-go-mitmproxy_1.3.2_linux_arm64.tar.gz</a>
 >  >
->  > 👉<a href="https://download.fastgit.org/SonicCloudOrg/sonic-go-mitmproxy/releases/download/v1.3.1/sonic-go-mitmproxy_1.3.1_linux_x86.tar.gz" target="_blank">sonic-go-mitmproxy_1.3.1_linux_x86.tar.gz</a>
+>  > 👉<a href="https://download.fastgit.org/SonicCloudOrg/sonic-go-mitmproxy/releases/download/v1.3.2/sonic-go-mitmproxy_1.3.2_linux_x86.tar.gz" target="_blank">sonic-go-mitmproxy_1.3.2_linux_x86.tar.gz</a>
 >  >
->  > 👉<a href="https://download.fastgit.org/SonicCloudOrg/sonic-go-mitmproxy/releases/download/v1.3.1/sonic-go-mitmproxy_1.3.1_linux_x86_64.tar.gz" target="_blank">sonic-go-mitmproxy_1.3.1_linux_x86_64.tar.gz</a>
+>  > 👉<a href="https://download.fastgit.org/SonicCloudOrg/sonic-go-mitmproxy/releases/download/v1.3.2/sonic-go-mitmproxy_1.3.2_linux_x86_64.tar.gz" target="_blank">sonic-go-mitmproxy_1.3.2_linux_x86_64.tar.gz</a>
 >
 >  > **Macosx:**
 >  >
->  > 👉<a href="https://download.fastgit.org/SonicCloudOrg/sonic-go-mitmproxy/releases/download/v1.3.1/sonic-go-mitmproxy_1.3.1_macosx_arm64.tar.gz" target="_blank">sonic-go-mitmproxy_1.3.1_macosx_arm64.tar.gz</a>
+>  > 👉<a href="https://download.fastgit.org/SonicCloudOrg/sonic-go-mitmproxy/releases/download/v1.3.2/sonic-go-mitmproxy_1.3.2_macosx_arm64.tar.gz" target="_blank">sonic-go-mitmproxy_1.3.2_macosx_arm64.tar.gz</a>
 >  >
->  > 👉<a href="https://download.fastgit.org/SonicCloudOrg/sonic-go-mitmproxy/releases/download/v1.3.1/sonic-go-mitmproxy_1.3.1_macosx_x86_64.tar.gz" target="_blank">sonic-go-mitmproxy_1.3.1_macosx_x86_64.tar.gz</a>
+>  > 👉<a href="https://download.fastgit.org/SonicCloudOrg/sonic-go-mitmproxy/releases/download/v1.3.2/sonic-go-mitmproxy_1.3.2_macosx_x86_64.tar.gz" target="_blank">sonic-go-mitmproxy_1.3.2_macosx_x86_64.tar.gz</a>
 >
 >  > **Windows:**
 >  >
->  > 👉<a href="https://download.fastgit.org/SonicCloudOrg/sonic-go-mitmproxy/releases/download/v1.3.1/sonic-go-mitmproxy_1.3.1_windows_arm64.tar.gz" target="_blank">sonic-go-mitmproxy_1.3.1_windows_arm64.tar.gz</a>
+>  > 👉<a href="https://download.fastgit.org/SonicCloudOrg/sonic-go-mitmproxy/releases/download/v1.3.2/sonic-go-mitmproxy_1.3.2_windows_arm64.tar.gz" target="_blank">sonic-go-mitmproxy_1.3.2_windows_arm64.tar.gz</a>
 > >
->  > 👉<a href="https://download.fastgit.org/SonicCloudOrg/sonic-go-mitmproxy/releases/download/v1.3.1/sonic-go-mitmproxy_1.3.1_windows_x86.tar.gz" target="_blank">sonic-go-mitmproxy_1.3.1_windows_x86.tar.gz</a>
+>  > 👉<a href="https://download.fastgit.org/SonicCloudOrg/sonic-go-mitmproxy/releases/download/v1.3.2/sonic-go-mitmproxy_1.3.2_windows_x86.tar.gz" target="_blank">sonic-go-mitmproxy_1.3.2_windows_x86.tar.gz</a>
 > >
->  > 👉<a href="https://download.fastgit.org/SonicCloudOrg/sonic-go-mitmproxy/releases/download/v1.3.1/sonic-go-mitmproxy_1.3.1_windows_x86_64.tar.gz" target="_blank">sonic-go-mitmproxy_1.3.1_windows_x86_64.tar.gz</a>
+>  > 👉<a href="https://download.fastgit.org/SonicCloudOrg/sonic-go-mitmproxy/releases/download/v1.3.2/sonic-go-mitmproxy_1.3.2_windows_x86_64.tar.gz" target="_blank">sonic-go-mitmproxy_1.3.2_windows_x86_64.tar.gz</a>
 >
 > 2. 执行指令（Windows不需要）。
 > ```
