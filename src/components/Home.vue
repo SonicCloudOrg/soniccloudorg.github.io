@@ -39,7 +39,7 @@ const statisticsData = [
   },
   {
     tipContent: '镜像仓库总下载量',
-    linkUrl: '#',
+    linkUrl: 'https://github.com/SonicCloudOrg',
     img: 'https://img.shields.io/badge/Docker%20pulls%20-53.5k-important'
   }
 ]
