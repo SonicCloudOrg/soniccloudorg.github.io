@@ -98,7 +98,7 @@ const devices = [
       <div class="bg"></div>
       <div class="bg bg2"></div>
       <div class="bg bg3"></div>
-      <h1 class="brand-slogan">“ For Tester，For Free，Forever ”</h1>
+      <h1 class="brand-slogan">“ For You，For Free，Forever ”</h1>
       <!-- 相关数据统计 -->
       <div class="statistics">
         <el-tooltip
