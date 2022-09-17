@@ -262,9 +262,9 @@ const devices = [
       <div style="padding: 0 20%;">
         <el-divider></el-divider>
       </div>
-      <div style="display: flex;justify-content: center; margin-top: 50px">
-        <img :src="msg" height="300"/>
-        <el-timeline style="text-align: left">
+      <div class="capacity-wrapper">
+        <img class="capacity-img" :src="msg"/>
+        <el-timeline class="capacity-list" style="text-align: left">
           <el-timeline-item
               type="primary"
               :hollow="true"
@@ -446,6 +446,16 @@ const devices = [
   margin-bottom: 20px;
 }
 
+.capacity-wrapper {
+  display: flex;
+  justify-content: center; 
+  margin-top: 50px
+}
+
+.capacity-img {
+  height: 300px;
+}
+
 @media screen and (max-width: 820px) {
   .container {
     width: 100%;
@@ -480,6 +490,27 @@ const devices = [
   .case-content {
     width: 170px;
     margin-bottom: 10px;
+  }
+
+  .capacity-wrapper {
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  .capacity-img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 300px;
+    margin-bottom: 30px;
+    transform: translate(-50%, -50%);
+    opacity: .05;
+    filter: blur(2px);
+  }
+
+  .capacity-list {
+    padding-right: 40px;
   }
 }
 
