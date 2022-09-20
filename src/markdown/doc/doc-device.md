@@ -18,3 +18,21 @@
 > 4. 输入安装密码、点击保存，更新安装密码。
 > 5. 点击【重启】按钮，重新启动当前设备。
 > 6. 点击【删除】按钮，删除当前设备。
+
+## 本文贡献者
+<div class="cont">
+<a href="https://github.com/ZhouYixun" target="_blank">
+<img src="https://avatars.githubusercontent.com/u/56339314?v=4" width="50"/>
+<span>ZhouYixun</span>
+</a>
+<a href="https://github.com/yyz20001111" target="_blank">
+<img src="https://avatars.githubusercontent.com/u/61265897?v=4" width="50"/>
+<span>yyz20001111</span>
+</a>
+</div>
+
+
+&nbsp;
+&nbsp;
+***
+不够详细？[点此](https://github.com/SonicCloudOrg/sonic-offical-website/edit/main/src/markdown/doc/doc-device.md) 发起贡献改善此页
