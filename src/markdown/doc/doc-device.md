@@ -2,11 +2,7 @@
 
 对接入设备进行管理。
 
-<el-alert v-if="i==0" style="margin-bottom: 20px" type="error" :closable="false">
-<template #title>
-<div>手机接入后没显示在设备中心？ 点击 <a href="https://sonic-cloud.gitee.io/#/Deploy?tag=android">这里</a> 查看！</div>
-</template>
-</el-alert>
+<el-alert style="margin-top: 20px" title="注意" show-icon type="info" description="手机接入后没显示在设备中心？可前往部署文档下的设备接入指南查看哦~" :closable="false"/>
 
 ## 查看设备信息
 
@@ -22,9 +18,17 @@
 > 2. 点击【点击上传】选项，更新设备图片。
 > 3. 输入设备备注、点击【保存】，更新设备备注。
 > 4. 输入安装密码、点击保存，更新安装密码。
-> 5. 点击【重启】按钮，重新启动当前设备。
-> 6. 点击【删除】按钮，删除当前设备。
 
+## 重启设备
+
+> 1. 移动鼠标到【更多信息】。
+> 2. 点击【重启】按钮，重新启动当前设备。
+
+## 删除设备
+
+> 1. 移动鼠标到【更多信息】。
+> 2. 点击【删除】按钮，删除当前设备。
+> 
 > 注意，当设备为 [离线] 或 [断开] 时，才可以被删除。
 
 ## 本文贡献者
