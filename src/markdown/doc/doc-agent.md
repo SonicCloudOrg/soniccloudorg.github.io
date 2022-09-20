@@ -2,6 +2,8 @@
 
 对Agent进行管理。
 
+<el-alert style="margin-top: 20px" title="注意" show-icon type="info" description="创建Agent后如何部署？可前往部署文档下的Agent端部署文档查看哦~" :closable="false"/>
+
 ## 新增Agent
 
 > 1. 点击【新增Agent】。
@@ -39,7 +41,7 @@
 
 > 点击【终止运行】按钮，终止运行当前Agent，Agent状态变更为 [离线] 状态。
 >
-> 注意，当设备为 [在线] 状态时，才可以被终止运行。
+> 注意，当Agent为 [在线] 状态时，才可以被终止运行。
 
 ## 本文贡献者
 <div class="cont">
