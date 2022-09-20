@@ -3,10 +3,10 @@
 对接入设备进行管理。
 
 <el-alert v-if="i==0" style="margin-bottom: 20px" type="error" :closable="false">
-              <template #title>
-                <div>手机接入后没显示在设备中心？ 点击 <a href="https://sonic-cloud.gitee.io/#/Deploy?tag=android">这里</a> 查看！</div>
-              </template>
-            </el-alert>
+<template #title>
+<div>手机接入后没显示在设备中心？ 点击 <a href="https://sonic-cloud.gitee.io/#/Deploy?tag=android">这里</a> 查看！</div>
+</template>
+</el-alert>
 
 ## 查看设备信息
 
