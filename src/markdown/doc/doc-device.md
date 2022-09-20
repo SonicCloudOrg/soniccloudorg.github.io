@@ -19,6 +19,8 @@
 > 5. 点击【重启】按钮，重新启动当前设备。
 > 6. 点击【删除】按钮，删除当前设备。
 
+> 注意，当设备为 [离线] 或 [断开] 时，才可以被删除。
+
 ## 本文贡献者
 <div class="cont">
 <a href="https://github.com/ZhouYixun" target="_blank">
