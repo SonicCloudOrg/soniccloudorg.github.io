@@ -30,15 +30,14 @@
 
 ### 二、离线安装
 
-> 1. 点击下方链接下载到任意目录。（如链接失效，请点击 <a href="https://repo.jenkins-ci.org/artifactory/releases/io/jenkins/plugins/sonic-ci-helper/1.0.2/sonic-ci-helper-1.0.2.hpi" target="_blank">这里</a> 下载）
->
->  > 👉<a href="https://download.sonic-cloud.wiki/sonic/sonic-ci-helper/v1.0.2/sonic-ci-helper-1.0.2.hpi" target="_blank">sonic-ci-helper-1.0.2.hpi</a>
-> 2. 前往Jenkins的插件管理页面，选择手动安装插件，将hpi上传即可。
+> 1. 从Github拉取源码。
+> 2. 执行 mvn package 命令。  
+> 3. 前往Jenkins的插件管理页面，选择手动安装插件，将hpi文件上传即可。
 
 ## 本文贡献者
 <div class="cont">
-<a href="https://gitee.com/ZhouYixun" target="_blank">
-<img src="https://portrait.gitee.com/uploads/avatars/user/2698/8096045_ZhouYixun_1645499109.png!avatar100" width="50"/>
+<a href="https://github.com/ZhouYixun" target="_blank">
+<img src="https://avatars.githubusercontent.com/u/56339314?v=4" width="50"/>
 <span>ZhouYixun</span>
 </a>
 </div>
