@@ -49,11 +49,10 @@ jobs:
       - name: replace sch
         run: |
           sch_new_ver=${{ steps.sch-latest-tag.outputs.tag }}
-          sch_new_ver_sub=${sch_new_ver:1}
           sch_old_ver=${{ env.test_sch }}
           sch_old_ver_sub=${sch_old_ver:4}
-          sed -i "s/${sch_old_ver}/sch_${sch_new_ver_sub}/g" version.json
-          sed -i "s/${sch_old_ver_sub}/${sch_new_ver_sub}/g" src/markdown/sch/re-sch.md
+          sed -i "s/${sch_old_ver}/sch_${sch_new_ver}/g" version.json
+          sed -i "s/${sch_old_ver_sub}/${sch_new_ver}/g" src/markdown/sch/re-sch.md
       - name: Use Node.js 16.x
         uses: actions/setup-node@v2
         with:
