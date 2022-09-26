@@ -19,10 +19,12 @@ jobs:
         id: sib-latest-tag
         with:
           repository: SonicCloudOrg/sonic-ios-bridge
+          sort-tags: false
       - uses: oprypin/find-latest-tag@v1
         id: sgm-latest-tag
         with:
           repository: SonicCloudOrg/sonic-go-mitmproxy
+          sort-tags: false
       - name: JSON to variables
         uses: antifree/json-to-variables@v1.0.1
         with:
