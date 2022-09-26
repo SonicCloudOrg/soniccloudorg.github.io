@@ -29,10 +29,12 @@
 > :preview-src-list="['https://img.wenjie.store/2022-07-27/1658886552-595597-9a1d8b2970d61eaebd9b806a13e373c.png']" style="width: 80%"/>
 
 ### 二、离线安装
-
-> 1. 从Github拉取源码。
-> 2. 执行 mvn package 命令。  
-> 3. 前往Jenkins的插件管理页面，选择手动安装插件，将hpi文件上传即可。
+  
+> 1. 点击下载链接。如 **加速链接失效** 或 **想查找旧版本**，请前往 <a href="https://github.com/jenkinsci/sonic-ci-helper-plugin/releases" target="_blank">这里</a> 下载
+>
+>  > 👉<a href="https://download.fastgit.org/jenkinsci/sonic-ci-helper-plugin/releases/download/sonic-ci-helper-1.0.3/sonic-ci-helper.hpi" target="_blank">sonic-ci-helper-1.0.3.hpi</a>
+> 
+> 2. 前往Jenkins的插件管理页面，选择手动安装插件，将hpi文件上传即可。
 
 ## 本文贡献者
 <div class="cont">
