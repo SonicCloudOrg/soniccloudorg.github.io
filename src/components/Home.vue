@@ -32,6 +32,11 @@ const statisticsData = [
     linkUrl: 'https://github.com/SonicCloudOrg',
     img: 'https://img.shields.io/github/stars/SonicCloudOrg?affiliations=OWNER&style=social'
   },
+   {
+    tipContent: 'Sonic组织Follower数量',
+    linkUrl: 'https://github.com/SonicCloudOrg',
+    img: 'https://img.shields.io/github/followers/SonicCloudOrg?style=social'
+  },
   {
     tipContent: 'Sonic社区总回复数',
     linkUrl: 'https://sonic-cloud.wiki',
