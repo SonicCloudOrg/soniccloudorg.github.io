@@ -28,19 +28,19 @@ const open = (url) => {
 const router = useRouter()
 const statisticsData = [
   {
-    tipContent: 'Sonic组织所有仓库总Star数量',
-    linkUrl: 'https://github.com/SonicCloudOrg',
-    img: 'https://img.shields.io/github/stars/SonicCloudOrg?affiliations=OWNER&style=social'
-  },
-   {
     tipContent: 'Sonic组织Follower数量',
     linkUrl: 'https://github.com/SonicCloudOrg',
     img: 'https://img.shields.io/github/followers/SonicCloudOrg?style=social'
   },
   {
+    tipContent: 'Sonic组织所有仓库总Star数量',
+    linkUrl: 'https://github.com/SonicCloudOrg',
+    img: 'https://img.shields.io/github/stars/SonicCloudOrg?affiliations=OWNER&style=social'
+  },
+  {
     tipContent: 'Sonic社区总回复数',
     linkUrl: 'https://sonic-cloud.wiki',
-    img: 'https://img.shields.io/badge/replies%20-9.8k-ff69b4?style=social&logo=Chromecast'
+    img: 'https://img.shields.io/badge/replies%20-9.8k-ff69b4?style=social&logo=LiveChat'
   },
   {
     tipContent: '镜像仓库总下载量',
