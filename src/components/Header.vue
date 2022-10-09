@@ -35,12 +35,6 @@ const open = (url) => {
         </el-sub-menu>
         <el-sub-menu index="3">
           <template #title>周边生态</template>
-          <el-menu-item index="/SDC" @click="router.push('/SDC')" disabled>
-            <div style="display: flex"><span>sonic-driver-core</span>
-              <el-badge type="primary" value="building" class="item" style="margin-top: -2px;margin-left: 5px">
-              </el-badge>
-            </div>
-          </el-menu-item>
           <el-menu-item index="/SIB" @click="router.push('/SIB')">
             sonic-ios-bridge
           </el-menu-item>
@@ -52,6 +46,24 @@ const open = (url) => {
           </el-menu-item>
           <el-menu-item index="/SCH" @click="router.push('/SCH')">
             sonic-ci-helper
+          </el-menu-item>
+          <el-menu-item index="/SDC" @click="router.push('/SDC')" disabled>
+            <div style="display: flex"><span>sonic-driver-core</span>
+              <el-badge type="primary" value="building" class="item" style="margin-top: -2px;margin-left: 5px">
+              </el-badge>
+            </div>
+          </el-menu-item>
+          <el-menu-item index="/SVC" @click="router.push('/SVC')" disabled>
+            <div style="display: flex"><span>sonic-vision-core</span>
+              <el-badge type="primary" value="building" class="item" style="margin-top: -2px;margin-left: 5px">
+              </el-badge>
+            </div>
+          </el-menu-item>
+          <el-menu-item index="/SAS" @click="router.push('/SAS')" disabled>
+            <div style="display: flex"><span>sonic-android-supply</span>
+              <el-badge type="primary" value="building" class="item" style="margin-top: -2px;margin-left: 5px">
+              </el-badge>
+            </div>
           </el-menu-item>
         </el-sub-menu>
         <el-sub-menu index="1">
