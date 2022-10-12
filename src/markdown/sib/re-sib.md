@@ -22,6 +22,7 @@
 > >1. 新增DiagnosticsRelay实现设备关机与重启。[feat: [DiagnosticsRelay] new functions Reboot Shutdown](https://github.com/electricbubble/gidevice/commit/ad436febc507a655ddd5de4720e6b0843bf45b16)
 > >2. 新增SpringBoardServices与App图标获取。[feat: [SpringBoard] support get the app's icon](https://github.com/electricbubble/gidevice/commit/a31cdff57d0fc234acf4a57d6f707a7b67a23f8d)
 > >3. 扩展SpringBoardServices获取屏幕旋转方向。[feat: [SpringBoard] support get the orientation of the interface](https://github.com/electricbubble/gidevice/commit/e787834515aabaacdf9208953625dd48af8d8514)
+> >4. 增加性能数据方法。[feat: 增加性能数据方法](https://github.com/electricbubble/gidevice/commit/8bef4cc76426c263212df7ea13dd7823914c4c1b)
 >
 > 所以您可以使用sib脱离Mac进行 **跨端iOS自动化** 、**iOS设备通信**、**iOS设备测试** 。
 >
