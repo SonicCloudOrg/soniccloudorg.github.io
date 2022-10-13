@@ -51,6 +51,7 @@ import ScreenSIB from '../markdown/sib/sib-screen.md'
 import AfcSIB from '../markdown/sib/sib-afc.md'
 import MountSIB from '../markdown/sib/sib-mount.md'
 import PerfSIB from '../markdown/sib/sib-perf.md'
+import WebInspectorSIB from '../markdown/sib/sib-webinspector.md'
 
 defineProps({
   active: String
@@ -111,6 +112,7 @@ defineProps({
     <afc-s-i-b v-if="active==='sib-afc'"/>
     <mount-s-i-b v-if="active==='sib-mount'"/>
     <perf-s-i-b v-if="active==='sib-perf'"/>
+    <web-inspector-s-i-b v-if="active==='sib-webinspector'"/>
   </div>
 </template>
 
