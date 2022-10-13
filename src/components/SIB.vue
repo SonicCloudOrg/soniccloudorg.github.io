@@ -79,6 +79,10 @@ const tree = ref([
         label: "性能监控",
         name: 'sib-perf',
       },
+      {
+        label: "网页检阅器",
+        name: "sib-webinspector"
+      }
     ]
   }
 ])
