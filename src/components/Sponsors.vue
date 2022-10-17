@@ -1,7 +1,8 @@
 <template>
   <div style="width: 170px;text-align: center;overflow: hidden;display: inline-block;">
     <el-card :body-style="{padding:'8px'}" shadow="hover">
-      <span style="font-size: 15px;color: #E6A23C">💪合作伙伴</span>
+<!--
+     <span style="font-size: 15px;color: #E6A23C">💪合作伙伴</span>
       <div style="margin-top: 10px">
         <a href="https://airtest.netease.com/" target="_blank">
           <img
@@ -10,6 +11,7 @@
         </a>
       </div>
       <el-divider style="margin: 10px 0px!important;"></el-divider>
+-->
       <span style="font-size: 15px;color: #E6A23C">✨金牌赞助商✨</span>
       <div style="margin-top: 10px">
         <a href="https://www.testing-studio.com/" target="_blank">
