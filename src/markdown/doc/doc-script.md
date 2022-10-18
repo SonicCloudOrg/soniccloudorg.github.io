@@ -6,7 +6,7 @@
 
 ### 能力介绍
 
-执行自定义脚本前，会将基础stepHandler传入Groovy引擎。
+执行自定义脚本前，会将基础StepHandler传入Groovy引擎。
 
 包括：
 > 1. log对象，可以操作测试报告输出文本
@@ -14,14 +14,17 @@
 > 3. iosDriver，可以操作Wda
 > 4. 全局参数，可以对全局参数进行存取
 > 5. Sonic的自定义步骤，可以直接复用
-> 6. 其他，包括PocoDriver、设备信息等等
+> 6. 其他，包括PocoDriver、设备信息等等（更多内置方法可查看[AndroidStepHandler](https://github.com/SonicCloudOrg/sonic-agent/blob/main/src/main/java/org/cloud/sonic/agent/automation/AndroidStepHandler.java)、
+[IOSStepHandler](https://github.com/SonicCloudOrg/sonic-agent/blob/main/src/main/java/org/cloud/sonic/agent/automation/IOSStepHandler.java)）
 
-stepHandler以外能力，可以直接import对应包进行实现。
+StepHandler以外能力，可以直接import对应包或者直接引用进行实现。
 
 包括但不限于：
 > 1. RestTemaplate，可以进行Rest Api操作。
-> 2. Process，可以运行本地指令等等。
-> 3. fastJson和其他包。
+> 2. Java自带的Process，可以运行本地指令。
+> 3. SibTool，用于使用sib的工具类。
+> 4. AndroidDeviceBridgeTool，用于操作adb的部分工具类。
+> 5. fastJson和其他包等等。
 
 ### 输出日志到测试报告
 
@@ -228,6 +231,17 @@ testCmdForLongTime()
 ```
 
 ## 二、Python脚本
+
+Python不能作为Agent内置引擎，因此不可使用Agent内置的方法与包，只能使用Agent传递的部分参数，并且依赖需要自行本地安装。
+
+### 前置环境
+Python环境、pip环境。
+
+### 可用参数
+
+建设中...
+
+### 示例脚本展示
 
 建设中...
 
