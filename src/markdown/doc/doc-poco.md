@@ -4,7 +4,16 @@
 
 ## 注意事项
 
-使用该步骤时，需确保被测控件类型为游戏控件，并且对应游戏包已经接入POCO-SDK，并且已经打开接入SDK的对应引擎页面。
+> 使用POCO相关步骤时，需确保：
+> 1. 被测控件类型为游戏控件
+> 2. 对应游戏包已经接入POCO-SDK
+> 3. 已经打开接入SDK的对应引擎页面。
+> 
+> 👉[POCO官方接入指南](https://poco.readthedocs.io/en/latest/source/doc/integration.html)
+> 
+> 接入POCO-SDK时，如果有更改默认的socket启动端口，可以在【启动PocoDriver】步骤中指定连接端口的值。
+> 
+> 目前Sonic已支持Unity3D、UE4、Egret、Cocos2dx-js、Cocos2dx-lua、Cocos2dx-c++、cocos-creator引擎的游戏自动化。
 
 ## POCO定位语法
 建设中...
