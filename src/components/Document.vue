@@ -74,6 +74,10 @@ const tree = ref([
     title: "测试管理相关",
     pane: [
       {
+        label: "控件元素",
+        name: 'element-manage'
+      },
+      {
         label: "测试用例",
         name: 'cases'
       },
