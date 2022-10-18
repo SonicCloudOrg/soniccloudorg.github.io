@@ -1,8 +1,8 @@
 # 自定义脚本
 
-使用自定义脚本执行UI自动化。
+使用自定义脚本执行UI自动化。（该功能需升级至Sonic v2.0.0版本）
 
-## Groovy(Java)脚本 （推荐）
+## 一、Groovy(Java)脚本 （推荐）
 
 ### 能力介绍
 
@@ -23,11 +23,35 @@ stepHandler以外能力，可以直接import对应包进行实现。
 2. Process，可以运行本地指令等等。
 3. fastJson和其他包。
 
-### 输出到测试报告
+### 输出日志到测试报告
 
+直接使用
 ```
-androidStepHandler.log.sendLog()
+androidStepHandler.log.sendStepLog(1, "我是普通日志", "步骤详细日志")
+androidStepHandler.log.sendStepLog(2, "我是通过日志", "步骤详细日志")
+androidStepHandler.log.sendStepLog(3, "我是告警日志", "步骤详细日志")
+androidStepHandler.log.sendStepLog(4, "我是异常日志", "步骤详细日志")
 ```
+
+入参分别为：**日志级别**、**步骤简述**、**步骤详细日志**
+
+日志级别有四种，从1-4分别是：INFO、PASS、WARN、ERROR
+
+### 引用全局参数
+
+全局参数默认存放在androidStepHandler.globalParams，是com.alibaba.fastjson.JSONObject对象。使用时可以直接
+```
+String test = androidStepHandler.globalParams.getString("Hello")
+androidStepHandler.log.sendStepLog(1, "获取全局参数Hello", "值：" + test)
+```
+
+### 示例脚本展示
+
+建设中...
+
+## 二、Python （不推荐）
+
+建设中...
 
 ## 本文贡献者
 <div class="cont">
