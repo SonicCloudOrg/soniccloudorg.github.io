@@ -14,7 +14,7 @@
 |  ----  | ----  | ---- |
 | 控件名称  | 控件的名称，用于后续所有展示 |  测试    |
 | 定位类型  | 控件用于定位时使用的类型 |  xpath  |
-| 控件元素值  | 控件用于定位时使用的值 |  //android.view.View[1]  |
+| 控件元素值  | 控件用于定位时使用的值 |  /android.view.View[1]  |
 | 所属模块  | 控件元素所属模块，用于搜索时筛选，可不填 |  模块A    |
 
 ## 控件类型
@@ -22,7 +22,7 @@
 |  类型   | 注意事项/提示  | 示例 |
 |  ----  | ----  | ---- |
 | id（resource-id）  | id类型的控件 |  hello    |
-| xpath  | xpath类型，可参考xpath语法 |  //android.view.View[1]  |
+| xpath  | xpath类型，可参考xpath语法 |  /android.view.View[1]  |
 | nsPredicate  | 仅适用于iOS10或以上，可参考语法 |  name == "login_default_icon"  |
 | uiautomator  | 仅支持安卓 |  new UiSelector().resourceId("com.test:id/close_btn")   |
 | accessibilityId  | accessibilityId类型的控件 | hello  |
