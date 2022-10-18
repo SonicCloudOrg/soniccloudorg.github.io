@@ -62,7 +62,16 @@ const tree = ref([
     ]
   },
   {
-    title: "自动化相关",
+    title: "测试步骤相关",
+    pane: [
+      {
+        label: "自定义脚本",
+        name: 'runScript'
+      },
+    ]
+  },
+  {
+    title: "测试管理",
     pane: [
       {
         label: "测试用例",
@@ -93,7 +102,7 @@ const tree = ref([
         name: 'result'
       },
     ]
-  },
+  }
 ])
 </script>
 <template>
