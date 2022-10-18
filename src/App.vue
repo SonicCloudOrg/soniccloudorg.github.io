@@ -65,7 +65,12 @@ body,
 }
 
 code {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-family: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;
+  font-size: 13px;
+  word-wrap: anywhere;
+  white-space: pre;
+  display: table-cell;
+  overflow: visible;
 }
 
 pre {
@@ -77,8 +82,9 @@ pre {
   color: #FFFFFF;
   border-radius: 10px;
   padding: 20px 20px;
-  background-color: #606266;
+  background-color: #24292f;
   margin-left: 30px;
+  line-height: 20px;
 }
 
 li {
