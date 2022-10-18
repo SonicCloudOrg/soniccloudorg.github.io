@@ -4,7 +4,7 @@ import {ref} from "vue";
 
 const tree = ref([
   {
-    title: "项目相关",
+    title: "项目管理相关",
     pane: [
       {
         label: "项目管理",
@@ -33,7 +33,7 @@ const tree = ref([
     ]
   },
   {
-    title: "远控相关",
+    title: "远程控制相关",
     pane: [
       {
         label: "控制中心",
@@ -71,7 +71,7 @@ const tree = ref([
     ]
   },
   {
-    title: "测试管理",
+    title: "测试管理相关",
     pane: [
       {
         label: "测试用例",
