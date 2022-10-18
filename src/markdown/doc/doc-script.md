@@ -47,13 +47,13 @@ stepHandler以外能力，可以直接import对应包进行实现。
 
 ### 获取设备信息
 
-Android: 
+> Android: 
 > ```
 > String udId = androidStepHandler.iDevice.getSerialNumber()
 > androidStepHandler.log.sendStepLog(1, "获取udId", "值：" + udId)
 > ```
-
-iOS: 
+>
+> iOS: 
 > ```
 > String udId = iosStepHandler.udId
 > iosStepHandler.log.sendStepLog(1, "获取udId", "值：" + udId)
