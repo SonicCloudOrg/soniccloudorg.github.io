@@ -36,6 +36,22 @@ stepHandler以外能力，可以直接import对应包进行实现。
 > 入参分别为：**日志级别**、**步骤简述**、**步骤详细日志**
 > 
 > 日志级别有四种，从1-4分别是：INFO、PASS、WARN、ERROR
+> 
+> 也可以提取LogUtil和StepType使用，使脚本更有可读性
+> ```
+> import org.cloud.sonic.agent.tests.LogUtil;
+> import org.cloud.sonic.agent.common.interfaces.StepType;
+> 
+> def test(){
+>   LogUtil log = androidStepHandler.log
+>   log.sendStepLog(StepType.INFO,"Hello","world")
+>   log.sendStepLog(StepType.PASS,"Hello","world")
+>   log.sendStepLog(StepType.WARN,"Hello","world")
+>   log.sendStepLog(StepType.ERROR,"Hello","world")
+> }
+> 
+> test()
+> ```
 
 ### 引用全局参数
 
@@ -63,16 +79,153 @@ stepHandler以外能力，可以直接import对应包进行实现。
 ### 示例脚本展示
 
 #### 调用第三方Rest API
-建设中...
+
+以下是使用RestTemplate调用第三方Rest API后，对响应结果断言以及输出到测试报告的示例。
+
+```
+import com.alibaba.fastjson.JSONObject;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpMethod;
+import org.cloud.sonic.agent.common.models.HandleDes;
+import org.cloud.sonic.agent.tools.SpringTool;
+import org.springframework.web.client.RestTemplate;
+import org.cloud.sonic.agent.tests.LogUtil;
+import org.cloud.sonic.agent.common.interfaces.StepType;
+
+import static org.testng.Assert.*;
+
+def testRestApi(){
+      LogUtil log =  androidStepHandler.log
+      RestTemplate restTemplate = SpringTool.getBean(RestTemplate.class)
+      HttpHeaders headers = new HttpHeaders()
+      headers.add("SonicToken", "xxxxxxx")
+      JSONObject result = restTemplate.exchange("http://localhost:8094/api/controller/projects/list", HttpMethod.GET,new HttpEntity<>(headers),JSONObject.class).getBody()
+      assertEquals(result.getInteger("code"),2000)
+      log.sendStepLog(StepType.INFO,"rest api assert","result: "+result.toJSONString())
+}
+
+testRestApi()
+```
 
 #### 循环点击POCO控件
-建设中...
 
-#### adb操作
-建设中...
+以下是获取全局参数以及通过循环对poco控件进行拖拽的示例。
+
+也可以直接通过androidStepHandler.getAndroidDriver()、androidStepHandler.getIOSDriver()、androidStepHandler.getPocoDriver()进行操作。可以参考周边生态 sonic-driver-core 。
+
+```
+import org.cloud.sonic.agent.common.models.HandleDes;
+import org.cloud.sonic.agent.tests.LogUtil;
+import org.cloud.sonic.agent.common.interfaces.StepType;
+
+def testPoco(){
+      LogUtil log =  androidStepHandler.log
+      HandleDes handleDes = new HandleDes()
+      log.sendStepLog(StepType.INFO,"Global",androidStepHandler.globalParams.getString("xxxx"))
+      androidStepHandler.startPocoDriver(handleDes,"UNITY_3D",5001)
+      for(int i=0;i<5;i++){
+        androidStepHandler
+          .pocoSwipe(handleDes,"Star"+[i],"poco(\"playDragAndDrop\").child(\"star\")["+i+"]",
+                    "Shell","poco(\"shell\")")
+        log.sendStepLog(StepType.INFO,"Poco Swipe","Move Done.")
+      }
+      androidStepHandler.closePocoDriver(handleDes)
+}
+
+testPoco()
+```
+
+#### adb shell操作
+
+以下是对adb shell命令输出的示例，包括一次性输出以及持续性输出。
+
+```
+import org.cloud.sonic.agent.bridge.android.AndroidDeviceBridgeTool;
+import org.cloud.sonic.agent.tests.LogUtil;
+import org.cloud.sonic.agent.common.interfaces.StepType;
+import com.android.ddmlib.IShellOutputReceiver;
+import java.util.concurrent.TimeUnit;
+
+def test(){
+        LogUtil log =  androidStepHandler.log
+        String out = AndroidDeviceBridgeTool.executeCommand(androidStepHandler.iDevice,"wm size")
+        log.sendStepLog(StepType.INFO,"Get screen size",out)
+}
+
+def testLong(){
+        LogUtil log =  androidStepHandler.log
+        androidStepHandler.iDevice.executeShellCommand("dumpsys window displays",
+                        new IShellOutputReceiver() {
+                            @Override
+                            public void addOutput(byte[] bytes, int i, int i1) {
+                                String res = new String(bytes, i, i1);
+                                log.sendStepLog(StepType.INFO,"Dump windows msg",res)
+                            }
+
+                            @Override
+                            public void flush() {
+                            }
+
+                            @Override
+                            public boolean isCancelled() {
+                                return false;
+                            }
+                        }, 0, TimeUnit.MILLISECONDS);
+}
+
+test()
+testLong()
+```
 
 #### 运行本地command指令
-建设中...
+
+以下是运行Agent本地PC指令和运行指令后持续输出指令结果到测试报告的示例。
+
+```
+import org.cloud.sonic.agent.tests.LogUtil;
+import org.cloud.sonic.agent.common.interfaces.StepType;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.BufferedReader;
+
+def testCmd(){
+            String system = System.getProperty("os.name").toLowerCase();
+            if (system.contains("win")) {
+                Runtime.getRuntime().exec("cmd /c calc");
+            } else {
+                Runtime.getRuntime().exec("sh -c echo Hello");
+            }
+}
+
+def testCmdForLongTime(){
+            LogUtil log =  androidStepHandler.log
+            Process ps = null;
+            String system = System.getProperty("os.name").toLowerCase();
+            if (system.contains("win")) {
+                ps = Runtime.getRuntime().exec("cmd /c calc");
+            } else {
+                ps = Runtime.getRuntime().exec("sh -c echo Hello");
+            }
+            InputStreamReader inputStreamReader = new InputStreamReader(ps.getInputStream());
+            BufferedReader stdInput = new BufferedReader(inputStreamReader);
+            String s;
+            while (ps.isAlive()) {
+                try{
+                    if ((s = stdInput.readLine()) != null) {
+                        log.sendStepLog(StepType.INFO,"ps msg",s)
+                    }
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            stdInput.close();
+            inputStreamReader.close();
+}
+
+testCmd()
+testCmdForLongTime()
+```
 
 ## 二、Python脚本
 

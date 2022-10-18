@@ -68,6 +68,10 @@ const tree = ref([
         label: "自定义脚本",
         name: 'runScript'
       },
+      {
+        label: "POCO控件",
+        name: "poco"
+      }
     ]
   },
   {

@@ -54,6 +54,7 @@ import PerfSIB from '../markdown/sib/sib-perf.md'
 import WebInspectorSIB from '../markdown/sib/sib-webinspector.md'
 import RunScript from '../markdown/doc/doc-script.md'
 import ElementManage from '../markdown/doc/doc-element-manage.md'
+import POCO from '../markdown/doc/doc-poco.md'
 
 defineProps({
   active: String
@@ -117,6 +118,7 @@ defineProps({
     <web-inspector-s-i-b v-if="active==='sib-webinspector'"/>
     <run-script v-if="active==='runScript'"/>
     <element-manage v-if="active==='element-manage'"/>
+    <p-o-c-o v-if="active==='poco'"/>
   </div>
 </template>
 

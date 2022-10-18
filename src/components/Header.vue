@@ -21,8 +21,6 @@ const open = (url) => {
           <el-menu-item index="/Deploy" @click="router.push('/Deploy')">部署文档</el-menu-item>
           <el-menu-item index="/Document" @click="router.push('/Document')">
             <div style="display: flex"><span>使用文档</span>
-              <el-badge type="primary" value="building" class="item" style="margin-top: -2px;margin-left: 5px">
-              </el-badge>
             </div>
           </el-menu-item>
           <el-menu-item index="/Contribute" @click="router.push('/Contribute')">

@@ -68,7 +68,7 @@ code {
   font-family: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;
   font-size: 13px;
   word-wrap: anywhere;
-  white-space: pre;
+  white-space: break-spaces;
   display: table-cell;
   overflow: visible;
 }
