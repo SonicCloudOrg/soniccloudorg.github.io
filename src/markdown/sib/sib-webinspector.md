@@ -4,7 +4,17 @@
 
 ## 启动服务
 
-正在建设中...
+只启动webinspector服务
+
+```
+sib webinspector
+```
+
+## 启用CDP Adapter
+
+```
+sib webinspector --cdp
+```
 
 ## 本文贡献者
 <div class="cont">
