@@ -15,7 +15,6 @@ import Header from "./components/Header.vue"
 
 <style>
 #app {
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, apple color emoji, segoe ui emoji, Segoe UI Symbol, noto color emoji !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -59,6 +58,7 @@ html,
 body,
 #app,
 .el-container {
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
   padding: 0px;
   margin: 0 !important;
   height: 100%;
@@ -144,7 +144,6 @@ table td, table th {
 }
 
 table td {
-  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "\5fae\8f6f\96c5\9ed1", Arial, sans-serif;
   font-size: 14px;
 }
 
