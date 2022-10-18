@@ -52,6 +52,7 @@ import AfcSIB from '../markdown/sib/sib-afc.md'
 import MountSIB from '../markdown/sib/sib-mount.md'
 import PerfSIB from '../markdown/sib/sib-perf.md'
 import WebInspectorSIB from '../markdown/sib/sib-webinspector.md'
+import RunScript from '../markdown/doc/doc-script.md'
 
 defineProps({
   active: String
@@ -113,6 +114,7 @@ defineProps({
     <mount-s-i-b v-if="active==='sib-mount'"/>
     <perf-s-i-b v-if="active==='sib-perf'"/>
     <web-inspector-s-i-b v-if="active==='sib-webinspector'"/>
+    <run-script v-if="active==='runScript'"/>
   </div>
 </template>
 
