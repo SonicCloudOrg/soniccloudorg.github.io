@@ -2,7 +2,7 @@
 
 使用自定义脚本执行UI自动化。（该功能需升级至Sonic v2.0.0版本）
 
-## 一、Groovy(Java)脚本 （推荐）
+## 一、Groovy(Java)脚本 （推荐⭐）
 
 ### 能力介绍
 
@@ -74,7 +74,7 @@ stepHandler以外能力，可以直接import对应包进行实现。
 #### 运行本地command指令
 建设中...
 
-## 二、Python （不推荐）
+## 二、Python脚本
 
 建设中...
 
