@@ -230,6 +230,10 @@ testCmd()
 testCmdForLongTime()
 ```
 
+#### 更多参考示例
+
+想参考更多脚本示例，可以前往 <a href="https://sonic-cloud.wiki/t/script" target="_blank">这里</a> 查看官方或用户分享的示例哦！
+
 ## 二、Python脚本
 
 Python不能作为Agent内置引擎，因此不可使用Agent内置的方法与包，只能使用Agent传递的部分参数，并且依赖需要自行本地安装。
