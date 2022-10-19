@@ -11,7 +11,8 @@ const tree = ref([
       },
       {
         label: "参与开发",
-        name: 'dev-siwa'
+        name: 'dev-siwa',
+        disable: true
       }
     ]
   }
