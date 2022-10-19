@@ -63,11 +63,8 @@ const open = (url) => {
               </el-badge>
             </div>
           </el-menu-item>
-          <el-menu-item index="/SIWA" @click="router.push('/SIWA')" disabled>
-            <div style="display: flex"><span>sonic-ios-webkit-adapter</span>
-              <el-badge type="primary" value="building" class="item" style="margin-top: -2px;margin-left: 5px">
-              </el-badge>
-            </div>
+          <el-menu-item index="/SIWA" @click="router.push('/SIWA')">
+            sonic-ios-webkit-adapter
           </el-menu-item>
         </el-sub-menu>
         <el-sub-menu index="1">
