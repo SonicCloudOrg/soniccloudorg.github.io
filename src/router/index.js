@@ -41,6 +41,11 @@ const routes = [
         component: () =>
             import ("../components/SGM.vue"),
     },
+     {
+        path: '/SIWA',
+        component: () =>
+            import ("../components/SIWA.vue"),
+    },
     {
         path: '/Version',
         component: () =>
