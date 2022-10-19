@@ -21,17 +21,58 @@
 注：接入POCO-SDK时，如果有更改默认的socket启动端口，可以在【启动PocoDriver】步骤中指定连接端口的值。
 
 ## POCO定位语法
-建设中...
 
-## 关于非全屏应用偏移量
+poco控件默认属性如下：
+```
+        private String layer;
+        private String name;
+        private String tag;
+        private String text;
+        private String texture;
+        private Integer _instanceId;
+        private Integer _ilayer;
+        private String type;
+        private Boolean visible;
+        private ZOrders zOrders;
+        private List<String> components;
+        private List<Float> anchorPoint;
+        private List<Float> scale;
+        private List<Float> size;
+        private List<Float> pos;
+        private Boolean clickable;
 
-> 有的应用不支持全屏展示，导致出现黑边而引起定位偏差。
-> 
-> Sonic已经兼容自动了大部分机型的非全屏偏移，如果自动兼容效果不够友好：
-> 1. 先关闭手机的**虚拟键盘**，查看应用是否能占用全屏。
-> 2. 如果仍然出现黑边，可以使用【设置偏移量】步骤。
+        public class ZOrders{
+            private Integer global;
+            private Integer local;
+        }
+```
+ 
+定位时，需要以poco开头如：
+```
+poco("Hello")
+```
 
-### 偏移量设置
+poco后的括号内可填入属性值进行筛选，不填属性值默认查找name字段。如：
+```
+poco(type="Button", name="Hello")
+poco(_instanceId=123)
+poco(visible=true)
+```
+
+poco后可以接上child来搜索子控件列表，默认搜索第一个结果，如果指定了数组index，会获取数组index下标的控件，当子控件数组长度小于index时，自动获取最末位。如：
+```
+poco(type="Button", name="Hello").child(text="Star")[1]
+```
+
+## 关于非全屏应用定位偏移
+
+有的应用不支持全屏展示，导致出现黑边而引起定位偏差。
+ 
+Sonic已经兼容自动了大部分机型的非全屏偏移，如果自动兼容效果不够友好：
+1. 先关闭手机的**虚拟键盘**，查看应用是否能占用全屏。
+2. 如果仍然出现黑边，可以使用【设置偏移量】步骤。
+
+## 偏移量设置
 
 偏移量设置有四个值，分别是：
 
@@ -42,9 +83,9 @@
 
 其代表的内容如下图所述：
 
-<el-image hide-on-click-modal src="https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/offsets.png" :preview-src-list="['https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/offsets.png']" style="width: 80%"/>
+<el-image hide-on-click-modal src="https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/offsets.png" :preview-src-list="['https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/offsets.png']" style="width: 500px"/>
 
-例如分辨率是1080*2220，上方黑边高度为100px，屏幕高度为2020px，底部黑边高度为100px，因此四个值为（0,100,1080,2020）。
+例如分辨率是1080x2220，上方黑边高度为100px，屏幕高度为2020px，底部黑边高度为100px，因此四个值为（0, 100, 1080, 2020）
 
 ## 本文贡献者
 <div class="cont">
