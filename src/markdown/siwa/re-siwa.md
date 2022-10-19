@@ -9,7 +9,7 @@
 
 ## 本仓库贡献者
 
-<a href="https://github.com/SonicCloudOrg/sonic-ios-bridge/graphs/contributors">
+<a href="https://github.com/SonicCloudOrg/sonic-ios-webkit-adapter/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=SonicCloudOrg/sonic-ios-webkit-adapter" />
 </a>
 
