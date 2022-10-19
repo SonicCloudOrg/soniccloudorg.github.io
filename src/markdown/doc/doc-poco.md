@@ -24,7 +24,27 @@
 建设中...
 
 ## 关于非全屏应用偏移量
-建设中...
+
+> 有的应用不支持全屏展示，导致出现黑边而引起定位偏差。
+> 
+> Sonic已经兼容自动了大部分机型的非全屏偏移，如果自动兼容效果不够友好：
+> 1. 先关闭手机的**虚拟键盘**，查看应用是否能占用全屏。
+> 2. 如果仍然出现黑边，可以使用【设置偏移量】步骤。
+
+### 偏移量设置
+
+偏移量设置有四个值，分别是：
+
+1. offsetWidth
+2. offsetHeight
+3. windowWidth
+4. windowHeight
+
+其代表的内容如下图所述：
+
+<el-image hide-on-click-modal src="https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/offsets.png" :preview-src-list="['https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/offsets.png']" style="width: 80%"/>
+
+例如分辨率是1080*2220，上方黑边高度为100px，屏幕高度为2020px，底部黑边高度为100px，因此四个值为（0,100,1080,2020）。
 
 ## 本文贡献者
 <div class="cont">
