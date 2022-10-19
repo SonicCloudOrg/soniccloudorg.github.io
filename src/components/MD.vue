@@ -56,6 +56,7 @@ import RunScript from '../markdown/doc/doc-script.md'
 import ElementManage from '../markdown/doc/doc-element-manage.md'
 import POCO from '../markdown/doc/doc-poco.md'
 import ReSIWA from '../markdown/siwa/re-siwa.md'
+import DevSIWA from '../markdown/siwa/dev-siwa.md'
 
 defineProps({
   active: String
@@ -121,6 +122,7 @@ defineProps({
     <element-manage v-if="active==='element-manage'"/>
     <p-o-c-o v-if="active==='poco'"/>
     <re-s-i-w-a v-if="active==='re-siwa'"/>
+    <dev-s-i-w-a v-if="active==='dev-siwa'"/>
   </div>
 </template>
 
