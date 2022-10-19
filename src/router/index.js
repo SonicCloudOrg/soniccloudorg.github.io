@@ -47,6 +47,11 @@ const routes = [
             import ("../components/SIWA.vue"),
     },
     {
+        path: '/SDC',
+        component: () =>
+            import ("../components/SDC.vue"),
+    },
+    {
         path: '/Version',
         component: () =>
             import ("../components/Version.vue"),

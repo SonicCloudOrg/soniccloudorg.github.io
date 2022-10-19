@@ -57,6 +57,8 @@ import ElementManage from '../markdown/doc/doc-element-manage.md'
 import POCO from '../markdown/doc/doc-poco.md'
 import ReSIWA from '../markdown/siwa/re-siwa.md'
 import DevSIWA from '../markdown/siwa/dev-siwa.md'
+import ReSDC from '../markdown/sdc/re-sdc.md'
+import DevSDC from '../markdown/sdc/dev-sdc.md'
 
 defineProps({
   active: String
@@ -123,6 +125,8 @@ defineProps({
     <p-o-c-o v-if="active==='poco'"/>
     <re-s-i-w-a v-if="active==='re-siwa'"/>
     <dev-s-i-w-a v-if="active==='dev-siwa'"/>
+    <re-s-d-c v-if="active==='re-sdc'"/>
+    <dev-s-d-c v-if="active==='dev-sdc'"/>
   </div>
 </template>
 

@@ -45,11 +45,8 @@ const open = (url) => {
           <el-menu-item index="/SCH" @click="router.push('/SCH')">
             sonic-ci-helper
           </el-menu-item>
-          <el-menu-item index="/SDC" @click="router.push('/SDC')" disabled>
-            <div style="display: flex"><span>sonic-driver-core</span>
-              <el-badge type="primary" value="building" class="item" style="margin-top: -2px;margin-left: 5px">
-              </el-badge>
-            </div>
+          <el-menu-item index="/SDC" @click="router.push('/SDC')">
+            sonic-driver-core
           </el-menu-item>
           <el-menu-item index="/SVC" @click="router.push('/SVC')" disabled>
             <div style="display: flex"><span>sonic-vision-core</span>
