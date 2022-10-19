@@ -8,7 +8,7 @@
 准备工作：Docker，Sonic前后端部署完毕
 > 1. 从部署好的前端界面【设备中心】的【Agent中心】新增Agent，记录Agent的Key。
 >
-> 2. <a href="https://download.sonic-cloud.wiki/sonic/sonic-agent/v1.5.0-release/docker-compose.yml" target="_blank">点击这里</a> 下载最新的docker-compose.yml，参考注释修改里面的内容。（如果你是非中国大陆用户，请 <a href="https://download.sonic-cloud.wiki/sonic/sonic-agent/v1.5.0-release/docker-compose2.yml" target="_blank">点击这里</a> 下载）
+> 2. <a href="https://download.fastgit.org/SonicCloudOrg/sonic-agent/releases/download/v1.5.0-release/docker-compose.yml" target="_blank">点击这里</a> 下载最新的docker-compose.yml，参考注释修改里面的内容。（如果你是非中国大陆用户，请 <a href="https://download.fastgit.org/SonicCloudOrg/sonic-agent/releases/download/v1.5.0-release/docker-compose2.yml" target="_blank">点击这里</a> 下载）
 >
 > 3. 执行以下指令（自行根据提示更改参数）。
 >
@@ -34,15 +34,15 @@
 > ```
 > 7. 选择 **PC对应的平台zip** 下载并解压到任意目录（标记为 **工作目录** ，如链接失效，请自行前往 <a href="https://github.com/SonicCloudOrg/sonic-agent/releases" target="_blank">这里</a> 下载）
 > 
->  > 👉<a href="https://download.sonic-cloud.wiki/sonic/sonic-agent/v1.5.0-release/sonic-agent-v1.5.0-release-linux_x86.zip" target="_blank">sonic-agent-v1.5.0-release-linux_x86.zip</a>
+>  > 👉<a href="https://download.fastgit.org/SonicCloudOrg/sonic-agent/releases/download/v1.5.0-release/sonic-agent-v1.5.0-release-linux_x86.zip" target="_blank">sonic-agent-v1.5.0-release-linux_x86.zip</a>
 >  >
->  > 👉<a href="https://download.sonic-cloud.wiki/sonic/sonic-agent/v1.5.0-release/sonic-agent-v1.5.0-release-linux_x86_64.zip" target="_blank">sonic-agent-v1.5.0-release-linux_x86_64.zip</a>
+>  > 👉<a href="https://download.fastgit.org/SonicCloudOrg/sonic-agent/releases/download/v1.5.0-release/sonic-agent-v1.5.0-release-linux_x86_64.zip" target="_blank">sonic-agent-v1.5.0-release-linux_x86_64.zip</a>
 >  > 
->  > 👉<a href="https://download.sonic-cloud.wiki/sonic/sonic-agent/v1.5.0-release/sonic-agent-v1.5.0-release-macosx_x86_64.zip" target="_blank">sonic-agent-v1.5.0-release-macosx_x86_64.zip</a>
+>  > 👉<a href="https://download.fastgit.org/SonicCloudOrg/sonic-agent/releases/download/v1.5.0-release/sonic-agent-v1.5.0-release-macosx_x86_64.zip" target="_blank">sonic-agent-v1.5.0-release-macosx_x86_64.zip</a>
 >  > 
->  > 👉<a href="https://download.sonic-cloud.wiki/sonic/sonic-agent/v1.5.0-release/sonic-agent-v1.5.0-release-windows_x86.zip" target="_blank">sonic-agent-v1.5.0-release-windows_x86.zip</a>
+>  > 👉<a href="https://download.fastgit.org/SonicCloudOrg/sonic-agent/releases/download/v1.5.0-release/sonic-agent-v1.5.0-release-windows_x86.zip" target="_blank">sonic-agent-v1.5.0-release-windows_x86.zip</a>
 >  > 
->  > 👉<a href="https://download.sonic-cloud.wiki/sonic/sonic-agent/v1.5.0-release/sonic-agent-v1.5.0-release-windows_x86_64.zip" target="_blank">sonic-agent-v1.5.0-release-windows_x86_64.zip</a>
+>  > 👉<a href="https://download.fastgit.org/SonicCloudOrg/sonic-agent/releases/download/v1.5.0-release/sonic-agent-v1.5.0-release-windows_x86_64.zip" target="_blank">sonic-agent-v1.5.0-release-windows_x86_64.zip</a>
 > 
 > 8. 赋予 **工作目录** 所有权限，然后确保解压后的mini、webview、config、plugins文件夹与jar同级
 > 

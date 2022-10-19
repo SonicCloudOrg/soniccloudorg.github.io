@@ -59,6 +59,9 @@ import ReSIWA from '../markdown/siwa/re-siwa.md'
 import DevSIWA from '../markdown/siwa/dev-siwa.md'
 import ReSDC from '../markdown/sdc/re-sdc.md'
 import DevSDC from '../markdown/sdc/dev-sdc.md'
+import SDCAndroid from '../markdown/sdc/sdc-android.md'
+import SDCIOS from '../markdown/sdc/sdc-ios.md'
+import SDCPoco from '../markdown/sdc/sdc-poco.md'
 
 defineProps({
   active: String
@@ -127,6 +130,9 @@ defineProps({
     <dev-s-i-w-a v-if="active==='dev-siwa'"/>
     <re-s-d-c v-if="active==='re-sdc'"/>
     <dev-s-d-c v-if="active==='dev-sdc'"/>
+    <s-d-c-android v-if="active==='sdc-android'"/>
+    <s-d-c-i-o-s v-if="active==='sdc-ios'"/>
+    <s-d-c-poco v-if="active==='sdc-poco'"/>
   </div>
 </template>
 

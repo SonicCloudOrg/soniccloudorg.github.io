@@ -20,16 +20,13 @@ const tree = ref([
     title: "Driver列表",
     pane: [{
       label: "AndroidDriver",
-      name: 'androidDriver',
-      disabled: true
+      name: 'sdc-android',
     }, {
       label: "IOSDriver",
-      name: "iOSDriver",
-      disabled: true
+      name: "sdc-ios",
     }, {
-      label: "POCODriver",
-      name: "pocoDriver",
-      disabled: true
+      label: "PocoDriver",
+      name: "sdc-poco",
     }]
   }
 ])

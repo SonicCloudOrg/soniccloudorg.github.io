@@ -2,7 +2,7 @@ name: deploy to gitee
 
 on:
   workflow_dispatch:
-  
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -26,6 +26,16 @@ jobs:
         with:
           repository: SonicCloudOrg/sonic-go-mitmproxy
           sort-tags: false
+      - uses: oprypin/find-latest-tag@v1
+        id: sdc-latest-tag
+        with:
+          repository: SonicCloudOrg/sonic-driver-core
+          sort-tags: false
+      - uses: oprypin/find-latest-tag@v1
+        id: ser-latest-tag
+        with:
+          repository: SonicCloudOrg/sonic-server
+          sort-tags: false
       - name: JSON to variables
         uses: antifree/json-to-variables@v1.0.1
         with:
@@ -47,6 +57,13 @@ jobs:
           sgm_old_ver_sub=${sgm_old_ver:4}
           sed -i "s/${sgm_old_ver}/sgm_${sgm_new_ver_sub}/g" version.json
           sed -i "s/${sgm_old_ver_sub}/${sgm_new_ver_sub}/g" src/markdown/sgm/re-sgm.md
+      - name: replace sdc
+        run: |
+          sdc_new_ver=${{ steps.sdc-latest-tag.outputs.tag }}
+          sdc_old_ver=${{ env.test_sdc }}
+          sdc_old_ver_sub=${sdc_old_ver:4}
+          sed -i "s/${sdc_old_ver}/sdc_${sdc_new_ver}/g" version.json
+          sed -i "s/${sdc_old_ver_sub}/${sdc_new_ver}/g" src/markdown/sdc/re-sdc.md
       - name: replace sch
         run: |
           sch_new_ver=${{ steps.sch-latest-tag.outputs.tag }}
@@ -54,6 +71,14 @@ jobs:
           sch_old_ver_sub=${sch_old_ver:4}
           sed -i "s/${sch_old_ver}/sch_${sch_new_ver}/g" version.json
           sed -i "s/${sch_old_ver_sub}/${sch_new_ver}/g" src/markdown/sch/re-sch.md
+      - name: replace server
+        run: |
+          ser_new_ver=${{ steps.ser-latest-tag.outputs.tag }}
+          ser_old_ver=${{ env.test_ser }}
+          ser_old_ver_sub=${ser_old_ver:4}
+          sed -i "s/${ser_old_ver}/ser_${ser_new_ver}/g" version.json
+          sed -i "s/${ser_old_ver_sub}/${ser_new_ver}/g" src/markdown/deploy/agent-deploy.md
+          sed -i "s/${ser_old_ver_sub}/${ser_new_ver}/g" src/markdown/deploy/back-end-deploy.md
       - name: Use Node.js 16.x
         uses: actions/setup-node@v2
         with:
@@ -75,16 +100,16 @@ jobs:
           title: 'doc: update files and ready to deploy'
           body: |
             **在提出此拉取请求时，我确认了以下几点（保存后请点击复选框）：**
-            
+
             - [x] 标题为fix、feat或doc开头
             - [x] 我已检查没有与此请求重复的拉取请求。
             - [x] 我已经考虑过，并确认这份呈件对其他人很有价值。
             - [x] 我接受此提交可能不会被使用，并根据维护人员的意愿关闭拉取请求。
-            
+
             **填写PR内容：**
-            
+
             - Update files to deploy by bot 🚀.
-            
+
           draft: false
       - name: check pr
         if: steps.cpr.outputs.pull-request-operation != 'created'
@@ -102,7 +127,7 @@ jobs:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
           PULL_REQUEST: ${{ steps.cpr.outputs.pull-request-number }}
           MERGE_RETRIES: 18
-          MERGE_RETRY_SLEEP: 10000    
+          MERGE_RETRY_SLEEP: 10000
       - name: upload files to OSS
         uses: fangbinwei/aliyun-oss-website-action@v1
         with:
@@ -114,12 +139,12 @@ jobs:
           incremental: false
       - name: sync gitee
         run: |
-         remote_repo="https://${{ secrets.GITEE_USERNAME }}:${{ secrets.GITEE_PASSWORD }}@gitee.com/sonic-cloud/sonic-cloud.git"
-         git remote add gitee "${remote_repo}"
-         git show-ref # useful for debugging
-         git branch --verbose
-         git push --all --force gitee
-         git push --tags --force gitee
+          remote_repo="https://${{ secrets.GITEE_USERNAME }}:${{ secrets.GITEE_PASSWORD }}@gitee.com/sonic-cloud/sonic-cloud.git"
+          git remote add gitee "${remote_repo}"
+          git show-ref # useful for debugging
+          git branch --verbose
+          git push --all --force gitee
+          git push --tags --force gitee
       - name: Build Gitee Pages
         uses: yanglbme/gitee-pages-action@main
         with:

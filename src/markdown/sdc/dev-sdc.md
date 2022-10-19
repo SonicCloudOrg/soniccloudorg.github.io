@@ -15,7 +15,14 @@
 
 ## 开发环境搭建
 
-建设中...
+> 1. Java 8+ 。
+> 2. 任意编辑器，推荐Idea。
+> 3. Fork [sonic-driver-core](https://github.com/SonicCloudOrg/sonic-driver-core) 仓库。
+> 4. 执行git clone指令，将您的仓库代码克隆到本地。
+> 5. 等待依赖下载完毕。
+> 6. 设备的前置配置可以参考 [这里](https://sonic-cloud.gitee.io/#/SDC?tag=re-sdc)
+> 7. 🎉恭喜！您已经可以开始开发了！
+> 8. 开发完毕后，push到自己的仓库，然后可以给Sonic原仓库提起pr哦！随后即可成为Sonic贡献者！（建议贡献前先开启issue讨论，防止跟组织计划进度有冲突哦）
 
 ## 本文贡献者
 <div class="cont">
