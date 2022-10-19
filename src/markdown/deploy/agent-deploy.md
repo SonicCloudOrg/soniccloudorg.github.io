@@ -22,17 +22,11 @@
 ## jar方式
 该方式将以本地jar包部署Agent端、Appium等等环境。
 
-准备工作：npm，**jdk15或以上**，安卓SDK，谷歌浏览器，chromedriver.exe
+准备工作：**jdk15或以上**，安卓SDK。
 > 1. 从部署好的前端界面【设备中心】的【Agent中心】新增Agent，记录Agent的Key。
-> 2. 将jdk路径设置到系统环境变量，命名为JAVA_HOME。
-> 3. （如不需要接入安卓设备可跳过）将安卓SDK设置到系统环境变量，命名为ANDROID_HOME。打开SDKManager，下载 **built-tools** 和 **platform-tools**。确保platform-tools目录存在，adb指令可用。
-> 4. 将JAVA_HOME、ANDROID_HOME、ANDROID_HOME/platform-tools添加到系统PATH中。
-> 5. （如不使用在线webView功能可跳过）[在这里](http://npm.taobao.org/mirrors/chromedriver/) 下载与Agent本机谷歌浏览器 **版本对应** 的chromedriver.exe，并放到跟谷歌浏览器安装同目录下（可以谷歌浏览器地址栏输入chrome://version，就看到安装目录了。大部分在这个目录C:\Program Files\Google\Chrome\Application，有时候在Program Files(x86)里面）。
-> 6. 执行以下指令后，确保appium指令可用。
-> ```
-> npm i -g appium
-> ```
-> 7. 选择 **PC对应的平台zip** 下载并解压到任意目录（标记为 **工作目录** ，如链接失效，请自行前往 <a href="https://github.com/SonicCloudOrg/sonic-agent/releases" target="_blank">这里</a> 下载）
+> 2. （如不需要接入安卓设备可跳过）将安卓SDK设置到系统环境变量，命名为ANDROID_HOME。打开SDKManager，下载 **built-tools** 和 **platform-tools**。确保platform-tools目录存在，adb指令可用。
+> 3. 将ANDROID_HOME、ANDROID_HOME/platform-tools添加到系统PATH中。
+> 4. 选择 **PC对应的平台zip** 下载并解压到任意目录（标记为 **工作目录** ，如链接失效，请自行前往 <a href="https://github.com/SonicCloudOrg/sonic-agent/releases" target="_blank">这里</a> 下载）
 > 
 >  > 👉<a href="https://download.fastgit.org/SonicCloudOrg/sonic-agent/releases/download/v2.0.0-alpha2/sonic-agent-v2.0.0-alpha2-linux_x86.zip" target="_blank">sonic-agent-v2.0.0-alpha2-linux_x86.zip</a>
 >  >
@@ -44,7 +38,7 @@
 >  > 
 >  > 👉<a href="https://download.fastgit.org/SonicCloudOrg/sonic-agent/releases/download/v2.0.0-alpha2/sonic-agent-v2.0.0-alpha2-windows_x86_64.zip" target="_blank">sonic-agent-v2.0.0-alpha2-windows_x86_64.zip</a>
 > 
-> 8. 赋予 **工作目录** 所有权限，然后确保解压后的mini、webview、config、plugins文件夹与jar同级
+> 5. 赋予 **工作目录** 所有权限，然后确保解压后的mini、webview、config、plugins文件夹与jar同级
 > 
 > ```
 > $ sudo chmod -R 777 xxxxx
@@ -63,14 +57,14 @@
 > ├─mini
 > ├─webview
 > ```
-> 9. 修改config文件夹中 **application-sonic-agent.yml** 的配置信息，保存。
-> 10. 在 **工作目录** 路径下执行以下指令。
+> 6. 修改config文件夹中 **application-sonic-agent.yml** 的配置信息，保存。
+> 7. 在 **工作目录** 路径下执行以下指令。
 >
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**快速启动** （*注意！如果你是windows用户，请先在控制台输入 **chcp 65001** 并回车，再输入以下指令*）
 > ```
 > java -Dfile.encoding=utf-8 -jar sonic-agent-xxxx.jar
 > ```
-> 11. 部署完毕！自行插入设备即可（设备请竖直放置或平摊放置，左右旋转放置有可能影响坐标定位）。
+> 8. 部署完毕！自行插入设备即可（设备请竖直放置或平摊放置，左右旋转放置有可能影响坐标定位）。
 
 ## 常见问题
 
