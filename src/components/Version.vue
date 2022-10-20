@@ -63,10 +63,96 @@ const cons = [
   }, {
     name: "aoliaoaoaojiao",
     avatar: "53102695"
+  }, {
+    name: "HappyTinaFu",
+    avatar: "16253258"
+  },{
+    name: "Julian0229",
+    avatar: "47594178"
+  },{
+    name: "gouldchu",
+    avatar: "6470268"
   }
 ]
 
-const data = ref([{
+const data = ref([
+  {
+  version: "v2.0.0-beta",
+  time:"2022/10/20",
+  feat:[{
+    title:"UI自动化添加自定义脚本引入，支持Groovy(Java)、Python"
+  },{
+    title: "iOS在线WebView调试"
+  },{
+    title: "Jenkins插件支持pipeline语法"
+  },{
+    title: "安卓步骤优化：控制WIFI开关、控制定位服务开关、控制飞行模式开关"
+  },{
+    title: "安卓与iOS新增步骤：全局设置查找控件重试次数与重试间隔"
+  },{
+    title: "Agent新增支持Mac、Linux arm64结构"
+  },{
+    title: "iOS新增步骤：剪切板设置与获取"
+  },{
+     title: "切换webview支持自定义androidProcess"
+  },{
+     title: "支持相对坐标"
+  },{
+     title: "新增脚本模板管理"
+  },{
+     title: "新增POCO控件类型"
+  },{
+     title: "安卓新增步骤：POCO控件存在断言、点击、拖拽、长按、冻结控件树、解冻控件树"
+  },{
+     title: "安卓新增步骤：键盘输入"
+  },{
+     title: "Sonic新生态sonic-ios-webkit-adapter基础建设"
+  },{
+     title: "国际化建设第二期"
+  },{
+     title: "sib更新webinspector协议相关方法"
+  },{
+    title: "sonic-android-supply第一期建设"
+  },{
+    title: "sonic-vision-core图像库剥离建设"
+  },{
+    title: "sonic-driver-core新增支持UIA2 client与Poco通信"
+  }],
+  fix:[{
+    title: "弃用chromedriver驱动配置，简化用户部署"
+  },{
+    title: "安卓模块弃用appium"
+  },{
+    title: "安卓webview测试优化，降低用户使用门槛"
+  },{
+    title:"修复使用设备覆盖后，设备不能并行测试的bug",
+    url:"https://sonic-cloud.wiki/d/1582"
+  },{
+    title:"修复全局参数在测试套件使用时传参异常的问题",
+    url:"https://sonic-cloud.wiki/d/1618"
+  },{
+    title: "弃用adbkit方案，修复相关授权问题"
+  },{
+    title: "安卓步骤弃用双指操作、隐藏键盘、后台运行App"
+  },{
+    title: "安卓UI自动化减负、提速"
+  },{
+    title: "Agent部署方式优化与减重"
+  },{
+    title: "修复在线调试webview时，复制xpath等信息失效的问题"
+  },{
+    title: "修复复制用例后，用例中步骤排序不正确的问题",
+    url: "https://sonic-cloud.wiki/d/1688"
+  },{
+    title: "弃用Node环境"
+  },{
+    title: "压缩优化Docker版Agent镜像大小，使其更轻量"
+  },{
+    title: "修复Agent重连后设备掉线问题"
+  }],
+  con: getCon("ZhouYixun", "Lewage59","yaming116","dongyi0412", "HappyTinaFu","aoliaoaoaojiao","weixiao12345","gouldchu","Julian0229")
+  },
+  {
   version: "v1.5.0-release",
   time: "2022/9/3",
   feat: [{
