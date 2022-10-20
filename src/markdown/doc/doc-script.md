@@ -249,6 +249,12 @@ Python环境、pip环境。
 
 建设中...
 
+## 导入模板
+
+在【脚本模板】页面管理的脚本模板，可以在编辑时导入使用，导入有两种模式：
+1. 追加，将模板追加到当前编辑脚本中
+2. 替换，将模板替换当前编辑脚本
+
 ## 本文贡献者
 <div class="cont">
 <a href="https://github.com/ZhouYixun" target="_blank">
