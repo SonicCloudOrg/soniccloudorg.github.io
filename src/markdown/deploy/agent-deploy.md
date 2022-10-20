@@ -26,7 +26,7 @@
 > 1. 从部署好的前端界面【设备中心】的【Agent中心】新增Agent，记录Agent的Key。
 > 2. （如不需要接入安卓设备可跳过）将安卓SDK设置到系统环境变量，命名为ANDROID_HOME。打开SDKManager，下载 **built-tools** 和 **platform-tools**。确保platform-tools目录存在，adb指令可用。
 > 3. 将ANDROID_HOME、ANDROID_HOME/platform-tools添加到系统PATH中。
-> 4. 选择 **PC对应的平台zip** 下载并解压到任意目录（标记为 **工作目录** ，如链接失效，请自行前往 <a href="https://github.com/SonicCloudOrg/sonic-agent/releases" target="_blank">这里</a> 下载）
+> 4. 选择 **PC对应的平台zip** 下载并解压到任意目录（标记为 **工作目录** ，**如以下加速链接失效**，请自行前往 <a href="https://github.com/SonicCloudOrg/sonic-agent/releases" target="_blank">这里</a> 下载）
 > 
 > > **Linux:**
 > > 
