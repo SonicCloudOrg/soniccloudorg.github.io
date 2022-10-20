@@ -2,9 +2,14 @@
 
 本文将介绍如何升级到最新版本。
 
-## 关于simple版本
-
-综合注册架构、通信逻辑、性能优化等因素，从v1.4.0-beta开始，集群版与simple版合并，并且在sonic-server上继续维护，因此sonic-server-simple版本不再维护。
+## 从v1.5.0-release升级到v2.0.0-beta
+> 0. server升级前，先备份数据库。
+> 1. 执行docker-compose down
+> 2. 更改旧docker-compose.yml文件中v1.5.0-release为v2.0.0-beta（或直接下载最新版docker-compose.yml）
+> 3. 执行docker-compose up -d
+> 4. Agent更新需替换旧版本plugins文件夹与jar文件。
+> 5. Agent的config/application-sonic-agent.yml字段有改动，需参考最新版yml备注进行配置。
+> 6. Agent本地环境不再依赖node、npm、谷歌浏览器、chromedriver，可以卸载来减少Agent空间。
 
 ## 从v1.4.1-release升级到v1.5.0-release
 
@@ -57,6 +62,10 @@
 > 4. server升级后，将旧挂载目录下的logs、keepFiles、imageFiles、recordFiles、packageFiles中的内容迁移到新目录下。
 > 5. 如果旧版本没有自定义挂载路径（特别是simple版用户），您不知道您的本地文件默认储存在哪里，可以 [参考这里](https://blog.csdn.net/wu_qing_song/article/details/113253437) （如果你不想使用这个方法，可以参考常见问题第二题）。
 > 6. Agent改动较大，需要将旧文件全部删除重新部署。
+
+## 关于simple版本
+
+综合注册架构、通信逻辑、性能优化等因素，从v1.4.0-beta开始，集群版与simple版合并，并且在sonic-server上继续维护，因此sonic-server-simple版本不再维护。
 
 ## 常见问题
 
