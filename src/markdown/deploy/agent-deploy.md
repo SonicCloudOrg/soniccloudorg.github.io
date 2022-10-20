@@ -30,23 +30,23 @@
 > 
 > > **Linux:**
 > > 
->  > 👉<a href="https://sonic-cloud.sonic-download.workers.dev/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.0.0-beta/sonic-agent-v2.0.0-beta-linux_x86.zip" target="_blank">sonic-agent-v2.0.0-beta-linux_x86.zip</a>
+>  > 👉<a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.0.0-beta/sonic-agent-v2.0.0-beta-linux_x86.zip" target="_blank">sonic-agent-v2.0.0-beta-linux_x86.zip</a>
 >  >
->  > 👉<a href="https://sonic-cloud.sonic-download.workers.dev/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.0.0-beta/sonic-agent-v2.0.0-beta-linux_x86_64.zip" target="_blank">sonic-agent-v2.0.0-beta-linux_x86_64.zip</a>
+>  > 👉<a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.0.0-beta/sonic-agent-v2.0.0-beta-linux_x86_64.zip" target="_blank">sonic-agent-v2.0.0-beta-linux_x86_64.zip</a>
 >  > 
->  > 👉<a href="https://sonic-cloud.sonic-download.workers.dev/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.0.0-beta/sonic-agent-v2.0.0-beta-linux_arm64.zip" target="_blank">sonic-agent-v2.0.0-beta-linux_arm64.zip</a>
+>  > 👉<a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.0.0-beta/sonic-agent-v2.0.0-beta-linux_arm64.zip" target="_blank">sonic-agent-v2.0.0-beta-linux_arm64.zip</a>
 > >
 > > **Macosx:**
 > >
->  > 👉<a href="https://sonic-cloud.sonic-download.workers.dev/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.0.0-beta/sonic-agent-v2.0.0-beta-macosx_x86_64.zip" target="_blank">sonic-agent-v2.0.0-beta-macosx_x86_64.zip</a>
+>  > 👉<a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.0.0-beta/sonic-agent-v2.0.0-beta-macosx_x86_64.zip" target="_blank">sonic-agent-v2.0.0-beta-macosx_x86_64.zip</a>
 >  > 
->  > 👉<a href="https://sonic-cloud.sonic-download.workers.dev/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.0.0-beta/sonic-agent-v2.0.0-beta-macosx_arm64.zip" target="_blank">sonic-agent-v2.0.0-beta-macosx_arm64.zip</a>
+>  > 👉<a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.0.0-beta/sonic-agent-v2.0.0-beta-macosx_arm64.zip" target="_blank">sonic-agent-v2.0.0-beta-macosx_arm64.zip</a>
 > >
 > > **Windows:**
 > >
->  > 👉<a href="https://sonic-cloud.sonic-download.workers.dev/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.0.0-beta/sonic-agent-v2.0.0-beta-windows_x86.zip" target="_blank">sonic-agent-v2.0.0-beta-windows_x86.zip</a>
+>  > 👉<a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.0.0-beta/sonic-agent-v2.0.0-beta-windows_x86.zip" target="_blank">sonic-agent-v2.0.0-beta-windows_x86.zip</a>
 >  > 
->  > 👉<a href="https://sonic-cloud.sonic-download.workers.dev/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.0.0-beta/sonic-agent-v2.0.0-beta-windows_x86_64.zip" target="_blank">sonic-agent-v2.0.0-beta-windows_x86_64.zip</a>
+>  > 👉<a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.0.0-beta/sonic-agent-v2.0.0-beta-windows_x86_64.zip" target="_blank">sonic-agent-v2.0.0-beta-windows_x86_64.zip</a>
 > 
 > 5. 赋予 **工作目录** 所有权限，然后确保解压后的mini、config、plugins文件夹与jar同级
 > 
