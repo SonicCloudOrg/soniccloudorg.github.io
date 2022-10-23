@@ -151,13 +151,13 @@ import com.android.ddmlib.IShellOutputReceiver;
 import java.util.concurrent.TimeUnit;
 
 def test(){
-        LogUtil log =  androidStepHandler.log
+        LogUtil log = androidStepHandler.log
         String out = AndroidDeviceBridgeTool.executeCommand(androidStepHandler.iDevice,"wm size")
         log.sendStepLog(StepType.INFO,"Get screen size",out)
 }
 
 def testLong(){
-        LogUtil log =  androidStepHandler.log
+        LogUtil log = androidStepHandler.log
         androidStepHandler.iDevice.executeShellCommand("dumpsys window displays",
                         new IShellOutputReceiver() {
                             @Override
@@ -179,6 +179,39 @@ def testLong(){
 
 test()
 testLong()
+```
+
+#### 执行fastbot
+下方展示了如何执行fastbot并将日志持续输出到测试报告
+```
+import org.cloud.sonic.agent.bridge.android.AndroidDeviceBridgeTool;
+import org.cloud.sonic.agent.tests.LogUtil;
+import org.cloud.sonic.agent.common.interfaces.StepType;
+import com.android.ddmlib.IShellOutputReceiver;
+import java.util.concurrent.TimeUnit;
+
+def testFastbot(){
+        LogUtil log = androidStepHandler.log
+        androidStepHandler.iDevice.executeShellCommand("CLASSPATH=/sdcard/monkeyq.jar:/sdcard/framework.jar:/sdcard/fastbot-thirdpart.jar exec app_process /system/bin com.android.commands.monkey.Monkey -p package_name --agent reuseq --running-minutes duration(min) --throttle delay(ms) -v -v",
+                        new IShellOutputReceiver() {
+                            @Override
+                            public void addOutput(byte[] bytes, int i, int i1) {
+                                String res = new String(bytes, i, i1);
+                                log.sendStepLog(StepType.INFO,"FastBot log",res)
+                            }
+
+                            @Override
+                            public void flush() {
+                            }
+
+                            @Override
+                            public boolean isCancelled() {
+                                return false;
+                            }
+                        }, 0, TimeUnit.MILLISECONDS);
+}
+
+testFastbot()
 ```
 
 #### 运行本地command指令
@@ -236,24 +269,47 @@ testCmdForLongTime()
 
 ## 二、Python脚本
 
-Python不能作为Agent内置引擎，因此不可使用Agent内置的方法与包，只能使用Agent传递的部分参数，并且依赖需要自行本地安装。
+### 能力介绍
+Python不能作为Agent内置引擎，因此不可使用Agent内置的方法与包。Python脚本只能使用Agent传递的部分参数，并且依赖需要自行本地安装，与Groovy脚本相比灵活性大大降低。
 
 ### 前置环境
+
 Python环境、pip环境。
 
 ### 可用参数
 
-建设中...
+> 无论安卓还是iOS，Sonic会传递三个参数到Python脚本中，arg依次分别为：
+> 1. sessionId。安卓为uia2的sessionId，iOS为wda的sessionId。
+> 2. 设备udId。
+> 3. 全局参数Json字符串。
 
 ### 示例脚本展示
 
-建设中...
+#### 打印传递参数示例
+
+以下是打印Sonic传递的所有参数的示例脚本。
+```
+import sys
+argv = sys.argv[1:]
+print("args==argv==", argv)
+```
+#### 更多参考示例
+
+想参考更多脚本示例，可以前往 <a href="https://sonic-cloud.wiki/t/script" target="_blank">这里</a> 查看官方或用户分享的示例哦！
 
 ## 导入模板
 
 在【脚本模板】页面管理的脚本模板，可以在编辑时导入使用，导入有两种模式：
 1. 追加，将模板追加到当前编辑脚本中
 2. 替换，将模板替换当前编辑脚本
+
+## 使用规范与建议
+
+> 为了减少在使用时的维护成本，Sonic组织推荐脚本管理方式如下：
+> 
+> 1. 将通用的方法/函数可以保存到【脚本模块管理】。
+> 2. 使用脚本时使用导入模块，将方法/函数追加到当前脚本中，并引用。
+> 3. 推荐重复引用的参数、方法提取出来维护。
 
 ## 本文贡献者
 <div class="cont">
