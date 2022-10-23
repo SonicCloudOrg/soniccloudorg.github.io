@@ -44,6 +44,7 @@
 |LDAP_USERNAME| LDAP Base DN 管理员用户名|uid=admin,ou=system|
 |LDAP_PASSWORD|LDAP Base DN 管理员密码|Sonic!@#123|
 |LDAP_URL|LDAP 服务 URL |ldap://192.168.0.1:10389|
+|LDAP_OBJECT_CLASS|LDAP筛选class，默认为person| person|
 
 ## 使用自己的Eureka
 
