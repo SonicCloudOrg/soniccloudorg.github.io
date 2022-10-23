@@ -17,7 +17,7 @@ const tree = ref([
     ]
   },
   {
-    title: "功能列表",
+    title: "功能列表（建设中）",
     pane: [
       {
         label: "物理查找",
