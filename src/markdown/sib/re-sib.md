@@ -18,7 +18,7 @@
 > **sonic-ios-bridge** 是基于 [gidevice](https://github.com/electricbubble/gidevice) 作为底层iOS通信协议，在此基础上丰富了周边辅助功能，如自动挂载开发者镜像、wda安装检测、iOS型号映射、命令行直接使用等等。
 > 以打造跨平台执行xctest、WebDriverAgentRunner、性能监听等等特色功能的命令行iOS调试工具。
 >
-> > Sonic组织也在持续将iOS通信的探索 **共建** 到gidevice上，以下是Sonic组织目前参与建设的提交：
+> > Sonic组织也在持续将iOS通信的探索 **共建** 到gidevice上，Sonic会先在 [sonic-gidevice](https://github.com/SonicCloudOrg/sonic-gidevice) 建设，等feat稳定之后通过  **feat/contribute_to_repo** 分支提交到原gidevice仓库，以下是Sonic组织目前参与建设的提交：
 > >1. 新增DiagnosticsRelay实现设备关机与重启。[feat: [DiagnosticsRelay] new functions Reboot Shutdown](https://github.com/electricbubble/gidevice/commit/ad436febc507a655ddd5de4720e6b0843bf45b16)
 > >2. 新增SpringBoardServices与App图标获取。[feat: [SpringBoard] support get the app's icon](https://github.com/electricbubble/gidevice/commit/a31cdff57d0fc234acf4a57d6f707a7b67a23f8d)
 > >3. 扩展SpringBoardServices获取屏幕旋转方向。[feat: [SpringBoard] support get the orientation of the interface](https://github.com/electricbubble/gidevice/commit/e787834515aabaacdf9208953625dd48af8d8514)
