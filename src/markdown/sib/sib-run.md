@@ -59,6 +59,13 @@
 > sib run xctest -b your.app.bundleId -e TEST_ENV_1=hello -e TEST_ENV_2=world
 > ```
 
+### 运行fastbot示例
+
+注意：因为wda与fastbot底层有共同部分，所以两个框架进程会互相阻塞。因此wda与fastbot不能同时运行。
+> ```
+> sib run xctest -b fastbot的bundleId -e BUNDLEID=被测应用的bundleId -e duration=测试时长 -e throttle=300
+> ```
+
 ## 可用选项
 
 |  快捷使用 | 选项名  | 数据类型 | 描述信息 |
