@@ -46,23 +46,43 @@ poco控件默认属性如下：
             private Integer local;
         }
 ```
- 
-定位时，需要以poco开头如：
-```
-poco("Hello")
-```
 
-poco后的括号内可填入属性值进行筛选，不填属性值默认查找name字段。如：
-```
-poco(type="Button", name="Hello")
-poco(_instanceId=123)
-poco(visible=true)
-```
+POCO游戏控件目前支持三种定位方式: 
+1. poco类型
+2. xpath类型
+3. cssSelector类型
 
-poco后可以接上child来搜索子控件列表，默认搜索第一个结果，如果指定了数组index，会获取数组index下标的控件，当子控件数组长度小于index时，自动获取最末位。如：
-```
-poco(type="Button", name="Hello").child(text="Star")[1]
-```
+
+### poco类型定位
+> 定位时，需要以poco开头如：
+> ```
+> poco("Hello")
+> ```
+> 
+> poco后的括号内可填入属性值进行筛选，不填属性值默认查找name字段。如：
+> ```
+> poco(type="Button", name="Hello")
+> poco(_instanceId=123)
+> poco(visible=true)
+> ```
+> 
+> poco后可以接上child来搜索子控件列表，默认搜索第一个结果，如果指定了数组index，会获取数组index下标的控件，当子控件数组长度小于index时，自动获取最末位。如：
+> ```
+> poco(type="Button", name="Hello").child(text="Star")[1]
+> ```
+
+### xpath类型定位
+> 只需跟普通xpath相同语法即可，如：
+> ```
+> //*[@text="Hello" and @type="button"]
+> ```
+
+### cssSelector类型定位
+
+> 只需跟普通cssSelector相同语法即可，如：
+> ```
+> Root > Camera > Button > Text
+> ```
 
 ## 关于非全屏应用定位偏移
 
