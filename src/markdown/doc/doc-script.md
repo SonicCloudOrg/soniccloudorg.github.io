@@ -148,7 +148,7 @@ import org.cloud.sonic.agent.bridge.android.AndroidDeviceBridgeTool;
 import org.cloud.sonic.agent.tests.LogUtil;
 import org.cloud.sonic.agent.common.interfaces.StepType;
 import com.android.ddmlib.IShellOutputReceiver;
-import java.util.concurrent.TimeUnit;
+import java.util.*;
 
 def test(){
         LogUtil log = androidStepHandler.log
@@ -188,7 +188,7 @@ import org.cloud.sonic.agent.bridge.android.AndroidDeviceBridgeTool;
 import org.cloud.sonic.agent.tests.LogUtil;
 import org.cloud.sonic.agent.common.interfaces.StepType;
 import com.android.ddmlib.IShellOutputReceiver;
-import java.util.concurrent.TimeUnit;
+import java.util.*;
 
 def testFastbot(){
         LogUtil log = androidStepHandler.log
