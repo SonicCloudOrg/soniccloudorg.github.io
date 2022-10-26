@@ -5,6 +5,7 @@ import MD from "../components/MD.vue"
 import Sponsor from "../components/Sponsors.vue"
 import {DArrowRight, DArrowLeft} from "@element-plus/icons"
 import ad1 from '../assets/ad1.jpg'
+import ad2 from '../assets/linux-ad.jpg'
 import ad3 from '../assets/ad3.jpg'
 
 const route = useRoute()
@@ -88,6 +89,10 @@ const switchNav = function () {
             <a href="https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/ad3.jpg"
                target="_blank">
               <img :src="ad3"
+                   alt=""/>
+            </a>
+            <a href="https://sonic-cloud.wiki/d/1255-agentsoniclinux" target="_blank">
+              <img :src="ad2"
                    alt=""/>
             </a>
             <a href="https://sonic-cloud.wiki/d/1209-sonic" target="_blank">
