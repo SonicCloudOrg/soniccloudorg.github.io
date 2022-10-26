@@ -181,7 +181,7 @@ def testLong(){
                             public boolean isCancelled() {
                                 return false;
                             }
-                        }, 0, TimeUnit.MILLISECONDS);
+                        }, 0, java.util.concurrent.TimeUnit.MILLISECONDS);
 }
 
 test()
@@ -189,7 +189,7 @@ testLong()
 ```
 
 #### 执行fastbot
-下方展示了如何执行fastbot并将日志持续输出到测试报告
+下方展示了如何执行fastbot并将日志持续输出到测试报告，注意：执行前确保设备上有fastbot相关的jar哦，详情可以查看fastbot文档。
 ```
 import org.cloud.sonic.agent.bridge.android.AndroidDeviceBridgeTool;
 import org.cloud.sonic.agent.tests.LogUtil;
@@ -215,7 +215,7 @@ def testFastbot(){
                             public boolean isCancelled() {
                                 return false;
                             }
-                        }, 0, TimeUnit.MILLISECONDS);
+                        }, 0, java.util.concurrent.TimeUnit.MILLISECONDS);
 }
 
 testFastbot()
