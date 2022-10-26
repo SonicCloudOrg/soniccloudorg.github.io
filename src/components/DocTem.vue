@@ -127,7 +127,7 @@ const switchNav = function () {
 .wrap {
   border-radius: 4px;
   position: relative;
-  width: 450px;
+  width: 600px;
   left: 0px;
   animation: animateImg 15s infinite;
   display: flex;
@@ -147,24 +147,32 @@ const switchNav = function () {
     left: 0px;
   }
 
-  30% {
+  10% {
     left: 0px;
+  }
+
+  25% {
+    left: -150px;
   }
 
   40% {
     left: -150px;
   }
 
-  70% {
-    left: -150px;
+  50% {
+    left: -300px;
   }
 
-  80% {
+  60% {
     left: -300px;
+  }
+  
+  75% {
+    left: -450px;
   }
 
   100% {
-    left: -300px;
+    left: -450px;
   }
 }
 
