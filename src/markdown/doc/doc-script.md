@@ -181,7 +181,7 @@ def testLong(){
                             public boolean isCancelled() {
                                 return false;
                             }
-                        }, 0, java.util.concurrent.TimeUnit.MILLISECONDS);
+                        }, 0, TimeUnit.MILLISECONDS);
 }
 
 test()
@@ -215,7 +215,7 @@ def testFastbot(){
                             public boolean isCancelled() {
                                 return false;
                             }
-                        }, 0, java.util.concurrent.TimeUnit.MILLISECONDS);
+                        }, 0, TimeUnit.MILLISECONDS);
 }
 
 testFastbot()
