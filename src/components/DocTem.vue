@@ -129,7 +129,7 @@ const switchNav = function () {
   position: relative;
   width: 600px;
   left: 0px;
-  animation: animateImg 15s infinite;
+  animation: animateImg 20s infinite;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -147,11 +147,7 @@ const switchNav = function () {
     left: 0px;
   }
 
-  10% {
-    left: 0px;
-  }
-
-  25% {
+  15% {
     left: -150px;
   }
 
@@ -159,19 +155,11 @@ const switchNav = function () {
     left: -150px;
   }
 
-  50% {
-    left: -300px;
-  }
-
-  60% {
+  65% {
     left: -300px;
   }
   
-  75% {
-    left: -450px;
-  }
-
-  100% {
+  90% {
     left: -450px;
   }
 }
