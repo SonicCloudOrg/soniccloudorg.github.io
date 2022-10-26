@@ -105,6 +105,7 @@ const switchNav = function () {
                    alt=""/>
             </a>
           </div>
+          
            <a href="mailto:291028775@qq.com" target="_blank">
                <el-button type="primary" plain size="small" style="width: 100%;margin-top: 20px">成为赞助商！</el-button>
            </a>
@@ -137,6 +138,7 @@ const switchNav = function () {
 
 .wrap img {
   border-radius: 4px;
+  height: 284px;
   width: 150px;
   float: left;
   display: block;
