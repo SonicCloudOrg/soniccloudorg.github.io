@@ -7,6 +7,11 @@ import {DArrowRight, DArrowLeft} from "@element-plus/icons"
 import ad1 from '../assets/ad1.jpg'
 import ad2 from '../assets/linux-ad.jpg'
 import ad3 from '../assets/ad3.jpg'
+import c2 from "../assets/banner2.png";
+import honor from "../assets/honor.png";
+import c1 from "../assets/banner.png";
+import c0 from "../assets/coo.png";
+import c4 from "../assets/banner3.png";
 
 const route = useRoute()
 const router = useRouter()
@@ -37,7 +42,20 @@ const getDefaultTag = (data) => {
     }
   }
 }
-
+const ads = ref([
+  {
+    url: "https://sonic-cloud.wiki/d/1255-agentsoniclinux",
+    pic: ad2
+  },
+  {
+    url: "https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/ad3.jpg",
+    pic: ad3
+  },
+  {
+    url: "https://sonic-cloud.wiki/d/1209-sonic",
+    pic: ad1
+  },
+])
 onBeforeMount(() => {
   if (route.query.tag) {
     active.value = route.query.tag
@@ -83,33 +101,16 @@ const switchNav = function () {
         </el-scrollbar>
       </div>
       <div class="doc-ad" :style="styleAdTag">
-
-        <div class="a-container">
-          <div class="wrap">
-            <a href="https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/ad3.jpg"
-               target="_blank">
-              <img :src="ad3"
-                   alt=""/>
+        <el-carousel indicator-position="outside" :interval="5000" arrow="never">
+          <el-carousel-item v-for="o in ads">
+            <a :href="o.url" target="_blank">
+              <img style="height: 284px;width: 150px" :src="o.pic" alt=""/>
             </a>
-            <a href="https://sonic-cloud.wiki/d/1255-agentsoniclinux" target="_blank">
-              <img :src="ad2"
-                   alt=""/>
-            </a>
-            <a href="https://sonic-cloud.wiki/d/1209-sonic" target="_blank">
-              <img :src="ad1"
-                   alt=""/>
-            </a>
-            <a href="https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/ad3.jpg"
-               target="_blank">
-              <img :src="ad3"
-                   alt=""/>
-            </a>
-          </div>
-          
-           <a href="mailto:291028775@qq.com" target="_blank">
-               <el-button type="primary" plain size="small" style="width: 100%;margin-top: 20px">成为赞助商！</el-button>
-           </a>
-        </div>
+          </el-carousel-item>
+        </el-carousel>
+        <a href="mailto:291028775@qq.com" target="_blank">
+          <el-button type="primary" plain size="small" style="width: 150px;">成为赞助商！</el-button>
+        </a>
       </div>
       <m-d :active="active"/>
     </div>
@@ -117,53 +118,8 @@ const switchNav = function () {
 </template>
 
 <style>
-
-.a-container {
-  margin-top: 10px;
-  border-radius: 4px;
-  width: 150px;
-  overflow: hidden;
-}
-
-.wrap {
-  border-radius: 4px;
-  position: relative;
-  width: 600px;
-  left: 0px;
-  animation: animateImg 20s infinite;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.wrap img {
-  border-radius: 4px;
+.doc-ad .el-carousel__container{
   height: 284px;
-  width: 150px;
-  float: left;
-  display: block;
-}
-
-@keyframes animateImg {
-  0% {
-    left: 0px;
-  }
-
-  15% {
-    left: -150px;
-  }
-
-  40% {
-    left: -150px;
-  }
-
-  65% {
-    left: -300px;
-  }
-  
-  90% {
-    left: -450px;
-  }
 }
 
 .doc-container {
@@ -172,7 +128,7 @@ const switchNav = function () {
 }
 
 .doc-ad {
-  width: 130px;
+  width: 150px;
   top: 20px;
   position: absolute;
   height: 100%;
