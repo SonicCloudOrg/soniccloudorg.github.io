@@ -12,7 +12,7 @@
       </div>
       <el-divider style="margin: 10px 0px!important;"></el-divider>
 -->
-      <span style="font-size: 15px;color: #E6A23C">✨金牌赞助商✨</span>
+      <span style="font-size: 15px;color: #E6A23C">✨ 金牌赞助商 ✨</span>
       <div style="margin-top: 10px">
         <a href="https://www.testing-studio.com/" target="_blank">
           <img
