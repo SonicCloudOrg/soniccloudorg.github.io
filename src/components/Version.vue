@@ -67,10 +67,10 @@ const cons = [
   }, {
     name: "HappyTinaFu",
     avatar: "16253258"
-  },{
+  }, {
     name: "Julian0229",
     avatar: "47594178"
-  },{
+  }, {
     name: "gouldchu",
     avatar: "6470268"
   }
@@ -78,271 +78,271 @@ const cons = [
 
 const data = ref([
   {
-  version: "v2.0.0-beta",
-  time:"2022/10/20",
-  feat:[{
-    title:"UI自动化添加自定义脚本引入，支持Groovy(Java)、Python"
-  },{
-    title: "iOS在线WebView调试"
-  },{
-    title: "Jenkins插件支持pipeline语法"
-  },{
-    title: "安卓步骤优化：控制WIFI开关、控制定位服务开关、控制飞行模式开关"
-  },{
-    title: "安卓与iOS新增步骤：全局设置查找控件重试次数与重试间隔"
-  },{
-    title: "Agent新增支持Mac、Linux arm64结构"
-  },{
-    title: "iOS新增步骤：剪切板设置与获取"
-  },{
-     title: "切换webview支持自定义androidProcess"
-  },{
-     title: "支持相对坐标"
-  },{
-     title: "新增脚本模板管理"
-  },{
-     title: "新增POCO控件类型"
-  },{
-     title: "安卓新增步骤：POCO控件存在断言、点击、拖拽、长按、冻结控件树、解冻控件树"
-  },{
-     title: "安卓新增步骤：键盘输入"
-  },{
-     title: "Sonic新生态sonic-ios-webkit-adapter基础建设"
-  },{
-     title: "国际化建设第二期"
-  },{
-     title: "sib更新webinspector协议相关方法"
-  },{
-    title: "sonic-android-supply第一期建设"
-  },{
-    title: "sonic-vision-core图像库剥离建设"
-  },{
-    title: "sonic-driver-core新增支持UIA2 client与Poco通信"
-  }],
-  fix:[{
-    title: "弃用chromedriver驱动配置，简化用户部署"
-  },{
-    title: "安卓模块弃用appium"
-  },{
-    title: "安卓webview测试优化，降低用户使用门槛"
-  },{
-    title:"修复使用设备覆盖后，设备不能并行测试的bug",
-    url:"https://sonic-cloud.wiki/d/1582"
-  },{
-    title:"修复全局参数在测试套件使用时传参异常的问题",
-    url:"https://sonic-cloud.wiki/d/1618"
-  },{
-    title: "弃用adbkit方案，修复相关授权问题"
-  },{
-    title: "安卓步骤弃用双指操作、隐藏键盘、后台运行App"
-  },{
-    title: "安卓UI自动化减负、提速"
-  },{
-    title: "Agent部署方式优化与减重"
-  },{
-    title: "修复在线调试webview时，复制xpath等信息失效的问题"
-  },{
-    title: "修复复制用例后，用例中步骤排序不正确的问题",
-    url: "https://sonic-cloud.wiki/d/1688"
-  },{
-    title: "弃用Node环境"
-  },{
-    title: "压缩优化Docker版Agent镜像大小，使其更轻量"
-  },{
-    title: "修复Agent重连后设备掉线问题"
-  }],
-  con: getCon("ZhouYixun", "Lewage59","yaming116","dongyi0412", "HappyTinaFu","aoliaoaoaojiao","weixiao12345","gouldchu","Julian0229")
+    version: "v2.0.0-beta",
+    time: "2022/10/20",
+    feat: [{
+      title: "UI自动化添加自定义脚本引入，支持Groovy(Java)、Python"
+    }, {
+      title: "iOS在线WebView调试"
+    }, {
+      title: "Jenkins插件支持pipeline语法"
+    }, {
+      title: "安卓步骤优化：控制WIFI开关、控制定位服务开关、控制飞行模式开关"
+    }, {
+      title: "安卓与iOS新增步骤：全局设置查找控件重试次数与重试间隔"
+    }, {
+      title: "Agent新增支持Mac、Linux arm64结构"
+    }, {
+      title: "iOS新增步骤：剪切板设置与获取"
+    }, {
+      title: "切换webview支持自定义androidProcess"
+    }, {
+      title: "支持相对坐标"
+    }, {
+      title: "新增脚本模板管理"
+    }, {
+      title: "新增POCO控件类型"
+    }, {
+      title: "安卓新增步骤：POCO控件存在断言、点击、拖拽、长按、冻结控件树、解冻控件树"
+    }, {
+      title: "安卓新增步骤：键盘输入"
+    }, {
+      title: "Sonic新生态sonic-ios-webkit-adapter基础建设"
+    }, {
+      title: "国际化建设第二期"
+    }, {
+      title: "sib更新webinspector协议相关方法"
+    }, {
+      title: "sonic-android-supply第一期建设"
+    }, {
+      title: "sonic-vision-core图像库剥离建设"
+    }, {
+      title: "sonic-driver-core新增支持UIA2 client与Poco通信"
+    }],
+    fix: [{
+      title: "弃用chromedriver驱动配置，简化用户部署"
+    }, {
+      title: "安卓模块弃用appium"
+    }, {
+      title: "安卓webview测试优化，降低用户使用门槛"
+    }, {
+      title: "修复使用设备覆盖后，设备不能并行测试的bug",
+      url: "https://sonic-cloud.wiki/d/1582"
+    }, {
+      title: "修复全局参数在测试套件使用时传参异常的问题",
+      url: "https://sonic-cloud.wiki/d/1618"
+    }, {
+      title: "弃用adbkit方案，修复相关授权问题"
+    }, {
+      title: "安卓步骤弃用双指操作、隐藏键盘、后台运行App"
+    }, {
+      title: "安卓UI自动化减负、提速"
+    }, {
+      title: "Agent部署方式优化与减重"
+    }, {
+      title: "修复在线调试webview时，复制xpath等信息失效的问题"
+    }, {
+      title: "修复复制用例后，用例中步骤排序不正确的问题",
+      url: "https://sonic-cloud.wiki/d/1688"
+    }, {
+      title: "弃用Node环境"
+    }, {
+      title: "压缩优化Docker版Agent镜像大小，使其更轻量"
+    }, {
+      title: "修复Agent重连后设备掉线问题"
+    }],
+    con: getCon("ZhouYixun", "Lewage59", "yaming116", "dongyi0412", "HappyTinaFu", "aoliaoaoaojiao", "weixiao12345", "gouldchu", "Julian0229")
   },
   {
-  version: "v1.5.0-release",
-  time: "2022/9/3",
-  feat: [{
-    title: "控件元素添加可绑定模块"
+    version: "v1.5.0-release",
+    time: "2022/9/3",
+    feat: [{
+      title: "控件元素添加可绑定模块"
+    }, {
+      title: "控件元素添加模块筛选"
+    }, {
+      title: "测试用例添加模块筛选"
+    }, {
+      title: "远控页添加快捷添加控件"
+    }, {
+      title: "sib更新性能监控"
+    }],
+    fix: [{
+      title: "修复测试套件设备覆盖时全局参数分配问题"
+    }, {
+      title: "修复复制步骤后，拖拽排序异常的问题"
+    }, {
+      title: "修复1.5.0-rc版本新的iOS接入不显示的Bug",
+      url: "https://sonic-cloud.wiki/d/1543"
+    }, {
+      title: "修复iOS 12.5版本挂载失败问题"
+    }, {
+      title: "设备列表高级筛选添加鸿蒙3.0筛选"
+    }],
+    con: getCon("ZhouYixun", "aoliaoaoaojiao", "dongyi0412", "weixiao12345", "ChaseWindWu")
   }, {
-    title: "控件元素添加模块筛选"
+    version: "v1.5.0-rc",
+    time: "2022/8/28",
+    feat: [{
+      title: "新增复制用例功能",
+      url: "https://sonic-cloud.wiki/d/1226"
+    }, {
+      title: "新增复制步骤功能",
+      url: "https://sonic-cloud.wiki/d/1388"
+    }],
+    fix: [{
+      title: "修复部分华为系统远控失效的问题",
+      url: "https://sonic-cloud.wiki/d/1436"
+    }, {
+      title: "修复Agent重连后偶现Bug"
+    }, {
+      title: "修复机器人通知通过率异常的Bug"
+    }, {
+      title: "修复编辑公共步骤步骤时的显示问题",
+      url: "https://sonic-cloud.wiki/d/1483"
+    }, {
+      title: "修复选择设备覆盖时，全局参数分配不正确的问题",
+      url: "https://sonic-cloud.wiki/d/1366"
+    }, {
+      title: "前端高级筛选优化，支持鸿蒙系统筛选"
+    }, {
+      title: "sgm依赖更新"
+    }],
+    con: getCon("ZhouYixun", "yaming116", "mengerya", "dongyi0412", "weixiao12345")
   }, {
-    title: "测试用例添加模块筛选"
+    version: "v1.5.0-beta",
+    time: "2022/8/21",
+    feat: [{
+      title: "iOS远控新增剪贴板操作",
+      url: "https://sonic-cloud.wiki/d/961"
+    }, {
+      title: "iOS远控新增进程实时查看"
+    }, {
+      title: "iOS远控新增投屏自定义清晰度与FPS"
+    }, {
+      title: "iOS远控新增键盘输入"
+    }, {
+      title: "iOS远控投屏流畅度增加"
+    }, {
+      title: "iOS新增步骤：键盘输入"
+    }, {
+      title: "安卓远控新增可主动校准横竖屏",
+      url: "https://sonic-cloud.wiki/d/1266"
+    }, {
+      title: "安卓新增步骤：清空app缓存内存"
+    }, {
+      title: "安卓新增步骤：自定义keycode输入",
+      url: "https://sonic-cloud.wiki/d/1263-androidui"
+    }, {
+      title: "新增鸿蒙系统单独分离展示"
+    }, {
+      title: "sonic新生态sonic-driver-core第一期"
+    }, {
+      title: "sib添加截图功能"
+    }, {
+      title: "sib添加文件管理功能，支持mkdir、tree、ls等等操作"
+    }, {
+      title: "sib添加进程查看相关"
+    }, {
+      title: "控件元素列表新增可通过控件值筛选",
+      url: "https://sonic-cloud.wiki/d/1381-cny"
+    }],
+    fix: [{
+      title: "修复Jenkins插件接口超时问题",
+      url: "https://sonic-cloud.wiki/d/1154-jenkins"
+    }, {
+      title: "iOS模块弃用appium"
+    }, {
+      title: "优化iOS触控，解决断触问题"
+    }, {
+      title: "iOSUI自动化稳定性增强",
+    }, {
+      title: "修复Jenkins子节点路径查找包失败问题",
+      url: "https://sonic-cloud.wiki/d/1154-jenkins"
+    }, {
+      title: "修复ios特殊情况下获取app列表时导致前端错位的bug"
+    }, {
+      title: "修复sib自动挂载与xctest进程冲突问题"
+    }, {
+      title: "修复设备高级筛选同时选中安卓与iOS时，不能同时生效的bug"
+    }, {
+      title: "修复scrcpy模式下安卓快速截图长宽与实际设备分辨率不符",
+      url: "https://sonic-cloud.wiki/d/1359"
+    }, {
+      title: "fastjson依赖升级"
+    }, {
+      title: "修复安卓使用AndroidUIAutomator方式定位时，误报了错误的问题",
+      url: "https://sonic-cloud.wiki/d/1395-cny"
+    }, {
+      title: "修复安卓13获取设备横竖屏API失败的问题"
+    }, {
+      title: "优化Docker版Agent接入iOS显示usbmuxd连接问题"
+    }],
+    con: getCon("ZhouYixun", "aoliaoaoaojiao", "yaming116", "Lewage59", "mengerya", "spalagu")
   }, {
-    title: "远控页添加快捷添加控件"
+    version: "v1.4.1-release",
+    time: "2022/7/10",
+    feat: [{
+      title: "支持企业微信机器人"
+    }],
+    fix: [{
+      title: "修复Agent高温预警机器人配置失效的问题",
+      url: "https://sonic-cloud.wiki/d/1026-agentwebhooksecretwebhook"
+    }, {
+      title: "修复从安装包管理列表安装时报错问题"
+    }, {
+      title: "修复用户管理多出删除按钮的问题"
+    }, {
+      title: "修复角色选择下拉框显示不全的问题"
+    }, {
+      title: "修复iOS清晰度过高导致卡顿问题"
+    }, {
+      title: "修复ws数据量过大造成断连的问题",
+      url: "https://sonic-cloud.wiki/d/1055"
+    }, {
+      title: "更改接口文档部分描述错误"
+    }, {
+      title: "安装包列表添加Jenkins插件提示"
+    }, {
+      title: "修复高温预警缺少飞书机器人类型"
+    }],
+    con: getCon("ZhouYixun", "yaming116")
   }, {
-    title: "sib更新性能监控"
-  }],
-  fix: [{
-    title: "修复测试套件设备覆盖时全局参数分配问题"
-  }, {
-    title: "修复复制步骤后，拖拽排序异常的问题"
-  }, {
-    title: "修复1.5.0-rc版本新的iOS接入不显示的Bug",
-    url: "https://sonic-cloud.wiki/d/1543"
-  }, {
-    title: "修复iOS 12.5版本挂载失败问题"
-  }, {
-    title: "设备列表高级筛选添加鸿蒙3.0筛选"
-  }],
-  con: getCon("ZhouYixun", "aoliaoaoaojiao", "dongyi0412", "weixiao12345", "ChaseWindWu")
-}, {
-  version: "v1.5.0-rc",
-  time: "2022/8/28",
-  feat: [{
-    title: "新增复制用例功能",
-    url: "https://sonic-cloud.wiki/d/1226"
-  }, {
-    title: "新增复制步骤功能",
-    url: "https://sonic-cloud.wiki/d/1388"
-  }],
-  fix: [{
-    title: "修复部分华为系统远控失效的问题",
-    url: "https://sonic-cloud.wiki/d/1436"
-  }, {
-    title: "修复Agent重连后偶现Bug"
-  }, {
-    title: "修复机器人通知通过率异常的Bug"
-  }, {
-    title: "修复编辑公共步骤步骤时的显示问题",
-    url: "https://sonic-cloud.wiki/d/1483"
-  }, {
-    title: "修复选择设备覆盖时，全局参数分配不正确的问题",
-    url: "https://sonic-cloud.wiki/d/1366"
-  }, {
-    title: "前端高级筛选优化，支持鸿蒙系统筛选"
-  }, {
-    title: "sgm依赖更新"
-  }],
-  con: getCon("ZhouYixun", "yaming116", "mengerya", "dongyi0412", "weixiao12345")
-}, {
-  version: "v1.5.0-beta",
-  time: "2022/8/21",
-  feat: [{
-    title: "iOS远控新增剪贴板操作",
-    url: "https://sonic-cloud.wiki/d/961"
-  }, {
-    title: "iOS远控新增进程实时查看"
-  }, {
-    title: "iOS远控新增投屏自定义清晰度与FPS"
-  }, {
-    title: "iOS远控新增键盘输入"
-  }, {
-    title: "iOS远控投屏流畅度增加"
-  }, {
-    title: "iOS新增步骤：键盘输入"
-  }, {
-    title: "安卓远控新增可主动校准横竖屏",
-    url: "https://sonic-cloud.wiki/d/1266"
-  }, {
-    title: "安卓新增步骤：清空app缓存内存"
-  }, {
-    title: "安卓新增步骤：自定义keycode输入",
-    url: "https://sonic-cloud.wiki/d/1263-androidui"
-  }, {
-    title: "新增鸿蒙系统单独分离展示"
-  }, {
-    title: "sonic新生态sonic-driver-core第一期"
-  }, {
-    title: "sib添加截图功能"
-  }, {
-    title: "sib添加文件管理功能，支持mkdir、tree、ls等等操作"
-  }, {
-    title: "sib添加进程查看相关"
-  }, {
-    title: "控件元素列表新增可通过控件值筛选",
-    url: "https://sonic-cloud.wiki/d/1381-cny"
-  }],
-  fix: [{
-    title: "修复Jenkins插件接口超时问题",
-    url: "https://sonic-cloud.wiki/d/1154-jenkins"
-  }, {
-    title: "iOS模块弃用appium"
-  }, {
-    title: "优化iOS触控，解决断触问题"
-  }, {
-    title: "iOSUI自动化稳定性增强",
-  }, {
-    title: "修复Jenkins子节点路径查找包失败问题",
-    url: "https://sonic-cloud.wiki/d/1154-jenkins"
-  }, {
-    title: "修复ios特殊情况下获取app列表时导致前端错位的bug"
-  }, {
-    title: "修复sib自动挂载与xctest进程冲突问题"
-  }, {
-    title: "修复设备高级筛选同时选中安卓与iOS时，不能同时生效的bug"
-  }, {
-    title: "修复scrcpy模式下安卓快速截图长宽与实际设备分辨率不符",
-    url: "https://sonic-cloud.wiki/d/1359"
-  }, {
-    title: "fastjson依赖升级"
-  }, {
-    title: "修复安卓使用AndroidUIAutomator方式定位时，误报了错误的问题",
-    url: "https://sonic-cloud.wiki/d/1395-cny"
-  }, {
-    title: "修复安卓13获取设备横竖屏API失败的问题"
-  }, {
-    title: "优化Docker版Agent接入iOS显示usbmuxd连接问题"
-  }],
-  con: getCon("ZhouYixun", "aoliaoaoaojiao", "yaming116", "Lewage59", "mengerya", "spalagu")
-}, {
-  version: "v1.4.1-release",
-  time: "2022/7/10",
-  feat: [{
-    title: "支持企业微信机器人"
-  }],
-  fix: [{
-    title: "修复Agent高温预警机器人配置失效的问题",
-    url: "https://sonic-cloud.wiki/d/1026-agentwebhooksecretwebhook"
-  }, {
-    title: "修复从安装包管理列表安装时报错问题"
-  }, {
-    title: "修复用户管理多出删除按钮的问题"
-  }, {
-    title: "修复角色选择下拉框显示不全的问题"
-  }, {
-    title: "修复iOS清晰度过高导致卡顿问题"
-  }, {
-    title: "修复ws数据量过大造成断连的问题",
-    url: "https://sonic-cloud.wiki/d/1055"
-  }, {
-    title: "更改接口文档部分描述错误"
-  }, {
-    title: "安装包列表添加Jenkins插件提示"
-  }, {
-    title: "修复高温预警缺少飞书机器人类型"
-  }],
-  con: getCon("ZhouYixun", "yaming116")
-}, {
-  version: "v1.4.1-rc",
-  time: "2022/7/2",
-  feat: [{
-    title: "新增安装包管理与Jenkins插件",
-  }, {
-    title: "安装步骤优化：可从安装包列表安装"
-  }, {
-    title: "新增UIAutomator原生定位"
-  }],
-  fix: [{
-    title: "修复SERVER_PORT与env配置冲突与Docker版Agent端口占用问题",
-    url: "https://sonic-cloud.wiki/d/951"
-  }, {
-    title: "优化扫描权限配置逻辑",
-    url: "https://sonic-cloud.wiki/d/956-agent-notfoundresource"
-  }, {
-    title: "补充部分品牌图片展示",
-    url: "https://sonic-cloud.wiki/d/932-logo"
-  }, {
-    title: "修复通知机器人跳转链接空白问题",
-    url: "https://sonic-cloud.wiki/d/977"
-  }, {
-    title: "修复鉴权按钮打开后失效的问题",
-    url: "https://sonic-cloud.wiki/d/983"
-  }, {
-    title: "修复选择控件翻页时造成筛选条件消失的问题",
-    url: "https://sonic-cloud.wiki/d/969"
-  }, {
-    title: "修复agent长时间不通信偶断的问题"
-  }, {
-    title: "修复获取agent端的图片失败的问题",
-    url: "https://sonic-cloud.wiki/d/1011"
-  }],
-  con: getCon("ZhouYixun", "yaming116", "hellojuly")
-},
+    version: "v1.4.1-rc",
+    time: "2022/7/2",
+    feat: [{
+      title: "新增安装包管理与Jenkins插件",
+    }, {
+      title: "安装步骤优化：可从安装包列表安装"
+    }, {
+      title: "新增UIAutomator原生定位"
+    }],
+    fix: [{
+      title: "修复SERVER_PORT与env配置冲突与Docker版Agent端口占用问题",
+      url: "https://sonic-cloud.wiki/d/951"
+    }, {
+      title: "优化扫描权限配置逻辑",
+      url: "https://sonic-cloud.wiki/d/956-agent-notfoundresource"
+    }, {
+      title: "补充部分品牌图片展示",
+      url: "https://sonic-cloud.wiki/d/932-logo"
+    }, {
+      title: "修复通知机器人跳转链接空白问题",
+      url: "https://sonic-cloud.wiki/d/977"
+    }, {
+      title: "修复鉴权按钮打开后失效的问题",
+      url: "https://sonic-cloud.wiki/d/983"
+    }, {
+      title: "修复选择控件翻页时造成筛选条件消失的问题",
+      url: "https://sonic-cloud.wiki/d/969"
+    }, {
+      title: "修复agent长时间不通信偶断的问题"
+    }, {
+      title: "修复获取agent端的图片失败的问题",
+      url: "https://sonic-cloud.wiki/d/1011"
+    }],
+    con: getCon("ZhouYixun", "yaming116", "hellojuly")
+  },
   {
     version: "v1.4.1-beta",
     time: "2022/6/22",
