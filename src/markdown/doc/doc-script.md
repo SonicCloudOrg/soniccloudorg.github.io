@@ -197,7 +197,6 @@ import org.cloud.sonic.agent.bridge.android.AndroidDeviceBridgeTool;
 import org.cloud.sonic.agent.tests.LogUtil;
 import org.cloud.sonic.agent.common.interfaces.StepType;
 import com.android.ddmlib.IShellOutputReceiver;
-import org.cloud.sonic.agent.tools.PortTool;
 import java.util.concurrent.TimeUnit;
 
 def testFastbot(){
@@ -220,7 +219,8 @@ def testFastbot(){
                                 return false;
                             }
                         }, 0, TimeUnit.MILLISECONDS);
-        androidStepHandler.startAndroidDriver(androidStepHandler.iDevice, PortTool.getPort())
+        int port = AndroidDeviceBridgeTool.startUiaServer(androidStepHandler.iDevice);
+        androidStepHandler.startAndroidDriver(androidStepHandler.iDevice, port)
 }
 
 testFastbot()
