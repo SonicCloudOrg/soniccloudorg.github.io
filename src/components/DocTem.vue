@@ -20,7 +20,8 @@ const scroll = ref(null)
 
 const props = defineProps({
   path: String,
-  tree: Array
+  tree: Array,
+  data: Array,
 })
 
 const handle = (e) => {
@@ -112,12 +113,56 @@ const switchNav = function () {
           <el-button type="primary" plain size="small" style="width: 150px;">成为赞助商！</el-button>
         </a>
       </div>
-      <m-d :active="active"/>
+       <m-d v-if="tree.length>0" :active="active"/>
+            <el-timeline class="version-show" v-else>
+                <h1></h1>
+                <el-timeline-item v-for="(d,i) in data" :timestamp="'发布时间：'+d.time" placement="top" type="success">
+                    <el-card>
+                        <el-alert v-if="i==0" style="margin-bottom: 20px" type="error" :closable="false">
+                            <template #title>
+                                <div>更新前一定要查看版本迁移指南哦，可点击 <a href="https://sonic-cloud.gitee.io/#/Deploy?tag=upgrade">这里</a> 查看！</div>
+                            </template>
+                        </el-alert>
+                        <span class="verh1">{{ d.version }}</span>
+                        {{ d.des }}
+                        <span class="verh2" v-if="d.feat&&d.feat.length>0">新特性</span>
+                        <div style="line-height: 1.6;text-indent:30px;font-size: 15px">
+                            <div v-for="(f,i) in d.feat">{{ i + 1 + "、 " + f.title }}
+                                <a :href="f.url" v-if="f.url"
+                                   target="_blank"> #{{ f.url.replace(/[^\d]/g, "") }}</a>
+                            </div>
+                        </div>
+                        <span class="verh2" v-if="d.fix&&d.fix.length>0">修复Bug与优化</span>
+                        <div style="line-height: 1.6;text-indent:30px;font-size: 15px">
+                            <div v-for="(f,i) in d.fix">{{ i + 1 + "、 " + f.title }}
+                                <a :href="f.url" v-if="f.url"
+                                   target="_blank"> #{{ f.url.replace(/[^\d]/g, "") }}</a>
+                            </div>
+                        </div>
+                        <span class="verh2" v-if="d.con&&d.con.length>0">贡献者</span>
+                        <a v-for="c in d.con" :href="'https://github.com/'+c.name" target="_blank" style="margin-right: 10px">
+                            <el-avatar size="large" :src="'https://avatars.githubusercontent.com/u/'+c.avatar+'?v=4'"></el-avatar>
+                        </a>
+                    </el-card>
+                </el-timeline-item>
+            </el-timeline>
     </div>
   </el-scrollbar>
 </template>
 
 <style>
+    .version-show {
+        text-align: left;
+        margin-left: 160px;
+        margin-bottom: 80px;
+    }
+
+    @media screen and (max-width: 820px) {
+        .version-show {
+            margin-left: 0;
+            padding: 0 14px;
+        }
+    }
 .doc-ad .el-carousel__container{
   height: 284px;
 }
@@ -139,7 +184,7 @@ const switchNav = function () {
   height: 100%;
   text-align: left;
   background-color: #fff;
-  z-index: 1;
+  z-index: 2000;
   transition: left .5s ease-in-out;
 }
 
@@ -163,6 +208,7 @@ const switchNav = function () {
   border-radius: 50px;
   background-color: rgba(125, 215, 246, .7);
   transition: left .5s ease-in-out;
+  z-index: 2000;
 }
 
 .float-tag .el-icon {
@@ -192,11 +238,12 @@ const switchNav = function () {
     top: 59px;
     left: -195px;
     border-right: 1px solid #ccc;
-    z-index: 1;
+    z-index: 2000;
   }
 
   .float-tag {
     display: unset;
+    z-index: 2000;
   }
 }
 </style>
