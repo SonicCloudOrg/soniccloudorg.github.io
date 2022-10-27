@@ -1,5 +1,6 @@
 <script setup>
 import {ref} from "vue";
+import DocTem from "../components/DocTem.vue"
 
 const getCon = (...name) => {
   let result = []
@@ -1072,55 +1073,9 @@ const data = ref([
     con: getCon("ZhouYixun")
   }
 ])
+const tree = ref([])
 </script>
+
 <template>
-  <el-backtop target=".demo-tree-scrollbar .el-scrollbar__wrap" :bottom="100"></el-backtop>
-  <el-scrollbar class="demo-tree-scrollbar" ref="scrollbar" style="height: 100%">
-    <div class="back" style="text-align: left;margin-top: 20px">
-      <el-timeline>
-        <el-timeline-item v-for="(d,i) in data" :timestamp="d.time" placement="top" type="success">
-          <el-card>
-            <el-alert v-if="i==0" style="margin-bottom: 20px" type="error" :closable="false">
-              <template #title>
-                <div>更新前一定要查看版本迁移指南哦，可点击 <a href="https://sonic-cloud.gitee.io/#/Deploy?tag=upgrade">这里</a> 查看！</div>
-              </template>
-            </el-alert>
-            <span class="verh1">{{ d.version }}</span>
-            {{ d.des }}
-            <span class="verh2" v-if="d.feat&&d.feat.length>0">新特性</span>
-            <div style="line-height: 1.6;text-indent:30px;font-size: 15px">
-              <div v-for="(f,i) in d.feat">{{ i + 1 + "、 " + f.title }}
-                <a :href="f.url" v-if="f.url"
-                   target="_blank"> #{{ f.url.replace(/[^\d]/g, "") }}</a>
-              </div>
-            </div>
-            <span class="verh2" v-if="d.fix&&d.fix.length>0">修复Bug与优化</span>
-            <div style="line-height: 1.6;text-indent:30px;font-size: 15px">
-              <div v-for="(f,i) in d.fix">{{ i + 1 + "、 " + f.title }}
-                <a :href="f.url" v-if="f.url"
-                   target="_blank"> #{{ f.url.replace(/[^\d]/g, "") }}</a>
-              </div>
-            </div>
-            <span class="verh2" v-if="d.con&&d.con.length>0">贡献者</span>
-            <a v-for="c in d.con" :href="'https://github.com/'+c.name" target="_blank" style="margin-right: 10px">
-              <el-avatar size="large" :src="'https://avatars.githubusercontent.com/u/'+c.avatar+'?v=4'"></el-avatar>
-            </a>
-          </el-card>
-        </el-timeline-item>
-      </el-timeline>
-    </div>
-  </el-scrollbar>
+  <doc-tem path="Version" :tree="tree" :data="data"/>
 </template>
-
-<style>
-@media screen and (max-width: 820px) {
-  .back {
-    padding: 0;
-    margin-right: 40px;
-  }
-
-  .el-timeline {
-    padding-left: 40px;
-  }
-}
-</style>
