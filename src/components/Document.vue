@@ -71,6 +71,10 @@ const tree = ref([
       {
         label: "POCO控件",
         name: "poco"
+      },
+      {
+        label: "切换WebView",
+        name: "toWebView"
       }
     ]
   },
