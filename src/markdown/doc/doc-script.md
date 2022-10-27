@@ -155,7 +155,7 @@ import org.cloud.sonic.agent.bridge.android.AndroidDeviceBridgeTool;
 import org.cloud.sonic.agent.tests.LogUtil;
 import org.cloud.sonic.agent.common.interfaces.StepType;
 import com.android.ddmlib.IShellOutputReceiver;
-import java.util.*;
+import java.util.concurrent.TimeUnit;
 
 def test(){
         LogUtil log = androidStepHandler.log
@@ -190,15 +190,19 @@ testLong()
 
 #### 执行fastbot
 下方展示了如何执行fastbot并将日志持续输出到测试报告，注意：执行前确保设备上有fastbot相关的jar哦，详情可以查看fastbot文档。
+
+因为fastbot底层与uia2有冲突，所以先执行了closeDriver()，运行完毕后，再重新startDriver()
 ```
 import org.cloud.sonic.agent.bridge.android.AndroidDeviceBridgeTool;
 import org.cloud.sonic.agent.tests.LogUtil;
 import org.cloud.sonic.agent.common.interfaces.StepType;
 import com.android.ddmlib.IShellOutputReceiver;
-import java.util.*;
+import org.cloud.sonic.agent.tools.PortTool;
+import java.util.concurrent.TimeUnit;
 
 def testFastbot(){
         LogUtil log = androidStepHandler.log
+        androidStepHandler.getAndroidDriver().closeDriver()
         androidStepHandler.iDevice.executeShellCommand("CLASSPATH=/sdcard/monkeyq.jar:/sdcard/framework.jar:/sdcard/fastbot-thirdpart.jar exec app_process /system/bin com.android.commands.monkey.Monkey -p package_name --agent reuseq --running-minutes duration(min) --throttle delay(ms) -v -v",
                         new IShellOutputReceiver() {
                             @Override
@@ -216,6 +220,7 @@ def testFastbot(){
                                 return false;
                             }
                         }, 0, TimeUnit.MILLISECONDS);
+        androidStepHandler.startAndroidDriver(androidStepHandler.iDevice, PortTool.getPort())
 }
 
 testFastbot()
