@@ -1,7 +1,7 @@
 {
-  "sib": "sib_1.2.3",
+  "sib": "sib_1.2.4",
   "sgm": "sgm_1.3.3",
   "sch": "sch_sonic-ci-helper-1.0.3",
-  "sdc": "sdc_1.1.8",
-  "ser": "ser_v2.0.0-beta"
+  "sdc": "sdc_1.1.9",
+  "ser": "ser_v2.0.0-rc"
 }

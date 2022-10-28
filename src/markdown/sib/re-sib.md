@@ -46,25 +46,25 @@
 >
 > > **Linux:**
 > >
->  > 👉<a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.2.3/sonic-ios-bridge_1.2.3_linux_arm64.tar.gz" target="_blank">sonic-ios-bridge_1.2.3_linux_arm64.tar.gz</a>
+>  > 👉<a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.2.4/sonic-ios-bridge_1.2.4_linux_arm64.tar.gz" target="_blank">sonic-ios-bridge_1.2.4_linux_arm64.tar.gz</a>
 >  >
->  > 👉<a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.2.3/sonic-ios-bridge_1.2.3_linux_x86.tar.gz" target="_blank">sonic-ios-bridge_1.2.3_linux_x86.tar.gz</a>
+>  > 👉<a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.2.4/sonic-ios-bridge_1.2.4_linux_x86.tar.gz" target="_blank">sonic-ios-bridge_1.2.4_linux_x86.tar.gz</a>
 >  >
->  > 👉<a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.2.3/sonic-ios-bridge_1.2.3_linux_x86_64.tar.gz" target="_blank">sonic-ios-bridge_1.2.3_linux_x86_64.tar.gz</a>
+>  > 👉<a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.2.4/sonic-ios-bridge_1.2.4_linux_x86_64.tar.gz" target="_blank">sonic-ios-bridge_1.2.4_linux_x86_64.tar.gz</a>
 >
 >  > **Macosx:**
 >  >
->  > 👉<a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.2.3/sonic-ios-bridge_1.2.3_macosx_arm64.tar.gz" target="_blank">sonic-ios-bridge_1.2.3_macosx_arm64.tar.gz</a>
+>  > 👉<a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.2.4/sonic-ios-bridge_1.2.4_macosx_arm64.tar.gz" target="_blank">sonic-ios-bridge_1.2.4_macosx_arm64.tar.gz</a>
 >  >
->  > 👉<a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.2.3/sonic-ios-bridge_1.2.3_macosx_x86_64.tar.gz" target="_blank">sonic-ios-bridge_1.2.3_macosx_x86_64.tar.gz</a>
+>  > 👉<a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.2.4/sonic-ios-bridge_1.2.4_macosx_x86_64.tar.gz" target="_blank">sonic-ios-bridge_1.2.4_macosx_x86_64.tar.gz</a>
 >
 >  > **Windows:**
 >  >
->  > 👉<a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.2.3/sonic-ios-bridge_1.2.3_windows_arm64.tar.gz" target="_blank">sonic-ios-bridge_1.2.3_windows_arm64.tar.gz</a>
+>  > 👉<a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.2.4/sonic-ios-bridge_1.2.4_windows_arm64.tar.gz" target="_blank">sonic-ios-bridge_1.2.4_windows_arm64.tar.gz</a>
 >  >
->  > 👉<a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.2.3/sonic-ios-bridge_1.2.3_windows_x86.tar.gz" target="_blank">sonic-ios-bridge_1.2.3_windows_x86.tar.gz</a>
+>  > 👉<a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.2.4/sonic-ios-bridge_1.2.4_windows_x86.tar.gz" target="_blank">sonic-ios-bridge_1.2.4_windows_x86.tar.gz</a>
 > >
->  > 👉<a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.2.3/sonic-ios-bridge_1.2.3_windows_x86_64.tar.gz" target="_blank">sonic-ios-bridge_1.2.3_windows_x86_64.tar.gz</a>
+>  > 👉<a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.2.4/sonic-ios-bridge_1.2.4_windows_x86_64.tar.gz" target="_blank">sonic-ios-bridge_1.2.4_windows_x86_64.tar.gz</a>
 >
 > 2. 执行指令（Windows不需要，但是Windows需要安装iTunes）。
 > ```
