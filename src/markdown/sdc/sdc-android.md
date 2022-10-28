@@ -2,7 +2,22 @@
 
 本文是AndroidDriver文档。 API文档可前往：👉[Java Doc](https://s01.oss.sonatype.org/service/local/repositories/releases/archive/io/github/soniccloudorg/sonic-driver-core/1.1.8/sonic-driver-core-1.1.8-javadoc.jar/!/index.html)
 
-##
+## 剪切板操作
+
+#### 设置剪切板
+```
+androidDriver.setPasteboard(String contentType, String content);
+```
+建设中...
+#### 获取剪贴板
+
+注意，该API仅在安卓10以下生效。
+```
+androidDriver.getPasteboard(String contentType);
+```
+建设中...
+
+## 建设中...
 
 ## 本文贡献者
 <div class="cont">

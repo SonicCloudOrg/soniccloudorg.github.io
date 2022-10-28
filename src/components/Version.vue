@@ -73,10 +73,75 @@ const cons = [
   }, {
     name: "gouldchu",
     avatar: "6470268"
+  }, {
+    name: "chenyan-master",
+    avatar: "26321493"
+  }, {
+    name: "sujianjob",
+    avatar: "28882742"
+  }, {
+    name: "partofme93",
+    avatar: "51112273"
   }
 ]
 
-const data = ref([
+const data = ref([{
+  version: "v2.0.0-rc",
+  time: "2022/10/28",
+  feat: [{
+    title: "新增可配置LDAP ObjectClass"
+  }, {
+    title: "POCO控件新增支持xpath定位、cssSelector定位"
+  }],
+  fix: [{
+    title: "修复安卓远控时在未初始化UIautomator情况下获取POCO控件失败的问题"
+  }, {
+    title: "修复iOS步骤执行时handleDes未使用同一个对象导致条件判断失效的问题",
+    url: "https://github.com/SonicCloudOrg/sonic-agent/pull/272"
+  }, {
+    title: "修复LDAP登陆失败引起的问题"
+  }, {
+    title: "修复部分情况下POCO节点获取失败的问题"
+  }, {
+    title: "修复安卓【修复触控】对横屏的坐标偏移问题"
+  }, {
+    title: "优化Agent本地图片处理，减少空间占用"
+  }, {
+    title: "修复自定义脚本Python无法使用的问题",
+    url: "https://sonic-cloud.wiki/d/1770"
+  }, {
+    title: "提升获取POCO控件速度与减少内存开销优化"
+  }, {
+    title: "修复部分Chrome版本切换WebView时的异常",
+    url: "https://github.com/SonicCloudOrg/sonic-agent/pull/273"
+  }, {
+    title: "修复在Mac上使用iOS远程Web调试时异常的问题",
+    url: "https://sonic-cloud.wiki/d/1778"
+  }, {
+    title: "优化切换Webview时对Mac m1的特殊兼容",
+    url: "https://sonic-cloud.wiki/d/1803"
+  }, {
+    title: "优化cdn找不到对应chromedriver时的可配置操作",
+    url: "https://sonic-cloud.wiki/d/1803"
+  }, {
+    title: "修复复制步骤后拖动排序异常的问题",
+    url: "https://sonic-cloud.wiki/d/1800"
+  }, {
+    title: "修复通知机器人通知的通过率小数点位数过多的问题",
+    url: "https://sonic-cloud.wiki/d/1822"
+  }, {
+    title: "优化部分机型连接Uia2Server超时的异常，延长等待时间与加入重试逻辑"
+  }, {
+    title: "修复runningTestsMap的key为rid导致条件判断失效遗漏用例执行的问题",
+    url: " https://github.com/SonicCloudOrg/sonic-agent/pull/276"
+  }, {
+    title: "优化安卓设备兼容部分电量白名单和后台运行权限"
+  }, {
+    title: "修复部分机型对5.x版本UIAutomator2 Server出现Crash问题",
+    url: "https://sonic-cloud.wiki/d/1790"
+  }],
+  con: getCon("ZhouYixun", "yaming116", "dongyi0412", "aoliaoaoaojiao", "Julian0229", "chenyan-master", "sujianjob", "partofme93")
+},
   {
     version: "v2.0.0-beta",
     time: "2022/10/20",
