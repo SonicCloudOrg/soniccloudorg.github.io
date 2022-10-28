@@ -46,7 +46,7 @@ implementation 'io.github.soniccloudorg:sonic-driver-core:1.1.8'
 自动化的前置配置Agent已大部分自动安装、检测与转发，如果在您的项目中单独使用sonic-driver-core，请往下翻阅。
 
 ### 安卓
-> 首次使用安卓需先安装两个uia2依赖（可以前往[appium-uiautomator2-server](https://github.com/SonicCloudOrg/sonic-appium-uiautomator2-server) 自行构建，也可以前往 [这个](https://github.com/SonicCloudOrg/sonic-agent/tree/main/plugins) 目录下下载对应apk）
+> 首次使用安卓需先安装两个uia2依赖（可以前往 [appium-uiautomator2-server](https://github.com/SonicCloudOrg/sonic-appium-uiautomator2-server) 自行构建，也可以前往 [这个](https://github.com/SonicCloudOrg/sonic-agent/tree/main/plugins) 目录下下载对应apk）
 > 1. appium-uiautomator2-server.apk
 > 2. appium-uiautomator2-server-test.apk
 > 
