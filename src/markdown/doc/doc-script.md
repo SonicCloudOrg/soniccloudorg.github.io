@@ -191,7 +191,7 @@ testLong()
 #### 执行fastbot
 下方展示了如何执行fastbot并将日志持续输出到测试报告，注意：执行前确保设备上有fastbot相关的jar哦，详情可以查看fastbot文档。
 
-因为fastbot底层与uia2有冲突，所以先执行了closeDriver()，运行完毕后，再重新startDriver()
+因为fastbot底层与uia2的instrumentation有冲突（虽然Sonic后续会做处理，但是最好还是避免冲突），所以先执行了closeDriver()，运行完毕后，再重新startDriver()
 ```
 import org.cloud.sonic.agent.bridge.android.AndroidDeviceBridgeTool;
 import org.cloud.sonic.agent.tests.LogUtil;
