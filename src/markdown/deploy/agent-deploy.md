@@ -2,7 +2,7 @@
 本文将介绍如何部署Agent端。
 <el-alert style="margin-top: 20px" title="注意" show-icon type="info" description="谨记一个主机只能部署一个Agent端，每个Agent的Key不能重复使用，多台设备可接入同一Agent" :closable="false"/>
 
-## Docker部署 **（注：仅Ubuntu可用！）** 
+## Docker部署 **（注：仅Ubuntu可用！可以点击 [这里](https://sonic-cloud.wiki/d/1255-agentsoniclinux) 查看官方推荐主机）** 
 该方式将一次性部署Agent端以及所需环境。
 
 准备工作：Docker，Sonic前后端部署完毕
@@ -19,7 +19,7 @@
 > 4. 部署完毕！自行插入设备即可。
 
 
-## jar方式
+## jar方式部署
 该方式将以本地jar包部署Agent端、Appium等等环境。
 
 > 0. **已知部分JDK出现不兼容的问题，Sonic官方推荐使用JDK15**，可以前往 [这里](https://docs.aws.amazon.com/corretto/latest/corretto-15-ug/downloads-list.html) 安装下载。
