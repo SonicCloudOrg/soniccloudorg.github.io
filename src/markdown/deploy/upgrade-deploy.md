@@ -9,8 +9,9 @@
 > 3. .env文件最下方新增LDAP_OBJECT_CLASS=person
 > 4. 执行docker-compose up -d
 > 5. Agent更新需替换旧版本plugins文件夹与jar文件。
-> 6. Agent的config/application-sonic-agent.yml字段有改动，需参考最新版yml备注进行配置。
-> 7. Agent本地环境不再依赖node、npm、谷歌浏览器、chromedriver，可以卸载来减少Agent空间。
+> 6. **已知部分JDK出现不兼容的问题，Sonic官方推荐使用JDK15**，可以前往 [这里](https://docs.aws.amazon.com/corretto/latest/corretto-15-ug/downloads-list.html) 安装下载。
+> 7. Agent的config/application-sonic-agent.yml字段有改动，需参考最新版yml备注进行配置。
+> 8. Agent本地环境不再依赖node、npm、谷歌浏览器、chromedriver，可以卸载来减少Agent空间。
 
 ## 从v1.4.1-release升级到v1.5.0-release
 
