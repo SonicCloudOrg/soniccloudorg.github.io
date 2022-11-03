@@ -15,7 +15,7 @@
 
 ## 搭建步骤
 
-**准备工作**：jdk15+、Idea
+**准备工作**：**jdk15**、Idea
 
 > 1. Fork [sonic-server](https://github.com/SonicCloudOrg/sonic-server) 仓库。
 > 2. 执行git clone指令，将您的仓库代码克隆到本地。
