@@ -45,7 +45,7 @@ v2.0.0-beta开始，Sonic会自动匹配并下载WebView对应Chrome版本的Chr
 
 ### 手动查找
 
-> 如果App为第三方App或者开发不能提供AndroidManifest.xml，我们也可以手动查找。以 **com.android.browser** 为例，将包名替换为您的被测应用包名：
+> 如果App为第三方App或者开发不能提供AndroidManifest.xml，我们也可以手动查找。以 **com.android.browser** 为例（将 com.android.browser 替换为您的被测应用包名）：
 > 
 > 1. 打开WebView页面
 > 2. 输入指令
