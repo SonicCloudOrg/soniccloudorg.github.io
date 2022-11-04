@@ -19,6 +19,11 @@ import c0 from '../assets/coo.png'
 import c1 from '../assets/banner.png'
 import c2 from '../assets/banner2.png'
 import c4 from '../assets/banner3.png'
+import con1 from '../assets/con1.jpg'
+import con2 from '../assets/con2.jpg'
+import con3 from '../assets/con3.jpg'
+import con4 from '../assets/con4.jpg'
+import con5 from '../assets/con5.jpg'
 import {useRouter} from "vue-router";
 import {onMounted, ref} from "vue";
 
@@ -50,28 +55,22 @@ const statisticsData = [
 ]
 const news = ref([
   {
+    title: "iOS WebView/H5调试新姿势",
+    time: "Sonic平台周边生态sib推出新功能webinspector啦！",
+    url: "https://sonic-cloud.wiki/d/1741-ios-webviewh5",
+    pic: honor
+  },
+  {
     title: "恭喜Sonic获得MTSC 2022年度最佳开源项目评选第一名",
     time: "历时两个多月的初选、海选和专家评审后，「MTSC 2022年度最佳开源项目」评选终于尘埃落定",
     url: "https://sonic-cloud.wiki/d/1471-sonicmtsc-2022",
     pic: c2
   },
   {
-    title: "【Sonic摘星计划】参与commit贡献赢取Sonic专属纪念品！",
-    time: "为了Sonic更好地发展，在此举行Sonic摘星计划~ 荣誉证书等你来拿！",
-    url: "https://sonic-cloud.wiki/d/1510-soniccommitsonic",
-    pic: honor
-  },
-  {
     title: "不想折腾python环境又想跨平台进行iOS自动化怎么办？不妨试试sib~",
     time: "Sonic组织推出的超方便iOS调试工具",
     url: "https://sonic-cloud.wiki/d/1197-pythoniossib",
     pic: c1
-  },
-  {
-    title: "Sonic项目与网易AirtestProject达成合作关系啦！",
-    time: "今后双方合作会碰撞出什么样的火花呢？点击下方马上了解！",
-    url: "https://sonic-cloud.wiki/d/843-sonicairtestproject",
-    pic: c0
   }, {
     title: "Sonic组织已加入OpenCollective啦！",
     time: "",
@@ -94,6 +93,7 @@ const devices = [
     name: '智能手表'
   }
 ]
+const conList = ref([con1, con2, con3, con4, con5])
 </script>
 <template>
   <el-backtop target=".demo-tree-scrollbar .el-scrollbar__wrap" :bottom="100"></el-backtop>
@@ -153,37 +153,35 @@ const devices = [
         </el-carousel>
       </div>
 
-      <!--      <div class="title">-->
-      <!--        <span class="verh2">-->
-      <!--          合作伙伴-->
-      <!--        </span>-->
-      <!--      </div>-->
-      <!--      <div style="padding: 0 20%;">-->
-      <!--        <el-divider></el-divider>-->
-      <!--      </div>-->
-      <!--      <div class="sponsor">-->
-      <!--        <a href="https://airtest.netease.com/" target="_blank">-->
-      <!--          <img src="https://airtest.netease.com/static/img/icon/logo.png" alt="Airtest" width="450"/>-->
-      <!--        </a>-->
-      <!--      </div>-->
+      <div class="title">
+              <span class="verh2">
+                Sonic荣誉墙
+              </span>
+      </div>
+      <div style="padding: 0 20%;">
+        <el-divider></el-divider>
+      </div>
+      <div class="sponsor">
+        🎉 MTSC 2022年度最佳开源项目评选第一名
+      </div>
 
-      <!--      <div class="title">-->
-      <!--        <span class="verh2">-->
-      <!--          金牌赞助商-->
-      <!--        </span>-->
-      <!--      </div>-->
-      <!--      <div style="padding: 0 20%;">-->
-      <!--        <el-divider></el-divider>-->
-      <!--      </div>-->
-      <!--      <div class="sponsor">-->
-      <!--        <a href="https://www.testing-studio.com/" target="_blank">-->
-      <!--          <img src="https://ceshiren.com/uploads/default/original/3X/7/0/70299922296e93e2dcab223153a928c4bfb27df9.jpeg"-->
-      <!--               alt="霍格沃兹测试开发学社" width="450"/>-->
-      <!--        </a>-->
-      <!--        <a style="margin-top: 20px" href="https://ec.diwork.com/" target="_blank">-->
-      <!--          <img src="https://ec.diwork.com/html/index/img/newlogo.png" alt="友空间" width="450"/>-->
-      <!--        </a>-->
-      <!--      </div>-->
+      <div style="margin-top: 100px">
+              <span class="verh1">
+                Sonic摘星计划贡献墙
+              </span>
+        <div style="color: #909399;font-size: 14px">更多用户正在加入...</div>
+        <div style="padding: 0 20%;">
+          <el-divider>
+          </el-divider>
+          <el-carousel type="card" height="280px">
+            <el-carousel-item v-for="c in conList" :key="c">
+              <el-image style="height: 280px" :src="c"/>
+            </el-carousel-item>
+          </el-carousel>
+        </div>
+        <el-button type="primary" size="large" @click="open('https://sonic-cloud.wiki/d/1510-soniccommitsonic')">我要上墙
+        </el-button>
+      </div>
 
       <div class="title">
         <span class="verh2">
@@ -328,15 +326,6 @@ const devices = [
         </div>
       </div>
 
-      <!--      <div style="margin-top: 100px">-->
-      <!--        <span class="verh1">-->
-      <!--          贡献者荣誉墙-->
-      <!--        </span>-->
-      <!--        <div style="padding: 0 20%;">-->
-      <!--          <el-divider></el-divider>-->
-      <!--        </div>-->
-      <!--      </div>-->
-
     </div>
     <!-- 页脚 -->
     <el-footer style="margin-top: 75px">
@@ -448,7 +437,7 @@ const devices = [
 
 .capacity-wrapper {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   margin-top: 50px
 }
 
