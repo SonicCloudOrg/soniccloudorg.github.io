@@ -2,7 +2,7 @@
 
 本文将介绍如何升级到最新版本。
 
-## 从v1.5.0-release升级到v2.0.0-rc
+## 从v1.5.0-release升级到v2.0.0-release
 > 0. server升级前，先备份数据库。
 > 1. 执行docker-compose down
 > 2. 替换旧docker-compose.yml为最新版docker-compose.yml。

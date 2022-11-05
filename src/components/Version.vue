@@ -86,6 +86,51 @@ const cons = [
 ]
 
 const data = ref([{
+  version: "v2.0.0-release",
+  time: "2022/11/5",
+  feat: [{
+    title: "iOS新增POCO控件操作相关步骤"
+  },{
+    title: "iOS远控页面新增快速截图"
+  },{
+    title: "POCO控件新增全局查找策略"
+  },{
+    title: "新增支持友空间机器人"
+  }],
+  fix:[{
+    title: "调整远控页面由当前页面跳转修改为跳转至新标签页"
+  },{
+    title: "优化运行套件runSuite接口返回信息",
+    url:"https://sonic-cloud.wiki/d/1834-testsuitesrunsuite-id"
+  },{
+    title: "修复iOS远控选择上下布局时无法拖动的问题"
+  },{
+    title: "修复iOS远控拖动投屏范围后，控件定位时渲染区块偏移的问题"
+  },{
+    title: "稍微提高iOS投屏流畅度与清晰度"
+  },{
+    title: "优化UIa2Server启动时默认为DISABLE_SUPPRESS_ACCESSIBILITY_SERVICES"
+  },{
+    title: "修复页面分辨率比较小时，自定义脚本保存按钮无法点击的问题",
+    url: "https://sonic-cloud.wiki/d/1811"
+  },{
+    title: "修复Cocos-creator、Cocos-js获取控件失败的Bug"
+  },{
+    title: "启用Uia2Server时禁用谷歌分析以防止可能的致命异常"
+  },{
+    title: "修复通知机器人状态图片显示不了的问题"
+  },{
+    title: "修复远控时部分横屏应用无法触控的问题"
+  },{
+    title: "修复获取部分webView进程出现404时导致远控失败的问题",
+    url: "https://sonic-cloud.wiki/d/1868"
+  },{
+    title: "修复部分设备安装Sonic APK时无法使用-g导致安装失败的问题"
+  },{
+    title: "修复随机事件使用异常的问题"
+  }],
+  con: getCon("ZhouYixun", "Roy2017", "Lewage59", "Julian0229")
+}, {
   version: "v2.0.0-rc",
   time: "2022/10/28",
   feat: [{
