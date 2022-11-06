@@ -20,7 +20,7 @@
 > 1. Fork [sonic-agent](https://github.com/SonicCloudOrg/sonic-agent) 仓库。
 > 2. 执行git clone指令，将您的仓库代码克隆到本地。
 > 3. 根据注释修改config的application-sonic-agent.yml，开发环境时，**sonic.server.port** 填写为gateway服务端口，**org/cloud/sonic/agent/transport/TransportConnectionThread.java** 与 **org/cloud/sonic/agent/tools/file/UploadTools.java** 去掉url中的 **/server**。
-> 4. 默认plugins目录下缺少sonic-ios-bridge、sonic-android-supply和sonic-go-mitmproxy二进制文件，或者存在但是跟您开发环境的平台一致，可以根据您的开发系统去仓库下载对应的包。（注意版本要对应resources/application.yml下的版本哦，如果不想下载，将application-sonic-agent.yml的ios、use-sas和sgm的enable改为false。）
+> 4. 默认plugins目录下缺少sonic-ios-bridge、sonic-android-supply和sonic-go-mitmproxy二进制文件，或者存在但是跟您开发环境的平台不一致，可以根据您的开发系统去仓库下载对应的包。（注意版本要对应resources/application.yml下的版本哦，如果不想下载，将application-sonic-agent.yml的ios、use-sas和sgm的enable改为false。）
 > 5. 如果idea启动，记得更改pom.xml中properties.platform的平台。（旧版本代码只需idea选择对应profile）
 > 5. 启动AgentApplication。
 > 6. 恭喜，搭建完毕！
