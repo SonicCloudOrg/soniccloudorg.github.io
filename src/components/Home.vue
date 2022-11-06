@@ -166,7 +166,7 @@ const conList = ref([con1, con2, con3, con4, con5])
       </div>
 
       <div style="margin-top: 100px">
-              <span class="verh1">
+              <span class="verh2">
                 Sonic摘星计划贡献墙
               </span>
         <div style="color: #909399;font-size: 14px">更多用户正在加入...</div>
