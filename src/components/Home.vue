@@ -45,12 +45,12 @@ const statisticsData = [
   {
     tipContent: 'Sonic社区总回复数',
     linkUrl: 'https://sonic-cloud.wiki',
-    img: 'https://img.shields.io/badge/replies%20-10.7k-ff69b4?style=social&logo=LiveChat'
+    img: 'https://img.shields.io/badge/replies%20-11.0k-ff69b4?style=social&logo=LiveChat'
   },
   {
     tipContent: '镜像仓库总下载量',
     linkUrl: 'https://github.com/SonicCloudOrg',
-    img: 'https://img.shields.io/badge/Docker%20pulls%20-59.1k-important'
+    img: 'https://img.shields.io/badge/Docker%20pulls%20-60.9k-important'
   }
 ]
 const news = ref([
