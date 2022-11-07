@@ -40,6 +40,10 @@ const tree = ref([
         name: 'control'
       },
       {
+        label: "网页调试",
+        name: 'webview'
+      },
+      {
         label: "控件获取",
         name: 'element'
       },
@@ -50,10 +54,6 @@ const tree = ref([
       {
         label: "网络抓包",
         name: 'proxy'
-      },
-      {
-        label: "网页调试",
-        name: 'webview'
       },
       {
         label: "运行测试",
