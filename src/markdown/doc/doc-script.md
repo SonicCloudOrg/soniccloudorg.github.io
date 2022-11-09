@@ -136,8 +136,8 @@ def testPoco(){
       androidStepHandler.startPocoDriver(handleDes,"UNITY_3D",5001)
       for(int i=0;i<5;i++){
         androidStepHandler
-          .pocoSwipe(handleDes,"Star"+[i],"poco(\"playDragAndDrop\").child(\"star\")["+i+"]",
-                    "Shell","poco(\"shell\")")
+          .pocoSwipe(handleDes,"Star"+[i],"poco","poco(\"playDragAndDrop\").child(\"star\")["+i+"]",
+                    "Shell","poco","poco(\"shell\")")
         log.sendStepLog(StepType.INFO,"Poco Swipe","Move Done.")
       }
       androidStepHandler.closePocoDriver(handleDes)
