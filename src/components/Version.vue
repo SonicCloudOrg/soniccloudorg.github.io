@@ -82,10 +82,40 @@ const cons = [
   }, {
     name: "partofme93",
     avatar: "51112273"
+  },{
+    name: "dwqdaiwenqi",
+    avatar:"18524392"
   }
 ]
 
 const data = ref([{
+  version:"v2.0.1",
+  time:"2022/11/11",
+  fix:[{
+     title:"修复Docker版Agent切换Webview失败的问题",
+     url:"https://sonic-cloud.wiki/d/1894"
+  },{
+     title:"修复部分前端文案错误",
+      url:"https://sonic-cloud.wiki/d/1891"
+   },{
+     title:"修复友空间机器人发送失败的问题"
+   },{
+     title:"修复当分辨率不一致时，图片相似度无法使用的问题",
+     url:"https://sonic-cloud.wiki/d/594"
+   },{
+     title:"添加切换窗口模式，解决UI自动化获取不了多窗口控件的问题",
+     url:"https://sonic-cloud.wiki/d/1922"
+   },{
+     title:"优化添加控件页面关联项目体验"
+   },{
+     title:"调整【切换WebView】、【切换Handle】步骤到WebView控件目录下"
+   },{
+     title:"获取控件时优化多窗口模式选项"
+   },{
+     title:"前端引入eslint，提高开发体验"
+   }],
+   con: getCon("ZhouYixun", "dongyi0412", "dwqdaiwenqi")
+},{
   version: "v2.0.0-release",
   time: "2022/11/5",
   feat: [{
