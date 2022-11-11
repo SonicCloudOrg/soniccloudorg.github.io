@@ -85,6 +85,46 @@ StepHandler以外能力，可以直接import对应包或者直接引用进行实
 > iosStepHandler.log.sendStepLog(1, "获取udId", "值：" + udId)
 > ```
 
+### 断言
+
+> 有assertEquals、assertNotEquals、assertNull、assertNotNull等等方法可以直接使用
+> 
+> ```
+> import static org.testng.Assert.*;
+> 
+> assertEquals(1+1,2)
+> ```
+
+### 退出Driver
+
+> 如果在您的第三方工具中有基于instrument的框架（例如fastbot、uiautomator2-python、poco-service等等），会跟Sonic已有进程冲突导致阻塞状态，这时我们可以先停止Sonic的Driver。
+> Android: 
+> ```
+> import org.cloud.sonic.agent.bridge.android.AndroidDeviceBridgeTool;
+> //停止Driver
+> androidStepHandler.getAndroidDriver().closeDriver()
+> 
+> //第三方操作
+> // xxxxxx
+> 
+> //重新启动Driver
+> int port = AndroidDeviceBridgeTool.startUiaServer(androidStepHandler.iDevice);
+> androidStepHandler.startAndroidDriver(androidStepHandler.iDevice, port)
+> ```
+>
+> iOS: 
+> ```
+> import org.cloud.sonic.agent.bridge.ios.SibTool;
+> //停止Driver
+> iosStepHandler.closeIOSDriver()
+> 
+> //第三方操作
+> // xxxxxx
+> 
+> //重新启动Driver
+> iosStepHandler.startIOSDriver(udId, SibTool.startWda(udId)[0]);
+> ```
+
 
 ### 示例脚本展示
 
