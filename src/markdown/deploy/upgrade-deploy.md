@@ -2,6 +2,32 @@
 
 本文将介绍如何升级到最新版本。
 
+## 关于版本规则变动
+v2.0.0-release起，Sonic版本规则更改如下：
+
+1. 第一位是大版本号，基本为一年一更
+2. 第二位是有新功能合入就会加1（特性版本，一般月更）
+3. 第三位是修复Bug就会加1（修复版本，一般半周到一周更一次）
+
+以v2.0.1为例，就是修复2.0.0的Bug。
+
+如果有大量新功能发布，就会更新2.1.0。
+
+如果2.1.0上线后有Bug，那么下版本就是2.1.1，如果仍有Bug，那么会继续发布2.1.2。
+
+**如果想追求稳定的版本，那么应该是上一个特性版本的最后一个修复版本为最稳定。**
+
+例如2.2.0的上一个版本为2.1.15，那么2.1.15版本就是2.1.x的最稳定的版本
+
+
+## 从v2.0.0-release升级到v2.0.x
+
+> 0. 升级前先备份Mysql数据库。
+> 1. 在server目录下执行docker-compose down
+> 2. 直接下载最新版docker-compose.yml
+> 3. 执行docker-compose up -d
+> 4. Agent更新需替换旧版本plugins文件夹与jar文件。
+
 ## 从v1.5.0-release升级到v2.0.0-release
 > 0. server升级前，先备份数据库。
 > 1. 执行docker-compose down
@@ -19,7 +45,7 @@
 > 1. 执行docker-compose down
 > 2. 更改旧docker-compose.yml文件中v1.4.1-release为v1.5.0-release（或直接下载最新版docker-compose.yml）
 > 3. 执行docker-compose up -d
-> 4. agent更新需替换旧版本plugins文件夹与jar文件。
+> 4. Agent更新需替换旧版本plugins文件夹与jar文件。
 
 ## 其他旧版本升级到v1.4.1-release
 
