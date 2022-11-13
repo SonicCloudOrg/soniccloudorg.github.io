@@ -27,7 +27,7 @@ import con5 from '../assets/con5.jpg'
 import {useRouter} from "vue-router";
 import {onMounted, ref} from "vue";
 import 'vue3-video-play/dist/style.css';
-import { videoPlay } from 'vue3-video-play';
+import {videoPlay} from 'vue3-video-play';
 
 const open = (url) => {
   window.open(url, '_blank')
@@ -107,33 +107,33 @@ const conList = ref([con1, con2, con3, con4, con5])
     <!-- 顶部标语 -->
     <div style="position: relative;padding: 120px 0;display: flex;align-items: center;justify-content: center">
       <div style="margin-right:50px">
-      <div class="bg"></div>
-      <div class="bg bg2"></div>
-      <div class="bg bg3"></div>
-      <h1 class="brand-slogan">“ For You，For Free，Forever ”</h1>
-      <!-- 相关数据统计 -->
-      <div class="statistics">
-        <el-tooltip
-            v-for="item in statisticsData"
-            effect="dark"
-            :content="item.tipContent"
-            placement="top"
-        >
-          <a :href="item.linkUrl" class="statistics-link" target="_blank">
-            <img :src="item.img"/>
-          </a>
-        </el-tooltip>
-      </div>
-      <h4 class="brand-desc">免费开源的云真机测试平台，用心打造更好的使用体验。</h4>
-      <div style="text-align: center">
-        <el-button type="primary" size="small" @click="router.push('/Deploy')">马上使用</el-button>
-        <el-button type="primary" size="small" @click="open('https://sonic-cloud.wiki/')">用户社区
-        </el-button>
-      </div>
-      <h5>Made with 🧡 by SonicCloudOrg</h5>
+        <div class="bg"></div>
+        <div class="bg bg2"></div>
+        <div class="bg bg3"></div>
+        <h1 class="brand-slogan">“ For You，For Free，Forever ”</h1>
+        <!-- 相关数据统计 -->
+        <div class="statistics">
+          <el-tooltip
+              v-for="item in statisticsData"
+              effect="dark"
+              :content="item.tipContent"
+              placement="top"
+          >
+            <a :href="item.linkUrl" class="statistics-link" target="_blank">
+              <img :src="item.img"/>
+            </a>
+          </el-tooltip>
+        </div>
+        <h4 class="brand-desc">免费开源的云真机测试平台，用心打造更好的使用体验。</h4>
+        <div style="text-align: center">
+          <el-button type="primary" size="small" @click="router.push('/Deploy')">马上使用</el-button>
+          <el-button type="primary" size="small" @click="open('https://sonic-cloud.wiki/')">用户社区
+          </el-button>
+        </div>
+        <h5>Made with 🧡 by SonicCloudOrg</h5>
       </div>
       <div>
-      <video-play v-bind="videoOptions" src="https://sonic-record-hongkong.oss-cn-hongkong.aliyuncs.com/demo.mp4" />
+        <video-play v-bind="videoOptions" src="https://sonic-record-hongkong.oss-cn-hongkong.aliyuncs.com/demo.mp4"/>
       </div>
     </div>
     <!-- 主体内容 -->
@@ -170,7 +170,7 @@ const conList = ref([con1, con2, con3, con4, con5])
       <div style="padding: 0 20%;">
         <el-divider></el-divider>
       </div>
-      <div class="sponsor">
+      <div>
         🎉 MTSC 2022年度最佳开源项目评选第一名
       </div>
 
@@ -268,7 +268,7 @@ const conList = ref([con1, con2, con3, con4, con5])
 
       <div style="margin-top: 60px">
          <span class="verh2">
-          Sonic的优势
+          Sonic的价值与产出
          </span>
       </div>
       <div style="padding: 0 20%;">
@@ -299,7 +299,7 @@ const conList = ref([con1, con2, con3, con4, con5])
               type="primary"
               :hollow="true"
           >
-            开源持续的更新迭代速度，仔细聆听用户的需求。
+            完全开源免费的平台，快速的更新迭代速度，创造了多个领域新技术。
           </el-timeline-item>
           <el-timeline-item
               type="primary"
@@ -332,6 +332,27 @@ const conList = ref([con1, con2, con3, con4, con5])
           </el-button>
         </div>
       </div>
+
+      <div class="title">
+              <span class="verh2">
+                金牌赞助商
+              </span>
+      </div>
+      <div style="padding: 0 20%;">
+        <el-divider></el-divider>
+      </div>
+      <div class="sponsor">
+        <a href="https://www.testing-studio.com/" target="_blank">
+          <img src="https://ceshiren.com/uploads/default/original/3X/7/0/70299922296e93e2dcab223153a928c4bfb27df9.jpeg"
+               alt="霍格沃兹测试开发学社" width="350"/>
+        </a>
+        <a style="margin-left: 20px" href="https://ec.diwork.com/" target="_blank">
+          <img src="https://ec.diwork.com/html/index/img/newlogo.png" alt="友空间" width="350"/>
+        </a>
+      </div>
+      <a href="mailto:291028775@qq.com" target="_blank">
+        <el-button type="primary" plain size="small" style="width: 150px;margin-top:30px">成为赞助商</el-button>
+      </a>
 
     </div>
     <!-- 页脚 -->
@@ -385,6 +406,12 @@ const conList = ref([con1, con2, con3, con4, con5])
   margin: 24px 0;
 }
 
+.sponsor {
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
 .statistics {
   height: 20px;
 }
@@ -414,10 +441,6 @@ const conList = ref([con1, con2, con3, con4, con5])
 
 .news-time {
   color: aliceblue;
-}
-
-.sponsor a {
-  display: block;
 }
 
 .devices {
@@ -470,10 +493,6 @@ const conList = ref([con1, con2, con3, con4, con5])
     font-size: 14px;
   }
 
-  .sponsor img {
-    width: 300px;
-  }
-
   .devices {
     margin: 0;
   }
@@ -507,6 +526,10 @@ const conList = ref([con1, con2, con3, con4, con5])
 
   .capacity-list {
     padding-right: 40px;
+  }
+
+  .sponsor{
+    display: block;
   }
 }
 
