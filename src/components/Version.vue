@@ -82,81 +82,95 @@ const cons = [
   }, {
     name: "partofme93",
     avatar: "51112273"
-  },{
+  }, {
     name: "dwqdaiwenqi",
-    avatar:"18524392"
+    avatar: "18524392"
   }
 ]
 
 const data = ref([{
-  version:"v2.0.1",
-  time:"2022/11/11",
-  fix:[{
-     title:"修复Docker版Agent切换Webview失败的问题",
-     url:"https://sonic-cloud.wiki/d/1894"
-  },{
-     title:"修复部分前端文案错误",
-      url:"https://sonic-cloud.wiki/d/1891"
-   },{
-     title:"修复友空间机器人发送失败的问题"
-   },{
-     title:"修复当分辨率不一致时，图片相似度无法使用的问题",
-     url:"https://sonic-cloud.wiki/d/594"
-   },{
-     title:"添加切换窗口模式，解决UI自动化获取不了多窗口控件的问题",
-     url:"https://sonic-cloud.wiki/d/1922"
-   },{
-     title:"优化添加控件页面关联项目体验"
-   },{
-     title:"调整【切换WebView】、【切换Handle】步骤到WebView控件目录下"
-   },{
-     title:"获取控件时优化多窗口模式选项"
-   },{
-     title:"前端引入eslint，提高开发体验"
-   }],
-   con: getCon("ZhouYixun", "dongyi0412", "dwqdaiwenqi")
-},{
+  version: "v2.0.2",
+  time: "2022/11/13",
+  fix: [{
+    title: "优化iOS投屏逻辑，修复Chrome跨域隐私引起不可投屏问题与前端console报错问题"
+  }, {
+    title: "优化iOS快速截图的截图、清空、下载逻辑"
+  }, {
+    title: "提升40%左右iOS获取控件速度"
+  }, {
+    title: "新增iPhone14系列、iPad Air 5系列中文名映射",
+    url: "https://sonic-cloud.wiki/d/1918"
+  }],
+  con: getCon("ZhouYixun")
+}, {
+  version: "v2.0.1",
+  time: "2022/11/11",
+  fix: [{
+    title: "修复Docker版Agent切换Webview失败的问题",
+    url: "https://sonic-cloud.wiki/d/1894"
+  }, {
+    title: "修复部分前端文案错误",
+    url: "https://sonic-cloud.wiki/d/1891"
+  }, {
+    title: "修复友空间机器人发送失败的问题"
+  }, {
+    title: "修复当分辨率不一致时，图片相似度无法使用的问题",
+    url: "https://sonic-cloud.wiki/d/594"
+  }, {
+    title: "添加切换窗口模式，解决UI自动化获取不了多窗口控件的问题",
+    url: "https://sonic-cloud.wiki/d/1922"
+  }, {
+    title: "优化添加控件页面关联项目体验"
+  }, {
+    title: "调整【切换WebView】、【切换Handle】步骤到WebView控件目录下"
+  }, {
+    title: "获取控件时优化多窗口模式选项"
+  }, {
+    title: "前端引入eslint，提高开发体验"
+  }],
+  con: getCon("ZhouYixun", "dongyi0412", "dwqdaiwenqi")
+}, {
   version: "v2.0.0-release",
   time: "2022/11/5",
   feat: [{
     title: "iOS新增POCO控件操作相关步骤"
-  },{
+  }, {
     title: "iOS远控页面新增快速截图"
-  },{
+  }, {
     title: "POCO控件新增全局查找策略"
-  },{
+  }, {
     title: "新增支持友空间机器人"
   }],
-  fix:[{
+  fix: [{
     title: "调整远控页面由当前页面跳转修改为跳转至新标签页"
-  },{
+  }, {
     title: "优化运行套件runSuite接口返回信息",
-    url:"https://sonic-cloud.wiki/d/1834-testsuitesrunsuite-id"
-  },{
+    url: "https://sonic-cloud.wiki/d/1834-testsuitesrunsuite-id"
+  }, {
     title: "修复iOS远控选择上下布局时无法拖动的问题"
-  },{
+  }, {
     title: "修复iOS远控拖动投屏范围后，控件定位时渲染区块偏移的问题"
-  },{
+  }, {
     title: "稍微提高iOS投屏流畅度与清晰度"
-  },{
+  }, {
     title: "优化UIa2Server启动时默认为DISABLE_SUPPRESS_ACCESSIBILITY_SERVICES"
-  },{
+  }, {
     title: "修复页面分辨率比较小时，自定义脚本保存按钮无法点击的问题",
     url: "https://sonic-cloud.wiki/d/1811"
-  },{
+  }, {
     title: "修复Cocos-creator、Cocos-js获取控件失败的Bug"
-  },{
+  }, {
     title: "启用Uia2Server时禁用谷歌分析以防止可能的致命异常"
-  },{
+  }, {
     title: "修复通知机器人状态图片显示不了的问题"
-  },{
+  }, {
     title: "修复远控时部分横屏应用无法触控的问题"
-  },{
+  }, {
     title: "修复获取部分webView进程出现404时导致远控失败的问题",
     url: "https://sonic-cloud.wiki/d/1868"
-  },{
+  }, {
     title: "修复部分设备安装Sonic APK时无法使用-g导致安装失败的问题"
-  },{
+  }, {
     title: "修复随机事件使用异常的问题"
   }],
   con: getCon("ZhouYixun", "Roy2017", "Lewage59", "Julian0229")

@@ -64,6 +64,7 @@ const open = (url) => {
             sonic-ios-webkit-adapter
           </el-menu-item>
         </el-sub-menu>
+        <el-menu-item index="/Cabinet" @click="router.push('/Home')" disabled>硬件方案(即将开放)</el-menu-item>
         <el-sub-menu index="1">
           <template #title>其他</template>
           <el-menu-item index="/Version" @click="router.push('/Version')">版本记录
