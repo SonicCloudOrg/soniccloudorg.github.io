@@ -64,18 +64,14 @@ const open = (url) => {
             sonic-ios-webkit-adapter
           </el-menu-item>
         </el-sub-menu>
-        <el-menu-item index="/Cabinet" @click="router.push('/Home')" disabled>硬件方案(即将开放)</el-menu-item>
+<!--        <el-menu-item index="/Cabinet" @click="router.push('/Home')" disabled>硬件方案(即将开放)</el-menu-item>-->
+        <el-menu-item index="/Version" @click="router.push('/Version')">版本记录
+        </el-menu-item>
         <el-sub-menu index="1">
           <template #title>其他</template>
-          <el-menu-item index="/Version" @click="router.push('/Version')">版本记录
-          </el-menu-item>
-          <el-menu-item index="1-2" @click="open('https://sonic-cloud.wiki')">
-            <div style="display: flex"><span>用户社区</span>
-              <el-badge value="Hot!" class="item" style="margin-top: -2px;margin-left: 5px">
-              </el-badge>
-            </div>
-          </el-menu-item>
+          <el-menu-item index="1-2" @click="open('https://sonic-cloud.wiki')">用户社区</el-menu-item>
           <el-menu-item index="/Mine" @click="open('https://sonic-cloud.wiki/p/1-contact')">联系我们</el-menu-item>
+          <el-menu-item index="/Open" @click="open('https://opencollective.com/soniccloudorg')">Open Collective</el-menu-item>
         </el-sub-menu>
         <el-menu-item><a href="https://github.com/SonicCloudOrg" target="_blank"><img src="../assets/github.png"
                                                                                       height="30"/></a>

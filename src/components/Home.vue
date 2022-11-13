@@ -26,6 +26,8 @@ import con4 from '../assets/con4.jpg'
 import con5 from '../assets/con5.jpg'
 import {useRouter} from "vue-router";
 import {onMounted, ref} from "vue";
+import 'vue3-video-play/dist/style.css';
+import { videoPlay } from 'vue3-video-play';
 
 const open = (url) => {
   window.open(url, '_blank')
@@ -93,13 +95,18 @@ const devices = [
     name: '智能手表'
   }
 ]
+const videoOptions = ref({
+  height: 'auto',
+  controlBtns: ['audioTrack', 'quality', 'volume', 'fullScreen', 'speedRate'],
+});
 const conList = ref([con1, con2, con3, con4, con5])
 </script>
 <template>
   <el-backtop target=".demo-tree-scrollbar .el-scrollbar__wrap" :bottom="100"></el-backtop>
   <el-scrollbar class="demo-tree-scrollbar" style="height: 100%">
     <!-- 顶部标语 -->
-    <div style="position: relative;padding: 120px 0">
+    <div style="position: relative;padding: 120px 0;display: flex;align-items: center;justify-content: center">
+      <div style="margin-right:50px">
       <div class="bg"></div>
       <div class="bg bg2"></div>
       <div class="bg bg3"></div>
@@ -120,12 +127,14 @@ const conList = ref([con1, con2, con3, con4, con5])
       <h4 class="brand-desc">免费开源的云真机测试平台，用心打造更好的使用体验。</h4>
       <div style="text-align: center">
         <el-button type="primary" size="small" @click="router.push('/Deploy')">马上使用</el-button>
-        <el-button type="primary" size="small" @click="open('https://zhuanlan.zhihu.com/p/449187669')">演示视频
-        </el-button>
         <el-button type="primary" size="small" @click="open('https://sonic-cloud.wiki/')">用户社区
         </el-button>
       </div>
       <h5>Made with 🧡 by SonicCloudOrg</h5>
+      </div>
+      <div>
+      <video-play v-bind="videoOptions" src="https://sonic-record-hongkong.oss-cn-hongkong.aliyuncs.com/demo.mp4" />
+      </div>
     </div>
     <!-- 主体内容 -->
     <div class="container">
@@ -319,8 +328,6 @@ const conList = ref([con1, con2, con3, con4, con5])
         </span>
         <div>
           <el-button type="primary" size="large" @click="router.push('/Deploy')">马上使用</el-button>
-          <el-button type="primary" size="large" @click="open('https://zhuanlan.zhihu.com/p/449187669')">演示视频
-          </el-button>
           <el-button type="primary" size="large" @click="open('https://sonic-cloud.wiki/')">用户社区
           </el-button>
         </div>
