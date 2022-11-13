@@ -268,7 +268,7 @@ const conList = ref([con1, con2, con3, con4, con5])
 
       <div style="margin-top: 60px">
          <span class="verh2">
-          Sonic方案与产出
+          Sonic的优势
          </span>
       </div>
       <div style="padding: 0 20%;">
@@ -299,7 +299,7 @@ const conList = ref([con1, con2, con3, con4, con5])
               type="primary"
               :hollow="true"
           >
-            持续的更新迭代速度，仔细聆听用户的需求。
+            开源持续的更新迭代速度，仔细聆听用户的需求。
           </el-timeline-item>
           <el-timeline-item
               type="primary"
@@ -311,7 +311,7 @@ const conList = ref([con1, con2, con3, con4, con5])
               type="primary"
               :hollow="true"
           >
-            超低的使用门槛，超便捷的维护方式，趣味交互让用户不再感到繁琐。
+            支持无限扩容设备，一键使用Android、iOS设备调试，设备管理不再繁琐。
           </el-timeline-item>
           <el-timeline-item
               type="primary"
