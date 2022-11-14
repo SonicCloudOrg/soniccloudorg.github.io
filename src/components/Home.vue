@@ -354,6 +354,19 @@ const conList = ref([con1, con2, con3, con4, con5])
         <el-button type="primary" plain size="small" style="width: 150px;margin-top:30px">成为赞助商</el-button>
       </a>
 
+      <div class="title">
+              <span class="verh2">
+                贡献者们
+              </span>
+      </div>
+      <div style="padding: 0 20%;">
+        <el-divider></el-divider>
+      </div>
+      <div>
+        <img src="https://opencollective.com/soniccloudorg/contributors.svg?width=800&button=false"
+             alt="contribute" width="950"/>
+      </div>
+
     </div>
     <!-- 页脚 -->
     <el-footer style="margin-top: 75px">
@@ -528,7 +541,7 @@ const conList = ref([con1, con2, con3, con4, con5])
     padding-right: 40px;
   }
 
-  .sponsor{
+  .sponsor {
     display: block;
   }
 }
