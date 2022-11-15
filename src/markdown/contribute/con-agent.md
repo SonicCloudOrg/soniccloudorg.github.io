@@ -28,7 +28,8 @@
 
 ## 打包
 
-> 更改pom.xml中properties.platform的平台。platform为您的平台，可选为 windows-x86, windows-x86_64, macosx-arm64, macosx-x86_64, linux-arm64, linux-x86, linux-x86_64
+> 1. 更改pom.xml中properties.platform的平台。platform为您的平台，可选为 windows-x86, windows-x86_64, macosx-arm64, macosx-x86_64, linux-arm64, linux-x86, linux-x86_64
+> 2. 执行命令
 > ```
 > mvn package
 > ```
