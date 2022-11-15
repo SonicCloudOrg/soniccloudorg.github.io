@@ -26,6 +26,17 @@
 > 6. 恭喜，搭建完毕！
 > 7. 开发完毕后，push到自己的仓库，然后可以给Sonic原仓库提起pr哦！（建议贡献前先开启issue讨论，防止跟组织计划进度有冲突哦）
 
+## 打包
+
+platform为您的平台，可选为 windows-x86, windows-x86_64, macosx-arm64, macosx-x86_64, linux-arm64, linux-x86, linux-x86_64
+```
+mvn package -Dplatform={platform}
+```
+例如
+```
+mvn package -Dplatform=windows-x86_64
+```
+
 ## 本文贡献者
 <div class="cont">
 <a href="https://gitee.com/ZhouYixun" target="_blank">
