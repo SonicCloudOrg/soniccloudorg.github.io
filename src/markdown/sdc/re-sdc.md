@@ -1,6 +1,6 @@
 # sonic-driver-core
 
-本文为Sonic UI自动化Driver核心sonic-driver-core的介绍与原理简述。 👉[Github地址](https://github.com/SonicCloudOrg/sonic-driver-core) 👉[Java Doc](https://s01.oss.sonatype.org/service/local/repositories/releases/archive/io/github/soniccloudorg/sonic-driver-core/1.1.10/sonic-driver-core-1.1.10-javadoc.jar/!/index.html)
+本文为Sonic UI自动化Driver核心sonic-driver-core的介绍与原理简述。 👉[Github地址](https://github.com/SonicCloudOrg/sonic-driver-core) 👉[Java Doc](https://s01.oss.sonatype.org/service/local/repositories/releases/archive/io/github/soniccloudorg/sonic-driver-core/1.1.11/sonic-driver-core-1.1.11-javadoc.jar/!/index.html)
 
 <a href="#">  
 <img src="https://img.shields.io/github/stars/SonicCloudOrg/sonic-driver-core?style=social">
@@ -19,7 +19,7 @@
 [appium-uiautomator2-server](https://github.com/SonicCloudOrg/sonic-appium-uiautomator2-server) 、[WebDriverAgent](https://github.com/SonicCloudOrg/sonic-ios-wda) 和
  [Poco-SDK](https://github.com/SonicCloudOrg/sonic-sdk-poco) 通信达到自动化效果，减少通信过程中的时延与消耗。
 > 
-> API文档可前往：👉[Java Doc](https://s01.oss.sonatype.org/service/local/repositories/releases/archive/io/github/soniccloudorg/sonic-driver-core/1.1.10/sonic-driver-core-1.1.10-javadoc.jar/!/index.html)
+> API文档可前往：👉[Java Doc](https://s01.oss.sonatype.org/service/local/repositories/releases/archive/io/github/soniccloudorg/sonic-driver-core/1.1.11/sonic-driver-core-1.1.11-javadoc.jar/!/index.html)
 
 ## 快速使用
 
@@ -31,14 +31,14 @@
 <dependency>
     <groupId>io.github.soniccloudorg</groupId>
     <artifactId>sonic-driver-core</artifactId>
-    <version>1.1.10</version>
+    <version>1.1.11</version>
 </dependency>
 ```
 
 #### Gradle
 
 ```
-implementation 'io.github.soniccloudorg:sonic-driver-core:1.1.10'
+implementation 'io.github.soniccloudorg:sonic-driver-core:1.1.11'
 ```
 
 ## 设备前置配置
