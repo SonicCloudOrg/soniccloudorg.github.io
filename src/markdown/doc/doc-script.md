@@ -172,9 +172,8 @@ import org.cloud.sonic.agent.common.interfaces.StepType;
 def testPoco(){
       LogUtil log =  androidStepHandler.log
       HandleDes handleDes = new HandleDes()
-      log.sendStepLog(StepType.INFO,"Global",androidStepHandler.globalParams.getString("xxxx"))
       androidStepHandler.startPocoDriver(handleDes,"UNITY_3D",5001)
-      for(int i=0;i<5;i++){
+      for(int i=1;i<6;i++){
         androidStepHandler
           .pocoSwipe(handleDes,"Star"+[i],"poco","poco(\"playDragAndDrop\").child(\"star\")["+i+"]",
                     "Shell","poco","poco(\"shell\")")
