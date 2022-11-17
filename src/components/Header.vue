@@ -72,6 +72,7 @@ const open = (url) => {
           <el-menu-item index="1-2" @click="open('https://sonic-cloud.wiki')">用户社区</el-menu-item>
           <el-menu-item index="/Mine" @click="open('https://sonic-cloud.wiki/p/1-contact')">联系我们</el-menu-item>
           <el-menu-item index="/Open" @click="open('https://opencollective.com/soniccloudorg')">Open Collective</el-menu-item>
+          <el-menu-item index="/About" @click="router.push('/About')">免责声明</el-menu-item>
         </el-sub-menu>
         <el-menu-item><a href="https://github.com/SonicCloudOrg" target="_blank"><img src="../assets/github.png"
                                                                                       height="30"/></a>

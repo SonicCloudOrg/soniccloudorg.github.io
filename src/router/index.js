@@ -57,6 +57,11 @@ const routes = [
             import ("../components/Version.vue"),
     },
     {
+        path: '/About',
+        component: () =>
+            import ("../components/About.vue"),
+    },
+    {
         path: '/',
         redirect: '/Home',
     }

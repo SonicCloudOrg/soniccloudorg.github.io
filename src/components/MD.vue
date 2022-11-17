@@ -63,6 +63,7 @@ import SDCAndroid from '../markdown/sdc/sdc-android.md'
 import SDCIOS from '../markdown/sdc/sdc-ios.md'
 import SDCPoco from '../markdown/sdc/sdc-poco.md'
 import ToWebView from '../markdown/doc/doc-to-webview.md'
+import Policy from '../markdown/about/policy.md'
 
 defineProps({
   active: String
@@ -135,6 +136,7 @@ defineProps({
     <s-d-c-i-o-s v-if="active==='sdc-ios'"/>
     <s-d-c-poco v-if="active==='sdc-poco'"/>
     <to-web-view v-if="active==='toWebView'"/>
+    <policy v-if="active==='policy'"/>
   </div>
 </template>
 
