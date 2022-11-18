@@ -89,6 +89,40 @@ const cons = [
 ]
 
 const data = ref([{
+  version: "v2.0.4",
+  time: "2022/11/18",
+  fix: [{
+    title: "修复部分机型输入法不可用的问题"
+  }, {
+    title: "优化启动Sonic输入法、禁用输入法体验"
+  }, {
+    title: "安卓新增步骤禁用Sonic输入法"
+  }],
+  con: getCon("ZhouYixun", "wzasd")
+}, {
+  version: "v2.0.3",
+  time: "2022/11/18",
+  fix: [{
+    title: "修复iOS远控时，偶现应用列表显示不全的问题"
+  }, {
+    title: "优化iOS远控时CPU占用过高的问题"
+  }, {
+    title: "修复友空间机器人超链接跳转失败的问题"
+  }, {
+    title: "优化部分设备品牌Logo展示"
+  }, {
+    title: "修复POCO控件包含多个重复名称子节点时，会缺失部分子节点的问题"
+  }, {
+    title: "修复sonic-android-apk偶现触控断连问题"
+  }, {
+    title: "修复部分机型（如三星）获取应用列表失败的兼容性问题"
+  }, {
+    title: "优化安卓输入为实时输入法输入"
+  }, {
+    title: "更改安卓步骤【键盘输入】为【输入法输入】"
+  }],
+  con: getCon("ZhouYixun", "wzasd", "aoliaoaoaojiao")
+}, {
   version: "v2.0.2",
   time: "2022/11/13",
   fix: [{
