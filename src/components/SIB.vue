@@ -44,6 +44,10 @@ const tree = ref([
         name: 'sib-battery'
       },
       {
+        label: "网络IP信息",
+        name: "sib-ip"
+      },
+      {
         label: "重启关机",
         name: 'sib-reboot'
       },

@@ -26,7 +26,7 @@
 
 1. **一般Agent端已自带** ，您也可以选择单独下载。（如链接失效，请自行前往 <a href="https://github.com/SonicCloudOrg/sonic-android-apk/releases" target="_blank">这里</a> 下载）
 >
->  > 👉<a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-android-apk/releases/download/v2.0.3/sonic-android-apk.apk" target="_blank">sonic-android-apk.apk</a>
+>  > 👉<a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-android-apk/releases/download/v2.0.1/sonic-android-apk.apk" target="_blank">sonic-android-apk.apk</a>
 >  
 
 
