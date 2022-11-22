@@ -16,7 +16,9 @@ Sonic目前使用的图像库基于 [sonic-vision-core](https://github.com/Sonic
 > 2. 选择【图片点击控件】步骤，选择对应控件即可。
 > 3. 如果为自定义截图信息，可以直接前往控件元素页面自行上传图片，然后添加到项目中。
 > 
-> <el-image hide-on-click-modal src="https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/tem.png" :preview-src-list="['https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/tem.png']" style="width: 500px"/>
+> 效果如图：
+> 
+> <el-image hide-on-click-modal src="https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/tem.png" :preview-src-list="['https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/tem.png']" style="width: 300px"/>
 
 默认图像识别算法顺序：
 
