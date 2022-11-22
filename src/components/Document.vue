@@ -4,24 +4,8 @@ import {ref} from "vue";
 
 const tree = ref([
   {
-    title: "项目管理相关",
+    title: "远程控制相关",
     pane: [
-      {
-        label: "项目管理",
-        name: 'project'
-      },
-      {
-        label: "通知机器人",
-        name: 'robot'
-      },
-      {
-        label: "版本管理",
-        name: 'version'
-      },
-      {
-        label: "模块管理",
-        name: 'module'
-      },
       {
         label: "Agent中心",
         name: 'agent-center'
@@ -30,14 +14,13 @@ const tree = ref([
         label: "设备中心",
         name: 'device'
       },
-    ]
-  },
-  {
-    title: "远程控制相关",
-    pane: [
       {
-        label: "控制中心",
+        label: "控制面板",
         name: 'control'
+      },
+      {
+        label: "应用列表",
+        name: 'app-list'
       },
       {
         label: "网页调试",
@@ -75,7 +58,11 @@ const tree = ref([
       {
         label: "切换WebView",
         name: "toWebView"
-      }
+      },
+      {
+        label: "图像识别类",
+        name: 'sift'
+      },
     ]
   },
   {
@@ -112,6 +99,27 @@ const tree = ref([
       {
         label: "测试结果",
         name: 'result'
+      },
+    ]
+  },
+  {
+    title: "项目管理相关",
+    pane: [
+      {
+        label: "项目管理",
+        name: 'project'
+      },
+      {
+        label: "通知机器人",
+        name: 'robot'
+      },
+      {
+        label: "版本管理",
+        name: 'version'
+      },
+      {
+        label: "模块管理",
+        name: 'module'
       },
     ]
   }

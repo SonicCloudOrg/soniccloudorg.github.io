@@ -65,6 +65,8 @@ import SDCPoco from '../markdown/sdc/sdc-poco.md'
 import ToWebView from '../markdown/doc/doc-to-webview.md'
 import Policy from '../markdown/about/policy.md'
 import IPSIB from '../markdown/sib/sib-ip.md'
+import DocAppList from '../markdown/doc/doc-app-list.md'
+import DocSift from '../markdown/doc/doc-sift.md'
 
 defineProps({
   active: String
@@ -139,6 +141,8 @@ defineProps({
     <to-web-view v-if="active==='toWebView'"/>
     <policy v-if="active==='policy'"/>
     <i-p-s-i-b v-if="active==='sib-ip'"/>
+    <doc-app-list v-if="active==='app-list'"/>
+    <doc-sift v-if="active==='sift'"/>
   </div>
 </template>
 
