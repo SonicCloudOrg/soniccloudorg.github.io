@@ -27,8 +27,8 @@ const tree = ref([
         name: 'webview'
       },
       {
-        label: "控件获取",
-        name: 'element'
+        label: "快速截图",
+        name: 'quick-cap'
       },
       {
         label: "Terminal",
@@ -37,6 +37,10 @@ const tree = ref([
       {
         label: "网络抓包",
         name: 'proxy'
+      },
+      {
+        label: "控件获取",
+        name: 'element'
       },
       {
         label: "运行测试",
