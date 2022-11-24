@@ -85,10 +85,40 @@ const cons = [
   }, {
     name: "dwqdaiwenqi",
     avatar: "18524392"
+  }, {
+    name: "Z-feiyao",
+    avatar: "78218958"
   }
 ]
 
 const data = ref([{
+  version: "v2.0.5",
+  time: "2022/11/24",
+  fix: [{
+    title: "修复低版本安卓无法使用投屏的Bug"
+  }, {
+    title: "优化触控逻辑，防止频繁刷新时概率出错的问题"
+  }, {
+    title: "优化前端删除设备逻辑",
+    url: "https://github.com/SonicCloudOrg/sonic-client-web/pull/229"
+  }, {
+    title: "优化 transform 替换图片切换",
+    url: "https://github.com/SonicCloudOrg/sonic-client-web/pull/228"
+  }, {
+    title: "升级sonic-appium-uiautomator2-server.apk依赖到5.7.4版本"
+  }, {
+    title: "修复UI自动化超时时间过短引起的异常"
+  }, {
+    title: "修复系统定时任务重启后会被重置的问题",
+    url: "https://github.com/SonicCloudOrg/sonic-server/pull/276"
+  }, {
+    title: "修复运行测试套件选择设备覆盖时，如果有设备离线，导致报告不能完成的问题",
+    url: "https://sonic-cloud.wiki/d/1833"
+  }, {
+    title: "IOSDriver启动时增加重连延时"
+  }],
+  con: getCon("ZhouYixun", "aoliaoaoaojiao", "weixiao12345", "dwqdaiwenqi", "Z-feiyao")
+}, {
   version: "v2.0.4",
   time: "2022/11/18",
   fix: [{
