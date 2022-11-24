@@ -8,7 +8,7 @@
 准备工作：Docker，Sonic前后端部署完毕
 > 1. 从部署好的前端界面【设备中心】的【Agent中心】新增Agent，记录Agent的Key。
 >
-> 2. <a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.0.4/docker-compose.yml" target="_blank">点击这里</a> 下载最新的docker-compose.yml，参考注释修改里面的内容。（如果你是非中国大陆用户，请 <a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.0.4/docker-compose2.yml" target="_blank">点击这里</a> 下载）
+> 2. <a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.0.5/docker-compose.yml" target="_blank">点击这里</a> 下载最新的docker-compose.yml，参考注释修改里面的内容。（如果你是非中国大陆用户，请 <a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.0.5/docker-compose2.yml" target="_blank">点击这里</a> 下载）
 >
 > 3. 执行以下指令（自行根据提示更改参数）。
 >
@@ -30,23 +30,23 @@
 > 
 > > **Linux:**
 > > 
->  > 👉<a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.0.4/sonic-agent-v2.0.4-linux_x86.zip" target="_blank">sonic-agent-v2.0.4-linux_x86.zip</a>
+>  > 👉<a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.0.5/sonic-agent-v2.0.5-linux_x86.zip" target="_blank">sonic-agent-v2.0.5-linux_x86.zip</a>
 >  >
->  > 👉<a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.0.4/sonic-agent-v2.0.4-linux_x86_64.zip" target="_blank">sonic-agent-v2.0.4-linux_x86_64.zip</a>
+>  > 👉<a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.0.5/sonic-agent-v2.0.5-linux_x86_64.zip" target="_blank">sonic-agent-v2.0.5-linux_x86_64.zip</a>
 >  > 
->  > 👉<a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.0.4/sonic-agent-v2.0.4-linux_arm64.zip" target="_blank">sonic-agent-v2.0.4-linux_arm64.zip</a>
+>  > 👉<a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.0.5/sonic-agent-v2.0.5-linux_arm64.zip" target="_blank">sonic-agent-v2.0.5-linux_arm64.zip</a>
 > >
 > > **Macosx:**
 > >
->  > 👉<a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.0.4/sonic-agent-v2.0.4-macosx_x86_64.zip" target="_blank">sonic-agent-v2.0.4-macosx_x86_64.zip</a>
+>  > 👉<a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.0.5/sonic-agent-v2.0.5-macosx_x86_64.zip" target="_blank">sonic-agent-v2.0.5-macosx_x86_64.zip</a>
 >  > 
->  > 👉<a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.0.4/sonic-agent-v2.0.4-macosx_arm64.zip" target="_blank">sonic-agent-v2.0.4-macosx_arm64.zip</a>
+>  > 👉<a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.0.5/sonic-agent-v2.0.5-macosx_arm64.zip" target="_blank">sonic-agent-v2.0.5-macosx_arm64.zip</a>
 > >
 > > **Windows:**
 > >
->  > 👉<a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.0.4/sonic-agent-v2.0.4-windows_x86.zip" target="_blank">sonic-agent-v2.0.4-windows_x86.zip</a>
+>  > 👉<a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.0.5/sonic-agent-v2.0.5-windows_x86.zip" target="_blank">sonic-agent-v2.0.5-windows_x86.zip</a>
 >  > 
->  > 👉<a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.0.4/sonic-agent-v2.0.4-windows_x86_64.zip" target="_blank">sonic-agent-v2.0.4-windows_x86_64.zip</a>
+>  > 👉<a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.0.5/sonic-agent-v2.0.5-windows_x86_64.zip" target="_blank">sonic-agent-v2.0.5-windows_x86_64.zip</a>
 > 
 > 5. 赋予 **工作目录** 所有权限，然后确保解压后的mini、config、plugins文件夹与jar同级
 > 
