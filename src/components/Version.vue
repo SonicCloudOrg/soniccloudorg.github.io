@@ -116,6 +116,8 @@ const data = ref([{
     url: "https://sonic-cloud.wiki/d/1833"
   }, {
     title: "IOSDriver启动时增加重连延时"
+  }, {
+    title: "修复部分iOS机器远控时出现Read time out的问题"
   }],
   con: getCon("ZhouYixun", "aoliaoaoaojiao", "weixiao12345", "dwqdaiwenqi", "Z-feiyao")
 }, {
