@@ -237,7 +237,7 @@ const conList = ref([con1, con2, con3, con4, con5])
         <el-card class="case-content" shadow="hover">
           <img :src="team3" height="40"/>
           <h3>优秀周边生态</h3>
-          <p>安卓Apk、iOS调试工具</p>
+          <p>安卓Apk、sib调试工具</p>
           <p>Jenkins插件、在线抓包工具</p>
         </el-card>
         <el-card class="case-content" shadow="hover">
