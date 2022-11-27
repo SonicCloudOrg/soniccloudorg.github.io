@@ -2,13 +2,13 @@
 
 本页为 **笔记App** 为例，介绍如何使用UI自动化功能。如果您单纯使用远控功能，可以跳过本页。
 
-## 创建项目
+## 一、创建项目
 
 给你的被测App创建项目。
 
 > <el-image hide-on-click-modal src="https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/use-p.png" :preview-src-list="['https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/use-p.png']" style="width: 50%"/>
 
-## 开始远控
+## 二、开始远控
 
 <el-alert style="margin-top: 20px" title="注意" show-icon type="info" description="如果不清楚如何接入设备，可以前往【部署文档】" :closable="false"/>
 
@@ -16,7 +16,7 @@
 
 > <el-image hide-on-click-modal src="https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/use-1.png" :preview-src-list="['https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/use-1.png']" style="width: 200px"/>
 
-## 绑定项目创建用例
+## 三、绑定项目创建用例
 
 > 1. 点击【UI自动化】标签
 > 2. 选择项目后，点击【新增用例】
@@ -24,16 +24,16 @@
 > 3. 点击创建好的用例，绑定完成
 > > <el-image hide-on-click-modal src="https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/use-3.png" :preview-src-list="['https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/use-3.png']" style="width: 60%"/>
 
-## 获取App包名
+## 四、获取App包名
 
 > 1. 点击【应用列表】标签
-> > <el-image hide-on-click-modal src="https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/use-4.png" :preview-src-list="['https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/use-4.png']" style="width: 60%"/>
+> > <el-image hide-on-click-modal src="https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/use-4.png" :preview-src-list="['https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/use-4.png']" style="width: 200px"/>
 > 2. 找到被测App的包名，点击即可复制
 > > <el-image hide-on-click-modal src="https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/use-5.png" :preview-src-list="['https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/use-5.png']" style="width: 60%"/>
 > 3. 回到【UI自动化】标签
 > 4. 点击【新建步骤】，创建【打开应用】步骤，将包名粘贴，点击保存
 
-## 获取控件
+## 五、获取控件
 
 > 1. 点击【控件元素】标签，点击【获取控件元素】
 > > <el-image hide-on-click-modal src="https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/use-6.png" :preview-src-list="['https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/use-6.png']" style="width: 60%"/> 
@@ -44,14 +44,14 @@
 > 4. 回到【UI自动化】标签
 > 5. 点击【新建步骤】，创建【点击控件】步骤，选择刚刚添加的控件，点击保存
 
-## 开始调试
+## 六、开始调试
 
 > 1. 查看新增好的步骤，点击开始运行
 > > <el-image hide-on-click-modal src="https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/use-9.png" :preview-src-list="['https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/use-9.png']" style="width: 60%"/>
 > 2. 查看日志，确保稳定运行
 > > <el-image hide-on-click-modal src="https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/use-10.png" :preview-src-list="['https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/use-10.png']" style="width: 60%"/>
 
-## 添加测试套件
+## 七、添加测试套件
 
 > 1. 退出远控，进入被测App的项目
 > 2. 进入测试套件标签页，点击添加测试套件按钮
@@ -63,7 +63,7 @@
 > 5. 检查信息无误，点击提交
 > > <el-image hide-on-click-modal src="https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/use-14.png" :preview-src-list="['https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/use-14.png']" style="width: 60%"/>
 
-## 运行测试套件
+## 八、运行测试套件
 
 > 1. 选择刚刚创建完毕的测试套件，点击运行
 > > <el-image hide-on-click-modal src="https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/use-15.png" :preview-src-list="['https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/use-15.png']" style="width: 60%"/>
