@@ -68,6 +68,8 @@ import IPSIB from '../markdown/sib/sib-ip.md'
 import DocAppList from '../markdown/doc/doc-app-list.md'
 import DocSift from '../markdown/doc/doc-sift.md'
 import DocQuickCap from '../markdown/doc/doc-quick-cap.md'
+import DocUse from "../markdown/doc/doc-use.md"
+import DocHigh from '../markdown/doc/doc-high.md'
 
 defineProps({
   active: String
@@ -145,6 +147,8 @@ defineProps({
     <doc-app-list v-if="active==='app-list'"/>
     <doc-sift v-if="active==='sift'"/>
     <doc-quick-cap v-if="active==='quick-cap'"/>
+    <doc-use v-if="active==='use'"/>
+    <doc-high v-if="active==='high'"/>
   </div>
 </template>
 

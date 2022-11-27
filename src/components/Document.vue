@@ -2,7 +2,16 @@
 import DocTem from "../components/DocTem.vue"
 import {ref} from "vue";
 
-const tree = ref([
+const tree = ref([{
+  title: "开始",
+  pane: [{
+    label: "快速上手",
+    name: "use"
+  }, {
+    label: "进阶教学",
+    name: "high"
+  }]
+},
   {
     title: "远程控制相关",
     pane: [
