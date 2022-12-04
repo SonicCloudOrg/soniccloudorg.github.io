@@ -86,6 +86,9 @@ const tree = ref([
       {
         label: "网页检阅器",
         name: "sib-webinspector"
+      }, {
+        label: "远程连接",
+        name: "sib-remote"
       }
     ]
   }
