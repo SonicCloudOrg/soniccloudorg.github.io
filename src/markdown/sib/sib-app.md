@@ -19,6 +19,7 @@
 |  ----  | ----  | ---- | ---- |
 | -j  | --json | | json格式输出    |
 | -f  | --format | |  格式化输出    |
+| -s  | --system | |  输出系统App    |
 | -i | --icon | | 输出App图标（Base64） |
 | -u  | --udid | string | 指定目标udid设备，不指定默认获取列表第一个设备  |
 | -h  | --help | |  获取帮助指南  |
