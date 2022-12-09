@@ -73,6 +73,10 @@ const tree = ref([{
         name: "toWebView"
       },
       {
+        label: "Sonic输入法输入",
+        name: 'keyboard'
+      },
+      {
         label: "图像识别类",
         name: 'sift'
       },

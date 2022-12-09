@@ -71,6 +71,7 @@ import DocQuickCap from '../markdown/doc/doc-quick-cap.md'
 import DocUse from "../markdown/doc/doc-use.md"
 import DocHigh from '../markdown/doc/doc-high.md'
 import SIBRemote from '../markdown/sib/sib-remote.md'
+import DocKeyboard from '../markdown/doc/doc-keyboard.md'
 
 defineProps({
   active: String
@@ -151,6 +152,7 @@ defineProps({
     <doc-use v-if="active==='use'"/>
     <doc-high v-if="active==='high'"/>
     <s-i-b-remote v-if="active==='sib-remote'"/>
+    <doc-keyboard v-if="active==='keyboard'"/>
   </div>
 </template>
 

@@ -19,11 +19,13 @@ import c0 from '../assets/coo.png'
 import c1 from '../assets/banner.png'
 import c2 from '../assets/banner2.png'
 import c4 from '../assets/banner3.png'
+import c5 from '../assets/banner4.png'
 import con1 from '../assets/con1.jpg'
 import con2 from '../assets/con2.jpg'
 import con3 from '../assets/con3.jpg'
 import con4 from '../assets/con4.jpg'
 import con5 from '../assets/con5.jpg'
+import con6 from '../assets/con6.jpg'
 import {useRouter} from "vue-router";
 import {onMounted, ref} from "vue";
 import 'vue3-video-play/dist/style.css';
@@ -47,15 +49,21 @@ const statisticsData = [
   {
     tipContent: 'Sonic社区总回复数',
     linkUrl: 'https://sonic-cloud.wiki',
-    img: 'https://img.shields.io/badge/replies%20-11.8k-ff69b4?style=social&logo=LiveChat'
+    img: 'https://img.shields.io/badge/replies%20-12.4k-ff69b4?style=social&logo=LiveChat'
   },
   {
     tipContent: '镜像仓库总下载量',
     linkUrl: 'https://github.com/SonicCloudOrg',
-    img: 'https://img.shields.io/badge/Docker%20pulls%20-63.1k-important'
+    img: 'https://img.shields.io/badge/Docker%20pulls%20-64.9k-important'
   }
 ]
 const news = ref([
+  {
+    title: "重磅！全新sib remote功能上线，iOS远程调试的福音！",
+    time: "用户可以自己本地sib remote connect就可以像本地链接一样使用啦！",
+    url:"https://sonic-cloud.wiki/d/2058-sib-remoteios",
+    pic:c5
+  },
   {
     title: "iOS WebView/H5调试新姿势",
     time: "Sonic平台周边生态sib推出新功能webinspector啦！",
@@ -67,12 +75,6 @@ const news = ref([
     time: "历时两个多月的初选、海选和专家评审后，「MTSC 2022年度最佳开源项目」评选终于尘埃落定",
     url: "https://sonic-cloud.wiki/d/1471-sonicmtsc-2022",
     pic: c2
-  },
-  {
-    title: "不想折腾python环境又想跨平台进行iOS自动化怎么办？不妨试试sib~",
-    time: "Sonic组织推出的超方便iOS调试工具",
-    url: "https://sonic-cloud.wiki/d/1197-pythoniossib",
-    pic: c1
   }, {
     title: "Sonic组织已加入OpenCollective啦！",
     time: "",
@@ -99,7 +101,7 @@ const videoOptions = ref({
   height: 'auto',
   controlBtns: ['audioTrack', 'quality', 'volume', 'fullScreen', 'speedRate'],
 });
-const conList = ref([con1, con2, con3, con4, con5])
+const conList = ref([con1, con2, con3, con4, con5,con6])
 </script>
 <template>
   <el-backtop target=".demo-tree-scrollbar .el-scrollbar__wrap" :bottom="100"></el-backtop>
