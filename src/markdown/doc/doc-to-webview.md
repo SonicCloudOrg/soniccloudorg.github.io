@@ -74,7 +74,7 @@ v2.0.0-beta开始，Sonic会自动匹配并下载WebView对应Chrome版本的Chr
 > 以微信H5为例：
 > 1. 使用AndroidProcess为com.tencent.mm:tools（有的微信版本是 com.tencent.mm:appbrand0 ）切换WebView。
 > 2. 这时我们获取页面标题，就会发现默认切换的窗口是微信的【搜一搜】窗口。
-> 3. 然后我们使用【切换Handle】步骤，输入目标页面的标题。
+> 3. 然后我们使用【切换Handle】步骤，输入目标页面的标题。（v2.1.0开始，也可以输入页面的页面地址或Handle数组下标定位目标Handle）
 > 4. 然后就可以切换到我们的期望页面，可以开始进行UI自动化操作了。
 
 ## 控件操作
