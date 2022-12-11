@@ -10,7 +10,7 @@ Agent有两种常见部署方式，分别为Docker部署和jar部署。
 准备工作：Docker，Sonic前后端部署完毕
 > 1. 从部署好的前端界面【设备中心】的【Agent中心】新增Agent，记录Agent的Key。
 >
-> 2. <a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.0.5/docker-compose.yml" target="_blank">点击这里</a> 下载最新的docker-compose.yml，参考注释修改里面的内容。（如果你是非中国大陆用户，请 <a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.0.5/docker-compose2.yml" target="_blank">点击这里</a> 下载）
+> 2. <a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.0.5/docker-compose.yml" target="_blank">点击这里</a> 下载最新的docker-compose.yml，参考注释修改里面的内容。（如加速链接失效，请自行前往 <a href="https://github.com/SonicCloudOrg/sonic-agent/releases" target="_black">这里</a> 下载）
 >
 > 3. 执行以下指令（自行根据提示更改参数）。
 >

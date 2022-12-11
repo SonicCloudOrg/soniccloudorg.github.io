@@ -19,6 +19,13 @@ v2.0.0-release起，Sonic版本规则更改如下：
 
 例如2.2.0的上一个版本为2.1.15，那么2.1.15版本就是2.1.x的最稳定的版本
 
+## 从 v1.4.x 或 v1.5.x 或 v2.0.x 升级到 v2.1.0
+> 0. 升级前先备份Mysql数据库。
+> 1. 在server目录下执行docker-compose down
+> 2. 直接下载最新版docker-compose.yml（新版本镜像迁移到中国香港加速链接，不能只更改版本号，建议重新下载docker-compose.yml）
+> 3. 执行docker-compose up -d
+> 4. jar方式部署的Agent更新需替换旧版本plugins文件夹与jar文件
+> 5. （附）Docker版Agent与server同理，下载最新版docker-compose.yml后，执行docker-compose up -d 重新下载镜像部署即可。
 
 ## 从v2.0.0-release升级到v2.0.x
 

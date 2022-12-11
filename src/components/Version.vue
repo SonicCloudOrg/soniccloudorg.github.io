@@ -92,6 +92,58 @@ const cons = [
 ]
 
 const data = ref([{
+  version: "v2.1.0",
+  time: "2022/12/11",
+  feat: [{
+    title: "iOS实时性能采集（初版）",
+  }, {
+    title: "iOS远控页面增加POCO控件获取"
+  }, {
+    title: "测试套件可配置性能采集开关"
+  }, {
+    title: "支持获取POCO控件文本断言"
+  }, {
+    title: "支持断言POCO控件指定属性"
+  }, {
+    title: "sib新增可获取mac地址、ipv4地址、ipv6地址"
+  }, {
+    title: "iOS远控新增sib remote connect地址"
+  }, {
+    title: "Jenkins插件新增通过通配符匹配安装包"
+  }, {
+    title: "Jenkins插件新增构建参数：是否上传Sonic、是否执行测试套件"
+  }, {
+    title: "测试用例列表支持id、编辑时间查询",
+    url: "https://sonic-cloud.wiki/d/2025"
+  }, {
+    title: "安卓与iOS新增poco控件的poco语法、xpath语法推荐"
+  }, {
+    title: "切换Handle新增index切换和url切换"
+  }, {
+    title: "测试报告新增性能数据展示"
+  }, {
+    title: "新增设备USB位置映射"
+  }, {
+    title: "新增iOS电池温度获取"
+  }, {
+    title: "新增iOS、安卓电池电压获取"
+  }],
+  fix: [{
+    title: "修复编辑测试用例后编辑日期没有改变的问题"
+  }, {
+    title: "修复POCO控件树节点中包含特殊字符时，定位解析失败的问题",
+    url: "https://sonic-cloud.wiki/d/2017-pococny"
+  }, {
+    title: "基础镜像搭建，减少更新流量消耗"
+  }, {
+    title: "修复iOS初始状态为横屏时，自动化点击错位的问题"
+  }, {
+    title: "修复更新v2.0.5后定时任务消失的问题"
+  }, {
+    title: "优化切换WebView时自动下载的chromedriver为淘宝加速链接"
+  }],
+  con: getCon("ZhouYixun","yaming116","dongyi0412","aoliaoaoaojiao")
+}, {
   version: "v2.0.5",
   time: "2022/11/24",
   fix: [{

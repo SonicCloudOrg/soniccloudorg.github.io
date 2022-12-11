@@ -8,7 +8,7 @@
 
 准备工作：docker-compose、Docker、MySQL
 > 0. 需提前建数据库库！字符集为utf8，排序规则为utf8_general_ci
-> 1. <a target="_blank" href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-server/releases/download/v2.0.5/sonic-server-v2.0.5.zip">点击这里</a> 下载最新版本的 **zip** 文件到任意目录（非中国大陆用户 <a target="_blank" href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-server/releases/download/v2.0.5/sonic-server-v2.0.5-2.zip">点击这里</a> 下载。如加速链接失效，请自行前往 <a href="https://github.com/SonicCloudOrg/sonic-server/releases" target="_black">这里</a> 下载）。
+> 1. <a target="_blank" href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-server/releases/download/v2.0.5/sonic-server-v2.0.5.zip">点击这里</a> 下载最新版本的 **zip** 文件到任意目录（如加速链接失效，请自行前往 <a href="https://github.com/SonicCloudOrg/sonic-server/releases" target="_black">这里</a> 下载）。
 > 2. 解压zip，更改.env中的信息。（无需改动docker-compose.yml文件。env配置项内容可查看下方表格。如果您的系统没显示.env，在本页最下方【常见问题】查看解决方案）
 > 3. 当前目录下执行以下指令
 > ```
@@ -19,32 +19,32 @@
 
 ## .env配置项解释
 
-|  字段名   | 解释  | 示例 |
-|  ----  | ----  | ---- |
-|SONIC_SERVER_HOST  | 部署sonic-server机器的ipv4地址，不能使用localhost、127.0.0.1。**可以使用域名。** | 192.168.0.1     |
-|SONIC_SERVER_PORT | 整个服务端对外暴露端口，默认3000。**可以使用80** | 3000 |
-|SONIC_EUREKA_USERNAME  | Eureka的用户名（为提高安全性，不建议使用默认值，可以更改为其他任意字符串） |   sonic    |
-|SONIC_EUREKA_PASSWORD  | Eureka的密码（为提高安全性，不建议使用默认值，可以更改为其他任意字符串） |  sonic  |
-|SONIC_EUREKA_PORT  | Eureka启动端口（一般不需要改动） |  9090  |
-|MYSQL_HOST| MySQL服务的host，不能使用localhost、127.0.0.1.| 192.168.0.1|
-|MYSQL_PORT | MySQL服务的端口（一般默认为3306）|3306|
-|MYSQL_DATABASE| Sonic服务要用到的数据库|sonic|
-|MYSQL_USERNAME| MySQL数据库用户名| root|
-|MYSQL_PASSWORD|MySQL数据库密码| Sonic!@#123|
-|SECRET_KEY| token加密密钥（为提高安全性，不建议使用默认值，可以更改为其他任意字符串）| sonic|
-|EXPIRE_DAY| token有效天数|14|
-|PERMISSION_ENABLE| 是否开启权限配置 | true|
-|PERMISSION_SUPER_ADMIN|超管用户名| sonic|
-|REGISTER_ENABLE| 是否开启用户注册| true|
-|NORMAL_USER_ENABLE|是否开启普通用户登录|true|
-|LDAP_USER_ENABLE|是否开启LDAP用户登录|true|
-|LDAP_USER_ID| LDAP user id 搜索字段|cn|
-|LDAP_BASE_DN|LDAP user 搜索用户组|users|
-|LDAP_BASE| LDAP Base DN |ou=system|
-|LDAP_USERNAME| LDAP Base DN 管理员用户名|uid=admin,ou=system|
-|LDAP_PASSWORD|LDAP Base DN 管理员密码|Sonic!@#123|
-|LDAP_URL|LDAP 服务 URL |ldap://192.168.0.1:10389|
-|LDAP_OBJECT_CLASS|LDAP筛选class，默认为person| person|
+| 字段名                    | 解释                                                          | 示例                       |
+|------------------------|-------------------------------------------------------------|--------------------------|
+| SONIC_SERVER_HOST      | 部署sonic-server机器的ipv4地址，不能使用localhost、127.0.0.1。**可以使用域名。** | 192.168.0.1              |
+| SONIC_SERVER_PORT      | 整个服务端对外暴露端口，默认3000。**可以使用80**                               | 3000                     |
+| SONIC_EUREKA_USERNAME  | Eureka的用户名（为提高安全性，不建议使用默认值，可以更改为其他任意字符串）                    | sonic                    |
+| SONIC_EUREKA_PASSWORD  | Eureka的密码（为提高安全性，不建议使用默认值，可以更改为其他任意字符串）                     | sonic                    |
+| SONIC_EUREKA_PORT      | Eureka启动端口（一般不需要改动）                                         | 9090                     |
+| MYSQL_HOST             | MySQL服务的host，不能使用localhost、127.0.0.1.                       | 192.168.0.1              |
+| MYSQL_PORT             | MySQL服务的端口（一般默认为3306）                                       | 3306                     |
+| MYSQL_DATABASE         | Sonic服务要用到的数据库                                              | sonic                    |
+| MYSQL_USERNAME         | MySQL数据库用户名                                                 | root                     |
+| MYSQL_PASSWORD         | MySQL数据库密码                                                  | Sonic!@#123              |
+| SECRET_KEY             | token加密密钥（为提高安全性，不建议使用默认值，可以更改为其他任意字符串）                     | sonic                    |
+| EXPIRE_DAY             | token有效天数                                                   | 14                       |
+| PERMISSION_ENABLE      | 是否开启权限配置                                                    | true                     |
+| PERMISSION_SUPER_ADMIN | 超管用户名                                                       | sonic                    |
+| REGISTER_ENABLE        | 是否开启用户注册                                                    | true                     |
+| NORMAL_USER_ENABLE     | 是否开启普通用户登录                                                  | true                     |
+| LDAP_USER_ENABLE       | 是否开启LDAP用户登录                                                | true                     |
+| LDAP_USER_ID           | LDAP user id 搜索字段                                           | cn                       |
+| LDAP_BASE_DN           | LDAP user 搜索用户组                                             | users                    |
+| LDAP_BASE              | LDAP Base DN                                                | ou=system                |
+| LDAP_USERNAME          | LDAP Base DN 管理员用户名                                         | uid=admin,ou=system      |
+| LDAP_PASSWORD          | LDAP Base DN 管理员密码                                          | Sonic!@#123              |
+| LDAP_URL               | LDAP 服务 URL                                                 | ldap://192.168.0.1:10389 |
+| LDAP_OBJECT_CLASS      | LDAP筛选class，默认为person                                       | person                   |
 
 ## 使用自己的Eureka
 

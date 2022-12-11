@@ -118,7 +118,7 @@ const switchNav = function () {
         <h1></h1>
         <el-timeline-item v-for="(d,i) in data" :timestamp="'发布时间：'+d.time" placement="top" type="success">
           <el-card>
-            <el-alert v-if="i==0" style="margin-bottom: 20px" type="error" :closable="false">
+            <el-alert v-if="i==0" style="margin-bottom: 20px" type="success" :closable="false">
               <template #title>
                 <div>更新前一定要查看版本迁移指南哦，可点击 <a href="https://sonic-cloud.gitee.io/#/Deploy?tag=upgrade">这里</a> 查看！</div>
               </template>
