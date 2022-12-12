@@ -92,6 +92,19 @@ const cons = [
 ]
 
 const data = ref([{
+  version: "v2.1.1",
+  time: "2022/12/12",
+  fix: [{
+    title: "修复v2.1.0设备中心筛选与排序无效的问题",
+    url: "https://sonic-cloud.wiki/d/2317"
+  }, {
+    title: "修复v2.1.0 Docker版Agent开启iOS模块失败的问题",
+    url: "https://sonic-cloud.wiki/d/2314"
+  }, {
+    title: "优化Server报错输出与补充"
+  }],
+  con: getCon("ZhouYixun", "yaming116")
+}, {
   version: "v2.1.0",
   time: "2022/12/11",
   feat: [{
@@ -142,7 +155,7 @@ const data = ref([{
   }, {
     title: "优化切换WebView时自动下载的chromedriver为淘宝加速链接"
   }],
-  con: getCon("ZhouYixun","yaming116","dongyi0412","aoliaoaoaojiao")
+  con: getCon("ZhouYixun", "yaming116", "dongyi0412", "aoliaoaoaojiao")
 }, {
   version: "v2.0.5",
   time: "2022/11/24",
