@@ -14,7 +14,7 @@
 > ```
 > docker-compose up -d
 > ```
-> 如果您为中国大陆用户，我们建议使用加速镜像（后续down的时候需要docker-compose -f docker-compose-zh.yml down）
+> 如果您为中国大陆用户，我们建议配置加速镜像源或执行以下指令直接使用加速镜像（后续down的时候需要docker-compose -f docker-compose-zh.yml down）
 > ```
 > docker-compose -f docker-compose-zh.yml up -d
 > ```
