@@ -17,7 +17,11 @@ Agent有两种常见部署方式，分别为Docker部署和jar部署。
 > ```
 > docker-compose up -d
 > ```
->
+> 如果您为中国大陆用户，我们建议使用加速镜像（后续down的时候需要docker-compose -f docker-compose-zh.yml down）
+> ```
+> docker-compose -f docker-compose-zh.yml up -d
+> ```
+> 
 > 4. 部署完毕！自行插入设备即可。
 > 
 > 5. （附）如果您对Docker不熟悉，更推荐使用jar方式部署。

@@ -49,7 +49,7 @@ const statisticsData = [
   {
     tipContent: 'Sonic社区总回复数',
     linkUrl: 'https://sonic-cloud.wiki',
-    img: 'https://img.shields.io/badge/replies%20-12.4k-ff69b4?style=social&logo=LiveChat'
+    img: 'https://img.shields.io/badge/replies%20-12.6k-ff69b4?style=social&logo=LiveChat'
   },
   {
     tipContent: '镜像仓库总下载量',

@@ -92,6 +92,26 @@ const cons = [
 ]
 
 const data = ref([{
+  version: "v2.1.2",
+  time: "2022/12/14",
+  fix: [{
+    title: "更改Docker镜像源"
+  }, {
+    title: "折叠步骤列表与测试结果中的脚本编辑框",
+    url: "https://sonic-cloud.wiki/d/2326"
+  }, {
+    title: "修复自定义脚本中包含http和jpg时解析为图片的问题",
+    url: "https://sonic-cloud.wiki/d/2327-http"
+  }, {
+    title: "修复未释放安卓转发中重复转发的接口"
+  }, {
+    title: "修复sib在部分Linux机器报GLIBC的异常问题",
+    url: "https://sonic-cloud.wiki/d/2332"
+  }, {
+    title: "上调了可传输文件大小为10G"
+  }],
+  con: getCon("ZhouYixun")
+}, {
   version: "v2.1.1",
   time: "2022/12/12",
   fix: [{
