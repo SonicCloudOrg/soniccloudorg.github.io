@@ -109,6 +109,9 @@ const data = ref([{
     url: "https://sonic-cloud.wiki/d/2332"
   }, {
     title: "上调了可传输文件大小为10G"
+  }, {
+    title: "修复了图像识别库在某些平台不可用的Bug",
+    url: "https://sonic-cloud.wiki/d/2330-linux-agent"
   }],
   con: getCon("ZhouYixun")
 }, {
