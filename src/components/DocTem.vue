@@ -109,7 +109,7 @@ const switchNav = function () {
             </a>
           </el-carousel-item>
         </el-carousel>
-        <a href="mailto:291028775@qq.com" target="_blank">
+        <a href="mailto:soniccloudorg@163.com" target="_blank">
           <el-button type="primary" plain size="small" style="width: 150px;">成为赞助商！</el-button>
         </a>
       </div>
