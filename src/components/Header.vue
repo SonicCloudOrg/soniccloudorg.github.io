@@ -1,11 +1,24 @@
 <script setup>
 import {useRoute, useRouter} from "vue-router";
+import docsearch from '@docsearch/js';
+import '@docsearch/css';
+import {onMounted} from "vue";
 const route = useRoute()
 const router = useRouter()
 
 const open = (url) => {
   window.open(url, '_blank')
 }
+
+onMounted(()=>{
+  docsearch({
+    placeholder:"Search Docs / 文档搜索",
+    container: '#docsearch',
+    appId: '173PUFCVUH',
+    indexName: 'sonic-cloud',
+    apiKey: '4c05e65805bc511ab341c44ca5c29e83',
+  });
+})
 </script>
 
 <template>
@@ -15,6 +28,7 @@ const open = (url) => {
                class="el-menu-demo"
                mode="horizontal"
       >
+        <div id="docsearch" style="display: flex;align-items: center;margin-right: 15px"></div>
         <el-menu-item index="/Home" @click="router.push('/Home')">首页</el-menu-item>
         <el-sub-menu index="2">
           <template #title>相关文档</template>
