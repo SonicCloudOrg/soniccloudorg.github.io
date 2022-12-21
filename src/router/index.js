@@ -1,53 +1,53 @@
-import {createRouter, createWebHashHistory} from 'vue-router';
+import {createRouter, createWebHistory} from 'vue-router';
 
 const routes = [
     {
-        path: '/Home',
+        path: '/home',
         component: () =>
             import ("../components/Home.vue"),
     },
     {
-        path: '/Document',
+        path: '/document',
         component: () =>
             import ("../components/Document.vue"),
     },
     {
-        path: '/Deploy',
+        path: '/deploy',
         component: () =>
             import ("../components/Deploy.vue"),
     },
     {
-        path: '/Contribute',
+        path: '/contribute',
         component: () =>
             import ("../components/Contribute.vue"),
     },
     {
-        path: '/SIB',
+        path: '/sib',
         component: () =>
             import ("../components/SIB.vue"),
     },
     {
-        path: '/SAA',
+        path: '/saa',
         component: () =>
             import ("../components/SAA.vue"),
     },
     {
-        path: '/SCH',
+        path: '/sch',
         component: () =>
             import ("../components/SCH.vue"),
     },
     {
-        path: '/SGM',
+        path: '/sgm',
         component: () =>
             import ("../components/SGM.vue"),
     },
      {
-        path: '/SIWA',
+        path: '/siwa',
         component: () =>
             import ("../components/SIWA.vue"),
     },
     {
-        path: '/SDC',
+        path: '/sdc',
         component: () =>
             import ("../components/SDC.vue"),
     },
@@ -63,11 +63,11 @@ const routes = [
     },
     {
         path: '/',
-        redirect: '/Home',
+        redirect: '/home',
     }
 ]
 
 export default createRouter({
-    history: createWebHashHistory("/sonic-cloud/"),
+    history: createWebHistory(),
     routes,
 })

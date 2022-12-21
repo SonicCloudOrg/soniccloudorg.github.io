@@ -32,5 +32,5 @@ const tree = ref([
 ])
 </script>
 <template>
-  <doc-tem path="SDC" :tree="tree"/>
+  <doc-tem path="sdc" :tree="tree"/>
 </template>

@@ -143,5 +143,5 @@ const tree = ref([{
 ])
 </script>
 <template>
-  <doc-tem path="Document" :tree="tree"/>
+  <doc-tem path="document" :tree="tree"/>
 </template>

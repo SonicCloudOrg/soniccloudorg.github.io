@@ -37,5 +37,5 @@ const tree = ref([
 
 </script>
 <template>
- <doc-tem path="Deploy" :tree="tree"/>
+ <doc-tem path="deploy" :tree="tree"/>
 </template>
