@@ -17,6 +17,43 @@ onMounted(()=>{
     appId: '173PUFCVUH',
     indexName: 'sonic-cloud',
     apiKey: '4c05e65805bc511ab341c44ca5c29e83',
+    translations: {
+      button: {
+        buttonText: "Search Docs / 文档搜索",
+        buttonAriaLabel: "Search Docs / 文档搜索",
+      },
+      modal: {
+        searchBox: {
+          resetButtonTitle: "Clear 清除查询条件",
+          resetButtonAriaLabel: "Clear 清除查询条件",
+          cancelButtonText: "Cancel 取消",
+          cancelButtonAriaLabel: "Cancel 取消",
+        },
+        startScreen: {
+          recentSearchesTitle: "History 搜索历史",
+          noRecentSearchesText: "History is empty 没有搜索历史",
+          saveRecentSearchButtonTitle: "Save to history 保存至搜索历史",
+          removeRecentSearchButtonTitle: "Remove from history 从搜索历史中移除",
+          favoriteSearchesTitle: "Favorite 收藏",
+          removeFavoriteSearchButtonTitle: "Remove from favorite 从收藏中移除",
+        },
+        errorScreen: {
+          titleText: "Unable to get results 无法获取结果",
+          helpText: "You need to check your network connection 你可能需要检查你的网络连接",
+        },
+        footer: {
+          selectText: "Choose 选择",
+          navigateText: "Switch 切换",
+          closeText: "Close 关闭",
+        },
+        noResultsScreen: {
+          noResultsText: "Unable to find related results 无法找到相关结果",
+          suggestedQueryText: "You can try to search 你可以尝试查询",
+          reportMissingResultsText: "Do you think the query should have results? 你认为该查询应该有结果？",
+          reportMissingResultsLinkText: "Click Feedback 点击反馈",
+        },
+      },
+    },
   });
 })
 </script>

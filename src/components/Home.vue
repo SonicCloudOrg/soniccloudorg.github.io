@@ -128,7 +128,7 @@ const conList = ref([con1, con2, con3, con4, con5,con6])
         </div>
         <h4 class="brand-desc">免费开源的云真机测试平台，用心打造更好的使用体验。</h4>
         <div style="text-align: center">
-          <el-button type="primary" size="small" @click="router.push('/Deploy')">马上使用</el-button>
+          <el-button type="primary" size="small" @click="router.push('/deploy')">马上使用</el-button>
           <el-button type="primary" size="small" @click="open('https://sonic-cloud.wiki/')">用户社区
           </el-button>
         </div>
@@ -329,7 +329,7 @@ const conList = ref([con1, con2, con3, con4, con5,con6])
           还等什么？马上开始吧！
         </span>
         <div>
-          <el-button type="primary" size="large" @click="router.push('/Deploy')">马上使用</el-button>
+          <el-button type="primary" size="large" @click="router.push('/deploy')">马上使用</el-button>
           <el-button type="primary" size="large" @click="open('https://sonic-cloud.wiki/')">用户社区
           </el-button>
         </div>

@@ -180,7 +180,7 @@ const switchNav = function () {
   height: 100%;
   text-align: left;
   background-color: #fff;
-  z-index: 2000;
+  z-index: 2;
   transition: left .5s ease-in-out;
 }
 
@@ -204,7 +204,7 @@ const switchNav = function () {
   border-radius: 50px;
   background-color: rgba(125, 215, 246, .7);
   transition: left .5s ease-in-out;
-  z-index: 2000;
+  z-index: 2;
 }
 
 .float-tag .el-icon {
@@ -234,12 +234,12 @@ const switchNav = function () {
     top: 59px;
     left: -195px;
     border-right: 1px solid #ccc;
-    z-index: 2000;
+    z-index: 2;
   }
 
   .float-tag {
     display: unset;
-    z-index: 2000;
+    z-index: 2;
   }
 }
 </style>
