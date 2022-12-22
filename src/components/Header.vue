@@ -60,7 +60,7 @@ onMounted(()=>{
 
 <template>
     <el-header>
-      <img src="../assets/logo2.png" class="logo-wrapper" height="40"/>
+      <img src="../assets/logo2.png" class="logo-wrapper" height="40" style="cursor: pointer" @click="router.push('/home')"/>
       <el-menu :default-active="route.path"
                class="el-menu-demo"
                mode="horizontal"
