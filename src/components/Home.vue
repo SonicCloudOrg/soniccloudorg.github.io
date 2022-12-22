@@ -142,7 +142,7 @@ const conList = ref([con1, con2, con3, con4, con5,con6])
     <div class="container">
       <div class="title">
         <span class="verh2">
-          最新动态
+          近期动态
         </span>
       </div>
       <div style="padding: 0 20%;">
