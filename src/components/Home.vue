@@ -190,7 +190,7 @@ const conList = ref([con1, con2, con3, con4, con5,con6])
             </el-carousel-item>
           </el-carousel>
         </div>
-        <el-button type="primary" size="large" @click="open('https://sonic-cloud.wiki/d/1510-soniccommitsonic')">我要上墙
+        <el-button type="primary" size="large" @click="open('https://sonic-cloud.wiki/d/1510')">我要上墙
         </el-button>
       </div>
 
