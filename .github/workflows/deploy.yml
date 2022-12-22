@@ -93,7 +93,7 @@ jobs:
           commit-message: Update doc files.
           author: GitHub <noreply@github.com>
           signoff: false
-          branch: deploy
+          branch: main
           base: main
           labels: document
           delete-branch: false
@@ -133,24 +133,7 @@ jobs:
         with:
           accessKeyId: ${{ secrets.ALIYUN_ACCESS_KEY_ID }}
           accessKeySecret: ${{ secrets.ALIYUN_ACCESS_KEY_SECRET }}
-          bucket: sonic-assets-hongkong
+          bucket: sonic-cloud
           endpoint: oss-cn-hongkong.aliyuncs.com
           folder: dist/
           incremental: false
-      - name: sync gitee
-        run: |
-          remote_repo="https://${{ secrets.GITEE_USERNAME }}:${{ secrets.GITEE_PASSWORD }}@gitee.com/sonic-cloud/sonic-cloud.git"
-          git remote add gitee "${remote_repo}"
-          git show-ref # useful for debugging
-          git branch --verbose
-          git push --all --force gitee
-          git push --tags --force gitee
-      - name: Build Gitee Pages
-        uses: yanglbme/gitee-pages-action@main
-        with:
-          gitee-username: ${{ secrets.GITEE_USERNAME }}
-          gitee-password: ${{ secrets.GITEE_PASSWORD }}
-          gitee-repo: sonic-cloud/sonic-cloud
-          branch: deploy
-          directory: dist
-          https: false
