@@ -21,26 +21,26 @@
 > ```
 > 2. 准备个人免费证书（7天过期），最好还是使用开发者账户。
 >
-> <el-image hide-on-click-modal src="https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/ios1.png"
-> :preview-src-list="['https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/ios1.png']" style="width: 80%"/>
-> <el-image hide-on-click-modal src="https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/ios2.png"
-> :preview-src-list="['https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/ios2.png']" style="width: 80%"/>
-> <el-image hide-on-click-modal src="https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/ios3.png"
-> :preview-src-list="['https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/ios3.png']" style="width: 80%"/>
-> <el-image hide-on-click-modal src="https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/ios4.png"
-> :preview-src-list="['https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/ios4.png']" style="width: 80%"/>
+> <el-image hide-on-click-modal src="https://sonic-record-hongkong.oss-cn-hongkong.aliyuncs.com/ios1.png"
+> :preview-src-list="['https://sonic-record-hongkong.oss-cn-hongkong.aliyuncs.com/ios1.png']" style="width: 80%"/>
+> <el-image hide-on-click-modal src="https://sonic-record-hongkong.oss-cn-hongkong.aliyuncs.com/ios2.png"
+> :preview-src-list="['https://sonic-record-hongkong.oss-cn-hongkong.aliyuncs.com/ios2.png']" style="width: 80%"/>
+> <el-image hide-on-click-modal src="https://sonic-record-hongkong.oss-cn-hongkong.aliyuncs.com/ios3.png"
+> :preview-src-list="['https://sonic-record-hongkong.oss-cn-hongkong.aliyuncs.com/ios3.png']" style="width: 80%"/>
+> <el-image hide-on-click-modal src="https://sonic-record-hongkong.oss-cn-hongkong.aliyuncs.com/ios4.png"
+> :preview-src-list="['https://sonic-record-hongkong.oss-cn-hongkong.aliyuncs.com/ios4.png']" style="width: 80%"/>
 >
 > 注意：这里第一次往手机上打会报错，是因为没有信任电脑，在设置--通用--描述文件与管理里面信任即可。
 > 
 > 4. 修改sonic的agent下的配置文件。
 >
-> <el-image hide-on-click-modal src="https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/ios5.png"
-> :preview-src-list="['https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/ios5.png']" style="width: 80%"/>
+> <el-image hide-on-click-modal src="https://sonic-record-hongkong.oss-cn-hongkong.aliyuncs.com/ios5.png"
+> :preview-src-list="['https://sonic-record-hongkong.oss-cn-hongkong.aliyuncs.com/ios5.png']" style="width: 80%"/>
 >
 > 5. 配置完成！接入Sonic即可。
 >
-> <el-image hide-on-click-modal src="https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/ios6.png"
-> :preview-src-list="['https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/ios6.png']" style="height: 380px"/>
+> <el-image hide-on-click-modal src="https://sonic-record-hongkong.oss-cn-hongkong.aliyuncs.com/ios6.png"
+> :preview-src-list="['https://sonic-record-hongkong.oss-cn-hongkong.aliyuncs.com/ios6.png']" style="height: 380px"/>
 > 
 > 6. 接入完成后，后续可以脱离Mac来使用iOS（Windows需要安装iTunes），如果证书过期，需要重新使用Mac安装证书
 
@@ -72,8 +72,8 @@
 
 ## 本文贡献者
 <div class="cont">
-<a href="https://gitee.com/ZhouYixun" target="_blank">
-<img src="https://portrait.gitee.com/uploads/avatars/user/2698/8096045_ZhouYixun_1645499109.png!avatar100" width="50"/>
+<a href="https://github.com/ZhouYixun" target="_blank">
+<img src="https://avatars.githubusercontent.com/u/56339314?v=4" width="50"/>
 <span>ZhouYixun</span>
 </a>
 <a href="https://gitee.com/soniclei" target="_blank">

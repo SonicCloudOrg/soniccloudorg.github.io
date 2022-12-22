@@ -6,7 +6,6 @@ import Sponsor from "../components/Sponsors.vue"
 import {DArrowRight, DArrowLeft} from "@element-plus/icons"
 import ad1 from '../assets/ad1.jpg'
 import ad2 from '../assets/linux-ad.jpg'
-import ad3 from '../assets/ad3.jpg'
 import c2 from "../assets/banner2.png";
 import honor from "../assets/honor.png";
 import c1 from "../assets/banner.png";
@@ -47,10 +46,6 @@ const ads = ref([
   {
     url: "https://sonic-cloud.wiki/d/1255-agentsoniclinux",
     pic: ad2
-  },
-  {
-    url: "https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/ad3.jpg",
-    pic: ad3
   },
   {
     url: "https://sonic-cloud.wiki/d/1209-sonic",
@@ -120,7 +115,7 @@ const switchNav = function () {
           <el-card>
             <el-alert v-if="i==0" style="margin-bottom: 20px" type="success" :closable="false">
               <template #title>
-                <div>更新前一定要查看版本迁移指南哦，可点击 <a href="https://sonic-cloud.gitee.io/#/Deploy?tag=upgrade">这里</a> 查看！</div>
+                <div>更新前一定要查看版本迁移指南哦，可点击 <a href="https://sonic-cloud.cn/deploy?tag=upgrade">这里</a> 查看！</div>
               </template>
             </el-alert>
             <span class="verh1">{{ d.version }}</span>

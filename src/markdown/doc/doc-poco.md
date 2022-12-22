@@ -103,7 +103,7 @@ Sonic已经兼容自动了大部分机型的非全屏偏移，如果自动兼容
 
 其代表的内容如下图所述：
 
-<el-image hide-on-click-modal src="https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/offsets.png" :preview-src-list="['https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/offsets.png']" style="width: 500px"/>
+<el-image hide-on-click-modal src="https://sonic-record-hongkong.oss-cn-hongkong.aliyuncs.com/offsets.png" :preview-src-list="['https://sonic-record-hongkong.oss-cn-hongkong.aliyuncs.com/offsets.png']" style="width: 500px"/>
 
 例如分辨率是1080x2220，上方黑边高度为100px，屏幕高度为2020px，底部黑边高度为100px，因此四个值为（0, 100, 1080, 2020）
 

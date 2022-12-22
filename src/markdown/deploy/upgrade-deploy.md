@@ -21,9 +21,9 @@ v2.0.0-release起，Sonic版本规则更改如下：
 
 ## 从 v1.4.x 或 v1.5.x 或 v2.0.x 升级到 v2.1.2
 > 0. 升级前先备份Mysql数据库。
-> 1. 直接前往 <a href="https://sonic-cloud.gitee.io/#/Deploy?tag=back-end" target="_blank">这里</a> 下载最新版本zip，down集群后重新up即可。（部署文档含中国大陆加速镜像部署方式）
-> 2. jar方式部署的Agent前往 <a href="https://sonic-cloud.gitee.io/#/Deploy?tag=agent" target="_blank">这里</a> 下载zip后解压，更新需替换旧版本plugins文件夹与jar文件。
-> 3. （附）Docker版Agent与server同理，前往 <a href="https://sonic-cloud.gitee.io/#/Deploy?tag=agent" target="_blank">这里</a> 重新下载镜像部署即可。（部署文档含中国大陆加速镜像部署方式）
+> 1. 直接前往 <a href="https://sonic-cloud.cn/deploy?tag=back-end" target="_blank">这里</a> 下载最新版本zip，down集群后重新up即可。（部署文档含中国大陆加速镜像部署方式）
+> 2. jar方式部署的Agent前往 <a href="https://sonic-cloud.cn/deploy?tag=agent" target="_blank">这里</a> 下载zip后解压，更新需替换旧版本plugins文件夹与jar文件。
+> 3. （附）Docker版Agent与server同理，前往 <a href="https://sonic-cloud.cn/deploy?tag=agent" target="_blank">这里</a> 重新下载镜像部署即可。（部署文档含中国大陆加速镜像部署方式）
 
 ## 从v2.0.0-release升级到v2.0.x
 
@@ -115,8 +115,8 @@ v2.0.0-release起，Sonic版本规则更改如下：
 ## 本文贡献者
 
 <div class="cont">
-<a href="https://gitee.com/ZhouYixun" target="_blank">
-<img src="https://portrait.gitee.com/uploads/avatars/user/2698/8096045_ZhouYixun_1645499109.png!avatar100" width="50"/>
+<a href="https://github.com/ZhouYixun" target="_blank">
+<img src="https://avatars.githubusercontent.com/u/56339314?v=4" width="50"/>
 <span>ZhouYixun</span>
 </a>
 <a href="https://gitee.com/wuxiangin" target="_blank">
