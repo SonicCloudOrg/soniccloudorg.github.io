@@ -1,4 +1,4 @@
-name: deploy to gitee
+name: deploy to ALIYUN
 
 on:
   workflow_dispatch:
