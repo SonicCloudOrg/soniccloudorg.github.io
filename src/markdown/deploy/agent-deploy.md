@@ -97,8 +97,8 @@ Agent有两种常见部署方式，分别为Docker部署和jar部署。
 
 ## 本文贡献者
 <div class="cont">
-<a href="https://gitee.com/ZhouYixun" target="_blank">
-<img src="https://portrait.gitee.com/uploads/avatars/user/2698/8096045_ZhouYixun_1645499109.png!avatar100" width="50"/>
+<a href="https://github.com/ZhouYixun" target="_blank">
+<img src="https://avatars.githubusercontent.com/u/56339314?v=4" width="50"/>
 <span>ZhouYixun</span>
 </a>
 <a href="https://gitee.com/soniclei" target="_blank">

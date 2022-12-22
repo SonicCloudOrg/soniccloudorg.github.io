@@ -49,12 +49,12 @@ const statisticsData = [
   {
     tipContent: 'Sonic社区总回复数',
     linkUrl: 'https://sonic-cloud.wiki',
-    img: 'https://img.shields.io/badge/replies%20-12.6k-ff69b4?style=social&logo=LiveChat'
+    img: 'https://img.shields.io/badge/replies%20-12.8k-ff69b4?style=social&logo=LiveChat'
   },
   {
     tipContent: '镜像仓库总下载量',
     linkUrl: 'https://github.com/SonicCloudOrg',
-    img: 'https://img.shields.io/badge/Docker%20pulls%20-64.9k-important'
+    img: 'https://img.shields.io/badge/Docker%20pulls%20-65.1k-important'
   }
 ]
 const news = ref([
@@ -128,7 +128,7 @@ const conList = ref([con1, con2, con3, con4, con5,con6])
         </div>
         <h4 class="brand-desc">免费开源的云真机测试平台，用心打造更好的使用体验。</h4>
         <div style="text-align: center">
-          <el-button type="primary" size="small" @click="router.push('/Deploy')">马上使用</el-button>
+          <el-button type="primary" size="small" @click="router.push('/deploy')">马上使用</el-button>
           <el-button type="primary" size="small" @click="open('https://sonic-cloud.wiki/')">用户社区
           </el-button>
         </div>
@@ -329,7 +329,7 @@ const conList = ref([con1, con2, con3, con4, con5,con6])
           还等什么？马上开始吧！
         </span>
         <div>
-          <el-button type="primary" size="large" @click="router.push('/Deploy')">马上使用</el-button>
+          <el-button type="primary" size="large" @click="router.push('/deploy')">马上使用</el-button>
           <el-button type="primary" size="large" @click="open('https://sonic-cloud.wiki/')">用户社区
           </el-button>
         </div>

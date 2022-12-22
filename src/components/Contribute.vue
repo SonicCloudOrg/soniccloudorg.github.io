@@ -31,5 +31,5 @@ const tree = ref([
 ])
 </script>
 <template>
-  <doc-tem path="Contribute" :tree="tree"/>
+  <doc-tem path="contribute" :tree="tree"/>
 </template>

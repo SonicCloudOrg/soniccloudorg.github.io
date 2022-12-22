@@ -66,10 +66,10 @@ implementation 'io.github.soniccloudorg:sonic-driver-core:1.1.17'
 
 ### iOS
 
-> iOS需要打包wda到手机上，教程可以参考 [这里](https://sonic-cloud.gitee.io/#/Deploy?tag=ios) 。
+> iOS需要打包wda到手机上，教程可以参考 [这里](https://sonic-cloud.cn/deploy?tag=ios) 。
 > 
 > 打包后，如果在Mac上直接使用XCode进行Build Test就可以忽略这一步。
-> 如果在非Mac环境或者不依赖XCode工具则需要 [sib](https://sonic-cloud.gitee.io/#/SIB) 或 tidevice 一类的工具启动wda。
+> 如果在非Mac环境或者不依赖XCode工具则需要 [sib](https://sonic-cloud.cn/sib) 或 tidevice 一类的工具启动wda。
 > 
 > 以sib为例：
 > ```
@@ -83,7 +83,7 @@ implementation 'io.github.soniccloudorg:sonic-driver-core:1.1.17'
 
 ### POCO
 
-> 使用POCO前需确认游戏应用引擎已经接入对应POCO-SDK，教程可以参考 [这里](https://sonic-cloud.gitee.io/#/Document?tag=poco) 。
+> 使用POCO前需确认游戏应用引擎已经接入对应POCO-SDK，教程可以参考 [这里](https://sonic-cloud.cn/document?tag=poco) 。
 > 
 > 打包后，打开对应游戏引擎并转发Socket端口。 以安卓、Unity3D引擎为例：
 > ```

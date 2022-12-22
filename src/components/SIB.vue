@@ -95,5 +95,5 @@ const tree = ref([
 ])
 </script>
 <template>
-  <doc-tem path="SIB" :tree="tree"/>
+  <doc-tem path="sib" :tree="tree"/>
 </template>

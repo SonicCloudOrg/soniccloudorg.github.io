@@ -1385,5 +1385,5 @@ const tree = ref([])
 </script>
 
 <template>
-  <doc-tem path="Version" :tree="tree" :data="data"/>
+  <doc-tem path="version" :tree="tree" :data="data"/>
 </template>

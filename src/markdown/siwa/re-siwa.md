@@ -128,11 +128,11 @@ go get -u github.com/SonicCloudOrg/sonic-ios-webkit-adapter
 
 ### 大体设计
 
-> <el-image hide-on-click-modal src="https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/siwa-design.png" :preview-src-list="['https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/siwa-design.png']" style="width: 80%"/>
+> <el-image hide-on-click-modal src="https://sonic-record-hongkong.oss-cn-hongkong.aliyuncs.com/siwa-design.png" :preview-src-list="['https://sonic-record-hongkong.oss-cn-hongkong.aliyuncs.com/siwa-design.png']" style="width: 80%"/>
 
 ### 不同调试协议之间的[API差异](http://compatibility.remotedebug.org/) 概览
 
-> <el-image hide-on-click-modal src="https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/siwa-api-diff.png" :preview-src-list="['https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/siwa-api-diff.png']" style="width: 90%"/>
+> <el-image hide-on-click-modal src="https://sonic-record-hongkong.oss-cn-hongkong.aliyuncs.com/siwa-api-diff.png" :preview-src-list="['https://sonic-record-hongkong.oss-cn-hongkong.aliyuncs.com/siwa-api-diff.png']" style="width: 90%"/>
 
 ## 本文贡献者
 

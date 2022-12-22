@@ -18,7 +18,7 @@ Sonic目前使用的图像库基于 [sonic-vision-core](https://github.com/Sonic
 > 
 > 效果如图：
 > 
-> <el-image hide-on-click-modal src="https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/tem.png" :preview-src-list="['https://gitee.com/sonic-cloud/sonic-cloud/raw/main/src/assets/tem.png']" style="width: 300px"/>
+> <el-image hide-on-click-modal src="https://sonic-record-hongkong.oss-cn-hongkong.aliyuncs.com/tem.png" :preview-src-list="['https://sonic-record-hongkong.oss-cn-hongkong.aliyuncs.com/tem.png']" style="width: 300px"/>
 
 默认图像识别算法顺序：
 

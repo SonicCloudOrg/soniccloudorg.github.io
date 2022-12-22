@@ -21,7 +21,7 @@ webView.setWebContentsDebuggingEnabled(true);
 
 ## iOS
 
-iOS网页调试webkit协议接收器在持续维护中，可以前往 [这里](https://sonic-cloud.gitee.io/#/SIWA) 了解更多。
+iOS网页调试webkit协议接收器在持续维护中，可以前往 [这里](https://sonic-cloud.cn/siwa) 了解更多。
 
 > 1. 前往系统【设置】。
 > 2. 在应用列表找到Safari浏览器。

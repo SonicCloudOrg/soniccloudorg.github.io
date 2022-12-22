@@ -29,7 +29,7 @@
 | classChain  | 仅支持iOS |  XCUIElementTypeWindow[2]/XCUIElementTypeAny   |
 | 坐标  | 支持绝对坐标与相对坐标，注意坐标(0,0)为当前屏幕旋转方向左上角。 |  0.8,0.2   |
 | 图片  | 图片类型控件 |  无   |
-| poco  | 仅支持Poco控件，支持多属性筛选，支持child筛选，如果筛选结果为多个，默认返回首个控件。详细语法可点击 <a href="https://sonic-cloud.gitee.io/#/Document?tag=poco" target="_blank">这里</a> （需升级至Sonic v2.0.0） |  poco("star").child(type="Text",name="Hello")[0]   |
+| poco  | 仅支持Poco控件，支持多属性筛选，支持child筛选，如果筛选结果为多个，默认返回首个控件。详细语法可点击 <a href="https://sonic-cloud.cn/document?tag=poco" target="_blank">这里</a> （需升级至Sonic v2.0.0） |  poco("star").child(type="Text",name="Hello")[0]   |
 | name、linkText和其他  | 都为webView定位方式，注意cssSelectorAndText可用className+text同时定位 |  van-button--default,购物车   |
 
 ## 复制控件元素

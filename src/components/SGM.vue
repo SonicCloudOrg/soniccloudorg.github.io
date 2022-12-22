@@ -18,5 +18,5 @@ const tree = ref([
 ])
 </script>
 <template>
-  <doc-tem path="SGM" :tree="tree"/>
+  <doc-tem path="sgm" :tree="tree"/>
 </template>
