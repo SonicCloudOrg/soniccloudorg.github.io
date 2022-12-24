@@ -17,7 +17,7 @@ Agent有两种常见部署方式，分别为Docker部署和jar部署。
 > ```
 > docker-compose up -d
 > ```
-> 如果您为中国大陆用户，我们建议配置加速镜像源或执行以下指令直接使用加速镜像（后续down的时候需要docker-compose -f docker-compose-zh.yml down）
+> 如果您为中国大陆用户，我们 **建议配置加速镜像源** 或 <a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.1.2/docker-compose.yml" target="_blank">点击这里</a> 下载docker-compose-zh.yml后执行以下指令直接使用加速镜像（后续down的时候需要docker-compose -f docker-compose-zh.yml down）
 > ```
 > docker-compose -f docker-compose-zh.yml up -d
 > ```
