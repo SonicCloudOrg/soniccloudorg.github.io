@@ -4,8 +4,8 @@
 Agent有两种常见部署方式，分别为Docker部署和jar部署。
 <el-alert style="margin-top: 20px" title="注意" show-icon type="info" description="谨记一个主机只能部署一个Agent端，每个Agent的Key不能重复使用，多台设备可接入同一Agent" :closable="false"/>
 
-## 一、Docker部署 **（注：仅Ubuntu可用！可以点击 [这里](https://sonic-cloud.wiki/d/1255-agentsoniclinux) 查看官方推荐主机）** 
-该方式将一次性部署Agent端以及所需环境。
+## 一、Docker部署 **（注：仅Ubuntu可用！）** 
+该方式将一次性部署Agent端以及所需环境。**可以点击 [这里](https://sonic-cloud.wiki/d/1255-agentsoniclinux) 查看官方推荐主机**
 
 准备工作：Docker，Sonic前后端部署完毕
 > 1. 从部署好的前端界面【设备中心】的【Agent中心】新增Agent，记录Agent的Key。
