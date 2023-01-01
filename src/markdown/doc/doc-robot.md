@@ -37,6 +37,16 @@
 > 4. 点击【添加】按钮，机器人添加完成，此时出现的webHook即为Sonic平台的【机器人Hook】，复制该webHook填写到项目中。
 > 5. 完成!平台即可推送消息。
 
+## Telegram机器人
+
+> 1. 在Telegram內透过[@BotFather](https://t.me/BotFather) 建立Telegram机器人且取得机器人Token。
+> 2. 在Telegram内将机器人加入指定聊天或聊天群组。
+> 3. 利用`https://api.telegram.org/bot{Token}/getUpdates` 连结取得chatId
+> 4. 将以下连结`https://api.telegram.org/bot{Token}/sendMessage?chat_id={chatId}`的Token和chatId取代组成webHook。
+> 5. 组成的webHook即为Sonic平台的【机器人Hook】，复制该webHook填写到项目中。
+> 6. 完成！平台即可推送消息。
+> 7. [Telegram Bot API参考连结](https://core.telegram.org/bots/api)
+
 ## 本文贡献者
 <div class="cont">
 <a href="https://github.com/ZhouYixun" target="_blank">
@@ -46,6 +56,10 @@
 <a href="https://github.com/upengfei" target="_blank">
 <img src="https://avatars.githubusercontent.com/u/18410330?v=4" width="50"/>
 <span>upengfei</span>
+</a>
+<a href="https://github.com/ayumi760405" target="_blank">
+<img src="https://avatars.githubusercontent.com/u/28735340?v=4" width="50"/>
+<span>ayumi760405</span>
 </a>
 </div>
 

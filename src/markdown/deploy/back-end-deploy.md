@@ -14,10 +14,12 @@
 > ```
 > docker-compose up -d
 > ```
-> 如果您为中国大陆用户，我们建议配置加速镜像源或执行以下指令直接使用加速镜像（后续down的时候需要docker-compose -f docker-compose-zh.yml down）
-> ```
-> docker-compose -f docker-compose-zh.yml up -d
-> ```
+> > 如果您为中国大陆用户，出现访问DockerHub较慢的情况，我们可以
+> > 1. 配置国内加速镜像源（推荐）
+> > 2. 执行以下指令直接使用加速镜像（不推荐，加速源可能出现不稳定或网络波动，后续down的时候需要docker-compose -f docker-compose-zh.yml down）
+> > ```
+> > docker-compose -f docker-compose-zh.yml up -d
+> > ```
 > 4. 前后端部署完毕！（因Eureka心跳机制，刚启动完毕微服务间互相访问需要3~5分钟，请耐心等候）打开浏览器访问 [http://localhost:3000](http://localhost:3000)，然后可 **直接前往** Agent端部署。
 > 5. （附）如果您是经验丰富的运维人员，也可以前往Eureka页面查看各微服务状态。
 
