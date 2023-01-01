@@ -52,14 +52,19 @@ const routes = [
             import ("../components/SDC.vue"),
     },
     {
-        path: '/Version',
+        path: '/version',
         component: () =>
             import ("../components/Version.vue"),
     },
     {
-        path: '/About',
+        path: '/about',
         component: () =>
             import ("../components/About.vue"),
+    },
+    {
+        path: '/cabinet',
+        component: () =>
+            import ("../components/Cabinet.vue"),
     },
     {
         path: '/',

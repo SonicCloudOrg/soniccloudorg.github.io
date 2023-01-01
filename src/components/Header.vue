@@ -115,7 +115,8 @@ onMounted(()=>{
             sonic-ios-webkit-adapter
           </el-menu-item>
         </el-sub-menu>
-<!--        <el-menu-item index="/Cabinet" @click="router.push('/Home')" disabled>硬件方案(即将开放)</el-menu-item>-->
+        <el-menu-item index="/cabinet" @click="router.push('/cabinet')">硬件方案<el-badge type="danger" value="new" class="item" style="margin-top: -2px;margin-left: 5px">
+        </el-badge></el-menu-item>
         <el-menu-item index="/version" @click="router.push('/version')">版本记录
         </el-menu-item>
         <el-sub-menu index="1">

@@ -21,10 +21,6 @@ import Header from "./components/Header.vue"
   color: #2c3e50;
 }
 
-.el-card * {
-  color: #606266;
-}
-
 .el-tab-pane {
   padding: 0 4%;
 }
