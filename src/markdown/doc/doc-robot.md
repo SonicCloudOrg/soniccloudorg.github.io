@@ -49,9 +49,9 @@
 
 ## LINE Notify
 
-> 1. 登入[Line Notify](https://notify-bot.line.me/doc/en/)且進入個人頁面。
-> 2. 點擊【發行權杖(Token)】並設定名稱及選取要接收通知的群組。
-> 3. 按下發行後取得【權杖(Token)】。
+> 1. 登入[Line Notify](https://notify-bot.line.me/doc/en/)且进入个人页面。
+> 2. 点击【发行权杖(Token)】并设定名称及选取要接收通知的群组。
+> 3. 按下发行后取得【权杖(Token)】。
 > 4. 取得的Token即为Sonic平台的【机器人Hook】，复制该Token填写到项目中。
 > 5. 完成！平台即可推送消息。
 > 6. [Line Notify API参考连结](https://notify-bot.line.me/doc/en/)
