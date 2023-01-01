@@ -168,10 +168,12 @@ const ths = ref([
                 <el-avatar :src="user" :size="60"/>
                 <div style="margin-left: 20px">
                   <div style="display: flex">
-                  <h4 style="margin: 0px">友空间团队测试专家</h4>
-                  <el-rate disabled v-model="rate" style="width: 200px;margin-left: 10px"/>
+                    <h4 style="margin: 0px">友空间团队测试专家</h4>
+                    <el-rate disabled v-model="rate" style="width: 200px;margin-left: 10px"/>
                   </div>
-                  <el-card style="margin-top: 20px">使用下来体验非常不错，设备鼓包率大大下降，长时间测试与使用能保持电池健康的温度。手机管理，监控，使用变得更快捷，更有效！</el-card>
+                  <el-card style="margin-top: 20px">
+                    使用下来体验非常不错，设备鼓包率大大下降，长时间测试与使用能保持电池健康的温度。手机管理，监控，使用变得更快捷，更有效！
+                  </el-card>
                 </div>
               </div>
             </el-card>
@@ -179,7 +181,45 @@ const ths = ref([
         </div>
       </div>
 
+      <div>
+        <div style="margin-top: 60px">
+          <h2>
+            设备充电保护落地效益
+          </h2>
+          <div style="padding: 0 20%;">
+            <el-divider><span style="color: #909399">Sonic实验室结合内测用户三个月实验数据</span></el-divider>
+          </div>
+          <el-descriptions
+              direction="vertical"
+              :column="1"
+              size="large"
+              border
+          >
+            <el-descriptions-item label="充电时长">工作日24h/天</el-descriptions-item>
+            <el-descriptions-item label="电池温度">设备平均温度下降8-11°C</el-descriptions-item>
+            <el-descriptions-item label="设备鼓包率">7% -> 1.8%</el-descriptions-item>
+            <el-descriptions-item label="设备充电电流">接近额定电流，未出现过冲</el-descriptions-item>
+            <el-descriptions-item label="设备充电电压">约4V - 4.2V不等</el-descriptions-item>
+          </el-descriptions>
+        </div>
+      </div>
+
       <div style="margin-bottom: 100px"></div>
+      <el-footer style="margin-top: 75px">
+        <el-divider></el-divider>
+        <div style="font-size: 10px;color: #909399">
+          上述硬件产品不影响Sonic平台正常使用，仅为搭建硬件环境提供采购选择，Sonic平台仍然保持永久开源、免费。
+        </div>
+        <div style="margin-top: 5px;font-size: 10px;color: #909399">上述部分产品含专利。版权所有，盗版必究。</div>
+        <div style="margin-top: 5px;">
+          <el-link href="mailto:soniccloudorg@163.com" target="_blank" type="primary">官方邮箱</el-link>
+          <el-link href="https://sonic-record-hongkong.oss-cn-hongkong.aliyuncs.com/wechat.jpg" target="_blank"
+                   type="primary"
+                   style="margin-left: 20px">企微咨询
+          </el-link>
+        </div>
+        <div style="margin-top: 10px">&nbsp;</div>
+      </el-footer>
     </div>
   </el-scrollbar>
 </template>
