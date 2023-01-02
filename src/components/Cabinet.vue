@@ -61,13 +61,13 @@ const product = ref([
     title: "PAWAO UPS电源",
     des: "外置电池主机",
     des2: "智能稳压，无惧异常断电",
-    url: ""
+    url: "https://item.taobao.com/item.htm?spm=a21dvs.23580594.0.0.3c3a645ez8ZN2h&ft=t&id=696193021266"
   },
   {
     title: "PAWAO 无线路由器",
     des: "超强覆盖，信号稳定",
     des2: "高速率、超频宽、更疾速",
-    url: ""
+    url: "https://item.taobao.com/item.htm?spm=a21dvs.23580594.0.0.3c3a645ez8ZN2h&ft=t&id=696702703783"
   },
 ])
 const ths = ref([
