@@ -7,6 +7,13 @@ import th2 from '../assets/th2.png'
 import th3 from '../assets/th3.png'
 import user from '../assets/user.png'
 import Pur from './Pur.vue'
+import p1 from '../assets/p1.jpg'
+import p2 from '../assets/p2.jpg'
+import p3 from '../assets/p3.jpg'
+import p4 from '../assets/p4.jpg'
+import p5 from '../assets/p5.jpg'
+import p6 from '../assets/p6.jpg'
+import p7 from '../assets/p7.jpg'
 
 const rate = ref(5)
 const videoOptions = ref({
@@ -28,42 +35,49 @@ const cabinetDes = ref([
 ])
 const product = ref([
   {
+    pic: p1,
     title: "PAWAO 1.0 散热式机柜",
     des: "含小、中、大规格",
     des2: "可选择散热版、屏蔽版、温控版",
-    url: ""
+    url: "https://item.taobao.com/item.htm?spm=a21dvs.23580594.0.0.3c3a645eSj7FCR&ft=t&id=696443990660"
   },
   {
+    pic: p2,
     title: "PAWAO 1.0 智能集线器",
     des: "提供二进制文件，可HTTP调用",
     des2: "轻松控制集线器USB口通断电",
     url: ""
   },
   {
+    pic: p3,
     title: "PAWAO 1.0 智能数据线",
     des: "智能芯片助力充电口降温",
     des2: "支持Type-c、苹果数据线",
     url: "https://item.taobao.com/item.htm?spm=a21dvs.23580594.0.0.52de3d0dbeP6yr&ft=t&id=693483194887"
   },
   {
+    pic: p4,
     title: "PAWAO 迷你工控机",
     des: "小巧工控机，可自定义配置",
     des2: "搭载Ubuntu系统，稳定运行",
     url: "https://item.taobao.com/item.htm?spm=a21dvs.23580594.0.0.52de3d0dbeP6yr&ft=t&id=690165961688"
   },
   {
+    pic: p5,
     title: "PAWAO 六类网线",
     des: "CAT6A成品网线、路由器连接线",
     des2: "可自由选择长度",
     url: "https://item.taobao.com/item.htm?spm=a21dvs.23580594.0.0.52de3d0dbeP6yr&ft=t&id=691859752465"
   },
   {
+    pic: p6,
     title: "PAWAO UPS电源",
     des: "外置电池主机",
     des2: "智能稳压，无惧异常断电",
     url: "https://item.taobao.com/item.htm?spm=a21dvs.23580594.0.0.3c3a645ez8ZN2h&ft=t&id=696193021266"
   },
   {
+    pic: p7,
     title: "PAWAO 无线路由器",
     des: "超强覆盖，信号稳定",
     des2: "高速率、超频宽、更疾速",
@@ -117,11 +131,11 @@ const ths = ref([
           </el-timeline-item>
         </el-timeline>
       </div>
-      预计2023年1月上架...
+      <pur url="https://item.taobao.com/item.htm?spm=a21dvs.23580594.0.0.3c3a645eSj7FCR&ft=t&id=696443990660"/>
     </div>
 
     <div>
-      <div style="margin-top: 60px">
+      <div style="margin: 160px 0">
         <h2>
           PAWAO 1.0 智能集线器
         </h2>
@@ -130,23 +144,6 @@ const ths = ref([
     </div>
 
     <div class="container">
-      <div style="margin-top: 60px">
-        <h2>
-          所有硬件产品
-        </h2>
-      </div>
-      <div style="padding: 0 20%;">
-        <el-divider></el-divider>
-      </div>
-      <div class="use-case-cabinet">
-        <el-card v-for="d in product" class="case-content" shadow="hover">
-          <!--          <img :src="team4" height="40"/>-->
-          <h3>{{ d.title }}</h3>
-          <p>{{ d.des }}</p>
-          <p>{{ d.des2 }}</p>
-          <pur :url="d.url"/>
-        </el-card>
-      </div>
 
       <div>
         <div style="margin-top: 60px">
@@ -202,6 +199,24 @@ const ths = ref([
             <el-descriptions-item label="设备充电电压">约4V - 4.2V不等</el-descriptions-item>
           </el-descriptions>
         </div>
+      </div>
+
+      <div style="margin-top: 60px">
+        <h2>
+          所有硬件产品
+        </h2>
+      </div>
+      <div style="padding: 0 20%;">
+        <el-divider></el-divider>
+      </div>
+      <div class="use-case-cabinet">
+        <el-card v-for="d in product" class="case-content" shadow="hover">
+          <img :src="d.pic" height="80"/>
+          <h3>{{ d.title }}</h3>
+          <p>{{ d.des }}</p>
+          <p>{{ d.des2 }}</p>
+          <pur :url="d.url"/>
+        </el-card>
       </div>
 
       <div style="margin-bottom: 100px"></div>
