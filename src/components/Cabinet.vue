@@ -144,7 +144,25 @@ const ths = ref([
     </div>
 
     <div class="container">
-
+    
+      <div style="margin-top: 60px">
+        <h2>
+          所有硬件产品
+        </h2>
+      </div>
+      <div style="padding: 0 20%;">
+        <el-divider></el-divider>
+      </div>
+      <div class="use-case-cabinet">
+        <el-card v-for="d in product" class="case-content" shadow="hover">
+          <img :src="d.pic" height="80"/>
+          <h3>{{ d.title }}</h3>
+          <p>{{ d.des }}</p>
+          <p>{{ d.des2 }}</p>
+          <pur :url="d.url"/>
+        </el-card>
+      </div>
+      
       <div>
         <div style="margin-top: 60px">
           <h2>
@@ -199,24 +217,6 @@ const ths = ref([
             <el-descriptions-item label="设备充电电压">约4V - 4.2V不等</el-descriptions-item>
           </el-descriptions>
         </div>
-      </div>
-
-      <div style="margin-top: 60px">
-        <h2>
-          所有硬件产品
-        </h2>
-      </div>
-      <div style="padding: 0 20%;">
-        <el-divider></el-divider>
-      </div>
-      <div class="use-case-cabinet">
-        <el-card v-for="d in product" class="case-content" shadow="hover">
-          <img :src="d.pic" height="80"/>
-          <h3>{{ d.title }}</h3>
-          <p>{{ d.des }}</p>
-          <p>{{ d.des2 }}</p>
-          <pur :url="d.url"/>
-        </el-card>
       </div>
 
       <div style="margin-bottom: 100px"></div>
