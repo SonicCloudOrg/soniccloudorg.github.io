@@ -2,6 +2,8 @@ name: deploy to ALIYUN
 
 on:
   workflow_dispatch:
+  push:
+    branches: [ main ]
 
 jobs:
   deploy:
