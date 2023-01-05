@@ -196,7 +196,7 @@ const ths = ref([
             <el-descriptions-item label="电池温度">设备平均温度下降8-11°C</el-descriptions-item>
             <el-descriptions-item label="设备鼓包率">7% -> 1.8%</el-descriptions-item>
             <el-descriptions-item label="设备充电电流">接近额定电流，未出现过冲</el-descriptions-item>
-            <el-descriptions-item label="设备充电电压">约4V - 4.2V不等</el-descriptions-item>
+            <el-descriptions-item label="设备充电电压">约4V - 4.5V不等</el-descriptions-item>
           </el-descriptions>
         </div>
       </div>
