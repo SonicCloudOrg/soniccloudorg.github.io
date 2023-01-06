@@ -193,7 +193,7 @@ const ths = ref([
               </div>
             </el-card>
             
-            <el-card style="width: 100%;text-align: left">
+            <el-card style="width: 100%;text-align: left;margin-top: 20px">
               <div style="display: flex">
                 <el-avatar :src="user" :size="60"/>
                 <div style="margin-left: 20px">
