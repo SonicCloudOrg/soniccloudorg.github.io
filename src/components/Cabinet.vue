@@ -192,6 +192,21 @@ const ths = ref([
                 </div>
               </div>
             </el-card>
+            
+            <el-card style="width: 100%;text-align: left">
+              <div style="display: flex">
+                <el-avatar :src="user" :size="60"/>
+                <div style="margin-left: 20px">
+                  <div style="display: flex">
+                    <h4 style="margin: 0px">东田测试团队</h4>
+                    <el-rate disabled v-model="rate" style="width: 200px;margin-left: 10px"/>
+                  </div>
+                  <el-card style="margin-top: 20px">
+                    为测试设备的运行提供了一个稳定的环境，可以更加高效的对测试设备进行管理，可以实时查看设备的状态以及各种信息，对温度指标设置监控警报，提升了测试设备的使用寿命。
+                  </el-card>
+                </div>
+              </div>
+            </el-card>
           </div>
         </div>
       </div>
