@@ -18,6 +18,10 @@ import sponsors from '../config/sponsors'
   height: 40px;
 }
 
+.vp-sponsor-grid-item .vp-sponsor-grid-image {
+  filter: unset;
+}
+
 .VPDocAsideSponsors {
   padding-bottom: 1em;
   border-bottom: 1px solid var(--vp-c-divider-light);

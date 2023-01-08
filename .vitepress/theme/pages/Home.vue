@@ -31,9 +31,10 @@
 
       <!-- entry -->
       <div class="entry-operation">
-        <el-button type="primary" round> 马上使用 </el-button>
+        <el-button type="primary" size="large" round> 马上使用 </el-button>
         <el-button
           type="primary"
+          size="large"
           round
           @click="open('https://sonic-cloud.wiki/')"
         >
