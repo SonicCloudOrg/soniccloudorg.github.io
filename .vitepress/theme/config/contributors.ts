@@ -24,5 +24,10 @@ export default [
     link: 'https://gitee.com/lanlanz',
     avatar:
       'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAAXNSR0IArs4c6QAAARZJREFUaEPtlMENAWEQhWdPIg560IBCnBSgCneJNtw0oIoNPUhwk3AQRCI21irAYWdlMGa/Pb+dzLzvvT/ZjjqF1OhLODg4bQgHBywQhnAwB4h0MKAv50AYwsEcINLBgPJoEWkiHcyBj0a62e1LuzeWpNGS/LyT42wo2WbxUws52NJ+CBNpyzzpZtFhnU86FR2mw7qkWKrosKWbdJgOW+ZJN4sO63zSqegwHdYlxVJFhy3drHWHH9eTZKtUijwr9fS+X8olnZTq3hF8LdJVlrut53KYDqr8otZysNqqPxV+lLBHTzjYIxXLnSBs6abHWRD2SMVyJwhbuulxFoQ9UrHcCcKWbnqcBWGPVCx3grClmx5n1Y7wE1DsXXjHsZ4HAAAAAElFTkSuQmCC'
+  },{
+    name: 'yyz20001111',
+    link: 'https://github.com/yyz20001111',
+    avatar:
+      'https://avatars.githubusercontent.com/u/61265897?v=4'
   }
 ] as Contributor[]

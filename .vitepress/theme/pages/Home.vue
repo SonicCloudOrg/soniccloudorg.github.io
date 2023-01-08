@@ -48,7 +48,7 @@
     <div class="hero__right">
       <video
         controls
-        src="https://sonic-record-hongkong.oss-cn-hongkong.aliyuncs.com/demo.mp4"
+        :src="demo"
       />
     </div>
   </section>
@@ -275,6 +275,7 @@ import c1 from '../assets/banner.png'
 import c2 from '../assets/banner2.png'
 import c4 from '../assets/banner3.png'
 import c5 from '../assets/banner4.png'
+import demo from '../assets/video/demo.mp4'
 // 贡献墙
 import con1 from '../assets/cons/con1.jpg'
 import con2 from '../assets/cons/con2.jpg'

@@ -15,7 +15,7 @@
       <video
         class="capacity-video"
         controls
-        src="https://sonic-record-hongkong.oss-cn-hongkong.aliyuncs.com/cabinet.mp4"
+        :src="cabinetVideo"
       />
       <el-timeline class="capacity-list" style="text-align: left">
         <el-timeline-item v-for="i in cabinetDes" type="primary" :hollow="true">
@@ -64,39 +64,20 @@
     </el-space>
 
     <div class="using-container">
-      <el-card style="width: 100%; text-align: left">
+      <el-card v-for="t in talk" style="width: 100%; text-align: left;margin-bottom: 10px">
         <div style="display: flex">
-          <el-avatar :src="user" :size="60"/>
+          <el-avatar :src="t.ava" :size="60"/>
           <div style="flex: 1; margin-left: 20px">
             <div style="display: flex">
-              <h4 style="margin: 0px">友空间团队测试专家</h4>
+              <h4 style="margin: 0px">{{ t.name }}</h4>
               <el-rate
                 disabled
                 v-model="rate"
-                style="width: 200px; margin-left: 10px"
+                style="width: 200px; margin-left: 10px;height: 25px"
               />
             </div>
-            <el-card style="margin-top: 20px">
-              使用下来体验非常不错，设备鼓包率大大下降，长时间测试与使用能保持电池健康的温度。手机管理，监控，使用变得更快捷，更有效！
-            </el-card>
-          </div>
-        </div>
-      </el-card>
-
-      <el-card style="width: 100%; text-align: left; margin-top: 20px">
-        <div style="display: flex">
-          <el-avatar :src="user" :size="60"/>
-          <div style="flex: 1; margin-left: 20px">
-            <div style="display: flex">
-              <h4 style="margin: 0px">东田测试团队</h4>
-              <el-rate
-                disabled
-                v-model="rate"
-                style="width: 200px; margin-left: 10px"
-              />
-            </div>
-            <el-card style="margin-top: 20px">
-              为测试设备的运行提供了一个稳定的环境，可以更加高效的对测试设备进行管理，可以实时查看设备的状态以及各种信息，对温度指标设置监控警报，提升了测试设备的使用寿命。
+            <el-card style="margin-top: 10px">
+              {{ t.msg }}
             </el-card>
           </div>
         </div>
@@ -172,6 +153,7 @@ import p4 from '../assets/cabinet/p4.jpg'
 import p5 from '../assets/cabinet/p5.jpg'
 import p6 from '../assets/cabinet/p6.jpg'
 import p7 from '../assets/cabinet/p7.jpg'
+import cabinetVideo from '../assets/video/cabinet.mp4'
 
 const rate = ref(5)
 const videoOptions = ref({
@@ -254,6 +236,17 @@ const ths = ref([
   {
     url: 'https://pmcloud.yonyoucloud.com/official-index.html',
     src: th1
+  }
+])
+const talk = ref([
+  {
+    ava: user,
+    name: "友空间团队测试专家",
+    msg: "使用下来体验非常不错，设备鼓包率大大下降，长时间测试与使用能保持电池健康的温度。手机管理，监控，使用变得更快捷，更有效！"
+  }, {
+    ava: user,
+    name: "东田测试团队",
+    msg: "为测试设备的运行提供了一个稳定的环境，可以更加高效的对测试设备进行管理，可以实时查看设备的状态以及各种信息，对温度指标设置监控警报，提升了测试设备的使用寿命。"
   }
 ])
 </script>

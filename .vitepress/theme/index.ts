@@ -16,7 +16,8 @@ import {
   ElDescriptionsItem,
   ElLink,
   ElPopover,
-  ElAlert
+  ElAlert,
+  ElRate
 } from 'element-plus'
 
 import Layout from './pages/Layout.vue'
@@ -45,6 +46,7 @@ const theme: Theme = {
     app.use(ElDescriptions)
     app.use(ElDescriptionsItem)
     app.use(ElLink)
+    app.use(ElRate)
     app.use(ElPopover)
     app.use(ElAlert)
     // 自定义组件

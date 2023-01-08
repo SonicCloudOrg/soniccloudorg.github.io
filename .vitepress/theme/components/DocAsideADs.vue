@@ -1,4 +1,5 @@
 <template>
+  <h2 class="sponsors-aside-text doc-aside-ads-top">广告 ADS</h2>
   <div class="doc-aside-ads-wrapper">
     <el-carousel
       indicator-position="outside"
@@ -22,11 +23,11 @@
 
 <script setup>
 import ad1 from '../assets/ads/ad1.jpg'
-import ad2 from '../assets/ads/linux-ad.jpg'
+import ad2 from '../assets/ads/linux-ad2.jpg'
 
 const ads = [
   {
-    url: 'https://sonic-cloud.wiki/d/1255-agentsoniclinux',
+    url: 'https://sonic-cloud.cn/cabinet.html',
     pic: ad2
   },
   {
@@ -37,10 +38,20 @@ const ads = [
 </script>
 
 <style>
+.doc-aside-ads-top {
+  margin-top: 30px;
+  padding-top: 1em;
+  border-top: 1px solid var(--vp-c-divider-light);
+}
+
 .doc-aside-ads-wrapper {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 10px;
+}
+
+.doc-aside-ads-wrapper .el-carousel__container{
+    height: 284px
 }
 
 .become-sponsor {
