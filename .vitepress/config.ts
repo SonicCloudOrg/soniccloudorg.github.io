@@ -7,7 +7,7 @@ const nav = [
       {
         items: [
           { text: '部署文档', link: '/deploy/back-end-deploy' },
-          { text: '使用文档', link: '/document' },
+          { text: '使用文档', link: '/doc/doc-use' },
           { text: '开发文档', link: '...' },
           { text: '企业案例', link: '...' }
         ]
@@ -70,6 +70,22 @@ const sidebar = {
       items: [
         { text: '安卓设备接入', link: '/deploy/android-deploy' },
         { text: 'iOS设备接入', link: '/deploy/ios-deploy' }
+      ]
+    }
+  ],
+  '/doc/': [
+    {
+      text: '开始',
+      items: [
+        { text: '快速上手', link: '/doc/doc-use' },
+        { text: '进阶教学', link: '/doc/doc-high' },
+      ]
+    },
+    {
+      text: '远程控制相关',
+      items: [
+        { text: 'Agent中心', link: '/doc/doc-agent' },
+        { text: '设备中心', link: '/doc/doc-device' }
       ]
     }
   ],

@@ -91,7 +91,7 @@ $ tree
 7. 修改 config 文件夹中 **application-sonic-agent.yml** 的配置信息，保存。
 8. 在 **工作目录** 路径下执行以下指令。
 
-::: tip 快速启动
+::: tip
 注意！如果你是 windows 用户，请先在控制台输入 `chcp 65001` 并回车，再输入以下指令
 :::
 
