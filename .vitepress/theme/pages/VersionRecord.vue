@@ -1,5 +1,6 @@
 <template>
   <el-timeline class="version-show">
+    <span class="verh1">版本更新记录</span>
     <el-timeline-item
       v-for="(d, i) in data"
       :timestamp="'发布时间：' + d.time"
@@ -68,8 +69,8 @@ import data from '../config/version'
 <style>
 .version-show {
   text-align: left;
-  margin-left: 160px;
-  margin-bottom: 80px;
+  width: 1000px;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 820px) {
