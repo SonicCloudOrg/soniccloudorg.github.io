@@ -36,11 +36,11 @@
     <div class="use-case-cabinet">
       <el-card v-for="d in product" class="case-card-wrapper" shadow="hover">
         <div class="case-card-content">
-          <img class="product-img" :src="d.pic" />
+          <img class="product-img" :src="d.pic"/>
           <h3 class="product-name">{{ d.title }}</h3>
           <p>{{ d.des }}</p>
           <p>{{ d.des2 }}</p>
-          <pur :url="d.url" />
+          <pur :url="d.url"/>
         </div>
       </el-card>
     </div>
@@ -66,7 +66,7 @@
     <div class="using-container">
       <el-card style="width: 100%; text-align: left">
         <div style="display: flex">
-          <el-avatar :src="user" :size="60" />
+          <el-avatar :src="user" :size="60"/>
           <div style="flex: 1; margin-left: 20px">
             <div style="display: flex">
               <h4 style="margin: 0px">友空间团队测试专家</h4>
@@ -85,7 +85,7 @@
 
       <el-card style="width: 100%; text-align: left; margin-top: 20px">
         <div style="display: flex">
-          <el-avatar :src="user" :size="60" />
+          <el-avatar :src="user" :size="60"/>
           <div style="flex: 1; margin-left: 20px">
             <div style="display: flex">
               <h4 style="margin: 0px">东田测试团队</h4>
@@ -136,22 +136,20 @@
       <div style="font-size: 10px; color: #909399">
         上述硬件产品不影响Sonic平台正常使用，仅为搭建硬件环境提供采购选择，Sonic平台仍然保持永久开源、免费。
       </div>
-      <div style="margin-top: 5px; font-size: 10px; color: #909399">
-        上述部分产品含专利。版权所有，盗版必究。
-      </div>
       <div style="margin-top: 5px">
         <el-link
           href="mailto:soniccloudorg@163.com"
           target="_blank"
           type="primary"
-          >官方邮箱</el-link
+        >官方邮箱
+        </el-link
         >
         <el-link
           href="https://sonic-record-hongkong.oss-cn-hongkong.aliyuncs.com/wechat.jpg"
           target="_blank"
           type="primary"
           style="margin-left: 20px"
-          >企微咨询
+        >企微咨询
         </el-link>
       </div>
       <div style="margin-top: 10px">&nbsp;</div>
@@ -160,7 +158,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import {ref} from 'vue'
 import Pur from '../components/Pur.vue'
 import SectionBox from '../components/SectionBox.vue'
 import th1 from '../assets/cabinet/th1.png'
@@ -293,7 +291,7 @@ const ths = ref([
 
 .cabinet-open-screen {
   position: relative;
-  padding: 120px 0;
+  padding: 200px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -365,6 +363,7 @@ const ths = ref([
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   p {
     margin-bottom: 16px;
   }

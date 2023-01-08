@@ -3,9 +3,9 @@ import { Contributor } from '../types'
 export default [
   {
     name: 'ZhouYixun',
-    link: 'https://gitee.com/ZhouYixun',
+    link: 'https://github.com/ZhouYixun',
     avatar:
-      'https://portrait.gitee.com/uploads/avatars/user/2698/8096045_ZhouYixun_1645499109.png!avatar100'
+      'https://avatars.githubusercontent.com/u/56339314?v=4'
   },
   {
     name: 'soniclei',

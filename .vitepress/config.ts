@@ -7,7 +7,7 @@ const nav = [
       {
         items: [
           { text: '部署文档', link: '/deploy/back-end-deploy' },
-          { text: '使用文档', link: '...' },
+          { text: '使用文档', link: '/document' },
           { text: '开发文档', link: '...' },
           { text: '企业案例', link: '...' }
         ]
