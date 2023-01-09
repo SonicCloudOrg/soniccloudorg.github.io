@@ -19,7 +19,7 @@ const nav = [
     items: [
       {
         items: [
-          { text: 'sonic-ios-bridge', link: '...' },
+          { text: 'sonic-ios-bridge', link: '/sib/re-sib' },
           { text: 'sonic-android-apk', link: '...' },
           { text: 'sonic-android-apk', link: '...' },
           { text: 'sonic-android-apk', link: '...' },
@@ -144,6 +144,38 @@ const sidebar = {
         { text: 'Server端', link: '/contribute/con-server' },
         { text: 'Client端', link: '/contribute/con-client' },
         { text: 'Agent端', link: '/contribute/con-agent' }
+      ]
+    }
+  ],
+  '/sib/': [
+    {
+      text: '快速入门',
+      items: [
+        { text: '插件介绍', link: '/sib/re-sib' },
+        { text: '参与开发', link: '/sib/dev-sib' },
+      ]
+    },
+    {
+      text: '功能列表',
+      items: [
+        { text: '设备信息', link: '/sib/sib-device' },
+        { text: 'App相关', link: '/contribute/con-client' },
+        { text: '挂载镜像', link: '/contribute/con-agent' },
+        { text: '进程相关', link: '/contribute/con-agent' },
+        { text: 'XCTest相关', link: '/contribute/con-agent' },
+        { text: '电池相关', link: '/contribute/con-agent' },
+        { text: '网络IP信息', link: '/contribute/con-agent' },
+        { text: '重启关机', link: '/contribute/con-agent' },
+        { text: '代理转发', link: '/contribute/con-agent' },
+        { text: '崩溃收集', link: '/contribute/con-agent' },
+        { text: '模拟定位', link: '/contribute/con-agent' },
+        { text: '屏幕方向', link: '/contribute/con-agent' },
+        { text: '系统日志', link: '/contribute/con-agent' },
+        { text: '屏幕截图', link: '/contribute/con-agent' },
+        { text: '文件管理', link: '/contribute/con-agent' },
+        { text: '性能监控', link: '/contribute/con-agent' },
+        { text: '网页检阅器', link: '/contribute/con-agent' },
+        { text: '远程连接', link: '/contribute/con-agent' },
       ]
     }
   ],
