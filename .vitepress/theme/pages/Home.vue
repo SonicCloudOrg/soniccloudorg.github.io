@@ -43,7 +43,7 @@
       </div>
 
       <!-- 脚标 -->
-      <h5 class="footmark">Made with by SonicCloudOrg</h5>
+      <h5 class="footmark">Made with 🧡 by SonicCloudOrg</h5>
     </div>
     <div class="hero__right">
       <video
