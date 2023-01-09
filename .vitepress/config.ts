@@ -85,9 +85,51 @@ const sidebar = {
       text: '远程控制相关',
       items: [
         { text: 'Agent中心', link: '/doc/doc-agent' },
-        { text: '设备中心', link: '/doc/doc-device' }
+        { text: '设备中心', link: '/doc/doc-device' },
+        { text: '控制面板', link: '/doc/doc-control' },
+        { text: '应用列表', link: '/doc/doc-app-list' },
+        { text: 'WebView/H5调试', link: '/doc/doc-webview' },
+        { text: '快速截图', link: '/doc/doc-quick-cap' },
+        { text: 'Terminal', link: '/doc/doc-terminal' },
+        { text: '网络抓包', link: '/doc/doc-proxy' },
+        { text: '控件获取', link: '/doc/doc-element' },
+        { text: '运行UI测试', link: '/doc/doc-run' },
+        { text: '性能监控', link: '/doc/doc-perfmon' },
       ]
-    }
+    },
+    {
+      text: '测试步骤相关',
+      items: [
+        { text: '自定义脚本', link: '/doc/doc-script' },
+        { text: 'POCO控件', link: '/doc/doc-poco' },
+        { text: '切换WebView', link: '/doc/doc-to-webview' },
+        { text: 'Sonic输入法输入', link: '/doc/doc-keyboard' },
+        { text: '图像识别类', link: '/doc/doc-sift' },
+        { text: '迭代控件列表', link: '/doc/doc-iterator' },
+      ]
+    },
+    {
+      text: '测试管理相关',
+      items: [
+        { text: '控件元素', link: '/doc/doc-element-manage' },
+        { text: '测试用例', link: '/doc/doc-cases' },
+        { text: '测试步骤', link: '/doc/doc-steps' },
+        { text: '公共步骤', link: '/doc/doc-pub' },
+        { text: '全局参数', link: '/doc/doc-global' },
+        { text: '测试套件', link: '/doc/doc-suite' },
+        { text: '定时任务', link: '/doc/doc-quartz' },
+        { text: '测试结果', link: '/doc/doc-result' },
+      ]
+    },
+    {
+      text: '项目管理相关',
+      items: [
+        { text: '项目管理', link: '/doc/doc-project' },
+        { text: '通知机器人', link: '/doc/doc-robot' },
+        { text: '版本管理', link: '/doc/doc-version' },
+        { text: '模块管理', link: '/doc/doc-module' },
+      ]
+    },
   ],
   '/about/': [
     {

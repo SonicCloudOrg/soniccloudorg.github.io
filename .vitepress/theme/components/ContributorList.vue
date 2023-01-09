@@ -54,6 +54,10 @@ const contributorList = computed(() => {
 
 <style scoped lang="scss">
 .contributor-list {
+  margin-top: 48px;
+  border-top: 1px solid var(--vp-c-divider-light);
+  padding-top: 24px;
+
   &__title {
     font-size: 20px;
     font-weight: bold;

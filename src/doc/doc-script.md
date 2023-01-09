@@ -1,3 +1,8 @@
+---
+contributors:
+- 'ZhouYixun'
+---
+
 # 自定义脚本
 
 使用自定义脚本执行UI自动化。（该功能需升级至Sonic v2.0.0版本）
@@ -6,124 +11,136 @@
 
 ### 能力介绍
 
-Sonic官方推荐用户使用，原因如下：
-> 1. 可以直接使用Agent所有内置函数与变量。
-> 2. Groovy引擎可以兼容Java语言，能与Java很好的结合，可以直接运行Java代码或者Groovy与Java混用。
-> 3. Groovy语法简单，容易扩展，学习门槛低。
-> 4. 直接运行在JVM上，无需配置额外环境。
-> 5. 等等...
+::: tip Sonic官方推荐原因
+1. 可以直接使用Agent所有内置函数与变量。
+2. Groovy引擎可以兼容Java语言，能与Java很好的结合，可以直接运行Java代码或者Groovy与Java混用。
+3. Groovy语法简单，容易扩展，学习门槛低。
+4. 直接运行在JVM上，无需配置额外环境。
+5. 等等...
+:::
 
+#### 默认内置内容
 执行自定义脚本前，会将基础StepHandler传入Groovy引擎。
 
-包括：
-> 1. log对象，可以操作测试报告输出文本
-> 2. androidDriver，可以操作UIAutomator2-Server
-> 3. iosDriver，可以操作Wda
-> 4. 全局参数，可以对全局参数进行存取
-> 5. Sonic的自定义步骤，可以直接复用
-> 6. 其他，包括PocoDriver、设备信息等等（更多内置方法可查看[AndroidStepHandler](https://github.com/SonicCloudOrg/sonic-agent/blob/main/src/main/java/org/cloud/sonic/agent/automation/AndroidStepHandler.java)、
-[IOSStepHandler](https://github.com/SonicCloudOrg/sonic-agent/blob/main/src/main/java/org/cloud/sonic/agent/automation/IOSStepHandler.java)）
+包括但不限于：
+1. log对象，可以操作测试报告输出文本
+2. androidDriver，可以操作UIAutomator2-Server
+3. iosDriver，可以操作Wda
+4. 全局参数，可以对全局参数进行存取
+5. Sonic的自定义步骤，可以直接复用
+6. 其他，包括PocoDriver、设备信息等等
+::: tip 更多内置方法可查看
+[AndroidStepHandler](https://github.com/SonicCloudOrg/sonic-agent/blob/main/src/main/java/org/cloud/sonic/agent/automation/AndroidStepHandler.java)
 
+[IOSStepHandler](https://github.com/SonicCloudOrg/sonic-agent/blob/main/src/main/java/org/cloud/sonic/agent/automation/IOSStepHandler.java)
+:::
+#### 扩展能力
 StepHandler以外能力，可以直接import对应包或者直接引用进行实现。
 
 包括但不限于：
-> 1. RestTemaplate，可以进行Rest Api操作。
-> 2. Java自带的Process，可以运行本地指令。
-> 3. SibTool，用于使用sib的工具类。
-> 4. AndroidDeviceBridgeTool，用于操作adb的部分工具类。
-> 5. fastJson和其他包等等。
+1. RestTemaplate，可以进行Rest Api操作。
+2. Java自带的Process，可以运行本地指令。
+3. SibTool，用于使用sib的工具类。
+4. AndroidDeviceBridgeTool，用于操作adb的部分工具类。
+5. fastJson和其他包等等。
 
 ### 输出日志到测试报告
 
-> 直接使用
-> ```
-> androidStepHandler.log.sendStepLog(1, "我是普通日志", "步骤详细日志")
-> androidStepHandler.log.sendStepLog(2, "我是通过日志", "步骤详细日志")
-> androidStepHandler.log.sendStepLog(3, "我是告警日志", "步骤详细日志")
-> androidStepHandler.log.sendStepLog(4, "我是异常日志", "步骤详细日志")
-> ```
-> 
-> 入参分别为：**日志级别**、**步骤简述**、**步骤详细日志**
-> 
-> 日志级别有四种，从1-4分别是：INFO、PASS、WARN、ERROR
-> 
-> 也可以提取LogUtil和StepType使用，使脚本更有可读性
-> ```
-> import org.cloud.sonic.agent.tests.LogUtil;
-> import org.cloud.sonic.agent.common.interfaces.StepType;
-> 
-> def test(){
->   LogUtil log = androidStepHandler.log
->   log.sendStepLog(StepType.INFO,"Hello","world")
->   log.sendStepLog(StepType.PASS,"Hello","world")
->   log.sendStepLog(StepType.WARN,"Hello","world")
->   log.sendStepLog(StepType.ERROR,"Hello","world")
-> }
-> 
-> test()
-> ```
+直接操作 **androidStepHandler.log** 使用
+```groovy
+androidStepHandler.log.sendStepLog(1, "我是普通日志", "步骤详细日志")
+androidStepHandler.log.sendStepLog(2, "我是通过日志", "步骤详细日志")
+androidStepHandler.log.sendStepLog(3, "我是告警日志", "步骤详细日志")
+androidStepHandler.log.sendStepLog(4, "我是异常日志", "步骤详细日志")
+```
+
+入参分别为：**日志级别**、**步骤简述**、**步骤详细日志**
+
+日志级别有四种，从1-4分别是：INFO、PASS、WARN、ERROR
+
+也可以提取LogUtil和StepType使用，使脚本更有可读性
+```groovy
+import org.cloud.sonic.agent.tests.LogUtil;
+import org.cloud.sonic.agent.common.interfaces.StepType;
+
+def test(){
+  LogUtil log = androidStepHandler.log
+  log.sendStepLog(StepType.INFO,"Hello","world")
+  log.sendStepLog(StepType.PASS,"Hello","world")
+  log.sendStepLog(StepType.WARN,"Hello","world")
+  log.sendStepLog(StepType.ERROR,"Hello","world")
+}
+
+test()
+```
 
 ### 引用全局参数
 
-> 全局参数默认存放在androidStepHandler.globalParams，是com.alibaba.fastjson.JSONObject对象。使用时可以直接
-> ```
-> String test = androidStepHandler.globalParams.getString("Hello")
-> androidStepHandler.log.sendStepLog(1, "获取全局参数Hello", "值：" + test)
-> ```
+全局参数默认存放在androidStepHandler.globalParams，是com.alibaba.fastjson.JSONObject对象。使用时可以直接
+```groovy
+String test = androidStepHandler.globalParams.getString("Hello")
+androidStepHandler.log.sendStepLog(1, "获取全局参数Hello", "值：" + test)
+```
 
-### 获取设备信息
+::: tip
+更多全局参数与临时参数运用可以参考 [这个帖子](https://sonic-cloud.wiki/d/2369)
+:::
 
-> Android: 
-> ```
-> String udId = androidStepHandler.iDevice.getSerialNumber()
-> androidStepHandler.log.sendStepLog(1, "获取udId", "值：" + udId)
-> ```
->
-> iOS: 
-> ```
-> String udId = iosStepHandler.udId
-> iosStepHandler.log.sendStepLog(1, "获取udId", "值：" + udId)
-> ```
+### 获取设备序列号
+
+Android: 
+```groovy
+String udId = androidStepHandler.iDevice.getSerialNumber()
+androidStepHandler.log.sendStepLog(1, "获取udId", "值：" + udId)
+```
+
+iOS: 
+```groovy
+String udId = iosStepHandler.udId
+iosStepHandler.log.sendStepLog(1, "获取udId", "值：" + udId)
+```
 
 ### 断言
 
-> 有assertEquals、assertNotEquals、assertNull、assertNotNull等等方法可以直接使用
-> 
-> ```
-> import static org.testng.Assert.*;
-> 
-> assertEquals(1+1,2)
-> ```
+有assertEquals、assertNotEquals、assertNull、assertNotNull等等方法可以直接使用
+
+```groovy
+import static org.testng.Assert.*;
+
+assertEquals(1+1,2)
+```
+
+断言失败会抛出异常，并且自定义脚本步骤也会标记为失败
 
 ### 退出Driver
 
-> 如果在您的第三方工具中有基于instrument的框架（例如fastbot、uiautomator2-python、poco-service等等），会跟Sonic已有进程冲突导致阻塞状态，这时我们可以先停止Sonic的Driver。
-> Android: 
-> ```
-> import org.cloud.sonic.agent.bridge.android.AndroidDeviceBridgeTool;
-> //停止Driver
-> androidStepHandler.getAndroidDriver().closeDriver()
-> 
-> //第三方操作
-> // xxxxxx
-> 
-> //重新启动Driver
-> int port = AndroidDeviceBridgeTool.startUiaServer(androidStepHandler.iDevice);
-> androidStepHandler.startAndroidDriver(androidStepHandler.iDevice, port)
-> ```
->
-> iOS: 
-> ```
-> import org.cloud.sonic.agent.bridge.ios.SibTool;
-> //停止Driver
-> iosStepHandler.closeIOSDriver()
-> 
-> //第三方操作
-> // xxxxxx
-> 
-> //重新启动Driver
-> iosStepHandler.startIOSDriver(udId, SibTool.startWda(udId)[0]);
-> ```
+如果在您的第三方工具中有基于instrument的框架（例如fastbot、uiautomator2-python、poco-service等等），会跟Sonic已有进程冲突导致阻塞状态，这时我们可以先停止Sonic的Driver。
+Android: 
+```groovy
+import org.cloud.sonic.agent.bridge.android.AndroidDeviceBridgeTool;
+//停止Driver
+androidStepHandler.getAndroidDriver().closeDriver()
+
+//第三方操作
+// xxxxxx
+
+//重新启动Driver
+int port = AndroidDeviceBridgeTool.startUiaServer(androidStepHandler.iDevice);
+androidStepHandler.startAndroidDriver(androidStepHandler.iDevice, port)
+```
+
+iOS: 
+```groovy
+import org.cloud.sonic.agent.bridge.ios.SibTool;
+//停止Driver
+iosStepHandler.closeIOSDriver()
+
+//第三方操作
+// xxxxxx
+
+//重新启动Driver
+iosStepHandler.startIOSDriver(udId, SibTool.startWda(udId)[0]);
+```
 
 
 ### 示例脚本展示
@@ -132,7 +149,7 @@ StepHandler以外能力，可以直接import对应包或者直接引用进行实
 
 以下是使用RestTemplate调用第三方Rest API后，对响应结果断言以及输出到测试报告的示例。
 
-```
+```groovy
 import com.alibaba.fastjson.JSONObject;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -164,7 +181,7 @@ testRestApi()
 
 也可以直接通过androidStepHandler.getAndroidDriver()、androidStepHandler.getIOSDriver()、androidStepHandler.getPocoDriver()进行操作。可以参考周边生态 sonic-driver-core 。
 
-```
+```groovy
 import org.cloud.sonic.agent.common.models.HandleDes;
 import org.cloud.sonic.agent.tests.LogUtil;
 import org.cloud.sonic.agent.common.interfaces.StepType;
@@ -189,7 +206,7 @@ testPoco()
 
 以下是对adb shell命令输出的示例，包括一次性输出以及持续性输出。
 
-```
+```groovy
 import org.cloud.sonic.agent.bridge.android.AndroidDeviceBridgeTool;
 import org.cloud.sonic.agent.tests.LogUtil;
 import org.cloud.sonic.agent.common.interfaces.StepType;
@@ -231,7 +248,7 @@ testLong()
 下方展示了如何执行fastbot并将日志持续输出到测试报告，注意：执行前确保设备上有fastbot相关的jar哦，详情可以查看fastbot文档。
 
 因为fastbot底层与uia2的instrumentation有冲突（虽然Sonic后续会做处理，但是最好还是避免冲突），所以先执行了closeDriver()，运行完毕后，再重新startDriver()
-```
+```groovy
 import org.cloud.sonic.agent.bridge.android.AndroidDeviceBridgeTool;
 import org.cloud.sonic.agent.tests.LogUtil;
 import org.cloud.sonic.agent.common.interfaces.StepType;
@@ -269,7 +286,7 @@ testFastbot()
 
 以下是运行Agent本地PC指令和运行指令后持续输出指令结果到测试报告的示例。
 
-```
+```groovy
 import org.cloud.sonic.agent.tests.LogUtil;
 import org.cloud.sonic.agent.common.interfaces.StepType;
 import java.io.IOException;
@@ -314,64 +331,52 @@ testCmd()
 testCmdForLongTime()
 ```
 
-#### 更多参考示例
-
+::: tip 更多参考示例
 想参考更多脚本示例，可以前往 <a href="https://sonic-cloud.wiki/t/script" target="_blank">这里</a> 查看官方或用户分享的示例哦！
+:::
 
 ## 二、Python脚本
 
 ### 能力介绍
-Python不能作为Agent内置引擎，因此不可使用Agent内置的方法与包。Python脚本只能使用Agent传递的部分参数，并且依赖需要自行本地安装，与Groovy脚本相比灵活性大大降低。
 
+::: info 对比Groovy脚本
+Python不能作为Agent内置引擎，因此不可使用Agent内置的方法与包。Python脚本只能使用Agent传递的部分参数，并且依赖需要自行本地安装，与Groovy脚本相比灵活性大大降低。
+:::
 ### 前置环境
 
 Python环境、pip环境。
 
 ### 可用参数
 
-> 无论安卓还是iOS，Sonic会传递三个参数到Python脚本中，arg依次分别为：
-> 1. sessionId。安卓为uia2的sessionId，iOS为wda的sessionId。
-> 2. 设备udId。
-> 3. 全局参数Json字符串。
+无论安卓还是iOS，Sonic会传递三个参数到Python脚本中，arg依次分别为：
+1. sessionId。安卓为uia2的sessionId，iOS为wda的sessionId。
+2. 设备udId。
+3. 全局参数Json字符串。
 
 ### 示例脚本展示
 
 #### 打印传递参数示例
 
 以下是打印Sonic传递的所有参数的示例脚本。
-```
+```python
 import sys
 argv = sys.argv[1:]
 print("args==argv==", argv)
 ```
-#### 更多参考示例
-
+::: tip 更多参考示例
 想参考更多脚本示例，可以前往 <a href="https://sonic-cloud.wiki/t/script" target="_blank">这里</a> 查看官方或用户分享的示例哦！
+:::
 
 ## 导入模板
 
-> 在【脚本模板】页面管理的脚本模板，可以在编辑时导入使用，导入有两种模式：
-> 1. 追加，将模板追加到当前编辑脚本中
-> 2. 替换，将模板替换当前编辑脚本
+在【脚本模板】页面管理的脚本模板，可以在编辑时导入使用，导入有两种模式：
+1. 追加，将模板追加到当前编辑脚本中
+2. 替换，将模板替换当前编辑脚本
 
 ## 使用规范与建议
 
-> 为了减少在使用时的维护成本，Sonic组织推荐脚本管理方式如下：
-> 
-> 1. 将通用的方法/函数可以保存到【脚本模块管理】。
-> 2. 使用脚本时使用导入模块，将方法/函数追加到当前脚本中，并引用。
-> 3. 推荐重复引用的参数、方法提取出来维护。
+为了减少在使用时的维护成本，Sonic组织推荐脚本管理方式如下：
 
-## 本文贡献者
-<div class="cont">
-<a href="https://github.com/ZhouYixun" target="_blank">
-<img src="https://avatars.githubusercontent.com/u/56339314?v=4" width="50"/>
-<span>ZhouYixun</span>
-</a>
-</div>
-
-
-&nbsp;
-&nbsp;
-***
-不够详细？[点此](https://github.com/SonicCloudOrg/sonic-offical-website/edit/main/src/markdown/doc/doc-script.md) 发起贡献改善此页
+1. 将通用的方法/函数可以保存到【脚本模块管理】。
+2. 使用脚本时使用导入模块，将方法/函数追加到当前脚本中，并引用。
+3. 推荐重复引用的参数、方法提取出来维护。

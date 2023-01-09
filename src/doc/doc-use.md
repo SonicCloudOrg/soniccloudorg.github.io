@@ -1,8 +1,6 @@
 ---
 contributors:
-
 - 'ZhouYixun'
-
 ---
 
 # 快速上手
@@ -85,4 +83,3 @@ contributors:
 
 至此，一个简单的UI自动化流程就到这里结束了。
 
----
