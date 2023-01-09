@@ -152,10 +152,21 @@ const socialLinks = [
 ]
 
 export default {
-  title: 'Sonic',
+  locales: {
+    '/': {
+      lang: 'zh-CN',
+      title: 'Sonic',
+      description:
+        'For You, For Free, Forever. 免费开源的云真机平台，用心打造更好的使用体验。 Made with 🧡 by SonicCloudOrg.'
+    },
+    '/en/': {
+      lang: 'en-US',
+      title: 'Sonic',
+      description:
+        'For You, For Free, Forever. 免费开源的云真机平台，用心打造更好的使用体验。 Made with 🧡 by SonicCloudOrg.'
+    }
+  },
   titleTemplate: 'Sonic - 开源云真机平台',
-  description:
-    'For You, For Free, Forever. 免费开源的云真机平台，用心打造更好的使用体验。 Made with 🧡 by SonicCloudOrg.',
   srcDir: 'src',
   scrollOffset: 'header',
   lastUpdated: true, // 是否显示最后修改时间
@@ -230,6 +241,17 @@ export default {
     sidebar,
     // 社交链接
     socialLinks,
+    // 国际化配置 @TODO
+    // localeLinks: {
+    //   items: [
+    //     { text: '简体中文', link: '/' },
+    //     { text: 'English', link: '/en' }
+    //   ]
+    // },
+    // locales: {
+    //   "/": getChineseThemeConfig(),
+    //   "/en/": getEnglishThemeConfig()
+    // },
 
     // 搜索相关配置
     algolia: {
