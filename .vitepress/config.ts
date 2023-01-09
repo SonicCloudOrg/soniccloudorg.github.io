@@ -8,8 +8,8 @@ const nav = [
         items: [
           { text: '部署文档', link: '/deploy/back-end-deploy' },
           { text: '使用文档', link: '/doc/doc-use' },
-          { text: '开发文档', link: '...' },
-          { text: '企业案例', link: '...' }
+          { text: '开发文档', link: '/contribute/con-re' },
+          { text: '企业案例', link: 'https://sonic-cloud.wiki/t/user' }
         ]
       }
     ]
@@ -130,6 +130,22 @@ const sidebar = {
         { text: '模块管理', link: '/doc/doc-module' },
       ]
     },
+  ],
+  '/contribute/': [
+    {
+      text: '前言',
+      items: [
+        { text: '参与开发', link: '/contribute/con-re' },
+      ]
+    },
+    {
+      text: '平台端项目列表',
+      items: [
+        { text: 'Server端', link: '/contribute/con-server' },
+        { text: 'Client端', link: '/contribute/con-client' },
+        { text: 'Agent端', link: '/contribute/con-agent' }
+      ]
+    }
   ],
   '/about/': [
     {
