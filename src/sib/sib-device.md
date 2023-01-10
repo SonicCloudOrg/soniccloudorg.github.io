@@ -30,6 +30,7 @@ sib devices
 sib devices -d
 ```
 
+---
 一般地，为了有更好的可读性，我们还会加上 **-f** 或 **--format** 选项来格式化输出。
 
 ```bash
@@ -101,6 +102,7 @@ sib devices listen
 0000****-00****3*F****E offline
 ```
 
+---
 监听设备拔插时也可以获取详情，用法与 sib devices 一致。
 
 输入指令
