@@ -26,8 +26,8 @@ const nav = [
           { text: 'sonic-ci-helper-plugin', link: '/sch/re-sch' },
           { text: 'sonic-go-mitmproxy', link: '/sgm/re-sgm' },
           { text: 'sonic-ios-webkit-adapter', link: '/siwa/re-siwa' },
-          { text: 'sonic-android-supply', link: '...' },
-          { text: 'sonic-vision-core', link: '...' }
+          { text: 'sonic-android-supply', link: '/sas/re-sas' },
+          { text: 'sonic-vision-core', link: '/svc/re-svc' }
         ]
       }
     ]
@@ -241,6 +241,24 @@ const sidebar = {
       items: [
         { text: '插件介绍', link: '/sgm/re-sgm' },
         { text: '参与开发', link: '/sgm/dev-sgm' },
+      ]
+    }
+  ],
+  '/sas/': [
+    {
+      text: '快速入门',
+      items: [
+        { text: '插件介绍', link: '/sas/re-sas' },
+        { text: '参与开发', link: '/sas/dev-sas' },
+      ]
+    }
+  ],
+  '/svc/': [
+    {
+      text: '快速入门',
+      items: [
+        { text: '插件介绍', link: '/svc/re-svc' },
+        { text: '参与开发', link: '/svc/dev-svc' },
       ]
     }
   ],
