@@ -277,7 +277,6 @@ import SectionBox from '../components/SectionBox.vue'
 import honor from '../assets/honor.png'
 import c1 from '../assets/banner.png'
 import c2 from '../assets/banner2.png'
-import c4 from '../assets/banner3.png'
 import c5 from '../assets/banner4.png'
 import demo from '../assets/video/demo.mp4'
 // 贡献墙
@@ -319,12 +318,12 @@ const statisticsData = ref([
   {
     tipContent: 'Sonic社区总回复数',
     linkUrl: 'https://sonic-cloud.wiki',
-    img: 'https://img.shields.io/badge/replies%20-10.1k-ff69b4?style=social&logo=LiveChat'
+    img: 'https://img.shields.io/badge/replies%20-13.3k-ff69b4?style=social&logo=LiveChat'
   },
   {
     tipContent: '镜像仓库总下载量',
     linkUrl: 'https://github.com/SonicCloudOrg',
-    img: 'https://img.shields.io/badge/Docker%20pulls%20-56.1k-important'
+    img: 'https://img.shields.io/badge/Docker%20pulls%20-65.5k-important'
   }
 ])
 
@@ -348,12 +347,6 @@ const news = ref([
     url: 'https://sonic-cloud.wiki/d/1471-sonicmtsc-2022',
     pic: c2
   },
-  {
-    title: 'Sonic组织已加入OpenCollective啦！',
-    time: '',
-    url: 'https://opencollective.com/soniccloudorg',
-    pic: c4
-  }
 ])
 
 // 贡献墙
