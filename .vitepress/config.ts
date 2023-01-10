@@ -1,4 +1,5 @@
 import type { UserConfig } from 'vitepress'
+import anchor from 'markdown-it-anchor'
 
 const nav = [
   {
@@ -78,7 +79,7 @@ const sidebar = {
       text: '开始',
       items: [
         { text: '快速上手', link: '/doc/doc-use' },
-        { text: '进阶教学', link: '/doc/doc-high' },
+        { text: '进阶教学', link: '/doc/doc-high' }
       ]
     },
     {
@@ -94,7 +95,7 @@ const sidebar = {
         { text: '网络抓包', link: '/doc/doc-proxy' },
         { text: '控件获取', link: '/doc/doc-element' },
         { text: '运行UI测试', link: '/doc/doc-run' },
-        { text: '性能监控', link: '/doc/doc-perfmon' },
+        { text: '性能监控', link: '/doc/doc-perfmon' }
       ]
     },
     {
@@ -105,7 +106,7 @@ const sidebar = {
         { text: '切换WebView', link: '/doc/doc-to-webview' },
         { text: 'Sonic输入法输入', link: '/doc/doc-keyboard' },
         { text: '图像识别类', link: '/doc/doc-sift' },
-        { text: '迭代控件列表', link: '/doc/doc-iterator' },
+        { text: '迭代控件列表', link: '/doc/doc-iterator' }
       ]
     },
     {
@@ -118,7 +119,7 @@ const sidebar = {
         { text: '全局参数', link: '/doc/doc-global' },
         { text: '测试套件', link: '/doc/doc-suite' },
         { text: '定时任务', link: '/doc/doc-quartz' },
-        { text: '测试结果', link: '/doc/doc-result' },
+        { text: '测试结果', link: '/doc/doc-result' }
       ]
     },
     {
@@ -127,9 +128,9 @@ const sidebar = {
         { text: '项目管理', link: '/doc/doc-project' },
         { text: '通知机器人', link: '/doc/doc-robot' },
         { text: '版本管理', link: '/doc/doc-version' },
-        { text: '模块管理', link: '/doc/doc-module' },
+        { text: '模块管理', link: '/doc/doc-module' }
       ]
-    },
+    }
   ],
   '/contribute/': [
     {
@@ -199,13 +200,24 @@ const socialLinks = [
 ]
 
 export default {
-  title: 'Sonic',
+  locales: {
+    '/': {
+      lang: 'zh-CN',
+      title: 'Sonic',
+      description:
+        'For You, For Free, Forever. 免费开源的云真机平台，用心打造更好的使用体验。 Made with 🧡 by SonicCloudOrg.'
+    },
+    '/en/': {
+      lang: 'en-US',
+      title: 'Sonic',
+      description:
+        'For You, For Free, Forever. 免费开源的云真机平台，用心打造更好的使用体验。 Made with 🧡 by SonicCloudOrg.'
+    }
+  },
   titleTemplate: 'Sonic - 开源云真机平台',
-  description:
-    'For You, For Free, Forever. 免费开源的云真机平台，用心打造更好的使用体验。 Made with 🧡 by SonicCloudOrg.',
   srcDir: 'src',
   scrollOffset: 'header',
-  lastUpdated: true,
+  lastUpdated: true, // 是否显示最后修改时间
   ignoreDeadLinks: true,
   head: [
     ['link', { rel: 'icon', href: '/assets/public/favicon.ico' }],
@@ -277,6 +289,17 @@ export default {
     sidebar,
     // 社交链接
     socialLinks,
+    // 国际化配置 @TODO
+    // localeLinks: {
+    //   items: [
+    //     { text: '简体中文', link: '/' },
+    //     { text: 'English', link: '/en' }
+    //   ]
+    // },
+    // locales: {
+    //   "/": getChineseThemeConfig(),
+    //   "/en/": getEnglishThemeConfig()
+    // },
 
     // 搜索相关配置
     algolia: {
@@ -327,6 +350,7 @@ export default {
 
     // 网站 logo & title
     logo: '/assets/logo2-o.png',
+    // 是否显示副标题
     siteTitle: false,
 
     //  页面右侧边栏标题
@@ -352,5 +376,27 @@ export default {
     }
   },
 
-  vite: {}
+  // vite config
+  vite: {},
+
+  // @TBD 未生效
+  // markdown render config
+  markdown: {
+    // options for markdown-it-anchor
+    // https://github.com/valeriangalliat/markdown-it-anchor#usage
+    // anchor: {
+    //   permalink: anchor.permalink.headerLink()
+    // },
+
+    // options for @mdit-vue/plugin-toc
+    // https://github.com/mdit-vue/mdit-vue/tree/main/packages/plugin-toc#options
+    // toc: { level: [1, 2, 3] },
+
+    config: (md) => {
+      // use more markdown-it plugins!
+      md.use(anchor, {
+        level: 6
+      })
+    }
+  }
 } as UserConfig

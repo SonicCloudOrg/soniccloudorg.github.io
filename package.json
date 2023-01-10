@@ -7,12 +7,13 @@
     "serve": "vitepress serve"
   },
   "dependencies": {
+    "@docsearch/js": "^3.3.0",
     "element-plus": "npm:element-plus@latest",
-    "vue": "^3.2.45",
-    "@docsearch/js": "^3.3.0"
+    "vue": "^3.2.45"
   },
   "devDependencies": {
     "sass": "^1.56.1",
-    "vitepress": "^1.0.0-alpha.29"
+    "vitepress": "^1.0.0-alpha.29",
+    "markdown-it-anchor": "^8.6.6"
   }
 }

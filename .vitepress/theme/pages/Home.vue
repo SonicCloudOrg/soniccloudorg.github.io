@@ -31,7 +31,14 @@
 
       <!-- entry -->
       <div class="entry-operation">
-        <el-button type="primary" size="large" round> 马上使用 </el-button>
+        <el-button
+          type="primary"
+          size="large"
+          round
+          @click="router.go('/deploy/back-end-deploy')"
+        >
+          马上使用
+        </el-button>
         <el-button
           type="primary"
           size="large"
@@ -46,10 +53,7 @@
       <h5 class="footmark">Made with 🧡 by SonicCloudOrg</h5>
     </div>
     <div class="hero__right">
-      <video
-        controls
-        :src="demo"
-      />
+      <video controls :src="demo" />
     </div>
   </section>
 
@@ -298,6 +302,7 @@ import team7 from '../assets/team7.png'
 import team8 from '../assets/docker.png'
 // 价值与产出
 import msg from '../assets/msg.png'
+import { useRouter } from 'vitepress'
 
 // 品牌数据统计
 const statisticsData = ref([
@@ -378,6 +383,8 @@ const devices = ref([
 const open = (url: string): void => {
   window.open(url, '_blank')
 }
+
+const router = useRouter()
 </script>
 
 <style scoped lang="scss">
