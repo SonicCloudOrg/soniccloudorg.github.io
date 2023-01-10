@@ -87,8 +87,6 @@ const sidebar = {
     {
       text: '远程控制相关',
       items: [
-        { text: 'Agent中心', link: '/doc/doc-agent' },
-        { text: '设备中心', link: '/doc/doc-device' },
         { text: '控制面板', link: '/doc/doc-control' },
         { text: '应用列表', link: '/doc/doc-app-list' },
         { text: 'WebView/H5调试', link: '/doc/doc-webview' },
@@ -97,7 +95,9 @@ const sidebar = {
         { text: '网络抓包', link: '/doc/doc-proxy' },
         { text: '控件获取', link: '/doc/doc-element' },
         { text: '运行UI测试', link: '/doc/doc-run' },
-        { text: '性能监控', link: '/doc/doc-perfmon' }
+        { text: '性能监控', link: '/doc/doc-perfmon' },
+        { text: 'Agent中心', link: '/doc/doc-agent' },
+        { text: '设备中心', link: '/doc/doc-device' },
       ]
     },
     {
