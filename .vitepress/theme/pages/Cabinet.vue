@@ -51,7 +51,7 @@
       v-for="t in ths"
       :size="25"
       alignment="stretch"
-      style="margin-top: 20px; margin-left: 25px"
+      style="margin: 20px 15px 0px 15px"
     >
       <a :href="t.url" target="_blank">
         <el-avatar
@@ -145,6 +145,8 @@ import SectionBox from '../components/SectionBox.vue'
 import th1 from '../assets/cabinet/th1.png'
 import th2 from '../assets/cabinet/th2.png'
 import th3 from '../assets/cabinet/th3.png'
+import th4 from '../assets/cabinet/th4.png'
+import th5 from '../assets/cabinet/th5.png'
 import user from '../assets/cabinet/user.png'
 import you from '../assets/cabinet/you.png'
 import p1 from '../assets/cabinet/p1.jpg'
@@ -237,6 +239,14 @@ const ths = ref([
   {
     url: 'https://pmcloud.yonyoucloud.com/official-index.html',
     src: th1
+  },
+  {
+    url: 'https://pmcloud.yonyoucloud.com/official-index.html',
+    src: th4
+  },
+  {
+    url: 'https://pmcloud.yonyoucloud.com/official-index.html',
+    src: th5
   }
 ])
 const talk = ref([
@@ -370,7 +380,7 @@ const talk = ref([
 .using-container {
   width: 1200px;
   margin: 0 auto;
-  padding: 5% 5% 0 5%;
+  padding: 3% 5% 0 5%;
 }
 
 .profit-container {
