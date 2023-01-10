@@ -44,5 +44,11 @@ export default [
     link: 'https://github.com/ayumi760405',
     avatar:
       'https://avatars.githubusercontent.com/u/28735340?v=4'
+  },
+  {
+    name: 'aoliaoaoaojiao',
+    link: 'https://github.com/aoliaoaoaojiao',
+    avatar:
+      'https://avatars.githubusercontent.com/u/53102695?v=4'
   }
 ] as Contributor[]

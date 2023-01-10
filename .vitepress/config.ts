@@ -21,11 +21,13 @@ const nav = [
       {
         items: [
           { text: 'sonic-ios-bridge', link: '/sib/re-sib' },
-          { text: 'sonic-android-apk', link: '...' },
-          { text: 'sonic-android-apk', link: '...' },
-          { text: 'sonic-android-apk', link: '...' },
-          { text: 'sonic-android-apk', link: '...' },
-          { text: 'sonic-android-apk', link: '...' }
+          { text: 'sonic-android-apk', link: '/saa/re-saa' },
+          { text: 'sonic-driver-core', link: '/sdc/re-sdc' },
+          { text: 'sonic-ci-helper-plugin', link: '/sch/re-sch' },
+          { text: 'sonic-go-mitmproxy', link: '/sgm/re-sgm' },
+          { text: 'sonic-ios-webkit-adapter', link: '/siwa/re-siwa' },
+          { text: 'sonic-android-supply', link: '...' },
+          { text: 'sonic-vision-core', link: '...' }
         ]
       }
     ]
@@ -177,6 +179,77 @@ const sidebar = {
         { text: '性能监控', link: '/sib/sib-perf' },
         { text: '网页检阅器', link: '/sib/sib-webinspector' },
         { text: '远程连接', link: '/sib/sib-remote' },
+      ]
+    }
+  ],
+  '/saa/': [
+    {
+      text: '快速入门',
+      items: [
+        { text: '插件介绍', link: '/saa/re-saa' },
+        { text: '参与开发', link: '/saa/dev-saa' },
+      ]
+    },
+    {
+      text: '功能列表',
+      items: [
+        { text: '实时输入法', link: '/saa/saa-keyboard' },
+        { text: 'App列表获取', link: '/saa/saa-app' },
+        { text: '远程音频传输', link: '/saa/saa-audio' },
+        { text: '屏幕旋转方向', link: '/saa/saa-orientation' },
+        { text: '物理查找', link: '/saa/saa-search' },
+        { text: '实时屏幕触控', link: '/saa/saa-touch' },
+        { text: 'WIFI信息获取', link: '/saa/saa-wifi' },
+      ]
+    }
+  ],
+  '/sdc/': [
+    {
+      text: '快速入门',
+      items: [
+        { text: '插件介绍', link: '/sdc/re-sdc' },
+        { text: '参与开发', link: '/sdc/dev-sdc' },
+      ]
+    },
+    {
+      text: 'Driver列表',
+      items: [
+        { text: 'AndroidDriver', link: '/sdc/sdc-android' },
+        { text: 'IOSDriver', link: '/sdc/sdc-ios' },
+        { text: 'PocoDriver', link: '/sdc/sdc-poco' },
+      ]
+    }
+  ],
+  '/sch/': [
+    {
+      text: '快速入门',
+      items: [
+        { text: '插件介绍', link: '/sch/re-sch' },
+        { text: '参与开发', link: '/sch/dev-sch' },
+      ]
+    },
+    {
+      text: '功能列表',
+      items: [
+        { text: '批量装包流程', link: '/sch/sch-upload' },
+      ]
+    }
+  ],
+  '/sgm/': [
+    {
+      text: '快速入门',
+      items: [
+        { text: '插件介绍', link: '/sgm/re-sgm' },
+        { text: '参与开发', link: '/sgm/dev-sgm' },
+      ]
+    }
+  ],
+  '/siwa/': [
+    {
+      text: '快速入门',
+      items: [
+        { text: '插件介绍', link: '/siwa/re-siwa' },
+        { text: '参与开发', link: '/siwa/dev-siwa' },
       ]
     }
   ],

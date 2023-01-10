@@ -1,9 +1,7 @@
 ---
 contributors:
-
 - 'ZhouYixun'
 - 'soniclei'
-
 ---
 
 # iOS 设备接入
@@ -40,20 +38,29 @@ git clone https://github.com/appium/WebDriverAgent
 git clone https://github.com/SonicCloudOrg/sonic-ios-wda.git
 ```
 2. 修改 **WebDriverAgentLib** 和 **WebDriverAgentRunner** 中的Signing Team为自己的开发者账号。
+
 <ElImage hide-on-click-modal src="./images/ios1.png" :preview-src-list="['./images/ios1.png']"/>
+
 3. 修改 **WebDriverAgentRunner** 中 Build Settings 中的 **Product Bundle Identifier**
    为自己的自定义包名（最好保留WebDriverAgentRunner结尾）
-   <ElImage hide-on-click-modal src="./images/ios2.png" :preview-src-list="['./images/ios2.png']"/>
-   ::: warning 注意
-   部分Xcode版本在修改包名后会重置签名的Team，需重新更改第二步中的签名
-   :::
+
+<ElImage hide-on-click-modal src="./images/ios2.png" :preview-src-list="['./images/ios2.png']"/>
+
+::: warning 注意
+部分Xcode版本在修改包名后会重置签名的Team，需重新更改第二步中的签名
+:::
+
 4. Scheme 选择 **WebDriverAgentRunner** 作为构建目标，右侧选择目标设备。然后选择 Product -> Build 即可构建。如果想测试
    WebDriverAgent 是否能正常运行，也可以选择 Product -> Test 查看运行日志。
-   <ElImage hide-on-click-modal src="./images/ios3.png" :preview-src-list="['./images/ios3.png']"/>
+
+<ElImage hide-on-click-modal src="./images/ios3.png" :preview-src-list="['./images/ios3.png']"/>
+
 ::: warning 注意
 如果构建到手机上有错误，可能是因为没有信任证书引起的。请连接网络后，在设置--通用--描述文件与管理里面信任即可。
 :::
+
 5. 构建完成！可以前往Agent端config文件夹的yml文件中配置对应的自定义BundleId即可。
+
 ::: tip 注意
 接入完成后，后续可以脱离 Mac 来使用 iOS（Windows 需要安装 iTunes），如果证书过期，需要重新使用 Mac 安装证书
 :::

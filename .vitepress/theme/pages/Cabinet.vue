@@ -65,8 +65,8 @@
 
     <div class="using-container">
       <el-card v-for="t in talk" style="width: 100%; text-align: left;margin-bottom: 10px">
-        <div style="display: flex">
-          <el-avatar :src="t.ava" :size="60"/>
+        <div class="cabinet-avatar" style="display: flex">
+          <el-avatar :src="t.ava" fit="contain" :size="60"/>
           <div style="flex: 1; margin-left: 20px">
             <div style="display: flex">
               <h4 style="margin: 0px">{{ t.name }}</h4>
@@ -146,6 +146,7 @@ import th1 from '../assets/cabinet/th1.png'
 import th2 from '../assets/cabinet/th2.png'
 import th3 from '../assets/cabinet/th3.png'
 import user from '../assets/cabinet/user.png'
+import you from '../assets/cabinet/you.png'
 import p1 from '../assets/cabinet/p1.jpg'
 import p2 from '../assets/cabinet/p2.jpg'
 import p3 from '../assets/cabinet/p3.jpg'
@@ -205,7 +206,7 @@ const product = ref([
   {
     pic: p5,
     title: 'PAWAO 六类网线',
-    des: 'CAT6A成品网线、路由器连接线',
+    des: 'CAT6A成品网线、路由器网线',
     des2: '可自由选择长度',
     url: 'https://item.taobao.com/item.htm?spm=a21dvs.23580594.0.0.52de3d0dbeP6yr&ft=t&id=691859752465'
   },
@@ -240,7 +241,7 @@ const ths = ref([
 ])
 const talk = ref([
   {
-    ava: user,
+    ava: you,
     name: "友空间团队测试专家",
     msg: "使用下来体验非常不错，设备鼓包率大大下降，长时间测试与使用能保持电池健康的温度。手机管理，监控，使用变得更快捷，更有效！"
   }, {
@@ -252,6 +253,10 @@ const talk = ref([
 </script>
 
 <style lang="scss" scoped>
+.cabinet-avatar .el-avatar {
+  background: #ffffff
+}
+
 @keyframes slide {
   0% {
     transform: translateX(-25%);
