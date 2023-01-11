@@ -12,8 +12,10 @@
     "vue": "^3.2.45"
   },
   "devDependencies": {
+    "@babel/types": "^7.20.7",
+    "markdown-it-anchor": "^8.6.6",
     "sass": "^1.56.1",
-    "vitepress": "^1.0.0-alpha.29",
-    "markdown-it-anchor": "^8.6.6"
+    "type-fest": "^3.5.1",
+    "vitepress": "^1.0.0-alpha.29"
   }
 }
