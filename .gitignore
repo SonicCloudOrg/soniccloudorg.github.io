@@ -1,6 +1,5 @@
 node_modules
-.DS_Store
-*.local
-/.idea
-/dist/assets
-/dist/favicon.ico
+.vscode
+.idea/
+.vitepress/dist
+.vitepress/cache

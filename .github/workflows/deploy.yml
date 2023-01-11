@@ -50,7 +50,7 @@ jobs:
           sib_old_ver=${{ env.test_sib }}
           sib_old_ver_sub=${sib_old_ver:4}
           sed -i "s/${sib_old_ver}/sib_${sib_new_ver_sub}/g" version.json
-          sed -i "s/${sib_old_ver_sub}/${sib_new_ver_sub}/g" src/markdown/sib/re-sib.md
+          sed -i "s/${sib_old_ver_sub}/${sib_new_ver_sub}/g" src/sib/re-sib.md
       - name: replace sgm
         run: |
           sgm_new_ver=${{ steps.sgm-latest-tag.outputs.tag }}
@@ -58,29 +58,29 @@ jobs:
           sgm_old_ver=${{ env.test_sgm }}
           sgm_old_ver_sub=${sgm_old_ver:4}
           sed -i "s/${sgm_old_ver}/sgm_${sgm_new_ver_sub}/g" version.json
-          sed -i "s/${sgm_old_ver_sub}/${sgm_new_ver_sub}/g" src/markdown/sgm/re-sgm.md
+          sed -i "s/${sgm_old_ver_sub}/${sgm_new_ver_sub}/g" src/sgm/re-sgm.md
       - name: replace sdc
         run: |
           sdc_new_ver=${{ steps.sdc-latest-tag.outputs.tag }}
           sdc_old_ver=${{ env.test_sdc }}
           sdc_old_ver_sub=${sdc_old_ver:4}
           sed -i "s/${sdc_old_ver}/sdc_${sdc_new_ver}/g" version.json
-          sed -i "s/${sdc_old_ver_sub}/${sdc_new_ver}/g" src/markdown/sdc/re-sdc.md
+          sed -i "s/${sdc_old_ver_sub}/${sdc_new_ver}/g" src/sdc/re-sdc.md
       - name: replace sch
         run: |
           sch_new_ver=${{ steps.sch-latest-tag.outputs.tag }}
           sch_old_ver=${{ env.test_sch }}
           sch_old_ver_sub=${sch_old_ver:4}
           sed -i "s/${sch_old_ver}/sch_${sch_new_ver}/g" version.json
-          sed -i "s/${sch_old_ver_sub}/${sch_new_ver}/g" src/markdown/sch/re-sch.md
+          sed -i "s/${sch_old_ver_sub}/${sch_new_ver}/g" src/sch/re-sch.md
       - name: replace server
         run: |
           ser_new_ver=${{ steps.ser-latest-tag.outputs.tag }}
           ser_old_ver=${{ env.test_ser }}
           ser_old_ver_sub=${ser_old_ver:4}
           sed -i "s/${ser_old_ver}/ser_${ser_new_ver}/g" version.json
-          sed -i "s/${ser_old_ver_sub}/${ser_new_ver}/g" src/markdown/deploy/agent-deploy.md
-          sed -i "s/${ser_old_ver_sub}/${ser_new_ver}/g" src/markdown/deploy/back-end-deploy.md
+          sed -i "s/${ser_old_ver_sub}/${ser_new_ver}/g" src/deploy/agent-deploy.md
+          sed -i "s/${ser_old_ver_sub}/${ser_new_ver}/g" src/deploy/back-end-deploy.md
       - name: Use Node.js 16.x
         uses: actions/setup-node@v2
         with:
