@@ -74,7 +74,7 @@ adb shell wm size
 
 ### 远程音频
 
-远程音频功能目前依赖 [sonic-android-apk](https://sonic-cloud.cn/saa) 实现实时音频传输，开启后可以直接在网页上播放远程设备的实时音频。
+远程音频功能目前依赖 [sonic-android-apk](https://sonic-cloud.cn/saa/re-saa.html) 实现实时音频传输，开启后可以直接在网页上播放远程设备的实时音频。
 
 如果开启后没有音频，可以检查设备是否开启了 sonic-android-apk 的通知栏权限等等，确保 sonic-android-apk 拥有所有权限。
 

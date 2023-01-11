@@ -93,23 +93,7 @@
     <section-box title="Sonic荣誉墙">
       <div class="honor-wall">🎉 MTSC 2022年度最佳开源项目评选第一名</div>
     </section-box>
-    <section-box title="Sonic摘星计划贡献墙">
-      <div class="cons-wall">
-        <div class="more-user">更多用户正在加入...</div>
-        <el-carousel type="card" height="280px">
-          <el-carousel-item v-for="conItem in conList" :key="conItem">
-            <el-image style="height: 280px" :src="conItem" />
-          </el-carousel-item>
-        </el-carousel>
-        <el-button
-          type="primary"
-          size="large"
-          @click="open('https://sonic-cloud.wiki/d/1510-soniccommitsonic')"
-        >
-          我要上墙
-        </el-button>
-      </div>
-    </section-box>
+
     <section-box title="Sonic支持哪些设备？">
       <div class="devices">
         <el-card
@@ -209,18 +193,7 @@
         </el-timeline>
       </div>
     </section-box>
-    <section-box title="还等什么？马上开始吧！">
-      <div class="quick-start">
-        <el-button type="primary" size="large">马上使用</el-button>
-        <el-button
-          type="primary"
-          size="large"
-          @click="open('https://sonic-cloud.wiki/')"
-        >
-          用户社区
-        </el-button>
-      </div>
-    </section-box>
+
     <section-box title="金牌赞助商">
       <div class="sponsor">
         <div class="sponsor__list">
@@ -254,6 +227,25 @@
         </a>
       </div>
     </section-box>
+
+    <section-box title="Sonic摘星计划贡献墙">
+      <div class="cons-wall">
+        <div class="more-user">部分用户贡献证书展示</div>
+        <el-carousel type="card" height="280px">
+          <el-carousel-item v-for="conItem in conList" :key="conItem">
+            <el-image style="height: 280px" :src="conItem" />
+          </el-carousel-item>
+        </el-carousel>
+        <el-button
+          type="primary"
+          size="large"
+          @click="open('https://sonic-cloud.wiki/d/1510-soniccommitsonic')"
+        >
+          我要上墙
+        </el-button>
+      </div>
+    </section-box>
+
     <section-box title="贡献者们">
       <div style="text-align: center">
         <img
@@ -318,7 +310,7 @@ const statisticsData = ref([
   {
     tipContent: 'Sonic社区总回复数',
     linkUrl: 'https://sonic-cloud.wiki',
-    img: 'https://img.shields.io/badge/replies%20-13.3k-ff69b4?style=social&logo=LiveChat'
+    img: 'https://img.shields.io/badge/replies%20-13.4k-ff69b4?style=social&logo=LiveChat'
   },
   {
     tipContent: '镜像仓库总下载量',

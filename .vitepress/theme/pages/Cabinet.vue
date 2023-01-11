@@ -240,14 +240,14 @@ const ths = ref([
     url: 'https://pmcloud.yonyoucloud.com/official-index.html',
     src: th1
   },
-  {
-    url: 'https://pmcloud.yonyoucloud.com/official-index.html',
-    src: th4
-  },
-  {
-    url: 'https://pmcloud.yonyoucloud.com/official-index.html',
-    src: th5
-  }
+  // {
+  //   url: 'https://pmcloud.yonyoucloud.com/official-index.html',
+  //   src: th4
+  // },
+  // {
+  //   url: 'https://pmcloud.yonyoucloud.com/official-index.html',
+  //   src: th5
+  // }
 ])
 const talk = ref([
   {
