@@ -13,6 +13,7 @@
   },
   "devDependencies": {
     "@babel/types": "^7.20.7",
+    "@types/node": "^18.11.18",
     "markdown-it-anchor": "^8.6.6",
     "sass": "^1.56.1",
     "type-fest": "^3.5.1",
