@@ -113,16 +113,15 @@ jobs:
             - Update files to deploy by bot 🚀.
 
           draft: false
-      - name: check pr
-        if: steps.cpr.outputs.pull-request-operation != 'created'
-        run: exit 1
       - name: Auto approve
+        if: steps.cpr.outputs.pull-request-operation == 'created'
         uses: juliangruber/approve-pull-request-action@v1
         with:
           github-token: ${{ secrets.PAT }}
           number: ${{ steps.cpr.outputs.pull-request-number }}
       - id: automerge
         name: automerge
+        if: steps.cpr.outputs.pull-request-operation == 'created'
         uses: "pascalgn/automerge-action@v0.15.3"
         env:
           MERGE_LABELS: "document"
@@ -138,6 +137,6 @@ jobs:
           accessKeySecret: ${{ secrets.ALIYUN_ACCESS_KEY_SECRET }}
           bucket: sonic-cloud
           endpoint: oss-cn-hongkong.aliyuncs.com
-          folder: dist/
+          folder: .vitepress/dist
           incremental: false
           skipSetting: true
