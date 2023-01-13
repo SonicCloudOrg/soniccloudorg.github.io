@@ -52,8 +52,12 @@ const theme: Theme = {
     // 自定义组件
     app.component('ContributorList', ContributorList)
 
-    // 新老路由兼容
-    jumpToNewURL()
+    app.mixin({
+      onMounted() {
+        // 新老路由兼容
+        jumpToNewURL()
+      }
+    })
   }
 } as Theme
 

@@ -97,7 +97,7 @@ const sidebar = {
         { text: '运行UI测试', link: '/doc/doc-run' },
         { text: '性能监控', link: '/doc/doc-perfmon' },
         { text: 'Agent中心', link: '/doc/doc-agent' },
-        { text: '设备中心', link: '/doc/doc-device' },
+        { text: '设备中心', link: '/doc/doc-device' }
       ]
     },
     {
@@ -137,9 +137,7 @@ const sidebar = {
   '/contribute/': [
     {
       text: '前言',
-      items: [
-        { text: '参与开发', link: '/contribute/con-re' },
-      ]
+      items: [{ text: '参与开发', link: '/contribute/con-re' }]
     },
     {
       text: '平台端项目列表',
@@ -155,7 +153,7 @@ const sidebar = {
       text: '快速入门',
       items: [
         { text: '插件介绍', link: '/sib/re-sib' },
-        { text: '参与开发', link: '/sib/dev-sib' },
+        { text: '参与开发', link: '/sib/dev-sib' }
       ]
     },
     {
@@ -178,7 +176,7 @@ const sidebar = {
         { text: '文件管理', link: '/sib/sib-afc' },
         { text: '性能监控', link: '/sib/sib-perf' },
         { text: '网页检阅器', link: '/sib/sib-webinspector' },
-        { text: '远程连接', link: '/sib/sib-remote' },
+        { text: '远程连接', link: '/sib/sib-remote' }
       ]
     }
   ],
@@ -187,7 +185,7 @@ const sidebar = {
       text: '快速入门',
       items: [
         { text: '插件介绍', link: '/saa/re-saa' },
-        { text: '参与开发', link: '/saa/dev-saa' },
+        { text: '参与开发', link: '/saa/dev-saa' }
       ]
     },
     {
@@ -199,7 +197,7 @@ const sidebar = {
         { text: '屏幕旋转方向', link: '/saa/saa-orientation' },
         { text: '物理查找', link: '/saa/saa-search' },
         { text: '实时屏幕触控', link: '/saa/saa-touch' },
-        { text: 'WIFI信息获取', link: '/saa/saa-wifi' },
+        { text: 'WIFI信息获取', link: '/saa/saa-wifi' }
       ]
     }
   ],
@@ -208,7 +206,7 @@ const sidebar = {
       text: '快速入门',
       items: [
         { text: '插件介绍', link: '/sdc/re-sdc' },
-        { text: '参与开发', link: '/sdc/dev-sdc' },
+        { text: '参与开发', link: '/sdc/dev-sdc' }
       ]
     },
     {
@@ -216,7 +214,7 @@ const sidebar = {
       items: [
         { text: 'AndroidDriver', link: '/sdc/sdc-android' },
         { text: 'IOSDriver', link: '/sdc/sdc-ios' },
-        { text: 'PocoDriver', link: '/sdc/sdc-poco' },
+        { text: 'PocoDriver', link: '/sdc/sdc-poco' }
       ]
     }
   ],
@@ -225,14 +223,12 @@ const sidebar = {
       text: '快速入门',
       items: [
         { text: '插件介绍', link: '/sch/re-sch' },
-        { text: '参与开发', link: '/sch/dev-sch' },
+        { text: '参与开发', link: '/sch/dev-sch' }
       ]
     },
     {
       text: '功能列表',
-      items: [
-        { text: '批量装包流程', link: '/sch/sch-upload' },
-      ]
+      items: [{ text: '批量装包流程', link: '/sch/sch-upload' }]
     }
   ],
   '/sgm/': [
@@ -240,7 +236,7 @@ const sidebar = {
       text: '快速入门',
       items: [
         { text: '插件介绍', link: '/sgm/re-sgm' },
-        { text: '参与开发', link: '/sgm/dev-sgm' },
+        { text: '参与开发', link: '/sgm/dev-sgm' }
       ]
     }
   ],
@@ -249,7 +245,7 @@ const sidebar = {
       text: '快速入门',
       items: [
         { text: '插件介绍', link: '/sas/re-sas' },
-        { text: '参与开发', link: '/sas/dev-sas' },
+        { text: '参与开发', link: '/sas/dev-sas' }
       ]
     }
   ],
@@ -258,7 +254,7 @@ const sidebar = {
       text: '快速入门',
       items: [
         { text: '插件介绍', link: '/svc/re-svc' },
-        { text: '参与开发', link: '/svc/dev-svc' },
+        { text: '参与开发', link: '/svc/dev-svc' }
       ]
     }
   ],
@@ -267,7 +263,7 @@ const sidebar = {
       text: '快速入门',
       items: [
         { text: '插件介绍', link: '/siwa/re-siwa' },
-        { text: '参与开发', link: '/siwa/dev-siwa' },
+        { text: '参与开发', link: '/siwa/dev-siwa' }
       ]
     }
   ],
@@ -350,7 +346,7 @@ export default {
     ],
     [
       'script',
-      null,
+      {},
       `(function(h,o,t,j,a,r){
         h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
         h._hjSettings={hjid:2962395,hjsv:6};
@@ -362,7 +358,7 @@ export default {
     ],
     [
       'script',
-      null,
+      {},
       `var _hmt = _hmt || [];
       (function() {
         var hm = document.createElement("script");

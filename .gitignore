@@ -3,3 +3,4 @@ node_modules
 .idea/
 .vitepress/dist
 .vitepress/cache
+dist
