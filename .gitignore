@@ -1,6 +1,7 @@
 node_modules
 .vscode
 .idea/
-.vitepress/dist
+!.vitepress/dist/index.html
+.vitepress/dist/*
 .vitepress/cache
 dist
