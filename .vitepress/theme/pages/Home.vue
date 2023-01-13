@@ -230,7 +230,7 @@
 
     <section-box title="Sonic摘星计划贡献墙">
       <div class="cons-wall">
-        <div class="more-user">部分用户贡献荣誉证书展示</div>
+        <div class="more-user">部分用户荣誉证书展示</div>
         <el-carousel type="card" height="280px">
           <el-carousel-item v-for="conItem in conList" :key="conItem">
             <el-image style="height: 280px" :src="conItem" />
