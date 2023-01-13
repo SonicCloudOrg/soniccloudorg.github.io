@@ -12,16 +12,11 @@
 
       <!-- 品牌数据统计 -->
       <div class="statistics">
-        <el-tooltip
-          v-for="item in statisticsData"
-          effect="dark"
-          :content="item.tipContent"
-          placement="top"
-        >
+        <template v-for="item in statisticsData" :key="item.tipContent">
           <a :href="item.linkUrl" class="statistics-link" target="_blank">
             <img :src="item.img" />
           </a>
-        </el-tooltip>
+        </template>
       </div>
 
       <!-- 品牌描述 -->
@@ -260,8 +255,6 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
-
 import SectionBox from '../components/SectionBox.vue'
 
 // 图片资源
@@ -296,7 +289,7 @@ import msg from '../assets/msg.png'
 import { useRouter } from 'vitepress'
 
 // 品牌数据统计
-const statisticsData = ref([
+const statisticsData = [
   {
     tipContent: 'Sonic组织Follower数量',
     linkUrl: 'https://github.com/SonicCloudOrg',
@@ -317,10 +310,10 @@ const statisticsData = ref([
     linkUrl: 'https://github.com/SonicCloudOrg',
     img: 'https://img.shields.io/badge/Docker%20pulls%20-65.5k-important'
   }
-])
+]
 
 // 最新动态
-const news = ref([
+const news = [
   {
     title: '重磅！全新sib remote功能上线，iOS远程调试的福音！',
     time: '用户可以自己本地sib remote connect就可以像本地链接一样使用啦！',
@@ -338,14 +331,14 @@ const news = ref([
     time: '历时两个多月的初选、海选和专家评审后，「MTSC 2022年度最佳开源项目」评选终于尘埃落定',
     url: 'https://sonic-cloud.wiki/d/1471-sonicmtsc-2022',
     pic: c2
-  },
-])
+  }
+]
 
 // 贡献墙
-const conList = ref([con1, con2, con3, con4, con5])
+const conList = [con1, con2, con3, con4, con5]
 
 // 支持设备
-const devices = ref([
+const devices = [
   {
     image: a1,
     name: '安卓设备'
@@ -362,7 +355,7 @@ const devices = ref([
     image: a4,
     name: '智能手表'
   }
-])
+]
 
 // 页面跳转
 const open = (url: string): void => {

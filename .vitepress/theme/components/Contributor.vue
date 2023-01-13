@@ -1,8 +1,6 @@
 <template>
   <a class="contributor" :href="info?.link" target="_blank">
-    <el-tooltip :content="info?.name" placement="top">
-      <el-avatar :src="info?.avatar" />
-    </el-tooltip>
+    <el-avatar :src="info?.avatar" />
   </a>
 </template>
 
