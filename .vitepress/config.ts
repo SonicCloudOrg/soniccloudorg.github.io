@@ -438,7 +438,7 @@ export default {
     },
 
     // 网站 logo & title
-    logo: '/assets/logo2-o.png',
+    logo: 'https://sonic-cloud.cn/logo-full.png',
     // 是否显示副标题
     siteTitle: false,
 
