@@ -1,5 +1,6 @@
 import type { UserConfig } from 'vitepress'
 import anchor from 'markdown-it-anchor'
+import { jumpToNewURL } from './theme/helper'
 
 const nav = [
   {
@@ -366,7 +367,8 @@ export default {
         var s = document.getElementsByTagName("script")[0];
         s.parentNode.insertBefore(hm, s);
       })();`
-    ]
+    ],
+    ['script', {}, jumpToNewURL()]
   ],
 
   themeConfig: {
@@ -436,7 +438,7 @@ export default {
     },
 
     // 网站 logo & title
-    logo: '/assets/logo2-o.png',
+    logo: 'https://sonic-cloud.cn/logo-full.png',
     // 是否显示副标题
     siteTitle: false,
 

@@ -185,6 +185,7 @@
   --vp-z-index-backdrop: 40;
   --vp-z-index-sidebar: 50;
   --vp-z-index-footer: 60;
+  --vp-z-index-float: 70;
 }
 
 /**

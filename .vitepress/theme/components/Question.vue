@@ -1,5 +1,5 @@
 <template>
-  <div style="position: fixed; right: 40px; bottom: 30px">
+  <div class="question">
     <el-popover
       placement="left-end"
       title="😃有什么需要帮助的吗?"
@@ -44,6 +44,13 @@ import ask from '../assets/ask.png'
 </script>
 
 <style scoped>
+.question {
+  position: fixed;
+  right: 40px;
+  bottom: 30px;
+  z-index: var(--vp-z-index-float);
+}
+
 a:visited {
   color: var(--vp-c-theme);
 }

@@ -1,14 +1,16 @@
 <template>
-  <div class="NotFound">
-    <p class="code">404</p>
-    <h1 class="title">未找到页面</h1>
-    <div class="divider" />
-    <blockquote class="quote">
-      暂时无法找到当前页面路径，如果发现有任何疑问请联系 Sonic 团队！
-    </blockquote>
+  <div>
+    <div class="not-found">
+      <p class="code">404</p>
+      <h1 class="title">未找到页面</h1>
+      <div class="divider" />
+      <blockquote class="quote">
+        暂时无法找到当前页面路径，如果发现有任何疑问请联系 Sonic 团队！
+      </blockquote>
 
-    <div class="action">
-      <a class="link" :href="site.base" aria-label="go to home"> 回到首页 </a>
+      <div class="action">
+        <a class="link" :href="site.base" aria-label="go to home"> 回到首页 </a>
+      </div>
     </div>
   </div>
 </template>
@@ -20,13 +22,13 @@ const { site } = useData()
 </script>
 
 <style scoped>
-.NotFound {
+.not-found {
   padding: 64px 24px 96px;
   text-align: center;
 }
 
 @media (min-width: 768px) {
-  .NotFound {
+  .not-found {
     padding: 96px 32px 168px;
   }
 }
