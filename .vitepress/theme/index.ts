@@ -26,8 +26,6 @@ import ContributorList from './components/ContributorList.vue'
 
 import './styles/index.css'
 
-import { jumpToNewURL } from './utils/index'
-
 const theme: Theme = {
   Layout,
   NotFound,
@@ -51,13 +49,6 @@ const theme: Theme = {
     app.use(ElAlert)
     // 自定义组件
     app.component('ContributorList', ContributorList)
-
-    app.mixin({
-      onMounted() {
-        // 新老路由兼容
-        jumpToNewURL()
-      }
-    })
   }
 } as Theme
 

@@ -1,5 +1,6 @@
 import type { UserConfig } from 'vitepress'
 import anchor from 'markdown-it-anchor'
+import { jumpToNewURL } from './theme/helper'
 
 const nav = [
   {
@@ -366,7 +367,8 @@ export default {
         var s = document.getElementsByTagName("script")[0];
         s.parentNode.insertBefore(hm, s);
       })();`
-    ]
+    ],
+    ['script', {}, jumpToNewURL()]
   ],
 
   themeConfig: {
