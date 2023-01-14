@@ -34,7 +34,6 @@ const theme: Theme = {
     app.use(ElButton)
     app.use(ElCarousel)
     app.use(ElCarouselItem)
-    app.use(ElTooltip)
     app.use(ElImage)
     app.use(ElCard)
     app.use(ElTimeline)
