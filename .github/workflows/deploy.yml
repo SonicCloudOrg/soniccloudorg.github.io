@@ -131,7 +131,7 @@ jobs:
           MERGE_DELETE_BRANCH: true
           MERGE_RETRY_SLEEP: 10000
       - name: mv logo file
-        run: mv .vitepress/theme/assets/logo-full.png .vitepress/dist
+        run: mv .vitepress/theme/assets/logo-full.png .vitepress/dist && mv .vitepress/theme/assets/public/favicon.ico .vitepress/dist
       - name: upload files to OSS
         uses: fangbinwei/aliyun-oss-website-action@v1
         with:

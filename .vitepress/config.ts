@@ -308,7 +308,7 @@ export default {
   lastUpdated: true, // 是否显示最后修改时间
   ignoreDeadLinks: true,
   head: [
-    ['link', { rel: 'icon', href: '/assets/public/favicon.ico' }],
+    ['link', { rel: 'icon', href: 'https://sonic-cloud.cn/favicon.ico' }],
     ['meta', { name: 'baidu-site-verification', content: 'code-tUj7cN37g6' }],
     [
       'meta',
@@ -448,7 +448,7 @@ export default {
     // 页面编辑链接配置
     editLink: {
       pattern:
-        'https://github.com/SonicCloudOrg/sonic-offical-website/src/:path',
+        'https://github.com/SonicCloudOrg/sonic-offical-website/edit/main/src/:path',
       text: '在 GitHub 上编辑此页'
     },
 
