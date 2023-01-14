@@ -29,7 +29,21 @@
   </section-box>
 
   <section-box title="PAWAO 1.0 智能集线器" isCenter>
-    预计2023年1月上架...
+    <div class="capacity-wrapper-cabinet">
+      <el-timeline class="capacity-list-2" style="text-align: left">
+        <el-timeline-item v-for="i in hubDes" type="primary" :hollow="true">
+          {{ i }}
+        </el-timeline-item>
+      </el-timeline>
+      <video
+        class="capacity-video-2"
+        controls
+        :src="hubVideo"
+      />
+    </div>
+    <pur
+      url="https://item.taobao.com/item.htm?spm=a21dvs.23580594.0.0.6781645egtquCF&ft=t&id=697697950839"
+    />
   </section-box>
 
   <section-box title="所有硬件产品">
@@ -157,6 +171,7 @@ import p5 from '../assets/cabinet/p5.jpg'
 import p6 from '../assets/cabinet/p6.jpg'
 import p7 from '../assets/cabinet/p7.jpg'
 import cabinetVideo from '../assets/video/cabinet.mp4'
+import hubVideo from '../assets/video/hub.mp4'
 
 const rate = ref(5)
 const videoOptions = ref({
@@ -176,6 +191,17 @@ const cabinetDes = ref([
   '内置高速静音散热风扇，静音降温，保证柜内温度',
   '底部配有带刹车万向轮，方便移动柜体'
 ])
+const hubDes = ref([
+  '采用工业级铁质外壳',
+  '3C级配置电源，保证电源供给防异常断电',
+  '程控USB集线器，单独控制USB口通断电',
+  '附赠二进制控制程序，搭配Sonic可视化界面',
+  '搭载智能芯片，防电流过冲过压',
+  '附带蓝色指示灯，通断情况一目了然',
+  '10个USB3.0口，传输速度快人一步',
+  '内置高速散热风扇，内部降温，控制集线器温度',
+  'USB连接，一插即用，无需额外硬件接口与驱动'
+])
 const product = ref([
   {
     pic: p1,
@@ -189,7 +215,7 @@ const product = ref([
     title: 'PAWAO 1.0 智能集线器',
     des: '提供二进制文件，可HTTP调用',
     des2: '轻松控制集线器USB口通断电',
-    url: ''
+    url: 'https://item.taobao.com/item.htm?spm=a21dvs.23580594.0.0.6781645egtquCF&ft=t&id=697697950839'
   },
   {
     pic: p3,
@@ -333,8 +359,17 @@ const talk = ref([
   height: 440px;
 }
 
+.capacity-video-2 {
+  width: 254px;
+  height: 450px;
+}
+
 .capacity-list {
   margin-left: 40px;
+}
+
+.capacity-list-2 {
+  margin-right: 60px;
 }
 
 .card-content {

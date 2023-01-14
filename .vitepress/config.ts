@@ -456,10 +456,6 @@ export default {
 
     // 页脚配置
     footer: {
-      license: {
-        text: 'MIT License',
-        link: 'https://opensource.org/licenses/MIT'
-      },
       copyright:
         'Copyright © All Rights Reserved Sonic Project for SonicCloudOrg 版权所有'
     }

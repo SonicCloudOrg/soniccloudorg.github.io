@@ -28,7 +28,7 @@
         <div style="line-height: 1.6; text-indent: 30px; font-size: 15px">
           <div v-for="(f, i) in d.feat">
             {{ i + 1 + '、 ' + f.title }}
-            <a :href="f.url" v-if="f.url" target="_blank">
+            <a :href="f.url" v-if="f.url" target="_blank" style="color: #0d84ff">
               #{{ f.url.replace(/[^\d]/g, '') }}</a
             >
           </div>
@@ -39,7 +39,7 @@
         <div style="line-height: 1.6; text-indent: 30px; font-size: 15px">
           <div v-for="(f, i) in d.fix">
             {{ i + 1 + '、 ' + f.title }}
-            <a :href="f.url" v-if="f.url" target="_blank">
+            <a :href="f.url" v-if="f.url" target="_blank" style="color: #0d84ff">
               #{{ f.url.replace(/[^\d]/g, '') }}</a
             >
           </div>

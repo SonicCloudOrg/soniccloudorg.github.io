@@ -122,10 +122,126 @@ const cons: Cons = [
   {
     name: 'Z-feiyao',
     avatar: '78218958'
+  },
+  {
+    name: "ayumi760405",
+    avatar: "28735340"
+  },
+  {
+    name: "viz1997",
+    avatar: "60973886"
   }
 ]
 
 export default [
+  {
+    version: 'v2.2.0',
+    time: '2023/1/14',
+    feat: [
+      {
+        title: '（初版）安卓远控实时性能采集，测试套件支持配置安卓性能采集'
+      },
+      {
+        title: '切换WebView的包名、process、handle参数支持传入全局变量',
+        url: 'https://sonic-cloud.wiki/d/2349'
+      },
+      {
+        title: "WebView自动化加入刷新、回退、验证网址操作"
+      },
+      {
+        title: "新增支持Telegram机器人接入",
+        url: "https://github.com/SonicCloudOrg/sonic-server/pull/283"
+      },
+      {
+        title: "新增支持Line Notify通知接入",
+        url: "https://github.com/SonicCloudOrg/sonic-server/pull/285"
+      },
+      {
+        title: "sib app list 新增子版本号属性展示",
+        url: "https://github.com/SonicCloudOrg/sonic-ios-bridge/pull/52"
+      },
+      {
+        title: "iOS远控页面新增App子版本号展示"
+      },
+      {
+        title: "新增操作：安卓迭代控件列表、iOS迭代控件列表、迭代POCO控件列表"
+      },
+      {
+        title: "iOS新增操作：断言iOS原生控件属性"
+      },
+      {
+        title: "新增操作：日志输出指定控件属性，支持安卓原生、iOS原生、POCO控件"
+      },
+      {
+        title: "安卓新增操作：切换InVisible控件展示与隐藏"
+      },
+      {
+        title: "sonic-android-supply新增设备性能监控功能"
+      },
+      {
+        title: "安卓远控设备时添加关闭UIAutomator2Server按钮",
+        url: "https://sonic-cloud.wiki/d/2445"
+      }
+    ],
+    fix: [
+      {
+        title: "修复公共步骤中的某个步骤设置失败中断后case仍然通过的问题",
+        url: "https://sonic-cloud.wiki/d/2354-case"
+      },
+      {
+        title: "安卓随机事件操作去除音量、屏幕亮度操作"
+      },
+      {
+        title: "优化后端启动未完成时前端503报错提示"
+      },
+      {
+        title: "删除步骤前提示步骤存在于哪些公共步骤，用户可选择仅移出用例或完全删除"
+      },
+      {
+        title: "公共步骤编辑页面删除步骤时，如步骤存在于用例中，可跳转前往用例详情处理"
+      }, {
+        title: "修复公共步骤编辑时，如果初始为iOS平台，结果会筛选出安卓步骤的问题"
+      },
+      {
+        title: '修复部分步骤在步骤列表无展示的问题'
+      },
+      {
+        title: "删除控件元素时，如果控件已应用于步骤中，不再强制删除步骤，可后续再编辑对应步骤"
+      },
+      {
+        title: "调整部分Mapper语句，优化安全策略"
+      },
+      {
+        title: "修复清理文件定时任务不生效的问题"
+      }, {
+        title: "优化Eureka参数，压缩微服务间发现时间"
+      },
+      {
+        title: "修复远控时右侧控制区域无法使用鼠标选中的问题"
+      }, {
+        title: "修复测试报告中性能数据在切换tab后重复增加的问题"
+      }, {
+        title: "修复测试报告中同设备存在多用例时性能图表不显示的问题"
+      }, {
+        title: "修复步骤中筛选POCO控件时使用名称筛选无效的问题"
+      }, {
+        title: "修复sib perfmon输出的proc-network中部分字段错位的问题",
+        url: "https://github.com/SonicCloudOrg/sonic-ios-bridge/issues/53"
+      }, {
+        title: "修复状态为InVisible的安卓原生控件没展示的问题",
+        url: "https://sonic-cloud.wiki/d/2419"
+      }, {
+        title: "修复iOS使用网络抓包时，页面显示拒绝连接的问题",
+        url: "https://sonic-cloud.wiki/d/426"
+      }, {
+        title: "修复iOS设备分辨率信息展示为缩放的分辨率的问题"
+      }, {
+        title: "官网大改造，优化文档展示与使用便捷性"
+      }, {
+        title: "Agent端配置文件加上英语注释"
+      }],
+    con: getCon('ZhouYixun', 'Lewage59', 'aoliaoaoaojiao', 'ayumi760405', 'viz1997')
+  },
   {
     version: 'v2.1.2',
     time: '2022/12/14',
