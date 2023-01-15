@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <template #layout-bottom>
-      <question />
+      <QuestionFloat />
     </template>
 
     <template #doc-footer-before>
@@ -24,7 +24,7 @@ import DefaultTheme from 'vitepress/theme'
 import ContributorList from '../components/ContributorList.vue'
 import DocAsideSponsors from '../components/DocAsideSponsors.vue'
 import DocAsideADs from '../components/DocAsideADs.vue'
-import Question from '../components/Question.vue'
+import QuestionFloat from '../components/QuestionFloat.vue'
 
 const { Layout } = DefaultTheme
 </script>

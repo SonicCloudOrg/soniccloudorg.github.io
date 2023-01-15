@@ -46,6 +46,7 @@ const theme: Theme = {
     app.use(ElRate)
     app.use(ElPopover)
     app.use(ElAlert)
+    app.use(ElTooltip)
     // 自定义组件
     app.component('ContributorList', ContributorList)
   }
