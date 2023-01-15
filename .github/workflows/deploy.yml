@@ -63,7 +63,7 @@ jobs:
           sas_old_ver=${{ env.test_sas }}
           sas_old_ver_sub=${sas_old_ver:4}
           sed -i "s/${sas_old_ver}/sas_${sas_new_ver_sub}/g" version.json
-          sed -i "s/${ssas_old_ver_sub}/${sas_new_ver_sub}/g" src/sas/re-sas.md
+          sed -i "s/${sas_old_ver_sub}/${sas_new_ver_sub}/g" src/sas/re-sas.md
       - name: replace sgm
         run: |
           sgm_new_ver=${{ steps.sgm-latest-tag.outputs.tag }}
