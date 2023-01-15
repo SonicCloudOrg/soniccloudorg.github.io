@@ -77,7 +77,7 @@ u0_a90         9252    517 2261048 293056 0                   0 S com.android.br
 一般地，一个WebView进程只有一个页面，但是也会有多个页面共用的情况，就像我们的浏览器会有多个Tab的场景。这时我们切换WebView之后，默认进入的是第一个Tab窗口，如果不是我们需要测试的窗口，则需要我们切换。
 
 以微信H5为例：
-1. 使用AndroidProcess为com.tencent.mm:tools（有的微信版本是 com.tencent.mm:appbrand0 ）切换WebView。
+1. 使用AndroidProcess为 com.tencent.mm:tools（有的微信版本是 com.tencent.mm:appbrand0 ）切换WebView。
 2. 这时我们获取页面标题，就会发现默认切换的窗口是微信的【搜一搜】窗口。
 3. 然后我们使用【切换Handle】步骤，输入目标页面的标题。（v2.1.0开始，也可以输入页面的页面地址或Handle数组下标定位目标Handle）
 4. 然后就可以切换到我们的期望页面，可以开始进行UI自动化操作了。
