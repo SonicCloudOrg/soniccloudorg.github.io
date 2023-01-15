@@ -248,6 +248,13 @@ const sidebar = {
         { text: '插件介绍', link: '/sas/re-sas' },
         { text: '参与开发', link: '/sas/dev-sas' }
       ]
+    },
+    {
+      text: '功能列表',
+      items: [
+        { text: '远程连接', link: '/sas/sas-share' },
+        { text: '性能监控', link: '/sas/sas-perf' }
+      ]
     }
   ],
   '/svc/': [

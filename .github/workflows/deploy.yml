@@ -19,6 +19,11 @@ jobs:
           sort-tags: false
           prefix: 'sonic-ci-helper'
       - uses: oprypin/find-latest-tag@v1
+        id: sas-latest-tag
+        with:
+          repository: SonicCloudOrg/sonic-android-supply
+          sort-tags: false
+      - uses: oprypin/find-latest-tag@v1
         id: sib-latest-tag
         with:
           repository: SonicCloudOrg/sonic-ios-bridge
@@ -51,6 +56,14 @@ jobs:
           sib_old_ver_sub=${sib_old_ver:4}
           sed -i "s/${sib_old_ver}/sib_${sib_new_ver_sub}/g" version.json
           sed -i "s/${sib_old_ver_sub}/${sib_new_ver_sub}/g" src/sib/re-sib.md
+      - name: replace sas
+        run: |
+          sas_new_ver=${{ steps.sas-latest-tag.outputs.tag }}
+          sas_new_ver_sub=${sas_new_ver:1}
+          sas_old_ver=${{ env.test_sas }}
+          sas_old_ver_sub=${sas_old_ver:4}
+          sed -i "s/${sas_old_ver}/sas_${sas_new_ver_sub}/g" version.json
+          sed -i "s/${ssas_old_ver_sub}/${sas_new_ver_sub}/g" src/sas/re-sas.md
       - name: replace sgm
         run: |
           sgm_new_ver=${{ steps.sgm-latest-tag.outputs.tag }}

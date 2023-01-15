@@ -4,17 +4,17 @@
       <el-popover
         ref="elPopoverRef"
         placement="left-end"
-        title="咨询渠道"
+        title="硬件方案咨询"
         trigger="hover"
         :width="220"
         v-model:visible="visible"
       >
         <el-link
-          href="mailto:soniccloudorg@163.com"
+          href="mailto:support@pawao.tech"
           target="_blank"
           type="primary"
         >
-          官方邮箱
+          邮箱咨询
         </el-link>
         <el-link
           href="https://sonic-record-hongkong.oss-cn-hongkong.aliyuncs.com/wechat.jpg"
