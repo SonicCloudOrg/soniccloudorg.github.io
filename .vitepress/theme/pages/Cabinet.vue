@@ -12,7 +12,7 @@
 
   <section-box title="PAWAO 1.0 散热式机柜" isCenter>
     <div class="capacity-wrapper-cabinet">
-      <video class="capacity-video" controls :src="cabinetVideo" />
+      <video class="capacity-video" controls :src="cabinetVideo"/>
       <el-timeline class="capacity-list" style="text-align: left">
         <el-timeline-item v-for="i in cabinetDes" type="primary" :hollow="true">
           {{ i }}
@@ -20,7 +20,8 @@
       </el-timeline>
     </div>
     <pur
-      url="https://item.taobao.com/item.htm?spm=a21dvs.23580594.0.0.3c3a645eSj7FCR&ft=t&id=696443990660"
+      url="https://item.taobao.com/item.htm?ft=t&id=696443990660"
+      :code="code1"
     />
   </section-box>
 
@@ -31,10 +32,11 @@
           {{ i }}
         </el-timeline-item>
       </el-timeline>
-      <video class="capacity-video-2" controls :src="hubVideo" />
+      <video class="capacity-video-2" controls :src="hubVideo"/>
     </div>
     <pur
-      url="https://item.taobao.com/item.htm?spm=a21dvs.23580594.0.0.6781645egtquCF&ft=t&id=697697950839"
+      url="https://item.taobao.com/item.htm?ft=t&id=697697950839"
+      :code="code2"
     />
   </section-box>
 
@@ -42,11 +44,11 @@
     <div class="use-case-cabinet">
       <el-card v-for="d in product" class="case-card-wrapper" shadow="hover">
         <div class="case-card-content">
-          <img class="product-img" :src="d.pic" />
+          <img class="product-img" :src="d.pic"/>
           <h3 class="product-name">{{ d.title }}</h3>
           <p>{{ d.des }}</p>
           <p>{{ d.des2 }}</p>
-          <pur :url="d.url" />
+          <pur :url="d.url" :code="d.code"/>
         </div>
       </el-card>
     </div>
@@ -75,7 +77,7 @@
         style="width: 100%; text-align: left; margin-bottom: 10px"
       >
         <div class="cabinet-avatar" style="display: flex">
-          <el-avatar :src="t.ava" fit="contain" :size="60" />
+          <el-avatar :src="t.ava" fit="contain" :size="60"/>
           <div style="flex: 1; margin-left: 20px">
             <div style="display: flex">
               <h4 style="margin: 0px">{{ t.name }}</h4>
@@ -148,11 +150,11 @@
   </div>
 
   <!-- 咨询浮窗 -->
-  <ConsultantFloat />
+  <ConsultantFloat/>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import {ref} from 'vue'
 import Pur from '../components/Pur.vue'
 import SectionBox from '../components/SectionBox.vue'
 import ConsultantFloat from '@theme/components/ConsultantFloat.vue'
@@ -170,6 +172,13 @@ import p4 from '../assets/cabinet/p4.jpg'
 import p5 from '../assets/cabinet/p5.jpg'
 import p6 from '../assets/cabinet/p6.jpg'
 import p7 from '../assets/cabinet/p7.jpg'
+import code1 from '../assets/cabinet/code1.png'
+import code2 from '../assets/cabinet/code2.png'
+import code3 from '../assets/cabinet/code3.png'
+import code4 from '../assets/cabinet/code4.png'
+import code5 from '../assets/cabinet/code5.png'
+import code6 from '../assets/cabinet/code6.png'
+import code7 from '../assets/cabinet/code7.png'
 import cabinetVideo from '../assets/video/cabinet.mp4'
 import hubVideo from '../assets/video/hub.mp4'
 
@@ -208,49 +217,56 @@ const product = ref([
     title: 'PAWAO 1.0 散热式机柜',
     des: '含小、中、大规格',
     des2: '可选择散热版、屏蔽版、温控版',
-    url: 'https://item.taobao.com/item.htm?spm=a21dvs.23580594.0.0.3c3a645eSj7FCR&ft=t&id=696443990660'
+    url: 'https://item.taobao.com/item.htm?ft=t&id=696443990660',
+    code: code1
   },
   {
     pic: p2,
     title: 'PAWAO 1.0 智能集线器',
     des: '提供二进制文件，可HTTP调用',
     des2: '轻松控制集线器USB口通断电',
-    url: 'https://item.taobao.com/item.htm?spm=a21dvs.23580594.0.0.6781645egtquCF&ft=t&id=697697950839'
+    url: 'https://item.taobao.com/item.htm?ft=t&id=697697950839',
+    code: code2
   },
   {
     pic: p3,
     title: 'PAWAO 1.0 智能数据线',
     des: '智能芯片助力充电口降温',
     des2: '支持Type-c、苹果数据线',
-    url: 'https://item.taobao.com/item.htm?spm=a21dvs.23580594.0.0.52de3d0dbeP6yr&ft=t&id=693483194887'
+    url: 'https://item.taobao.com/item.htm?ft=t&id=693483194887',
+    code: code3
   },
   {
     pic: p4,
     title: 'PAWAO 迷你工控机',
     des: '小巧工控机，可自定义配置',
     des2: '搭载Ubuntu系统，稳定运行',
-    url: 'https://item.taobao.com/item.htm?spm=a21dvs.23580594.0.0.52de3d0dbeP6yr&ft=t&id=690165961688'
+    url: 'https://item.taobao.com/item.htm?ft=t&id=690165961688',
+    code: code4
   },
   {
     pic: p5,
     title: 'PAWAO 六类网线',
     des: 'CAT6A成品网线、路由器网线',
     des2: '可自由选择长度',
-    url: 'https://item.taobao.com/item.htm?spm=a21dvs.23580594.0.0.52de3d0dbeP6yr&ft=t&id=691859752465'
+    url: 'https://item.taobao.com/item.htm?ft=t&id=691859752465',
+    code: code5
   },
   {
     pic: p6,
     title: 'PAWAO UPS电源',
     des: '外置电池主机',
     des2: '智能稳压，无惧异常断电',
-    url: 'https://item.taobao.com/item.htm?spm=a21dvs.23580594.0.0.3c3a645ez8ZN2h&ft=t&id=696193021266'
+    url: 'https://item.taobao.com/item.htm?ft=t&id=696193021266',
+    code: code6
   },
   {
     pic: p7,
     title: 'PAWAO 无线路由器',
     des: '超强覆盖，信号稳定',
     des2: '高速率、超频宽、更疾速',
-    url: 'https://item.taobao.com/item.htm?spm=a21dvs.23580594.0.0.3c3a645ez8ZN2h&ft=t&id=696702703783'
+    url: 'https://item.taobao.com/item.htm?ft=t&id=696702703783',
+    code: code7
   }
 ])
 const ths = ref([
