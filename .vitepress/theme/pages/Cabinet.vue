@@ -12,11 +12,7 @@
 
   <section-box title="PAWAO 1.0 散热式机柜" isCenter>
     <div class="capacity-wrapper-cabinet">
-      <video
-        class="capacity-video"
-        controls
-        :src="cabinetVideo"
-      />
+      <video class="capacity-video" controls :src="cabinetVideo" />
       <el-timeline class="capacity-list" style="text-align: left">
         <el-timeline-item v-for="i in cabinetDes" type="primary" :hollow="true">
           {{ i }}
@@ -35,11 +31,7 @@
           {{ i }}
         </el-timeline-item>
       </el-timeline>
-      <video
-        class="capacity-video-2"
-        controls
-        :src="hubVideo"
-      />
+      <video class="capacity-video-2" controls :src="hubVideo" />
     </div>
     <pur
       url="https://item.taobao.com/item.htm?spm=a21dvs.23580594.0.0.6781645egtquCF&ft=t&id=697697950839"
@@ -50,11 +42,11 @@
     <div class="use-case-cabinet">
       <el-card v-for="d in product" class="case-card-wrapper" shadow="hover">
         <div class="case-card-content">
-          <img class="product-img" :src="d.pic"/>
+          <img class="product-img" :src="d.pic" />
           <h3 class="product-name">{{ d.title }}</h3>
           <p>{{ d.des }}</p>
           <p>{{ d.des2 }}</p>
-          <pur :url="d.url"/>
+          <pur :url="d.url" />
         </div>
       </el-card>
     </div>
@@ -78,16 +70,19 @@
     </el-space>
 
     <div class="using-container">
-      <el-card v-for="t in talk" style="width: 100%; text-align: left;margin-bottom: 10px">
+      <el-card
+        v-for="t in talk"
+        style="width: 100%; text-align: left; margin-bottom: 10px"
+      >
         <div class="cabinet-avatar" style="display: flex">
-          <el-avatar :src="t.ava" fit="contain" :size="60"/>
+          <el-avatar :src="t.ava" fit="contain" :size="60" />
           <div style="flex: 1; margin-left: 20px">
             <div style="display: flex">
               <h4 style="margin: 0px">{{ t.name }}</h4>
               <el-rate
                 disabled
                 v-model="rate"
-                style="width: 200px; margin-left: 10px;height: 25px"
+                style="width: 200px; margin-left: 10px; height: 25px"
               />
             </div>
             <el-card style="margin-top: 10px">
@@ -136,26 +131,31 @@
           href="mailto:soniccloudorg@163.com"
           target="_blank"
           type="primary"
-        >官方邮箱
-        </el-link
         >
+          官方邮箱
+        </el-link>
         <el-link
           href="https://sonic-record-hongkong.oss-cn-hongkong.aliyuncs.com/wechat.jpg"
           target="_blank"
           type="primary"
           style="margin-left: 20px"
-        >企微咨询
+        >
+          企微咨询
         </el-link>
       </div>
       <div style="margin-top: 10px">&nbsp;</div>
     </el-footer>
   </div>
+
+  <!-- 咨询浮窗 -->
+  <ConsultantFloat />
 </template>
 
 <script setup lang="ts">
-import {ref} from 'vue'
+import { ref } from 'vue'
 import Pur from '../components/Pur.vue'
 import SectionBox from '../components/SectionBox.vue'
+import ConsultantFloat from '@theme/components/ConsultantFloat.vue'
 import th1 from '../assets/cabinet/th1.png'
 import th2 from '../assets/cabinet/th2.png'
 import th3 from '../assets/cabinet/th3.png'
@@ -265,7 +265,7 @@ const ths = ref([
   {
     url: 'https://pmcloud.yonyoucloud.com/official-index.html',
     src: th1
-  },
+  }
   // {
   //   url: 'https://pmcloud.yonyoucloud.com/official-index.html',
   //   src: th4
@@ -278,19 +278,20 @@ const ths = ref([
 const talk = ref([
   {
     ava: you,
-    name: "友空间团队测试专家",
-    msg: "使用下来体验非常不错，设备鼓包率大大下降，长时间测试与使用能保持电池健康的温度。手机管理，监控，使用变得更快捷，更有效！"
-  }, {
+    name: '友空间团队测试专家',
+    msg: '使用下来体验非常不错，设备鼓包率大大下降，长时间测试与使用能保持电池健康的温度。手机管理，监控，使用变得更快捷，更有效！'
+  },
+  {
     ava: user,
-    name: "东田测试团队",
-    msg: "为测试设备的运行提供了一个稳定的环境，可以更加高效的对测试设备进行管理，可以实时查看设备的状态以及各种信息，对温度指标设置监控警报，提升了测试设备的使用寿命。"
+    name: '东田测试团队',
+    msg: '为测试设备的运行提供了一个稳定的环境，可以更加高效的对测试设备进行管理，可以实时查看设备的状态以及各种信息，对温度指标设置监控警报，提升了测试设备的使用寿命。'
   }
 ])
 </script>
 
 <style lang="scss" scoped>
 .cabinet-avatar .el-avatar {
-  background: #ffffff
+  background: #ffffff;
 }
 
 @keyframes slide {

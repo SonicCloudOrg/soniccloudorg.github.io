@@ -1,5 +1,5 @@
 <template>
-  <div class="question">
+  <div class="question-float">
     <client-only>
       <el-popover
         placement="left-end"
@@ -46,7 +46,7 @@ import ask from '../assets/ask.png'
 </script>
 
 <style scoped>
-.question {
+.question-float {
   position: fixed;
   right: 40px;
   bottom: 30px;
