@@ -13,9 +13,13 @@
       <!-- 品牌数据统计 -->
       <div class="statistics">
         <template v-for="item in statisticsData" :key="item.tipContent">
-          <a :href="item.linkUrl" class="statistics-link" target="_blank">
-            <img :src="item.img" />
-          </a>
+          <client-only>
+            <el-tooltip :content="item.tipContent" placement="top">
+              <a :href="item.linkUrl" class="statistics-link" target="_blank">
+                <img :src="item.img" />
+              </a>
+            </el-tooltip>
+          </client-only>
         </template>
       </div>
 
@@ -48,7 +52,7 @@
       <h5 class="footmark">Made with 🧡 by SonicCloudOrg</h5>
     </div>
     <div class="hero__right">
-      <video controls :src="demo" />
+      <video width="800" controls :src="demo" />
     </div>
   </section>
 
