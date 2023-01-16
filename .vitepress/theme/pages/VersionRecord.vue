@@ -17,7 +17,7 @@
           <template #title>
             <div>
               更新前一定要查看版本迁移指南哦，可点击
-              <a href="https://sonic-cloud.cn/deploy?tag=upgrade">这里</a>
+              <a href="https://sonic-cloud.cn/deploy?tag=upgrade" target="_blank">这里</a>
               查看！
             </div>
           </template>
