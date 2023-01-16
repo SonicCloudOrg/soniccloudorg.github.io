@@ -137,7 +137,7 @@
           官方邮箱
         </el-link>
         <el-link
-          href="https://sonic-record-hongkong.oss-cn-hongkong.aliyuncs.com/wechat.jpg"
+          href="https://sonic-cloud.cn/wechat.jpg"
           target="_blank"
           type="primary"
           style="margin-left: 20px"
