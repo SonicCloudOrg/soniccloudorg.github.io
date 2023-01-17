@@ -9,7 +9,7 @@
     >
       <el-card>
         <el-alert
-          v-if="i == 0"
+          v-if="(i==0&&d.time!=='unknown') || (data[0].time==='unknown'&&i == 1)"
           style="margin-bottom: 20px"
           type="success"
           :closable="false"
@@ -22,7 +22,11 @@
             </div>
           </template>
         </el-alert>
-        <span class="verh1">{{ d.version }}</span>
+        <span class="verh1">{{
+            d.time === 'unknown' ? d.version + "（预计" +
+              new Date(new Date(data[i + 1].time).getTime() + 86400000 * 8).toLocaleDateString() + "发布）"
+              : d.version
+          }}</span>
         {{ d.des }}
         <span class="verh2" v-if="d.feat && d.feat.length > 0">新特性</span>
         <div style="line-height: 1.6; text-indent: 30px; font-size: 15px">
@@ -34,7 +38,7 @@
           </div>
         </div>
         <span class="verh2" v-if="d.fix && d.fix.length > 0"
-          >修复Bug与优化</span
+        >修复Bug与优化</span
         >
         <div style="line-height: 1.6; text-indent: 30px; font-size: 15px">
           <div v-for="(f, i) in d.fix">

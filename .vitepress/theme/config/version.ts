@@ -135,6 +135,23 @@ const cons: Cons = [
 
 export default [
   {
+    version: 'v2.2.1',
+    time: 'unknown',
+    fix: [
+      {
+        title: "修复测试套件运行时，特殊情况下安卓性能数据获取失败的情况",
+        url: "https://sonic-cloud.wiki/d/2462"
+      },
+      {
+        title: "兼容部分特殊安卓设备安装时-g报错导致无法继续进行的情况",
+      },
+      {
+        title: "待定"
+      }
+    ],
+    con: getCon("ZhouYixun")
+  },
+  {
     version: 'v2.2.0',
     time: '2023/1/14',
     feat: [
