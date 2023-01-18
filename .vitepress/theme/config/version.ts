@@ -146,7 +146,7 @@ export default [
         title: "兼容部分特殊安卓设备安装时-g报错导致无法继续进行的情况",
       },
       {
-        title: "待定"
+        title: "各端依赖以及组件安全性升级"
       }
     ],
     con: getCon("ZhouYixun")
