@@ -1,8 +1,8 @@
 {
   "sib": "sib_1.3.7",
-  "sgm": "sgm_1.3.3",
+  "sgm": "sgm_1.3.4",
   "sch": "sch_sonic-ci-helper-1.0.4",
-  "sdc": "sdc_1.1.19",
+  "sdc": "sdc_1.1.20",
   "ser": "ser_v2.2.0",
   "sas": "sas_0.1.0"
 }
