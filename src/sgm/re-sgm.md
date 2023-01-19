@@ -33,29 +33,29 @@ Sonic组织也在持续将代理抓包的探索 **共建** 到go-mitmproxy上，
 
 ::: info Linux:
 
-👉 <a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-go-mitmproxy/releases/download/v1.3.3/sonic-go-mitmproxy_1.3.3_linux_arm64.tar.gz" target="_blank">sonic-go-mitmproxy_1.3.3_linux_arm64.tar.gz</a>
+👉 <a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-go-mitmproxy/releases/download/v1.3.4/sonic-go-mitmproxy_1.3.4_linux_arm64.tar.gz" target="_blank">sonic-go-mitmproxy_1.3.4_linux_arm64.tar.gz</a>
 
-👉 <a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-go-mitmproxy/releases/download/v1.3.3/sonic-go-mitmproxy_1.3.3_linux_x86.tar.gz" target="_blank">sonic-go-mitmproxy_1.3.3_linux_x86.tar.gz</a>
+👉 <a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-go-mitmproxy/releases/download/v1.3.4/sonic-go-mitmproxy_1.3.4_linux_x86.tar.gz" target="_blank">sonic-go-mitmproxy_1.3.4_linux_x86.tar.gz</a>
 
-👉 <a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-go-mitmproxy/releases/download/v1.3.3/sonic-go-mitmproxy_1.3.3_linux_x86_64.tar.gz" target="_blank">sonic-go-mitmproxy_1.3.3_linux_x86_64.tar.gz</a>
+👉 <a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-go-mitmproxy/releases/download/v1.3.4/sonic-go-mitmproxy_1.3.4_linux_x86_64.tar.gz" target="_blank">sonic-go-mitmproxy_1.3.4_linux_x86_64.tar.gz</a>
 
 :::
 
 ::: info Macosx:
 
-👉 <a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-go-mitmproxy/releases/download/v1.3.3/sonic-go-mitmproxy_1.3.3_macosx_arm64.tar.gz" target="_blank">sonic-go-mitmproxy_1.3.3_macosx_arm64.tar.gz</a>
+👉 <a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-go-mitmproxy/releases/download/v1.3.4/sonic-go-mitmproxy_1.3.4_macosx_arm64.tar.gz" target="_blank">sonic-go-mitmproxy_1.3.4_macosx_arm64.tar.gz</a>
 
-👉 <a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-go-mitmproxy/releases/download/v1.3.3/sonic-go-mitmproxy_1.3.3_macosx_x86_64.tar.gz" target="_blank">sonic-go-mitmproxy_1.3.3_macosx_x86_64.tar.gz</a>
+👉 <a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-go-mitmproxy/releases/download/v1.3.4/sonic-go-mitmproxy_1.3.4_macosx_x86_64.tar.gz" target="_blank">sonic-go-mitmproxy_1.3.4_macosx_x86_64.tar.gz</a>
 
 :::
 
 ::: info Windows:
 
-👉 <a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-go-mitmproxy/releases/download/v1.3.3/sonic-go-mitmproxy_1.3.3_windows_arm64.tar.gz" target="_blank">sonic-go-mitmproxy_1.3.3_windows_arm64.tar.gz</a>
+👉 <a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-go-mitmproxy/releases/download/v1.3.4/sonic-go-mitmproxy_1.3.4_windows_arm64.tar.gz" target="_blank">sonic-go-mitmproxy_1.3.4_windows_arm64.tar.gz</a>
 
-👉 <a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-go-mitmproxy/releases/download/v1.3.3/sonic-go-mitmproxy_1.3.3_windows_x86.tar.gz" target="_blank">sonic-go-mitmproxy_1.3.3_windows_x86.tar.gz</a>
+👉 <a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-go-mitmproxy/releases/download/v1.3.4/sonic-go-mitmproxy_1.3.4_windows_x86.tar.gz" target="_blank">sonic-go-mitmproxy_1.3.4_windows_x86.tar.gz</a>
 
-👉 <a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-go-mitmproxy/releases/download/v1.3.3/sonic-go-mitmproxy_1.3.3_windows_x86_64.tar.gz" target="_blank">sonic-go-mitmproxy_1.3.3_windows_x86_64.tar.gz</a>
+👉 <a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-go-mitmproxy/releases/download/v1.3.4/sonic-go-mitmproxy_1.3.4_windows_x86_64.tar.gz" target="_blank">sonic-go-mitmproxy_1.3.4_windows_x86_64.tar.gz</a>
 
 :::
 
