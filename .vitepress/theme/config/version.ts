@@ -150,6 +150,9 @@ export default [
       },
       {
         title: "sonic-go-mitmproxy基础功能升级，Web过滤器升级，代理身份验证添加" 
+      },
+      {
+        title: "升级sonic-server中LDAP组件依赖"
       }
     ],
     con: getCon("ZhouYixun")
