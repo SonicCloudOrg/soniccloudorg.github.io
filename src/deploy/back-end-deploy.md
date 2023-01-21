@@ -15,7 +15,7 @@ contributors:
 准备工作：docker-compose、Docker、MySQL
 
 1. 需提前建数据库库！字符集为 utf8，排序规则为 utf8_general_ci
-2. [点击这里](https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-server/releases/download/v2.2.0/sonic-server-v2.2.0.zip) 下载最新版本的 **zip** 文件到任意目录（如加速链接失效，请自行前往 <a href="https://github.com/SonicCloudOrg/sonic-server/releases" target="_black">这里</a> 下载）。
+2. [点击这里](https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-server/releases/download/v2.2.1/sonic-server-v2.2.1.zip) 下载最新版本的 **zip** 文件到任意目录（如加速链接失效，请自行前往 <a href="https://github.com/SonicCloudOrg/sonic-server/releases" target="_black">这里</a> 下载）。
 3. 解压 zip，更改.env 中的信息。（无需改动 docker-compose.yml 文件。env 配置项内容可查看下方表格。如果您的系统没显示.env，在本页最下方【常见问题】查看解决方案）
 4. 当前目录下执行以下指令
 
