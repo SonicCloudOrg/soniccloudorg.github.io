@@ -143,7 +143,8 @@ export default [
         url: "https://sonic-cloud.wiki/d/2462"
       },
       {
-        title: "兼容部分特殊安卓设备安装时-g报错导致无法继续进行的情况",
+        title: "兼容部分特殊安卓设备安装时使用-g参数异常导致无法继续进行的情况",
+        url: "https://sonic-cloud.wiki/d/2443"
       },
       {
         title: "各端依赖以及组件安全性升级"
