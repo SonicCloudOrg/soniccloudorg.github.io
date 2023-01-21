@@ -136,7 +136,7 @@ const cons: Cons = [
 export default [
   {
     version: 'v2.2.1',
-    time: 'unknown',
+    time: '2023/1/21',
     fix: [
       {
         title: "修复测试套件运行时，特殊情况下安卓性能数据获取失败的情况",
