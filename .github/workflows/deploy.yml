@@ -24,6 +24,11 @@ jobs:
           repository: SonicCloudOrg/sonic-android-supply
           sort-tags: false
       - uses: oprypin/find-latest-tag@v1
+        id: saa-latest-tag
+        with:
+          repository: SonicCloudOrg/sonic-android-apk
+          sort-tags: false
+      - uses: oprypin/find-latest-tag@v1
         id: sib-latest-tag
         with:
           repository: SonicCloudOrg/sonic-ios-bridge
@@ -48,6 +53,13 @@ jobs:
         with:
           filename: 'version.json'
           prefix: test
+      - name: replace saa
+        run: |
+          saa_new_ver=${{ steps.saa-latest-tag.outputs.tag }}
+          saa_old_ver=${{ env.test_saa }}
+          saa_old_ver_sub=${saa_old_ver:4}
+          sed -i "s/${saa_old_ver}/saa_${saa_new_ver}/g" version.json
+          sed -i "s/${saa_old_ver_sub}/${saa_new_ver}/g" src/saa/re-saa.md
       - name: replace sib
         run: |
           sib_new_ver=${{ steps.sib-latest-tag.outputs.tag }}
