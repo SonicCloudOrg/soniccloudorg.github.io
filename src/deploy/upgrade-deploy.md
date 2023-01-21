@@ -26,13 +26,13 @@ v2.0.0-release 起，Sonic 版本规则更改如下：
 
 例如 2.2.0 的上一个版本为 2.1.15，那么 2.1.15 版本就是 2.1.x 的最稳定的版本
 
-## 从 v1.4.x 以上升级到 v2.2.0
+## 从 v1.4.x 以上升级到 v2.2.x
 0. 升级前先备份Mysql数据库。
 1. 直接前往 <a href="https://sonic-cloud.cn/deploy/back-end-deploy.html" target="_blank">这里</a> 下载最新版本zip，down集群后重新up即可。（部署文档含中国大陆加速镜像部署方式）
 2. jar方式部署的Agent前往 <a href="https://sonic-cloud.cn/deploy/agent-deploy.html" target="_blank">这里</a> 下载zip后解压，更新需替换旧版本plugins文件夹与jar文件。
 3. （附）Docker版Agent与server同理，前往 <a href="https://sonic-cloud.cn/deploy/agent-deploy.html" target="_blank">这里</a> 重新下载镜像部署即可。（部署文档含中国大陆加速镜像部署方式）
 
-## 从 v1.4.x 或 v1.5.x 或 v2.0.x 升级到 v2.1.2
+## 从 v1.4.x 或 v1.5.x 或 v2.0.x 升级到 v2.1.x
 0. 升级前先备份Mysql数据库。
 1. 直接前往 <a href="https://sonic-cloud.cn/deploy/back-end-deploy.html" target="_blank">这里</a> 下载最新版本zip，down集群后重新up即可。（部署文档含中国大陆加速镜像部署方式）
 2. jar方式部署的Agent前往 <a href="https://sonic-cloud.cn/deploy/agent-deploy.html" target="_blank">这里</a> 下载zip后解压，更新需替换旧版本plugins文件夹与jar文件。
