@@ -149,11 +149,17 @@ export default [
         title: "各端依赖以及组件安全性升级"
       },
       {
-        title: "sonic-go-mitmproxy基础功能升级，Web过滤器升级，代理身份验证添加" 
+        title: "sonic-go-mitmproxy基础功能升级，Web过滤器升级，代理身份验证添加"
       },
       {
-        title: "升级sonic-server中LDAP组件依赖"
-      }
+        title: "升级sonic-server中LDAP模块组件依赖"
+      },
+      {
+        title: "修复部分安卓10以上设备无法获取应用列表的Unable to start SonicManagerServiceV2问题",
+      },
+      {
+        title: "修复部分安卓10以上设备无法实时触控的Looper.loop()异常问题",
+      },
     ],
     con: getCon("ZhouYixun")
   },
