@@ -24,11 +24,12 @@ contributors:
 1. Fork [sonic-server](https://github.com/SonicCloudOrg/sonic-server) 仓库。
 2. 执行git clone指令，将您的仓库代码克隆到本地。
 3. 根据注释修改/sonic-server-common下resources的yml，特别是mysql的配置，开发环境还需将application-sonic-server-folder.yml文件内的url的 **/server** 暂时隐藏。
-4. 在编辑器的启动配置中加上以下jvm参数：
+::: tip 在v2.2.1版本以前，还需在编辑器的启动配置中加上以下vm options参数：
 ```
 --add-exports java.naming/com.sun.jndi.ldap=ALL-UNNAMED
 ```
-5. 依次启动EurekaApplicaiton、ControllerApplication、GatewayApplication、FolderApplication。
-6. 恭喜，搭建完毕！
-7. 开发完毕后，push到自己的仓库，然后可以给Sonic原仓库提起pr哦！（建议贡献前先开启issue讨论，防止跟组织计划进度有冲突哦）
+:::
+4. 依次启动EurekaApplicaiton、ControllerApplication、GatewayApplication、FolderApplication。
+5. 恭喜，搭建完毕！
+6. 开发完毕后，push到自己的仓库，然后可以给Sonic原仓库提起pr哦！（建议贡献前先开启issue讨论，防止跟组织计划进度有冲突哦）
 
