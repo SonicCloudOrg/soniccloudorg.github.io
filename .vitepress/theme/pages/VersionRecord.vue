@@ -32,7 +32,7 @@
               : d.version
           }}</span>
         <el-progress v-if="d.time === 'unknown'"
-                     :percentage="((new Date(data[i + 1].time).getTime() + 86400000 * 20-new Date().getTime())/86400000/20).toFixed(4)*100"
+                     :percentage="100-((new Date(data[i + 1].time).getTime() + 86400000 * 20-new Date().getTime())/86400000/20).toFixed(4)*100"
                      :indeterminate="true"/>
         {{ d.des }}
         <span class="verh2" v-if="d.feat && d.feat.length > 0">新特性</span>
