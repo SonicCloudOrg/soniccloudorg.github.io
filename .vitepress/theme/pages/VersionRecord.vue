@@ -5,7 +5,8 @@
       v-for="(d, i) in data"
       :timestamp="'发布时间：' + d.time"
       placement="top"
-      type="success"
+      size="large"
+      :type="d.time==='unknown'?'primary':'success'"
     >
       <el-card>
         <el-alert
@@ -22,11 +23,17 @@
             </div>
           </template>
         </el-alert>
+        <el-button type="primary" plain v-if="d.time === 'unknown'" style="float: right"
+                   @click="open('https://sonic-cloud.cn/contribute/con-re.html')">我想参与该版本开发💪
+        </el-button>
         <span class="verh1">{{
             d.time === 'unknown' ? d.version + "（预计" +
-              new Date(new Date(data[i + 1].time).getTime() + 86400000 * 8).toLocaleDateString() + "发布）"
+              new Date(new Date(data[i + 1].time).getTime() + 86400000 * 20).toLocaleDateString() + "发布）"
               : d.version
           }}</span>
+        <el-progress v-if="d.time === 'unknown'"
+                     :percentage="((new Date(data[i + 1].time).getTime() + 86400000 * 20-new Date().getTime())/86400000/20).toFixed(4)*100"
+                     :indeterminate="true"/>
         {{ d.des }}
         <span class="verh2" v-if="d.feat && d.feat.length > 0">新特性</span>
         <div style="line-height: 1.6; text-indent: 30px; font-size: 15px">
@@ -68,6 +75,10 @@
 
 <script setup>
 import data from '../config/version'
+
+const open = (url) => {
+  window.open(url, '_blank')
+}
 </script>
 
 <style>

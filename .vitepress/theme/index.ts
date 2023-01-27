@@ -17,7 +17,8 @@ import {
   ElLink,
   ElPopover,
   ElAlert,
-  ElRate
+  ElRate,
+  ElProgress
 } from 'element-plus'
 
 import Layout from './pages/Layout.vue'
@@ -47,6 +48,7 @@ const theme: Theme = {
     app.use(ElPopover)
     app.use(ElAlert)
     app.use(ElTooltip)
+    app.use(ElProgress)
     // 自定义组件
     app.component('ContributorList', ContributorList)
   }

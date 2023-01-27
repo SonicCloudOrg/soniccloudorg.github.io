@@ -135,6 +135,33 @@ const cons: Cons = [
 
 export default [
   {
+    version: 'v2.3.0',
+    time: "unknown",
+    feat: [
+      {
+        title: "测试套件支持测试录像采集"
+      },
+      {
+        title: "测试套件支持测试系统日志采集"
+      },
+      {
+        title: "安卓运行测试时支持配置触控模式(默认为APK触控)"
+      },
+      {
+        title: "安卓性能采集新增支持内存PSS性能数据获取"
+      },
+      {
+        title: "待定"
+      }
+    ],
+    fix: [
+      {
+        title: "待定"
+      }
+    ],
+    con: getCon("ZhouYixun")
+  },
+  {
     version: 'v2.2.1',
     time: '2023/1/21',
     fix: [
