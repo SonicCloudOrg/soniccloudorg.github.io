@@ -24,27 +24,27 @@ contributors:
 
 ::: info Linux
 
-👉 <a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.2.1/sonic-agent-v2.2.1-linux_x86.zip" target="_blank">sonic-agent-v2.2.1-linux_x86.zip</a>
+👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.2.1/sonic-agent-v2.2.1-linux_x86.zip" target="_blank">sonic-agent-v2.2.1-linux_x86.zip</a>
 
-👉 <a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.2.1/sonic-agent-v2.2.1-linux_x86_64.zip" target="_blank">sonic-agent-v2.2.1-linux_x86_64.zip</a>
+👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.2.1/sonic-agent-v2.2.1-linux_x86_64.zip" target="_blank">sonic-agent-v2.2.1-linux_x86_64.zip</a>
 
-👉 <a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.2.1/sonic-agent-v2.2.1-linux_arm64.zip" target="_blank">sonic-agent-v2.2.1-linux_arm64.zip</a>
+👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.2.1/sonic-agent-v2.2.1-linux_arm64.zip" target="_blank">sonic-agent-v2.2.1-linux_arm64.zip</a>
 
 :::
 
 ::: info Macosx
 
-👉 <a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.2.1/sonic-agent-v2.2.1-macosx_x86_64.zip" target="_blank">sonic-agent-v2.2.1-macosx_x86_64.zip</a>
+👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.2.1/sonic-agent-v2.2.1-macosx_x86_64.zip" target="_blank">sonic-agent-v2.2.1-macosx_x86_64.zip</a>
 
-👉 <a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.2.1/sonic-agent-v2.2.1-macosx_arm64.zip" target="_blank">sonic-agent-v2.2.1-macosx_arm64.zip</a>
+👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.2.1/sonic-agent-v2.2.1-macosx_arm64.zip" target="_blank">sonic-agent-v2.2.1-macosx_arm64.zip</a>
 
 :::
 
 ::: info Windows
 
-👉 <a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.2.1/sonic-agent-v2.2.1-windows_x86.zip" target="_blank">sonic-agent-v2.2.1-windows_x86.zip</a>
+👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.2.1/sonic-agent-v2.2.1-windows_x86.zip" target="_blank">sonic-agent-v2.2.1-windows_x86.zip</a>
 
-👉 <a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.2.1/sonic-agent-v2.2.1-windows_x86_64.zip" target="_blank">sonic-agent-v2.2.1-windows_x86_64.zip</a>
+👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.2.1/sonic-agent-v2.2.1-windows_x86_64.zip" target="_blank">sonic-agent-v2.2.1-windows_x86_64.zip</a>
 
 :::
 
@@ -94,7 +94,7 @@ Docker部署仅 Ubuntu 可用！仅 Ubuntu 可用！仅 Ubuntu 可用！
 准备工作：Docker，Sonic 前后端部署完毕
 
 1. 从部署好的前端界面【设备中心】的【Agent 中心】新增 Agent，记录 Agent 的 Key。
-2. [点击这里](https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.2.1/docker-compose.yml) 下载最新的docker-compose.yml，参考注释修改里面的内容。（如加速链接失效，请自行前往 <a href="https://github.com/SonicCloudOrg/sonic-agent/releases" target="_black">这里</a> 下载）
+2. [点击这里](https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.2.1/docker-compose.yml) 下载最新的docker-compose.yml，参考注释修改里面的内容。（如加速链接失效，请自行前往 <a href="https://github.com/SonicCloudOrg/sonic-agent/releases" target="_black">这里</a> 下载）
 3. 执行以下指令（自行根据提示更改参数）。
 
 ```bash
@@ -102,7 +102,7 @@ docker-compose up -d
 ```
 ::: tip 如果您为中国大陆用户，出现访问DockerHub较慢的情况，我们可以
 1. 配置国内加速镜像源（推荐）
-2. <a href="https://gh.flyinbug.top/gh/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.2.1/docker-compose-zh.yml" target="_blank">点击这里</a> 下载docker-compose-zh.yml后执行以下指令直接使用加速镜像（不推荐，加速源可能出现不稳定或网络波动，后续down的时候需要docker-compose -f docker-compose-zh.yml down）
+2. <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.2.1/docker-compose-zh.yml" target="_blank">点击这里</a> 下载docker-compose-zh.yml后执行以下指令直接使用加速镜像（不推荐，加速源可能出现不稳定或网络波动，后续down的时候需要docker-compose -f docker-compose-zh.yml down）
 ```bash
 docker-compose -f docker-compose-zh.yml up -d
 ```
