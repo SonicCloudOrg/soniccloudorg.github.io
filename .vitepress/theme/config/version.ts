@@ -159,6 +159,10 @@ export default [
         title: "优化安卓退出远控功能后部分内存空间占用"
       },
       {
+        title: "修复从Process Perfmon页面切换其他tab页后切换System Perfmon页面会出现图表被压缩展示的问题",
+        url: "https://sonic-cloud.wiki/d/2485"
+      },
+      {
         title: "待定"
       }
     ],
