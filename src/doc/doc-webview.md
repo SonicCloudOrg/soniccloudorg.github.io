@@ -16,6 +16,7 @@ v2.0.0-beta开始，使用网页调试时，需确保：
 webView.setWebContentsDebuggingEnabled(true);
 ```
 3. 如果是手机默认的浏览器，部分浏览器需要打开debug开关。
+4. 本功能需要转发Devtools服务，官方Docker镜像中已内置，所以仅能在Docker部署前后端的情况下使用。本地开发环境使用需自行开启chrome devtools服务并修改ws地址。
 
 ## 安卓
 
