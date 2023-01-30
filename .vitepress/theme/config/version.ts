@@ -163,6 +163,9 @@ export default [
         url: "https://sonic-cloud.wiki/d/2485"
       },
       {
+        title: "修复v2.2.1部分机型执行安装时出现message为空的异常"
+      },
+      {
         title: "待定"
       }
     ],
