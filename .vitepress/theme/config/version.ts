@@ -166,6 +166,10 @@ export default [
         title: "修复v2.2.1部分机型执行安装时出现message为空的异常"
       },
       {
+        title: "修复v2.2.x版本使用网络抓包功能时sgm进程被close的问题",
+        url: "https://sonic-cloud.wiki/d/2490"
+      },
+      {
         title: "待定"
       }
     ],
