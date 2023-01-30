@@ -151,6 +151,10 @@ export default [
         title: "安卓性能采集新增支持内存PSS性能数据获取"
       },
       {
+        title: "丰富Sonic运行时内置的随机变量",
+        url: "https://sonic-cloud.wiki/d/240-random"
+      },
+      {
         title: "待定"
       }
     ],
@@ -168,6 +172,12 @@ export default [
       {
         title: "修复v2.2.x版本使用网络抓包功能时sgm进程被close的问题",
         url: "https://sonic-cloud.wiki/d/2490"
+      },
+      {
+        title: "修复v2.2.1版本H5测试切换WebView会失效的问题",
+      },
+      {
+        title: "修复v2.2.x版本公共步骤内的逻辑判断会直接中断的问题",
       },
       {
         title: "待定"
