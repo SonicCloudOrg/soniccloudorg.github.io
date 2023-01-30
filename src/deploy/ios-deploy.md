@@ -77,7 +77,7 @@ git clone https://github.com/SonicCloudOrg/sonic-ios-wda.git
 $ xcodebuild build-for-testing -scheme WebDriverAgentRunner -sdk iphoneos -configuration Release -derivedDataPath /tmp/derivedDataPath
 $ cd /tmp/derivedDataPath
 $ cd Build/Products/Release-iphoneos
-$ mkdir Payload && mv *.app Payload\
+$ mkdir Payload && mv *.app Payload
 $ zip -r WDA.ipa Payload
 $ sib app install WDA.ipa
 ```
