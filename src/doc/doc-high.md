@@ -15,7 +15,9 @@ contributors:
 
 ![high-1](./images/high-1.png)
 
+::: v-pre
 当我们下发测试任务的时候，就会发现{{abc}}会替换为123456
+:::
 
 ::: tip 提示
 如果希望同一个参数名分发给不同设备时为不同的值，可以查看 [特殊用法](https://sonic-cloud.cn/doc/doc-global.html#%E7%89%B9%E6%AE%8A%E7%94%A8%E6%B3%95)
@@ -27,6 +29,8 @@ contributors:
 - WebView名称
 - Handle名称
 - 等等...
+
+测试过程中，例如【获取文本】一类的结果也可以存放到临时参数里，后续也可以通过相同方式引用，达到参数传递的效果。
 :::
 
 ## 公共步骤

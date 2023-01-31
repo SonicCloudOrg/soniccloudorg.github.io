@@ -180,6 +180,13 @@ export default [
         title: "修复v2.2.x版本公共步骤内的逻辑判断会直接中断的问题",
       },
       {
+        title: "修复iOS远控时Siri指令框按下回车后导致页面异常关闭的问题",
+        url: "https://sonic-cloud.wiki/d/2502"
+      },
+      {
+        title: "修复安卓与iOS远控页面的【发送】按钮文本被异常显示为【清空输入框】"
+      },
+      {
         title: "待定"
       }
     ],
