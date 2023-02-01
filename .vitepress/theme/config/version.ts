@@ -139,10 +139,8 @@ export default [
     time: "unknown",
     feat: [
       {
-        title: "测试套件支持测试录像采集"
-      },
-      {
-        title: "测试套件支持测试系统日志采集"
+        title: "超管新增支持后台配置远控设备的连接超时时间",
+        url: "https://sonic-cloud.wiki/d/2496"
       },
       {
         title: "安卓运行测试时支持配置触控模式(默认为APK触控)"
@@ -185,6 +183,10 @@ export default [
       },
       {
         title: "修复安卓与iOS远控页面的【发送】按钮文本被异常显示为【清空输入框】"
+      },
+      {
+        title: "修复更改Agent的高温值、高温超时时间后需重启Agent才能生效的问题",
+        url: "https://sonic-cloud.wiki/d/2379-agent"
       },
       {
         title: "待定"
