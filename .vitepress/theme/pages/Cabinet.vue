@@ -281,7 +281,7 @@ const ths = ref([
   {
     url: 'https://pmcloud.yonyoucloud.com/official-index.html',
     src: th1
-  }，
+  },
   {
     url: 'https://pmcloud.yonyoucloud.com/official-index.html',
     src: th4
