@@ -139,11 +139,11 @@ export default [
     time: "unknown",
     feat: [
       {
-        title: "超管新增支持后台配置远控设备的连接超时时间",
-        url: "https://sonic-cloud.wiki/d/2496"
+        title: "超管新增支持后台配置远控设备的最长占用时间，超时后自动解除占用状态",
+        url: "https://github.com/SonicCloudOrg/sonic-agent/issues/45"
       },
       {
-        title: "安卓运行测试时支持配置触控模式(默认为APK触控)"
+        title: "安卓运行测试时支持配置触控模式（默认为APK触控），使得部分步骤触控速度加快"
       },
       {
         title: "安卓性能采集新增支持内存PSS性能数据获取"
@@ -151,6 +151,10 @@ export default [
       {
         title: "丰富Sonic运行时内置的随机变量",
         url: "https://sonic-cloud.wiki/d/240-random"
+      },
+      {
+        title: "用户可强制解除占用中的设备（超管可配置对应角色权限）",
+        url: "https://sonic-cloud.wiki/d/438"
       },
       {
         title: "待定"
