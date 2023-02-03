@@ -163,8 +163,10 @@ import th2 from '../assets/cabinet/th2.png'
 import th3 from '../assets/cabinet/th3.png'
 import th4 from '../assets/cabinet/th4.png'
 import th5 from '../assets/cabinet/th5.png'
+import th6 from '../assets/cabinet/th6.jpg'
 import user from '../assets/cabinet/user.png'
 import you from '../assets/cabinet/you.png'
+import xinyang from '../assets/cabinet/xinyang.jpg'
 import p1 from '../assets/cabinet/p1.jpg'
 import p2 from '../assets/cabinet/p2.jpg'
 import p3 from '../assets/cabinet/p3.jpg'
@@ -283,12 +285,16 @@ const ths = ref([
     src: th1
   },
   {
-    url: 'https://pmcloud.yonyoucloud.com/official-index.html',
+    url: 'http://thsy.yx20.com/main.html',
     src: th4
   },
   {
-    url: 'https://pmcloud.yonyoucloud.com/official-index.html',
+    url: 'http://yj.20planet.com/main.html',
     src: th5
+  },
+  {
+    url: 'https://www.soyoung.com/',
+    src: th6
   }
 ])
 const talk = ref([
@@ -296,6 +302,11 @@ const talk = ref([
     ava: you,
     name: '友空间团队测试专家',
     msg: '使用下来体验非常不错，设备鼓包率大大下降，长时间测试与使用能保持电池健康的温度。手机管理，监控，使用变得更快捷，更有效！'
+  },
+  {
+    ava: xinyang,
+    name: '新氧技术中心-平台研发部',
+    msg: '非常专业的硬件设备，是搭建云测机房的不二选择。不仅能很完美地与Sonic云测平台结合，而且技术售后也非常到位，考虑到的实际情况非常细心，期待更深入的合作'
   },
   {
     ava: user,
