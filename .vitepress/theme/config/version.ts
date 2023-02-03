@@ -193,6 +193,10 @@ export default [
         url: "https://sonic-cloud.wiki/d/2379-agent"
       },
       {
+        title: "兼容部分低版本安卓系统获取性能数据为0的问题",
+        url: "https://sonic-cloud.wiki/d/2527"
+      },
+      {
         title: "待定"
       }
     ],
