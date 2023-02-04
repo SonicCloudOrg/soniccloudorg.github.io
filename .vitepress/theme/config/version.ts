@@ -157,6 +157,10 @@ export default [
         url: "https://sonic-cloud.wiki/d/438"
       },
       {
+        title: "Sonic输入法启用时，可点击输入法下方灰色区域快捷切换到系统输入法设置页",
+        url: "https://sonic-cloud.wiki/d/2469"
+      },
+      {
         title: "待定"
       }
     ],
@@ -193,14 +197,18 @@ export default [
         url: "https://sonic-cloud.wiki/d/2379-agent"
       },
       {
-        title: "兼容部分低版本安卓系统获取性能数据为0的问题",
+        title: "兼容部分低版本安卓系统获取Process性能数据为0的问题",
         url: "https://sonic-cloud.wiki/d/2527"
+      },
+      {
+        title: "兼容部分低版本安卓系统获取FPS数据为0的问题",
+        url: "https://sonic-cloud.wiki/d/2484"
       },
       {
         title: "待定"
       }
     ],
-    con: getCon("ZhouYixun")
+    con: getCon("ZhouYixun", "aoliaoaoaojiao", "wzasd")
   },
   {
     version: 'v2.2.1',

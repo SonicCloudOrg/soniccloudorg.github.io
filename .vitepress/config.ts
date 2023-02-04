@@ -98,7 +98,8 @@ const sidebar = {
         { text: '运行UI测试', link: '/doc/doc-run' },
         { text: '性能监控', link: '/doc/doc-perfmon' },
         { text: 'Agent中心', link: '/doc/doc-agent' },
-        { text: '设备中心', link: '/doc/doc-device' }
+        { text: '设备中心', link: '/doc/doc-device' },
+        { text: '自动与强制解除占用', link: '/doc/doc-stop-debug' }
       ]
     },
     {

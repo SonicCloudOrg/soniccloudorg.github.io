@@ -11,6 +11,10 @@ contributors:
 
 Sonic 目前使用的图像库基于 [sonic-vision-core](https://github.com/SonicCloudOrg/sonic-vision-core) 建设。如果您的图像类操作报类似丢失依赖的错误，请检查 Agent 的 jar 包与您的平台是否匹配。
 
+::: warning 注意
+已知部分Mac arm64系统使用该功能会出现问题，可以尝试下载 Mac x86_64 的 Agent 并将 Mac x86_64 的jar替换原本的 arm64 jar（只替换jar即可，无需替换plugins下的二进制文件，否则plugins下的插件因没有对应系统架构而使用失败）
+:::
+
 ## 图片点击
 
 使用图片点击时，需确保：

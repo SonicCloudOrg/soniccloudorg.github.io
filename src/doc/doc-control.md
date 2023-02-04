@@ -11,7 +11,7 @@ contributors:
 
 ### 键盘实时输入
 ::: tip
-该功能需升级至v2.0.3
+该功能需升级至Sonic v2.0.3
 :::
 
 远程控制设备时。
@@ -20,6 +20,10 @@ contributors:
 3. 可以直接发送对应文本到手机里面，支持删除与回车键。
 
 <video class="capacity-video" controls src="./video/input.mp4"/>
+
+::: warning 注意
+升级至Sonic v2.3.0后，可以直接点击Sonic输入法下方灰色区域快速跳转到系统输入法设置页进行输入法切换。
+:::
 
 ### 切换投屏模式
 安卓投屏有目前版本有两种模式，分别是minicap模式与scrcpy模式（默认）。
