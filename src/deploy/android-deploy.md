@@ -44,6 +44,8 @@ contributors:
 6. 点击右上角设置 icon
 7. 关闭权限监控与 USB 安装监控
 8. 【语言与输入法】关闭安全键盘
+9. 【设置】->【省电与电池】右上角设置icon->【应用智能省电】
+10. 找到sonic、uiautomator2、uiautomator2-test -> 【无限制】
 
 ## OPPO
 
