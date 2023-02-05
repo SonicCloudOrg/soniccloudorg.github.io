@@ -159,9 +159,6 @@ export default [
       {
         title: "Sonic输入法启用时，可点击输入法下方灰色区域快捷切换到系统输入法设置页",
         url: "https://sonic-cloud.wiki/d/2469"
-      },
-      {
-        title: "待定"
       }
     ],
     fix: [
@@ -205,7 +202,8 @@ export default [
         url: "https://sonic-cloud.wiki/d/2484"
       },
       {
-        title: "待定"
+        title: "兼容部分安卓8～9系统设备无法获取应用列表的问题",
+        url: "https://sonic-cloud.wiki/d/2036"
       }
     ],
     con: getCon("ZhouYixun", "aoliaoaoaojiao", "wzasd")
