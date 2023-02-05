@@ -10,6 +10,7 @@ contributors:
 <div style="display: flex">
 <img src="https://img.shields.io/github/stars/SonicCloudOrg/sonic-android-supply?style=social">
 <img style="margin-left:10px" src="https://img.shields.io/github/forks/SonicCloudOrg/sonic-android-supply?style=social">
+<img style="margin-left:10px" src="https://img.shields.io/github/downloads/SonicCloudOrg/sonic-android-supply/total">
 </div>
 
 ## 本仓库贡献者

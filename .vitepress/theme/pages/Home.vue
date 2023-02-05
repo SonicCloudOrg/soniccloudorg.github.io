@@ -310,25 +310,25 @@ const statisticsData = [
     img: 'https://img.shields.io/badge/replies%20-14.2k-ff69b4?style=social&logo=LiveChat'
   },
   {
-    tipContent: '镜像仓库总下载量',
-    linkUrl: 'https://github.com/SonicCloudOrg',
-    img: 'https://img.shields.io/badge/Docker%20pulls%20-67.1k-important'
+    tipContent: 'Agent端总下载量',
+    linkUrl: 'https://github.com/SonicCloudOrg/sonic-agent/releases',
+    img: 'https://img.shields.io/github/downloads/SonicCloudOrg/sonic-agent/total'
   }
 ]
 
 // 最新动态
 const news = [
   {
+    title: 'Sonic 平台的移动性能监控初次探索',
+    time: '万众期待下，Sonic还是把iOS和安卓的性能监控初版的答卷做出来了',
+    url: 'https://sonic-cloud.wiki/d/2503-sonic',
+    pic: honor
+  },
+  {
     title: '重磅！全新sib remote功能上线，iOS远程调试的福音！',
     time: '用户可以自己本地sib remote connect就可以像本地链接一样使用啦！',
     url: 'https://sonic-cloud.wiki/d/2058-sib-remoteios',
     pic: c5
-  },
-  {
-    title: 'iOS WebView/H5调试新姿势',
-    time: 'Sonic平台周边生态sib推出新功能webinspector啦！',
-    url: 'https://sonic-cloud.wiki/d/1741-ios-webviewh5',
-    pic: honor
   },
   {
     title: '恭喜Sonic获得MTSC 2022年度最佳开源项目评选第一名',
