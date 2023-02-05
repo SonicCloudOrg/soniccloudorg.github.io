@@ -136,7 +136,7 @@ const cons: Cons = [
 export default [
   {
     version: 'v2.3.0',
-    time: "unknown",
+    time: "2023/2/5",
     feat: [
       {
         title: "超管新增支持后台配置远控设备的最长占用时间，超时后自动解除占用状态",
@@ -149,11 +149,11 @@ export default [
         title: "安卓性能采集新增支持内存PSS性能数据获取"
       },
       {
-        title: "丰富Sonic运行时内置的随机变量",
+        title: "丰富Sonic运行时内置的随机变量，使用方式可查看 [使用文档]->[全局参数] 文档",
         url: "https://sonic-cloud.wiki/d/240-random"
       },
       {
-        title: "用户可强制解除占用中的设备（超管可配置对应角色权限）",
+        title: "用户可强制解除占用中的设备，超管可配置对应角色权限",
         url: "https://sonic-cloud.wiki/d/438"
       },
       {

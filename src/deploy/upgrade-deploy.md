@@ -16,55 +16,30 @@ v2.0.0-release 起，Sonic 版本规则更改如下：
 2. 第二位是有新功能合入就会加 1（特性版本，一般月更）
 3. 第三位是修复 Bug 就会加 1（修复版本，一般半周到一周更一次）
 
-以 v2.0.1 为例，就是修复 2.0.0 的 Bug。
+以 `v2.0.1` 为例，就是修复 `v2.0.0` 的 Bug。
 
-如果有大量新功能发布，就会更新 2.1.0。
+如果有大量新功能发布，就会更新 `v2.1.0`。
 
-如果 2.1.0 上线后有 Bug，那么下版本就是 2.1.1，如果仍有 Bug，那么会继续发布 2.1.2。
+如果 `v2.1.0` 上线后有 Bug，那么下版本就是 `v2.1.1`，如果仍有 Bug，那么会继续发布 `v2.1.2`。
 
 **如果想追求稳定的版本，那么应该是上一个特性版本的最后一个修复版本为最稳定。**
 
-例如 2.2.0 的上一个版本为 2.1.15，那么 2.1.15 版本就是 2.1.x 的最稳定的版本
+例如 `v2.2.0` 的上一个版本为 `v2.1.15`，那么 `v2.1.15` 版本就是 `v2.1.x` 的最稳定的版本
 
-## 从 v1.4.x 以上升级到 v2.2.x
+## 从 v1.4.1-release 以上版本 升级到 v2.x.x
 0. 升级前先备份Mysql数据库。
 1. 直接前往 <a href="https://sonic-cloud.cn/deploy/back-end-deploy.html" target="_blank">这里</a> 下载最新版本zip，down集群后重新up即可。（部署文档含中国大陆加速镜像部署方式）
 2. jar方式部署的Agent前往 <a href="https://sonic-cloud.cn/deploy/agent-deploy.html" target="_blank">这里</a> 下载zip后解压，更新需替换旧版本plugins文件夹与jar文件。
 3. （附）Docker版Agent与server同理，前往 <a href="https://sonic-cloud.cn/deploy/agent-deploy.html" target="_blank">这里</a> 重新下载镜像部署即可。（部署文档含中国大陆加速镜像部署方式）
 
-## 从 v1.4.x 或 v1.5.x 或 v2.0.x 升级到 v2.1.x
-0. 升级前先备份Mysql数据库。
-1. 直接前往 <a href="https://sonic-cloud.cn/deploy/back-end-deploy.html" target="_blank">这里</a> 下载最新版本zip，down集群后重新up即可。（部署文档含中国大陆加速镜像部署方式）
-2. jar方式部署的Agent前往 <a href="https://sonic-cloud.cn/deploy/agent-deploy.html" target="_blank">这里</a> 下载zip后解压，更新需替换旧版本plugins文件夹与jar文件。
-3. （附）Docker版Agent与server同理，前往 <a href="https://sonic-cloud.cn/deploy/agent-deploy.html" target="_blank">这里</a> 重新下载镜像部署即可。（部署文档含中国大陆加速镜像部署方式）
+::: tip 注意
+从 `v1.5.0或以下版本` 升级需注意：
+1. env 文件最下方新增 LDAP_OBJECT_CLASS=person
+2. Agent 端的 jar 部署方式：**已知部分 JDK 出现不兼容的问题，Sonic 官方推荐使用 JDK15**，可以前往 [这里](https://docs.aws.amazon.com/corretto/latest/corretto-15-ug/downloads-list.html) 安装下载。
+3. Agent 的 config/application-sonic-agent.yml 字段有改动，需参考最新版 yml 备注进行配置。
+4. Agent 本地环境不再依赖 node、npm、谷歌浏览器、chromedriver，可以卸载来减少 Agent 空间。
+:::
 
-## 从 v2.0.0-release 升级到 v2.0.x
-
-0. 升级前先备份 Mysql 数据库。
-1. 在 server 目录下执行 docker-compose down
-2. 直接下载最新版 docker-compose.yml
-3. 执行 docker-compose up -d
-4. Agent 更新需替换旧版本 plugins 文件夹与 jar 文件。
-
-## 从 v1.5.0-release 升级到 v2.0.0-release
-
-0. server 升级前，先备份数据库。
-1. 执行 docker-compose down
-2. 替换旧 docker-compose.yml 为最新版 docker-compose.yml。
-3. .env 文件最下方新增 LDAP_OBJECT_CLASS=person
-4. 执行 docker-compose up -d
-5. Agent 更新需替换旧版本 plugins 文件夹与 jar 文件。
-6. Agent 端的 jar 部署方式：**已知部分 JDK 出现不兼容的问题，Sonic 官方推荐使用 JDK15**，可以前往 [这里](https://docs.aws.amazon.com/corretto/latest/corretto-15-ug/downloads-list.html) 安装下载。
-7. Agent 的 config/application-sonic-agent.yml 字段有改动，需参考最新版 yml 备注进行配置。
-8. Agent 本地环境不再依赖 node、npm、谷歌浏览器、chromedriver，可以卸载来减少 Agent 空间。
-
-## 从 v1.4.1-release 升级到 v1.5.0-release
-
-0. server 升级前，先备份数据库。
-1. 执行 docker-compose down
-2. 更改旧 docker-compose.yml 文件中 v1.4.1-release 为 v1.5.0-release（或直接下载最新版 docker-compose.yml）
-3. 执行 docker-compose up -d
-4. Agent 更新需替换旧版本 plugins 文件夹与 jar 文件。
 
 ## 其他旧版本升级到 v1.4.1-release
 
@@ -132,7 +107,7 @@ A2: 可以使用 docker cp 指令将容器内的文件复制到宿主机，再�
 
 ---
 
-Q3: 为什么旧版本需要删除重复的序列号设备？
+Q3: 为什么1.4.0之前旧版本升级需要删除重复的序列号设备？
 
 A3: 旧版本是以单 Agent 内不可重复，后续考虑到用户会将同一设备在多个 Agent 之间迁移，直接以序列号为标识。安卓目前是极低概率才会出现序列号相同的设备（哪怕相同也有办法修改），而苹果的序列号都是唯一的，所以大家不用担心。
 
