@@ -9,7 +9,9 @@ contributors:
 本文将介绍如何部署 Agent 端。
 
 ::: tip 注意
-谨记一个主机只能部署一个 Agent 端，每个 Agent 的 Key 不能重复使用，多台设备可接入同一 Agent
+谨记一个主机只能部署一个 Agent 端，每个 Agent 的 Key 不能重复使用，多台设备可接入同一 Agent。
+
+为了能正常使用，请保持与server版本一致。
 :::
 
 ## jar 方式部署
