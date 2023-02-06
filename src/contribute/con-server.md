@@ -32,4 +32,4 @@ contributors:
 4. 依次启动EurekaApplicaiton、ControllerApplication、GatewayApplication、FolderApplication。
 5. 恭喜，搭建完毕！
 6. 开发完毕后，push到自己的仓库，然后可以给Sonic原仓库提起pr哦！（建议贡献前先开启issue讨论，防止跟组织计划进度有冲突哦）
-
+7. 每次本地开发环境更新版本，需前往【后台管理中心】 -> 【同步资源】
