@@ -135,6 +135,32 @@ const cons: Cons = [
 
 export default [
   {
+    version: 'v2.3.1',
+    time: "unknown",
+    feat: [
+      {
+        "title": "安卓新增步骤：是否忽略不重要视图"
+      },
+      {
+        title: "待定"
+      }
+    ],
+    fix: [
+      {
+        title: "修复安卓远控页面拉取文件时没有指定-s设备的问题",
+        url: "https://sonic-cloud.wiki/d/2546"
+      },
+      {
+        title: "兼容部分安卓9设备无法获取性能信息的问题",
+        url: "https://sonic-cloud.wiki/d/2534"
+      },
+      {
+        title: "待定"
+      }
+    ],
+    con: getCon("ZhouYixun")
+  },
+  {
     version: 'v2.3.0',
     time: "2023/2/5",
     feat: [

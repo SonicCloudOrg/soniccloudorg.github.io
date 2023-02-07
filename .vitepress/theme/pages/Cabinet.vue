@@ -55,44 +55,47 @@
   </section-box>
 
   <section-box title="他们都在用" isCenter>
-    <el-space
-      v-for="t in ths"
-      :size="25"
-      alignment="stretch"
-      style="margin: 20px 15px 0px 15px"
-    >
-      <a :href="t.url" target="_blank">
-        <el-avatar
-          shape="square"
-          style="border-radius: 22px; box-shadow: 4px 4px 10px #606266"
-          :src="t.src"
-          :size="100"
-        />
-      </a>
-    </el-space>
+    <div class="icon-container">
+      <el-space
+        v-for="t in ths"
+        :size="25"
+        alignment="stretch"
+        style="margin: 20px 15px 0px 15px"
+      >
+        <a :href="t.url" target="_blank">
+          <el-avatar
+            shape="square"
+            style="margin-top: 20px;border-radius: 24px; box-shadow: 4px 4px 10px #606266"
+            :src="t.src"
+            :size="100"
+          />
+        </a>
+      </el-space>
+    </div>
 
     <div class="using-container">
-      <el-card
-        v-for="t in talk"
-        style="width: 100%; text-align: left; margin-bottom: 10px"
-      >
-        <div class="cabinet-avatar" style="display: flex">
-          <el-avatar :src="t.ava" fit="contain" :size="60"/>
-          <div style="flex: 1; margin-left: 20px">
-            <div style="display: flex">
-              <h4 style="margin: 0px">{{ t.name }}</h4>
-              <el-rate
-                disabled
-                v-model="rate"
-                style="width: 200px; margin-left: 10px; height: 25px"
-              />
+      <el-carousel type="card" height="250px" arrow="always">
+        <el-carousel-item v-for="t in talk" :key="t">
+          <el-card style="text-align: left">
+            <div class="cabinet-avatar" style="display: flex">
+              <el-avatar :src="t.ava" fit="contain" :size="60"/>
+              <div style="flex: 1; margin-left: 20px">
+                <div style="display: flex">
+                  <h4 style="margin: 0px">{{ t.name }}</h4>
+                  <el-rate
+                    disabled
+                    v-model="rate"
+                    style="width: 200px; margin-left: 10px; height: 25px"
+                  />
+                </div>
+                <el-card style="margin-top: 10px">
+                  {{ t.msg }}
+                </el-card>
+              </div>
             </div>
-            <el-card style="margin-top: 10px">
-              {{ t.msg }}
-            </el-card>
-          </div>
-        </div>
-      </el-card>
+          </el-card>
+        </el-carousel-item>
+      </el-carousel>
     </div>
   </section-box>
 
@@ -164,9 +167,11 @@ import th3 from '../assets/cabinet/th3.png'
 import th4 from '../assets/cabinet/th4.png'
 import th5 from '../assets/cabinet/th5.png'
 import th6 from '../assets/cabinet/th6.jpg'
+import th7 from '../assets/cabinet/th7.png'
 import user from '../assets/cabinet/user.png'
 import you from '../assets/cabinet/you.png'
 import xinyang from '../assets/cabinet/xinyang.jpg'
+import eco from '../assets/cabinet/eco.jpeg'
 import p1 from '../assets/cabinet/p1.jpg'
 import p2 from '../assets/cabinet/p2.jpg'
 import p3 from '../assets/cabinet/p3.jpg'
@@ -295,6 +300,10 @@ const ths = ref([
   {
     url: 'https://www.soyoung.com/',
     src: th6
+  },
+  {
+    url: 'https://www.eeo.cn/cn/',
+    src: th7
   }
 ])
 const talk = ref([
@@ -307,6 +316,11 @@ const talk = ref([
     ava: xinyang,
     name: '新氧技术中心-平台研发部',
     msg: '非常专业的硬件设备，是搭建云测机房的不二选择。不仅能很完美地与Sonic云测平台结合，而且技术售后也非常到位，考虑到的实际情况非常细心，期待更深入的合作'
+  },
+  {
+    ava: eco,
+    name: '翼鸥产品研发中心-测试团队',
+    msg: '考虑非常周到的硬件套装，让中小企业打造自己专属的云测设施变为可能！搭配Sonic云测平台对设备进行软硬件的监控与控制非常便利，祝越来越好。'
   },
   {
     ava: user,
@@ -444,6 +458,12 @@ const talk = ref([
   width: 1200px;
   margin: 0 auto;
   padding: 3% 5% 0 5%;
+}
+
+.icon-container {
+  width: 900px;
+  margin: 0 auto;
+  padding: 0 5% 0 5%;
 }
 
 .profit-container {
