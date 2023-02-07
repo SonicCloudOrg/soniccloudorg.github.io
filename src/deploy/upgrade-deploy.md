@@ -31,6 +31,7 @@ v2.0.0-release 起，Sonic 版本规则更改如下：
 1. 直接前往 <a href="https://sonic-cloud.cn/deploy/back-end-deploy.html" target="_blank">这里</a> 下载最新版本zip，down集群后重新up即可。（部署文档含中国大陆加速镜像部署方式）
 2. jar方式部署的Agent前往 <a href="https://sonic-cloud.cn/deploy/agent-deploy.html" target="_blank">这里</a> 下载zip后解压，更新需替换旧版本plugins文件夹与jar文件。
 3. （附）Docker版Agent与server同理，前往 <a href="https://sonic-cloud.cn/deploy/agent-deploy.html" target="_blank">这里</a> 重新下载镜像部署即可。（部署文档含中国大陆加速镜像部署方式）
+4. 升级至`v2.3.0`时，因部分类目录迁移至`tests/handlers`下，可能引起自定义脚本引入包时出错，更改详情可查看 [这里](https://github.com/SonicCloudOrg/sonic-agent/tree/main/src/main/java/org/cloud/sonic/agent/tests/handlers)
 
 ::: tip 注意
 从 `v1.5.0或以下版本` 升级需注意：
