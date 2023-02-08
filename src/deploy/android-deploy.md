@@ -3,6 +3,7 @@ contributors:
   - 'ZhouYixun'
   - 'wuxiangin'
   - 'lanlanz'
+  - 'shinyvince'
 ---
 
 # 安卓设备接入
@@ -21,9 +22,15 @@ contributors:
 6. 打开 usb 调试
 7. 保持设备竖放或平放
 
-::: tip 如果需要进行性能信息采集，可以额外打开如下选项
+::: tip TIP
+
+如果需要进行性能信息采集，可以额外打开如下选项
 1. 开发者选项中点击【GPU呈现模式分析】（部分机型叫【HWUI呈现模式分析】）
 2. 在【GPU呈现模式分析】中，点击选中【在adb shell dumpsys gfxinfo中】
+
+若升级Sonic后，Sonic 插件、uiautomator2、uiautomator2-test 的版本有更新，手机可能会还原相关电源优化。
+故需要重新检查一遍，确保Sonic 插件、uiautomator2、uiautomator2-test 电量优化关配置正确
+
 :::
 
 各品牌不同内容可往下翻阅 👇
