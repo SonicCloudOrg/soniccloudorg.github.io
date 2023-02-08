@@ -2,6 +2,7 @@
 contributors:
   - 'ZhouYixun'
   - 'soniclei'
+  - 'shinyvince'
 ---
 
 # Agent 端部署
@@ -12,6 +13,8 @@ contributors:
 谨记一个主机只能部署一个 Agent 端，每个 Agent 的 Key 不能重复使用，多台设备可接入同一 Agent。
 
 为了能正常使用，请保持与server版本一致。
+
+为了远控设备时更流畅以及装包速度更快，建议 Agent 优先使用有线网络环境而不是无线网络。
 :::
 
 ## jar 方式部署
