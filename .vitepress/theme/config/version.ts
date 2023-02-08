@@ -155,7 +155,8 @@ export default [
         url: "https://sonic-cloud.wiki/d/2534"
       },
       {
-        title: "待定"
+        title: "优化前端分页逻辑，记录当前页码，刷新数据后停留当前页",
+        url: "https://sonic-cloud.wiki/d/2554"
       }
     ],
     con: getCon("ZhouYixun")
