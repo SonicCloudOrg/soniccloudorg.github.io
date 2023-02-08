@@ -29,7 +29,7 @@ contributors:
 2. 在【GPU呈现模式分析】中，点击选中【在adb shell dumpsys gfxinfo中】
 
 若升级Sonic后，Sonic 插件、uiautomator2、uiautomator2-test 的版本有更新，手机可能会还原相关电源优化。
-故需要重新检查一遍，确保Sonic 插件、uiautomator2、uiautomator2-test 电量优化关闭
+故需要重新检查一遍，确保Sonic 插件、uiautomator2、uiautomator2-test 电量优化关配置正确
 
 :::
 
