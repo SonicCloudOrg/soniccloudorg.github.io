@@ -66,7 +66,10 @@ Agent部署有疑问？可前往 [Agent端部署文档](https://sonic-cloud.cn/d
 Q1: 为什么Agent接入后，仍然显示离线？
 
 A1: 刚连上需要手动刷新页面或打开【自动刷新】，如果一直没连上，需要查看Agent日志排查，要检查好填写的Server IP与Agent Key。
+---
+Q2: 感觉远控设备卡顿，或者装包时间过长？
 
+A2: agent网络环境用有线而不是无线网络。实测用有线网络，iPhone8及以上的手机流畅度可接受，装包耗时减半。
 ---
 ::: tip
 更多疑问可前往 👉[社区](https://sonic-cloud.wiki)👈 交流
