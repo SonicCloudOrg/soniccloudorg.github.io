@@ -85,7 +85,7 @@
                   <el-rate
                     disabled
                     v-model="rate"
-                    style="width: 200px; margin-left: 10px; height: 25px"
+                    style="width: 160px; margin-left: 10px; height: 25px"
                   />
                 </div>
                 <el-card style="margin-top: 10px">
