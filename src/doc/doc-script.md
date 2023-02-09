@@ -115,7 +115,11 @@ assertEquals(1+1,2)
 ### 退出Driver
 
 如果在您的第三方工具中有基于instrument的框架（例如fastbot、uiautomator2-python、poco-service等等），会跟Sonic已有进程冲突导致阻塞状态，这时我们可以先停止Sonic的Driver。
-Android: 
+
+#### Android: 
+
+AndroidDriver有两种方式关闭:
+1. 用内置函数关闭
 ```groovy
 import org.cloud.sonic.agent.bridge.android.AndroidDeviceBridgeTool;
 //停止Driver
@@ -129,7 +133,22 @@ int port = AndroidDeviceBridgeTool.startUiaServer(androidStepHandler.iDevice);
 androidStepHandler.startAndroidDriver(androidStepHandler.iDevice, port)
 ```
 
-iOS: 
+2. 用adb强制停止instrument服务（不推荐）
+```groovy
+import org.cloud.sonic.agent.bridge.android.AndroidDeviceBridgeTool;
+//停止UIAutomator2-server
+AndroidDeviceBridgeTool.executeCommand(androidStepHandler.iDevice,"am force-stop io.appium.uiautomator2.server")
+AndroidDeviceBridgeTool.executeCommand(androidStepHandler.iDevice,"am force-stop io.appium.uiautomator2.server.test")
+
+//第三方操作
+// xxxxxx
+
+//重新启动Driver
+int port = AndroidDeviceBridgeTool.startUiaServer(androidStepHandler.iDevice);
+androidStepHandler.startAndroidDriver(androidStepHandler.iDevice, port)
+```
+
+#### iOS: 
 ```groovy
 import org.cloud.sonic.agent.bridge.ios.SibTool;
 //停止Driver
@@ -352,6 +371,20 @@ Python环境、pip环境。
 1. sessionId。安卓为uia2的sessionId，iOS为wda的sessionId。
 2. 设备udId。
 3. 全局参数Json字符串。
+
+### 退出Driver
+
+如果在您的第三方工具中有基于instrument的框架（例如fastbot、uiautomator2-python、poco-service等等），会跟Sonic已有进程冲突导致阻塞状态，这时我们可以先停止Sonic的Driver。
+
+#### Android: 
+
+用adb强制停止instrument服务
+```python
+import os
+udId = sys.argv[1:][1]
+os.system("adb -s {udId} shell am force-stop io.appium.uiautomator2.server".format(udId))
+os.system("adb -s {udId} am force-stop io.appium.uiautomator2.server.test".format(udId))
+```
 
 ### 示例脚本展示
 
