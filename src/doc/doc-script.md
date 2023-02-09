@@ -119,7 +119,7 @@ assertEquals(1+1,2)
 #### Android: 
 
 AndroidDriver有两种方式关闭:
-1. 用内置函数关闭
+1. 用内置函数关闭（推荐）
 ```groovy
 import org.cloud.sonic.agent.bridge.android.AndroidDeviceBridgeTool;
 //停止Driver
