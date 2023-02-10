@@ -157,6 +157,9 @@ export default [
       {
         title: "优化前端分页逻辑，记录当前页码，刷新数据后停留当前页",
         url: "https://sonic-cloud.wiki/d/2554"
+      },
+      {
+        title: "步骤列表中的公共步骤可直接查看包含的子步骤",
       }
     ],
     con: getCon("ZhouYixun")
