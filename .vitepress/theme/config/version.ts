@@ -159,7 +159,7 @@ export default [
         url: "https://sonic-cloud.wiki/d/2554"
       },
       {
-        title: "步骤列表中的公共步骤可直接查看包含的子步骤",
+        title: "优化公共步骤列表与步骤列表中的公共步骤包含的子步骤展示",
       }
     ],
     con: getCon("ZhouYixun")
