@@ -1,7 +1,7 @@
 ---
 contributors:
 - 'ZhouYixun'
-- ’shinyvince'
+- 'shinyvince'
 ---
 
 # 应用列表
