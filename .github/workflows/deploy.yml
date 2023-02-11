@@ -91,6 +91,9 @@ jobs:
           sdc_old_ver_sub=${sdc_old_ver:4}
           sed -i "s/${sdc_old_ver}/sdc_${sdc_new_ver}/g" version.json
           sed -i "s/${sdc_old_ver_sub}/${sdc_new_ver}/g" src/sdc/re-sdc.md
+          sed -i "s/${sdc_old_ver_sub}/${sdc_new_ver}/g" src/sdc/sdc-android.md
+          sed -i "s/${sdc_old_ver_sub}/${sdc_new_ver}/g" src/sdc/sdc-ios.md
+          sed -i "s/${sdc_old_ver_sub}/${sdc_new_ver}/g" src/sdc/sdc-poco.md
       - name: replace sch
         run: |
           sch_new_ver=${{ steps.sch-latest-tag.outputs.tag }}
