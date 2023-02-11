@@ -74,7 +74,7 @@
     </div>
 
     <div class="using-container">
-      <el-carousel type="card" height="250px" arrow="always">
+      <el-carousel type="card" height="250px" :interval="5000">
         <el-carousel-item v-for="t in talk" :key="t">
           <el-card style="text-align: left">
             <div class="cabinet-avatar" style="display: flex">

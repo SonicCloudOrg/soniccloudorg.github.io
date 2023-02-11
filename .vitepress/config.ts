@@ -134,6 +134,15 @@ const sidebar = {
         { text: '版本管理', link: '/doc/doc-version' },
         { text: '模块管理', link: '/doc/doc-module' }
       ]
+    },
+    {
+      text: '后台管理中心',
+      items: [
+        { text: '资源管理', link: '/doc/doc-resource' },
+        { text: '角色管理', link: '/doc/doc-role' },
+        { text: '用户配置', link: '/doc/doc-user' },
+        { text: '系统定时任务', link: '/doc/doc-sys-job' }
+      ]
     }
   ],
   '/contribute/': [

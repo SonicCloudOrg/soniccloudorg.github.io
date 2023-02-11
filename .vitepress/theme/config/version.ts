@@ -136,14 +136,14 @@ const cons: Cons = [
 export default [
   {
     version: 'v2.3.1',
-    time: "unknown",
+    time: "2023/2/11",
     feat: [
       {
         "title": "安卓新增步骤：是否忽略不重要视图"
       },
       {
-        title: "待定"
-      }
+        "title": "安卓远控时获取原生控件新增选项：是否忽略不重要视图"
+      },
     ],
     fix: [
       {
@@ -162,7 +162,7 @@ export default [
         title: "优化公共步骤列表与步骤列表中的公共步骤包含的子步骤展示",
       }
     ],
-    con: getCon("ZhouYixun")
+    con: getCon("ZhouYixun", "aoliaoaoaojiao")
   },
   {
     version: 'v2.3.0',

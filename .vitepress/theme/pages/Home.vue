@@ -58,38 +58,39 @@
 
   <!-- 主体内容 -->
   <div class="container">
-    <section-box title="最新动态">
-      <div class="news">
-        <el-carousel
-          style="margin-top: 30px"
-          height="400px"
-          indicator-position="outside"
-          :interval="3000"
-        >
-          <el-carousel-item v-for="item in news">
-            <div
-              :style="
-                'background:linear-gradient(to bottom right, rgba(64,158,255, 0.3), rgba(0, 0, 0, 0.8)) ,url(' +
-                item.pic +
-                ');'
-              "
-              class="news-banner"
-            >
-              <span class="news-banner__title">
-                {{ item.title }}
-              </span>
-              <h3 class="news-banner__time" v-if="item.time">
-                {{ item.time }}
-              </h3>
-              <el-button v-if="item.url" type="primary" @click="open(item.url)">
-                查看
-              </el-button>
-            </div>
-          </el-carousel-item>
-        </el-carousel>
-      </div>
-    </section-box>
-    <section-box title="Sonic荣誉墙">
+<!--    <section-box title="最新动态">-->
+<!--      <div class="news">-->
+<!--        <el-carousel-->
+<!--          style="margin-top: 30px"-->
+<!--          height="400px"-->
+<!--          indicator-position="outside"-->
+<!--          :interval="3000"-->
+<!--        >-->
+<!--          <el-carousel-item v-for="item in news">-->
+<!--            <div-->
+<!--              :style="-->
+<!--                'background:linear-gradient(to bottom right, rgba(64,158,255, 0.3), rgba(0, 0, 0, 0.8)) ,url(' +-->
+<!--                item.pic +-->
+<!--                ');'-->
+<!--              "-->
+<!--              class="news-banner"-->
+<!--            >-->
+<!--              <span class="news-banner__title">-->
+<!--                {{ item.title }}-->
+<!--              </span>-->
+<!--              <h3 class="news-banner__time" v-if="item.time">-->
+<!--                {{ item.time }}-->
+<!--              </h3>-->
+<!--              <el-button v-if="item.url" type="primary" @click="open(item.url)">-->
+<!--                查看-->
+<!--              </el-button>-->
+<!--            </div>-->
+<!--          </el-carousel-item>-->
+<!--        </el-carousel>-->
+<!--      </div>-->
+<!--    </section-box>-->
+
+    <section-box title="Sonic荣誉及认证">
       <div class="honor-wall">🎉 MTSC 2022年度最佳开源项目评选第一名</div>
     </section-box>
 
@@ -217,44 +218,26 @@
         </div>
         <a class="" href="mailto:291028775@qq.com" target="_blank">
           <el-button
-            type="primary"
+            round
             plain
             style="width: 150px; margin-top: 30px"
           >
-            成为赞助商
+            成为赞助商！
           </el-button>
         </a>
       </div>
     </section-box>
 
-    <section-box title="Sonic摘星计划贡献墙">
-      <div class="cons-wall">
-        <div class="more-user">部分用户荣誉证书展示</div>
-        <el-carousel type="card" height="280px">
-          <el-carousel-item v-for="conItem in conList" :key="conItem">
-            <el-image style="height: 280px" :src="conItem" />
-          </el-carousel-item>
-        </el-carousel>
-        <el-button
-          type="primary"
-          size="large"
-          @click="open('https://sonic-cloud.wiki/d/1510-soniccommitsonic')"
-        >
-          我要上墙
-        </el-button>
-      </div>
-    </section-box>
-
-    <section-box title="贡献者们">
-      <div style="text-align: center">
-        <img
-          style="display: inline-block"
-          src="https://opencollective.com/soniccloudorg/contributors.svg?width=800&button=false"
-          alt="contribute"
-          width="950"
-        />
-      </div>
-    </section-box>
+<!--    <section-box title="贡献者们">-->
+<!--      <div style="text-align: center">-->
+<!--        <img-->
+<!--          style="display: inline-block"-->
+<!--          src="https://opencollective.com/soniccloudorg/contributors.svg?width=800&button=false"-->
+<!--          alt="contribute"-->
+<!--          width="950"-->
+<!--        />-->
+<!--      </div>-->
+<!--    </section-box>-->
   </div>
 </template>
 
@@ -262,18 +245,8 @@
 import SectionBox from '../components/SectionBox.vue'
 
 // 图片资源
-// news
-import honor from '../assets/honor.png'
-import c1 from '../assets/banner.png'
-import c2 from '../assets/banner2.png'
-import c5 from '../assets/banner4.png'
 import demo from '../assets/video/demo.mp4'
-// 贡献墙
-import con1 from '../assets/cons/con1.jpg'
-import con2 from '../assets/cons/con2.jpg'
-import con3 from '../assets/cons/con3.jpg'
-import con4 from '../assets/cons/con4.jpg'
-import con5 from '../assets/cons/con5.jpg'
+
 // 支持设备
 import a1 from '../assets/ANDROID.jpg'
 import a2 from '../assets/APPLE.jpg'
@@ -315,31 +288,6 @@ const statisticsData = [
     img: 'https://img.shields.io/github/downloads/SonicCloudOrg/sonic-agent/total'
   }
 ]
-
-// 最新动态
-const news = [
-  {
-    title: 'Sonic 平台的移动性能监控初次探索',
-    time: '万众期待下，Sonic还是把iOS和安卓的性能监控初版的答卷做出来了',
-    url: 'https://sonic-cloud.wiki/d/2503-sonic',
-    pic: honor
-  },
-  {
-    title: '重磅！全新sib remote功能上线，iOS远程调试的福音！',
-    time: '用户可以自己本地sib remote connect就可以像本地链接一样使用啦！',
-    url: 'https://sonic-cloud.wiki/d/2058-sib-remoteios',
-    pic: c5
-  },
-  {
-    title: '恭喜Sonic获得MTSC 2022年度最佳开源项目评选第一名',
-    time: '历时两个多月的初选、海选和专家评审后，「MTSC 2022年度最佳开源项目」评选终于尘埃落定',
-    url: 'https://sonic-cloud.wiki/d/1471-sonicmtsc-2022',
-    pic: c2
-  }
-]
-
-// 贡献墙
-const conList = [con1, con2, con3, con4, con5]
 
 // 支持设备
 const devices = [

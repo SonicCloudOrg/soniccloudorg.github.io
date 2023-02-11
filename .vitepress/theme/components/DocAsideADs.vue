@@ -15,7 +15,7 @@
     </el-carousel>
   </div>
   <a href="mailto:soniccloudorg@163.com" target="_blank" class="become-sponsor">
-    <el-button type="primary" plain style="width: 150px">
+    <el-button plain style="width: 150px">
       成为赞助商！
     </el-button>
   </a>
