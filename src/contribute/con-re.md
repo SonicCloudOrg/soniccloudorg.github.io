@@ -23,19 +23,19 @@ contributors:
 <div style="text-align: center">
 <el-carousel type="card" height="280px" arrow="never">
 <el-carousel-item>
-<el-image style="height: 280px" src="./images/cons/con1.jpg" />
+<img style="height: 280px" src="https://sonic-cloud.cn/con1.jpg" />
 </el-carousel-item>
 <el-carousel-item>
-<el-image style="height: 280px" src="./images/cons/con2.jpg" />
+<img style="height: 280px" src="https://sonic-cloud.cn/con2.jpg" />
 </el-carousel-item>
 <el-carousel-item>
-<el-image style="height: 280px" src="./images/cons/con3.jpg" />
+<img style="height: 280px" src="https://sonic-cloud.cn/con3.jpg" />
 </el-carousel-item>
 <el-carousel-item>
-<el-image style="height: 280px" src="./images/cons/con4.jpg" />
+<img style="height: 280px" src="https://sonic-cloud.cn/con4.jpg" />
 </el-carousel-item>
 <el-carousel-item>
-<el-image style="height: 280px" src="./images/cons/con5.jpg" />
+<img style="height: 280px" src="https://sonic-cloud.cn/con5.jpg" />
 </el-carousel-item>
 </el-carousel>
 </div>

@@ -160,6 +160,7 @@ jobs:
           mv .vitepress/theme/assets/logo-full.png .vitepress/dist
           mv .vitepress/theme/assets/public/favicon.ico .vitepress/dist
           mv .vitepress/theme/assets/wechat.jpg .vitepress/dist
+          mv src/contribute/images/con*.jpg .vitepress/dist
       - name: upload files to OSS
         uses: fangbinwei/aliyun-oss-website-action@v1
         with:
