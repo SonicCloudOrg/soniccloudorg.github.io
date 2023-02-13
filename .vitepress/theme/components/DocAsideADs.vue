@@ -31,7 +31,7 @@ const ads = [
     pic: ad2
   },
   {
-    url: 'https://sonic-cloud.wiki/d/1209-sonic',
+    url: 'https://ceshiren.com/t/topic/23746',
     pic: ad1
   }
 ]

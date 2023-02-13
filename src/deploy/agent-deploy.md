@@ -138,6 +138,12 @@ A3: 可以参考 [这个帖子](https://sonic-cloud.wiki/d/2297)
 
 ---
 
+Q4: Mac上启动会有sonic-android-supply或其他插件安全弹窗？
+
+A4: Mac：系统偏好设置 -> 安全性与隐私 -> 通用，点击信任或仍要打开。
+
+---
+
 ::: tip
 更多疑问可前往 👉[社区](https://sonic-cloud.wiki)👈 交流
 :::
