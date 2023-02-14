@@ -56,5 +56,11 @@ export default [
     link: 'https://github.com/shinyvince',
     avatar:
       'https://avatars.githubusercontent.com/u/4026929?v=4'
+  },
+  {
+    name: 'yaming116',
+    link: 'https://github.com/yaming116',
+    avatar:
+      'https://avatars.githubusercontent.com/u/2171071?v=4'
   }
 ] as Contributor[]
