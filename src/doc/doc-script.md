@@ -30,9 +30,9 @@ contributors:
 5. Sonic的自定义步骤，可以直接复用
 6. 其他，包括PocoDriver、设备信息等等
 ::: tip 更多内置方法可查看
-[AndroidStepHandler](https://github.com/SonicCloudOrg/sonic-agent/blob/main/src/main/java/org/cloud/sonic/agent/automation/AndroidStepHandler.java)
+[AndroidStepHandler](https://github.com/SonicCloudOrg/sonic-agent/blob/main/src/main/java/org/cloud/sonic/agent/tests/handlers/AndroidStepHandler.java)
 
-[IOSStepHandler](https://github.com/SonicCloudOrg/sonic-agent/blob/main/src/main/java/org/cloud/sonic/agent/automation/IOSStepHandler.java)
+[IOSStepHandler](https://github.com/SonicCloudOrg/sonic-agent/blob/main/src/main/java/org/cloud/sonic/agent/tests/handlers/IOSStepHandler.java)
 :::
 #### 扩展能力
 StepHandler以外能力，可以直接import对应包或者直接引用进行实现。
