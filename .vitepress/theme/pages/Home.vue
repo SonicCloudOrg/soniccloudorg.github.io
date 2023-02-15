@@ -275,7 +275,7 @@ const statisticsData = [
   {
     tipContent: 'Sonic组织所有仓库总Star数量',
     linkUrl: 'https://github.com/SonicCloudOrg',
-    img: 'https://img.shields.io/github/stars/SonicCloudOrg?affiliations=OWNER&style=social'
+    img: 'https://img.shields.io/github/stars/soniccloudorg?style=social'
   },
   {
     tipContent: 'Sonic社区总回复数',
