@@ -28,14 +28,14 @@
         </el-button>
         <span class="verh1">{{
             d.time === 'unknown' ? d.version + "（预计" +
-              new Date(new Date(data[i + 1].time).getTime() + 86400000 * 7).toLocaleDateString() + "发布）"
+              new Date(new Date(data[i + 1].time).getTime() + 86400000 * 10).toLocaleDateString() + "发布）"
               : d.version
           }}</span>
         <el-progress v-if="d.time === 'unknown'"
                      :percentage="((1-(
-                       ((new Date(data[i + 1].time).getTime() + 86400000 * 7)
+                       ((new Date(data[i + 1].time).getTime() + 86400000 * 10)
                        -new Date().getTime())
-                       /86400000/7))*100).toFixed(2)"
+                       /86400000/10))*100).toFixed(2)"
                      :indeterminate="true"/>
         {{ d.des }}
         <span class="verh2" v-if="d.feat && d.feat.length > 0">新特性</span>

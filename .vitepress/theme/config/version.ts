@@ -130,10 +130,50 @@ const cons: Cons = [
   {
     name: "viz1997",
     avatar: "60973886"
+  },
+  {
+    name: 'stephenwang1011',
+    avatar: "3350356"
   }
 ]
 
 export default [
+  {
+    version: "v2.3.2",
+    time: "unknown",
+    feat: [
+      {
+        title: "i18n第三期建设，完成前后端文本翻译"
+      },
+      {
+        title: "加入了Slack机器人支持",
+        url: "https://github.com/SonicCloudOrg/sonic-server/pull/313"
+      }
+    ],
+    fix: [
+      {
+        title: "调整了安卓设备性能数据获取的逻辑，使得结果更精确"
+      },
+      {
+        title: "安卓设备在测试任务时，默认触控方式由Sonic APK调整为ADB模式",
+        url: "https://sonic-cloud.wiki/d/2605"
+      },
+      {
+        title: "更改了大量i18n翻译错误的文本"
+      },
+      {
+        title: "调整了浏览器语言无匹配时的默认语言为en_US"
+      },
+      {
+        title: "修复了if步骤失败时，后续步骤会被中断的问题",
+        url: "https://sonic-cloud.wiki/d/2610"
+      },
+      {
+        title: "待定"
+      }
+    ],
+    con: getCon('ZhouYixun', 'aoliaoaoaojiao', 'stephenwang1011')
+  },
   {
     version: 'v2.3.1',
     time: "2023/2/11",
