@@ -3,6 +3,7 @@ contributors:
 - 'ZhouYixun'
 - 'upengfei'
 - 'ayumi760405'
+- 'stephenwang1011'
 ---
 
 # 通知机器人
@@ -63,4 +64,10 @@ contributors:
 5. 完成！平台即可推送消息。
 6. [Line Notify API参考连结](https://notify-bot.line.me/doc/en/)
 
+## Slack机器人
 
+1. 登录到[Slack App](https://api.slack.com/apps)，然后点击"Create New App"按钮创建一个App。
+2. 在App详情中，点击"Features" -> "Incoming Webhooks" -> "Activate Incoming Webhooks"。
+3. 接着点击"Add New Webhook to Workspace"按钮，然后选择你要发送的个人或者频道(channel)。
+4. 回到APP详情界面，复制刚才生成的Webhook URL。
+5. 进入Sonici平台，在消息推送设置页面选择Slack Bot, Webhook填写刚才复制的URL即可。
