@@ -6,7 +6,7 @@ export default [
     items: [
       {
         name: '霍格沃兹测试开发学社',
-        url: 'https://www.testing-studio.com/',
+        url: 'http://qrcode.testing-studio.com/f?from=Sonic&url=https://ceshiren.com/',
         img: 'https://ceshiren.com/uploads/default/original/3X/7/0/70299922296e93e2dcab223153a928c4bfb27df9.jpeg'
       }
     ]

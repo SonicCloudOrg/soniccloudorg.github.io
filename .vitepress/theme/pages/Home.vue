@@ -197,7 +197,7 @@
     <section-box title="金牌赞助商">
       <div class="sponsor">
         <div class="sponsor__list">
-          <a href="https://www.testing-studio.com/" target="_blank">
+          <a href="http://qrcode.testing-studio.com/f?from=Sonic&url=https://ceshiren.com/" target="_blank">
             <img
               src="https://ceshiren.com/uploads/default/original/3X/7/0/70299922296e93e2dcab223153a928c4bfb27df9.jpeg"
               alt="霍格沃兹测试开发学社"

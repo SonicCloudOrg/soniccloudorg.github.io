@@ -31,7 +31,7 @@ const ads = [
     pic: ad2
   },
   {
-    url: 'https://ceshiren.com/t/topic/23746',
+    url: 'http://qrcode.testing-studio.com/f?from=Sonic&url=https://ceshiren.com/t/topic/23746',
     pic: ad1
   }
 ]
