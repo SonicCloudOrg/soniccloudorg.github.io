@@ -3,6 +3,7 @@ contributors:
 - 'ZhouYixun'
 - 'upengfei'
 - 'ayumi760405'
+- 'stephenwang1011'
 ---
 
 # 通知机器人
@@ -70,4 +71,3 @@ contributors:
 3. 接着点击"Add New Webhook to Workspace"按钮，然后选择你要发送的个人或者频道(channel)。
 4. 回到APP详情界面，复制刚才生成的Webhook URL。
 5. 进入Sonici平台，在消息推送设置页面选择Slack Bot, Webhook填写刚才复制的URL即可。
-
