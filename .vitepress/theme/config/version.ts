@@ -140,7 +140,7 @@ const cons: Cons = [
 export default [
   {
     version: "v2.3.2",
-    time: "unknown",
+    time: "2023/2/19",
     feat: [
       {
         title: "i18n第三期建设，完成前后端文本翻译"
@@ -167,9 +167,6 @@ export default [
       {
         title: "修复了if步骤失败时，后续步骤会被中断的问题",
         url: "https://sonic-cloud.wiki/d/2610"
-      },
-      {
-        title: "待定"
       }
     ],
     con: getCon('ZhouYixun', 'aoliaoaoaojiao', 'stephenwang1011')
