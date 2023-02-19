@@ -26,13 +26,19 @@ v2.0.0-release 起，Sonic 版本规则更改如下：
 
 例如 `v2.2.0` 的上一个版本为 `v2.1.15`，那么 `v2.1.15` 版本就是 `v2.1.x` 的最稳定的版本
 
-## 从 v1.4.1-release 以上版本 升级到 v2.x.x
-0. 升级前先备份Mysql数据库。
-1. 直接前往 <a href="https://sonic-cloud.cn/deploy/back-end-deploy.html" target="_blank">这里</a> 下载最新版本zip，down集群后重新up即可。如果更换了部署目录，旧目录下的`keepFiles`、`imageFiles`、`recordFiles`、`packageFiles`文件夹的内容也要同步到新目录下（部署文档含中国大陆加速镜像部署方式）
-2. jar方式部署的Agent前往 <a href="https://sonic-cloud.cn/deploy/agent-deploy.html" target="_blank">这里</a> 下载zip后解压，更新需替换旧版本plugins文件夹与jar文件。Docker版Agent与server同理，前往 <a href="https://sonic-cloud.cn/deploy/agent-deploy.html" target="_blank">这里</a> 重新下载镜像部署即可。（部署文档含中国大陆加速镜像部署方式）
-3. （附）升级至`v2.3.x`时，因部分类目录迁移至`tests/handlers`下，可能引起自定义脚本引入包时出错，更改详情可查看 [这里](https://github.com/SonicCloudOrg/sonic-agent/tree/main/src/main/java/org/cloud/sonic/agent/tests/handlers)
+## 从 v1.4.1-release 以上版本 升级到 v2.0.x ~ v2.3.x
+1. 升级前先备份Mysql数据库。
+2. 直接前往 <a href="https://sonic-cloud.cn/deploy/back-end-deploy.html" target="_blank">这里</a> 下载最新版本zip，down集群后重新up即可。如果更换了部署目录，旧目录下的`keepFiles`、`imageFiles`、`recordFiles`、`packageFiles`文件夹的内容也要同步到新目录下（部署文档含中国大陆加速镜像部署方式）
+3. jar方式部署的Agent前往 <a href="https://sonic-cloud.cn/deploy/agent-deploy.html" target="_blank">这里</a> 下载zip后解压，更新需替换旧版本plugins文件夹与jar文件。Docker版Agent与server同理，前往 <a href="https://sonic-cloud.cn/deploy/agent-deploy.html" target="_blank">这里</a> 重新下载镜像部署即可。（部署文档含中国大陆加速镜像部署方式）
 
 ::: tip TIP
+---
+升级至`v2.3.2`时，因数据结构调整，旧的安卓测试报告中的性能数据信息与新版本结构**不兼容**，因此会出现图表展示异常的问题。
+
+---
+升级至`v2.3.x`时，因部分类目录迁移至`tests/handlers`下，可能引起自定义脚本引入包时出错，更改详情可查看 [这里](https://github.com/SonicCloudOrg/sonic-agent/tree/main/src/main/java/org/cloud/sonic/agent/tests/handlers)。
+
+---
 从 v1.5.0或以下版本 升级需注意：
 1. env 文件最下方新增 LDAP_OBJECT_CLASS=person
 2. Agent 端的 jar 部署方式：已知部分 JDK 出现不兼容的问题，Sonic 官方推荐使用 JDK15，可以前往 [这里](https://docs.aws.amazon.com/corretto/latest/corretto-15-ug/downloads-list.html) 安装下载。
