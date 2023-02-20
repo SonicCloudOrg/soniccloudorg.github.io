@@ -58,11 +58,11 @@ sonic-ci-helper支持自由风格项目直接配置，例子如下：
 sonic-ci-helper支持pipeline脚本项目，例子如下：
 
 ```groovy
-        stage('sonic') {
-            steps {
-                step([$class:"UploadBuilder" ,apiKey: '1212', projectId: '1',wildcard:"**/us-*.apk"])
-            }
-        }
+ stage('sonic') {
+      steps {
+         step([$class:"UploadBuilder", apiKey:'1212', projectId:'1', wildcard:"**/us-*.apk"])
+      }
+ }
 ```
 
 ### 字段解析
