@@ -47,16 +47,17 @@ contributors:
 
 ## 快速使用
 
-
 ### 自由风格项目  
+
 sonic-ci-helper支持自由风格项目直接配置，例子如下：
 
 ![use_sch](./images/use_sch.png)
 
-### pipeline   
+### pipeline
+
 sonic-ci-helper支持pipeline脚本项目，例子如下：
 
-```pipeline
+```groovy
         stage('sonic') {
             steps {
                 step([$class:"UploadBuilder" ,apiKey: '1212', projectId: '1',wildcard:"**/us-*.apk"])
@@ -65,12 +66,14 @@ sonic-ci-helper支持pipeline脚本项目，例子如下：
 ```
 
 ### 字段解析
+
 | 字段名     |字段解释     | 数据类型   | 描述信息                   |
 |---------|---------|--------|------------------------|
 |scanDir | 扫描目录    | string | App包所在目录,默认是当前项目空间目录，例如填写 build,扫描目录是： ${WORKSPACE}/build。（可选）              |
 |projectId | 对应项目    | int    | 选取的项目id             |
 |apiKey | 鉴权Token | String | 可前往Sonic平台右上角用户头像处生成填入  |
 |suiteId | 测试套件id  | int    | 构建后触发的测试套件id（可选），为空则不触发       |
-|wildcard | 文件通配符   | string | 默认 （**/*.apk,**/*.ipa），支持通配符号，如果想要 sonic 开头的 apk 可以这样： **/sonic-*.apk |
+|wildcard | 文件通配符   | string | 默认 （**/*.apk,**/*.ipa），支持通配符号，如果想要 sonic 开头的 apk 可以这样： `**/sonic-*.apk` |
 |isRunSuite | 是否运行测试套件  | bool    | 默认值：true ,可以设置环境变量或参数化构建过程     |
 |isUploadSonic | 是否上传 sonic  | bool    | 默认值：true  ,可以设置环境变量或参数化构建过程        |
+
