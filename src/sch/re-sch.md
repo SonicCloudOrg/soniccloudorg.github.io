@@ -1,6 +1,7 @@
 ---
 contributors:
   - 'ZhouYixun'
+  - 'yaming116'
 ---
 
 # sonic-ci-helper-plugin
