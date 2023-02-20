@@ -48,11 +48,11 @@ contributors:
 ## 快速使用
 
 
-### 自由风格项目
+### sonic-ci-helper支持自由风格项目直接配置，例子如下：
 
 ![use_sch](./images/use_sch.png)
 
-### pipeline 
+### sonic-ci-helper支持pipeline脚本项目，例子如下： 
 
 ```pipeline
         stage('sonic') {
