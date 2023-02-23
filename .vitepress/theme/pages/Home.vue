@@ -92,6 +92,7 @@
 
     <section-box title="Sonic荣誉及认证">
       <div class="honor-wall">🎉 MTSC 2022年度最佳开源项目评选第一名</div>
+      <div class="honor-wall" style="margin-top: 20px">🎉 开源中国GVP - Gitee最有价值开源项目</div>
     </section-box>
 
     <section-box title="Sonic支持哪些设备？">
@@ -268,22 +269,27 @@ import { useRouter } from 'vitepress'
 // 品牌数据统计
 const statisticsData = [
   {
-    tipContent: 'Sonic组织Follower数量',
+    tipContent: 'Sonic组织Gitee镜像Star数量',
+    linkUrl: 'https://gitee.com/sonic-cloud/sonic-server/stargazers',
+    img: 'https://gitee.com/sonic-cloud/sonic-server/badge/star.svg?theme=gvp'
+  },
+  {
+    tipContent: 'Sonic组织Github Follower数量',
     linkUrl: 'https://github.com/SonicCloudOrg',
     img: 'https://img.shields.io/github/followers/SonicCloudOrg?style=social'
   },
   {
-    tipContent: 'Sonic组织所有仓库总Star数量',
+    tipContent: 'Sonic组织Github仓库总Star数量',
     linkUrl: 'https://github.com/SonicCloudOrg',
     img: 'https://img.shields.io/github/stars/soniccloudorg?style=social'
   },
   {
-    tipContent: 'Sonic社区总回复数',
+    tipContent: 'Sonic用户社区总回复数',
     linkUrl: 'https://sonic-cloud.wiki',
     img: 'https://img.shields.io/badge/replies%20-15k-ff69b4?style=social&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAABiVBMVEUAAAAoq+Ioq+JHuul92PYoq+Ipq+Jdx+4pq+Ipq+Ipq+Ioq+J92PZ92PZ92PZ92PZ92PYpq+Ipq+J92PYpq+J92PYpq+J92PZ92PZMvep82PZ81/Yoq+J92PYoquIpq+J92PZ92PYpq+Ipq+J92PYoq+J82PZ92PYoq+Ioq+J82PZ92PYpq+J92PYoq+Gzs7Mpq+J92PUpq+J92Pazs7PY2Nh92PYpq+J92PYoq+J82PZ81/Z92PZ92PZ81/Xl5eUpq+Ll5eWw3u4pq+J91/V92PZ00/Pl5eUpq+J92PYpq+Ll5eWzs7N92PZ92Pazs7N92Pbl5eV82PZ92PUpq+Kzs7N92PZ82PYpq+KDsMOzs7Pl5eXl5eV92PYpq+Kzs7Pm5uZ61vV81/bk5ORBuOgtruN41fV11PRx0vNtz/JjyvBcxu49tuc6teY2suUxsOTHx8dozfFSwexNvupGu+nExMSF2fSU2/Ko3e9Ww+zR4+ne5ec3q91IrNeYv89ers+BsMOWsbyssrUBQeaHAAAAXXRSTlMA8hkG/OUOBPx8J/nz7ubNqalsa1A+PBcQC/jc2NXU0M/EwryzsaKelpGQhoJ1cmxlWldSUE5EQzYxLyYeG/Xx79XHx7urq6OdmYmFg358enJoZGJeXkpISEJCLhBW59AbAAAB8UlEQVRYw+3VR1MbQRCG4VFCEkiADVgWwYBtwAkwNmAwOeecQ7ckcs45wy9HW4uoRdOMWsuBC+/9qZpDfzXirderrjiv3Wpa2/5+tUNowW2S///hBYDQBn4woz+mpYDW0gbmxq+d422ZoPtNxN/x8pqfyfDQctg3+uN7+nA+wKPfQsTv8fCMwnqI8q5Etq7tywJjK5rHL0ztL2u1w1O/jVrpLF7V5QUgvcMZW/uKc0BqVffoZl0r4Rd1n2SNda3JAAqP7zjXKrcb8aoZTKRmQkyfy7hWubUIf24G/pH8OWB5SwJ1rUUeAI4nZ1DbnwXq1tGQNIMyO3A9PYNUvqdnUOlR+1ODpmdQp3rD3F6EqmZQmcPwyhk4Bz2034/ImDPwFXK88jfIyJP8QbT/JFQ507xPfEjy+F6o8xXZDX5B8tIM5KpSFB6/CUbNR5KXZqCs6fxE/z7lPgtODcHg2XFoE4n+cPxsMNz8FeUdNsFoRvOHdxco90twqtB8IHAje5dVcBoKzu8Ewl0iSjNg1aP7wC1G90+w6tC81rU0A14VvQOlpWPl5dNTFnoG/EroGfCzZdMz4DeJhqqFiQroGfBLTKJnwK+bngG/BAc9A36jihnwakGtAmG6ahc9A36dYZ8tXpDVQs+AXwk9A342d7p4S9E9V8/Td9ry6OsAAAAASUVORK5CYII='
   },
   {
-    tipContent: 'Agent端总下载量',
+    tipContent: 'Agent端Release总下载量',
     linkUrl: 'https://github.com/SonicCloudOrg/sonic-agent/releases',
     img: 'https://img.shields.io/github/downloads/SonicCloudOrg/sonic-agent/total'
   }

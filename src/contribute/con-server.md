@@ -8,7 +8,9 @@ contributors:
 本文将介绍如何搭建Server端开发环境。 👉[Github地址](https://github.com/SonicCloudOrg/sonic-server)
 
 <div style="display: flex">
-<img src="https://img.shields.io/github/stars/SonicCloudOrg/sonic-server?style=social"><img style="margin-left: 10px" src="https://img.shields.io/github/forks/SonicCloudOrg/sonic-server?style=social">
+<a href='https://gitee.com/sonic-cloud/sonic-server/stargazers'><img src='https://gitee.com/sonic-cloud/sonic-server/badge/star.svg?theme=gvp' alt='star'></a>
+<img style="margin-left: 10px" src="https://img.shields.io/github/stars/SonicCloudOrg/sonic-server?style=social"><img style="margin-left: 10px" src="https://img.shields.io/github/forks/SonicCloudOrg/sonic-server?style=social">
+<img style="margin-left:10px" src="https://img.shields.io/github/downloads/SonicCloudOrg/sonic-server/total">
 </div>
 
 ## 本仓库贡献者
