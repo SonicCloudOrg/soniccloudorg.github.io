@@ -422,5 +422,5 @@
 }
 
 .vp-doc ul {
-  list-style: disc;
+  list-style: disc!important;
 }
