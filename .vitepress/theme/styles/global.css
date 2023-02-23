@@ -420,3 +420,7 @@
 .vp-doc h4 {
   margin: 32px 0 0;
 }
+
+.vp-doc ul {
+  list-style: disc;
+}
