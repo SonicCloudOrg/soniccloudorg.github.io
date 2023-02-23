@@ -173,7 +173,6 @@ import com.alibaba.fastjson.JSONObject;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
-import org.cloud.sonic.agent.common.models.HandleDes;
 import org.cloud.sonic.agent.tools.SpringTool;
 import org.springframework.web.client.RestTemplate;
 import org.cloud.sonic.agent.tests.LogUtil;
@@ -192,33 +191,6 @@ def testRestApi(){
 }
 
 testRestApi()
-```
-
-#### 循环点击POCO控件
-
-以下是获取全局参数以及通过循环对poco控件进行拖拽的示例。
-
-也可以直接通过androidStepHandler.getAndroidDriver()、androidStepHandler.getIOSDriver()、androidStepHandler.getPocoDriver()进行操作。可以参考周边生态 sonic-driver-core 。
-
-```groovy
-import org.cloud.sonic.agent.common.models.HandleDes;
-import org.cloud.sonic.agent.tests.LogUtil;
-import org.cloud.sonic.agent.common.interfaces.StepType;
-
-def testPoco(){
-      LogUtil log =  androidStepHandler.log
-      HandleDes handleDes = new HandleDes()
-      androidStepHandler.startPocoDriver(handleDes,"UNITY_3D",5001)
-      for(int i=1;i<6;i++){
-        androidStepHandler
-          .pocoSwipe(handleDes,"Star"+[i],"poco","poco(\"playDragAndDrop\").child(\"star\")["+i+"]",
-                    "Shell","poco","poco(\"shell\")")
-        log.sendStepLog(StepType.INFO,"Poco Swipe","Move Done.")
-      }
-      androidStepHandler.closePocoDriver(handleDes)
-}
-
-testPoco()
 ```
 
 #### adb shell操作
