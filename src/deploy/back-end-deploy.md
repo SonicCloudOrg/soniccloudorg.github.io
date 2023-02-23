@@ -22,7 +22,7 @@ contributors:
 ```bash
 docker-compose up -d
 ```
-::: tip 如果您为中国大陆用户，出现访问DockerHub较慢的情况，可以从以下操作选择一个：
+::: tip 如果您为中国大陆用户，出现访问DockerHub较慢的情况，可以从以下两点选择一个进行操作：
 - 配置国内加速镜像源（推荐）
 - 执行以下指令直接使用加速镜像（不推荐，加速源可能出现不稳定或网络波动，后续down的时候需要docker-compose -f docker-compose-zh.yml down）
 ```bash
