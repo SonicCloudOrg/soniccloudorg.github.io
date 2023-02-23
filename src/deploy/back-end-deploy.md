@@ -14,7 +14,7 @@ contributors:
 
 准备工作：docker-compose、Docker、MySQL
 
-1. 需提前建数据库库！字符集为 utf8，排序规则为 utf8_general_ci
+1. 创建一个MySQL数据库，数据库名可自定义，注意字符集为 utf8，排序规则为 utf8_general_ci。如果你想MySQL随着Sonic一同启动，可以参考本页下方`在docker-compose.yml中内置MySQL`的内容。
 2. [点击这里](https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-server/releases/download/v2.3.2/sonic-server-v2.3.2.zip) 下载最新版本的 **zip** 文件到任意目录（如加速链接失效，请自行前往 <a href="https://github.com/SonicCloudOrg/sonic-server/releases" target="_black">这里</a> 下载）。
 3. 解压 zip，更改.env 中的信息。（无需改动 docker-compose.yml 文件。env 配置项内容可查看下方表格。如果您的系统没显示.env，在本页最下方【常见问题】查看解决方案）
 4. 当前目录下执行以下指令
@@ -69,6 +69,66 @@ docker-compose -f docker-compose-zh.yml up -d
 2. 将 **docker-compose.yml** 的 SONIC_EUREKA_HOST 填写为自己 Eureka 服务的 host。
 3. 将.env 中的配置修改为自己 Eureka 服务的信息。
 4. 完成！
+
+## 在docker-compose.yml中内置MySQL
+
+因Docker挂载时如果出现操作不当或数据迁移时的风险会引起MySQL容易数据丢失，因此docker-compose.yml默认没有附带MySQL镜像。
+
+::: warning 警告
+该方式不一定兼容所有Docker版本与Linux系统与Mysql版本，操作前应当备份当前数据。而且更新时会导致MySQL容器停止与删除，因此推荐MySQL单独部署或使用已有MySQL服务。
+:::
+
+如果想MySQL随着sonic一同启动，你可以进行如下操作：
+
+1. 当前目录下创建`mysql`文件夹
+```shell
+mkdir -p mysql/log mysql/data mysql/conf
+```
+2. 在docker-compose.yml中加入以下 **注释部分** 的内容
+```
+version: '3'
+services:
+  sonic-server-eureka:
+  .
+  .
+  .
+  .
+  .
+  sonic-client-web:
+    image: "sonicorg/sonic-client-web:SONIC_VERSION"
+    environment:
+      - SONIC_SERVER_HOST
+      - SONIC_SERVER_PORT
+    networks:
+      - sonic-network
+    depends_on:
+      - sonic-server-gateway
+    restart: on-failure
+    ports:
+      - "${SONIC_SERVER_PORT}:80"
+# ==== MySQL ====
+  sonic-mysql:
+    image: "mysql:5.7"
+    hostname: sonic-mysql
+    command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    environment:
+      - MYSQL_ROOT_PASSWORD=MYSQL_PASSWORD
+      - MYSQL_DATABASE
+    volumes:
+      - ./mysql/log:/var/log/mysql
+      - ./mysql/data:/var/lib/mysql
+      - ./mysql/conf:/etc/mysql
+    ports:
+      - "3306:3306"
+    networks:
+      - sonic-network      
+# ==== End ====
+
+networks:
+  sonic-network:
+    driver: bridge
+```
+3. 执行 `docker-compose up -d` 即可。
 
 ## 常见问题（Q&A）
 
