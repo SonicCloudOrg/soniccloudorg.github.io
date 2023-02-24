@@ -28,14 +28,14 @@
         </el-button>
         <span class="verh1">{{
             d.time === 'unknown' ? d.version + "（预计" +
-              new Date(new Date(data[i + 1].time).getTime() + 86400000 * 10).toLocaleDateString() + "发布）"
+              new Date(new Date(data[i + 1].time).getTime() + 86400000 * day).toLocaleDateString() + "发布）"
               : d.version
           }}</span>
         <el-progress v-if="d.time === 'unknown'"
                      :percentage="((1-(
-                       ((new Date(data[i + 1].time).getTime() + 86400000 * 10)
+                       ((new Date(data[i + 1].time).getTime() + 86400000 * day)
                        -new Date().getTime())
-                       /86400000/10))*100).toFixed(2)"
+                       /86400000/day))*100).toFixed(2)"
                      :indeterminate="true"/>
         {{ d.des }}
         <span class="verh2" v-if="d.feat && d.feat.length > 0">新特性</span>
@@ -45,6 +45,10 @@
             <a :href="f.url" v-if="f.url" target="_blank" style="color: #0d84ff">
               #{{ f.url.replace(/[^\d]/g, '') }}</a
             >
+            <span v-if="d.time === 'unknown' && f.done"> ✅</span>
+          </div>
+          <div v-if="d.time === 'unknown' && d.feat">
+            {{ d.feat.length + 1 + "、 待定..." }}
           </div>
         </div>
         <span class="verh2" v-if="d.fix && d.fix.length > 0"
@@ -56,6 +60,10 @@
             <a :href="f.url" v-if="f.url" target="_blank" style="color: #0d84ff">
               #{{ f.url.replace(/[^\d]/g, '') }}</a
             >
+            <span v-if="d.time === 'unknown' && f.done"> ✅</span>
+          </div>
+          <div v-if="d.time === 'unknown' && d.fix">
+            {{ d.fix.length + 1 + "、 待定..." }}
           </div>
         </div>
         <span class="verh2" v-if="d.con && d.con.length > 0">贡献者</span>
@@ -78,6 +86,9 @@
 
 <script setup>
 import data from '../config/version'
+import {ref} from "vue";
+
+const day = ref(30)
 
 const open = (url) => {
   window.open(url, '_blank')

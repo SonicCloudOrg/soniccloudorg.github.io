@@ -139,6 +139,65 @@ const cons: Cons = [
 
 export default [
   {
+    version: "v2.4.0",
+    time: "unknown",
+    feat: [
+      {
+        title: "支持Windows自动化与远控（初版）"
+      },
+      {
+        title: "支持创建UI监控者处理系统弹窗",
+        url: "https://sonic-cloud.wiki/d/531"
+      },
+      {
+        title: "支持项目配置多个通知机器人",
+        url: "https://sonic-cloud.wiki/d/2533"
+      },
+      {
+        title: "iOS原生控件获取与属性断言补充value属性值",
+        url: "https://sonic-cloud.wiki/d/2676"
+      },
+      {
+        title: "sonic-vision-core服务迁移至server，减少Agent端图像处理压力，减少包体"
+      },
+      {
+        title: "新增WebView控件查找策略步骤"
+      },
+      {
+        title: "补充测试报告的国际化建设"
+      },
+      {
+        title: "安卓与iOS远控页面应用程序列表新增停止单个应用功能",
+        url: "https://sonic-cloud.wiki/d/1674"
+      },
+      {
+        title: "Springboot依赖组件升级，解决部分安全性问题"
+      },
+      {
+        title: "单个测试步骤新增开关按钮，关闭后将忽略其运行",
+        url: "https://github.com/SonicCloudOrg/sonic-server/issues/58"
+      },
+    ],
+    fix: [
+      {
+        title: "优化本地开发环境部署方式，使其更便捷"
+      },
+      {
+        title: "优化测试报告查找逻辑，使其更响应迅速"
+      },
+      {
+        title: "修复安卓性能数据中System Network记录不正确的问题",
+        url: "https://sonic-cloud.wiki/d/2692"
+      },
+      {
+        title: "修复测试套件执行异常时，上报了2次结果状态的问题",
+        url: "https://github.com/SonicCloudOrg/sonic-agent/pull/311",
+        done: true
+      }
+    ],
+    con: getCon("ZhouYixun", "chenyan-master")
+  },
+  {
     version: "v2.3.2",
     time: "2023/2/19",
     feat: [
