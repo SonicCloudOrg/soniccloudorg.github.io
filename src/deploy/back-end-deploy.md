@@ -84,7 +84,8 @@ docker-compose -f docker-compose-zh.yml up -d
 ```shell
 mkdir -p mysql/log mysql/data mysql/conf
 ```
-2. 在docker-compose.yml中加入以下 **注释部分** 的内容
+2. 将.env中的`MYSQL_HOST`改为`sonic-mysql`
+3. 在docker-compose.yml中加入以下 **注释部分** 的内容
 ```
 version: '3'
 services:
@@ -128,7 +129,7 @@ networks:
   sonic-network:
     driver: bridge
 ```
-3. 执行 `docker-compose up -d` 即可。
+4. 执行 `docker-compose up -d` 即可。
 
 ## 常见问题（Q&A）
 
