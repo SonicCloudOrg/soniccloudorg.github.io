@@ -112,7 +112,7 @@ services:
     hostname: sonic-mysql
     command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
     environment:
-      - MYSQL_ROOT_PASSWORD=MYSQL_PASSWORD
+      - MYSQL_ROOT_PASSWORD=${MYSQL_PASSWORD}
       - MYSQL_DATABASE
     volumes:
       - ./mysql/log:/var/log/mysql
