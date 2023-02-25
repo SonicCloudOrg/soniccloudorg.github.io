@@ -171,6 +171,7 @@ import th7 from '../assets/cabinet/th7.png'
 import user from '../assets/cabinet/user.png'
 import you from '../assets/cabinet/you.png'
 import xinyang from '../assets/cabinet/xinyang.jpg'
+import taole from '../assets/cabinet/taole.png'
 import eco from '../assets/cabinet/eco.jpeg'
 import p1 from '../assets/cabinet/p1.jpg'
 import p2 from '../assets/cabinet/p2.jpg'
@@ -316,6 +317,11 @@ const talk = ref([
     ava: xinyang,
     name: '新氧技术中心-平台研发部',
     msg: '非常专业的硬件设备，是搭建云测机房的不二选择。不仅能很完美地与Sonic云测平台结合，而且技术售后也非常到位，考虑到的实际情况非常细心，期待更深入的合作'
+  },
+  {
+    ava: taole,
+    name: '深圳淘乐网络-手游研发团队',
+    msg: 'HUB支持十台手机设备，并且HUB本身自带风扇散热，集中使用散热也很好，提高跑脚本时的稳定性，每个设备还可以通过HUB控制手机断电，提高电池使用寿命，集中管理的情况下常非方便远程管理设备。期待平台继续成长强大。'
   },
   {
     ava: eco,
