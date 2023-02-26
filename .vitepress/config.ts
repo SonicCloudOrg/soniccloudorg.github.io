@@ -16,16 +16,21 @@ const socialLinks = [
   }
 ]
 
+enum LocalePathMap {
+  CN = '/',
+  EN = '/en/'
+}
+
 export default {
   locales: {
-    '/': {
+    [LocalePathMap.CN]: {
       lang: LOCALE.ZH_CN,
       title: 'Sonic',
       titleTemplate: 'Sonic - 开源云真机平台',
       description:
         'For You, For Free, Forever. 免费开源的云真机平台，用心打造更好的使用体验。 Made with 🧡 by SonicCloudOrg.'
     },
-    '/en/': {
+    [LocalePathMap.EN]: {
       lang: LOCALE.EN_US,
       title: 'Sonic',
       titleTemplate: 'Sonic - Open source cloud virtual machine platform',
@@ -104,16 +109,16 @@ export default {
   themeConfig: {
     // 社交链接
     socialLinks,
-    // 国际化配置 @TODO
+    // 国际化配置
     localeLinks: {
       items: [
-        { text: '简体中文', link: '/' },
-        { text: 'English', link: '/en/' }
+        { text: '简体中文', link: LocalePathMap.CN },
+        { text: 'English', link: LocalePathMap.EN }
       ]
     },
     locales: {
-      '/': initCNThemeConfig,
-      '/en/': initENThemeConfig
+      [LocalePathMap.CN]: initCNThemeConfig,
+      [LocalePathMap.EN]: initENThemeConfig
     },
 
     // 搜索相关配置
