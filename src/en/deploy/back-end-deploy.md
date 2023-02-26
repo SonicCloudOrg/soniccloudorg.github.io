@@ -34,37 +34,37 @@ docker-compose -f docker-compose-zh.yml up -d
 
 :::
 
-5. The front and rear ends are deployed!(Due to the Eureka heartbeat mechanism, it takes 3 to 5 minutes for microservices to access each other. Please wait patiently)Open a browser and visit[http://localhost:3000](http://localhost:3000)，Then you can **directly deploy** the Agent。
+5. The front and rear ends are deployed!(Due to the Eureka heartbeat mechanism, it takes 3 to 5 minutes for microservices to access each other. Please wait patiently)Open a browser and visit [http://localhost:3000](http://localhost:3000)，Then you can **directly deploy** the Agent。
 6. (Attached) If you are experienced operation and maintenance personnel, you can also visit the Eureka page to check the status of each micro-service.
 
 ## .env configuration item description
 
 | params                 | description                                                                                                                               | example                  |
-| ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
+|------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|--------------------------|
 | SONIC_SERVER_HOST      | localhost or 127.0.0.1 cannot be used as the ipv4 address of the machine where the sonic-server is deployed. **can use domain names.**    | 192.168.0.1              |
 | SONIC_SERVER_PORT      | The whole server is exposed to external ports. The default port is 3000. **can use 80**                                                   | 3000                     |
 | SONIC_EUREKA_USERNAME  | User name for Eureka (For security purposes, the default value is not recommended, but can be changed to any other string, excluding `@`) | sonic                    |
 | SONIC_EUREKA_PASSWORD  | Eureka password (For security purposes, the default value is not recommended. You can change it to any other string, excluding `@`)       | sonic                    |
-| SONIC_EUREKA_PORT      | Eureka start port (usually no change is required 动）                                                                                     | 9090                     |
+| SONIC_EUREKA_PORT      | Eureka start port (usually no change is required）                                                                                         | 9090                     |
 | MYSQL_HOST             | The host of the MySQL service cannot be localhost or 127.0.0.1.                                                                           | 192.168.0.1              |
-| MYSQL_PORT             | MySQL service port (default 3306）                                                                                                        | 3306                     |
-| MYSQL_DATABASE         | Data to be used by the Sonic service 库                                                                                                   | sonic                    |
+| MYSQL_PORT             | MySQL service port (default 3306）                                                                                                         | 3306                     |
+| MYSQL_DATABASE         | Data to be used by the Sonic service                                                                                                      | sonic                    |
 | MYSQL_USERNAME         | MySQL database user name                                                                                                                  | root                     |
-| MYSQL_PASSWORD         | MySQL 数据库密码                                                                                                                          | Sonic!@#123              |
-| SECRET_KEY             | token 加密密钥（为提高安全性，不建议使用默认值，可以更改为其他任意字符串）                                                                | sonic                    |
-| EXPIRE_DAY             | token 有效天数                                                                                                                            | 14                       |
-| PERMISSION_ENABLE      | 是否开启权限配置                                                                                                                          | true                     |
-| PERMISSION_SUPER_ADMIN | 超管用户名                                                                                                                                | sonic                    |
-| REGISTER_ENABLE        | 是否开启用户注册                                                                                                                          | true                     |
-| NORMAL_USER_ENABLE     | 是否开启普通用户登录                                                                                                                      | true                     |
-| LDAP_USER_ENABLE       | 是否开启 LDAP 用户登录                                                                                                                    | true                     |
-| LDAP_USER_ID           | LDAP user id 搜索字段                                                                                                                     | cn                       |
-| LDAP_BASE_DN           | LDAP user 搜索用户组                                                                                                                      | users                    |
+| MYSQL_PASSWORD         | MySQL password                                                                                                                            | Sonic!@#123              |
+| SECRET_KEY             | token 加密密钥（为提高安全性，不建议使用默认值，可以更改为其他任意字符串）                                                                                                  | sonic                    |
+| EXPIRE_DAY             | token 有效天数                                                                                                                                | 14                       |
+| PERMISSION_ENABLE      | 是否开启权限配置                                                                                                                                  | true                     |
+| PERMISSION_SUPER_ADMIN | 超管用户名                                                                                                                                     | sonic                    |
+| REGISTER_ENABLE        | 是否开启用户注册                                                                                                                                  | true                     |
+| NORMAL_USER_ENABLE     | 是否开启普通用户登录                                                                                                                                | true                     |
+| LDAP_USER_ENABLE       | 是否开启 LDAP 用户登录                                                                                                                            | true                     |
+| LDAP_USER_ID           | LDAP user id 搜索字段                                                                                                                         | cn                       |
+| LDAP_BASE_DN           | LDAP user 搜索用户组                                                                                                                           | users                    |
 | LDAP_BASE              | LDAP Base DN                                                                                                                              | ou=system                |
-| LDAP_USERNAME          | LDAP Base DN 管理员用户名                                                                                                                 | uid=admin,ou=system      |
-| LDAP_PASSWORD          | LDAP Base DN 管理员密码                                                                                                                   | Sonic!@#123              |
-| LDAP_URL               | LDAP 服务 URL                                                                                                                             | ldap://192.168.0.1:10389 |
-| LDAP_OBJECT_CLASS      | LDAP 筛选 class，默认为 person                                                                                                            | person                   |
+| LDAP_USERNAME          | LDAP Base DN 管理员用户名                                                                                                                       | uid=admin,ou=system      |
+| LDAP_PASSWORD          | LDAP Base DN 管理员密码                                                                                                                        | Sonic!@#123              |
+| LDAP_URL               | LDAP 服务 URL                                                                                                                               | ldap://192.168.0.1:10389 |
+| LDAP_OBJECT_CLASS      | LDAP 筛选 class，默认为 person                                                                                                                  | person                   |
 
 ## 使用自己的 Eureka
 
