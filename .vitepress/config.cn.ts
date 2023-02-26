@@ -300,6 +300,11 @@ const initCNThemeConfig = {
     pattern:
       'https://github.com/SonicCloudOrg/sonic-offical-website/edit/main/src/:path',
     text: '在 GitHub 上编辑此页'
+  },
+  // 页脚配置
+  footer: {
+    copyright:
+      'Copyright © All Rights Reserved Sonic Project for SonicCloudOrg 版权所有'
   }
 }
 

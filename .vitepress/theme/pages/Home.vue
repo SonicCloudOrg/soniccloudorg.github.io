@@ -25,7 +25,7 @@
 
       <!-- 品牌描述 -->
       <h4 class="brand-desc">
-        免费开源的云真机测试平台，用心打造更好的使用体验。
+        {{ $t('home.desc') }}
       </h4>
 
       <!-- entry -->
@@ -58,41 +58,43 @@
 
   <!-- 主体内容 -->
   <div class="container">
-<!--    <section-box title="最新动态">-->
-<!--      <div class="news">-->
-<!--        <el-carousel-->
-<!--          style="margin-top: 30px"-->
-<!--          height="400px"-->
-<!--          indicator-position="outside"-->
-<!--          :interval="3000"-->
-<!--        >-->
-<!--          <el-carousel-item v-for="item in news">-->
-<!--            <div-->
-<!--              :style="-->
-<!--                'background:linear-gradient(to bottom right, rgba(64,158,255, 0.3), rgba(0, 0, 0, 0.8)) ,url(' +-->
-<!--                item.pic +-->
-<!--                ');'-->
-<!--              "-->
-<!--              class="news-banner"-->
-<!--            >-->
-<!--              <span class="news-banner__title">-->
-<!--                {{ item.title }}-->
-<!--              </span>-->
-<!--              <h3 class="news-banner__time" v-if="item.time">-->
-<!--                {{ item.time }}-->
-<!--              </h3>-->
-<!--              <el-button v-if="item.url" type="primary" @click="open(item.url)">-->
-<!--                查看-->
-<!--              </el-button>-->
-<!--            </div>-->
-<!--          </el-carousel-item>-->
-<!--        </el-carousel>-->
-<!--      </div>-->
-<!--    </section-box>-->
+    <!--    <section-box title="最新动态">-->
+    <!--      <div class="news">-->
+    <!--        <el-carousel-->
+    <!--          style="margin-top: 30px"-->
+    <!--          height="400px"-->
+    <!--          indicator-position="outside"-->
+    <!--          :interval="3000"-->
+    <!--        >-->
+    <!--          <el-carousel-item v-for="item in news">-->
+    <!--            <div-->
+    <!--              :style="-->
+    <!--                'background:linear-gradient(to bottom right, rgba(64,158,255, 0.3), rgba(0, 0, 0, 0.8)) ,url(' +-->
+    <!--                item.pic +-->
+    <!--                ');'-->
+    <!--              "-->
+    <!--              class="news-banner"-->
+    <!--            >-->
+    <!--              <span class="news-banner__title">-->
+    <!--                {{ item.title }}-->
+    <!--              </span>-->
+    <!--              <h3 class="news-banner__time" v-if="item.time">-->
+    <!--                {{ item.time }}-->
+    <!--              </h3>-->
+    <!--              <el-button v-if="item.url" type="primary" @click="open(item.url)">-->
+    <!--                查看-->
+    <!--              </el-button>-->
+    <!--            </div>-->
+    <!--          </el-carousel-item>-->
+    <!--        </el-carousel>-->
+    <!--      </div>-->
+    <!--    </section-box>-->
 
     <section-box title="Sonic荣誉及认证">
       <div class="honor-wall">🎉 MTSC 2022年度最佳开源项目评选第一名</div>
-      <div class="honor-wall" style="margin-top: 20px">🎉 开源中国GVP - Gitee最有价值开源项目</div>
+      <div class="honor-wall" style="margin-top: 20px">
+        🎉 开源中国GVP - Gitee最有价值开源项目
+      </div>
     </section-box>
 
     <section-box title="Sonic支持哪些设备？">
@@ -198,7 +200,10 @@
     <section-box title="金牌赞助商">
       <div class="sponsor">
         <div class="sponsor__list">
-          <a href="http://qrcode.testing-studio.com/f?from=Sonic&url=https://ceshiren.com/" target="_blank">
+          <a
+            href="http://qrcode.testing-studio.com/f?from=Sonic&url=https://ceshiren.com/"
+            target="_blank"
+          >
             <img
               src="https://ceshiren.com/uploads/default/original/3X/7/0/70299922296e93e2dcab223153a928c4bfb27df9.jpeg"
               alt="霍格沃兹测试开发学社"
@@ -218,31 +223,28 @@
           </a>
         </div>
         <a class="" href="mailto:291028775@qq.com" target="_blank">
-          <el-button
-            round
-            plain
-            style="width: 150px; margin-top: 30px"
-          >
+          <el-button round plain style="width: 150px; margin-top: 30px">
             成为赞助商！
           </el-button>
         </a>
       </div>
     </section-box>
 
-<!--    <section-box title="贡献者们">-->
-<!--      <div style="text-align: center">-->
-<!--        <img-->
-<!--          style="display: inline-block"-->
-<!--          src="https://opencollective.com/soniccloudorg/contributors.svg?width=800&button=false"-->
-<!--          alt="contribute"-->
-<!--          width="950"-->
-<!--        />-->
-<!--      </div>-->
-<!--    </section-box>-->
+    <!--    <section-box title="贡献者们">-->
+    <!--      <div style="text-align: center">-->
+    <!--        <img-->
+    <!--          style="display: inline-block"-->
+    <!--          src="https://opencollective.com/soniccloudorg/contributors.svg?width=800&button=false"-->
+    <!--          alt="contribute"-->
+    <!--          width="950"-->
+    <!--        />-->
+    <!--      </div>-->
+    <!--    </section-box>-->
   </div>
 </template>
 
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n'
 import SectionBox from '../components/SectionBox.vue'
 
 // 图片资源
@@ -321,6 +323,7 @@ const open = (url: string): void => {
 }
 
 const router = useRouter()
+const { t: $t } = useI18n()
 </script>
 
 <style scoped lang="scss">

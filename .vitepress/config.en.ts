@@ -303,6 +303,10 @@ const initENThemeConfig = {
     pattern:
       'https://github.com/SonicCloudOrg/sonic-offical-website/edit/main/src/:path',
     text: 'Edit this page on GitHub'
+  },
+  // 页脚配置
+  footer: {
+    copyright: 'Copyright © All Rights Reserved Sonic Project for SonicCloudOrg'
   }
 }
 

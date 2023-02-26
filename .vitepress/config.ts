@@ -1,4 +1,4 @@
-import { UserConfig } from "vitepress";
+import { UserConfig } from 'vitepress'
 import anchor from 'markdown-it-anchor'
 import { jumpToNewURL } from './theme/helper'
 import initCNThemeConfig from './config.cn'
@@ -111,8 +111,8 @@ export default {
       ]
     },
     locales: {
-      "/": initCNThemeConfig,
-      "/en/": initENThemeConfig
+      '/': initCNThemeConfig,
+      '/en/': initENThemeConfig
     },
 
     // 搜索相关配置
@@ -165,19 +165,13 @@ export default {
     // 网站 logo & title
     logo: 'https://sonic-cloud.cn/logo-full.png',
     // 是否显示副标题
-    siteTitle: false,
-
-    // 页脚配置
-    footer: {
-      copyright:
-        'Copyright © All Rights Reserved Sonic Project for SonicCloudOrg 版权所有'
-    }
+    siteTitle: false
   },
 
   // vite config
   vite: {
     server: {
-      host: true,
+      host: true
     }
   },
 
