@@ -3,6 +3,7 @@ import anchor from 'markdown-it-anchor'
 import { jumpToNewURL } from './theme/helper'
 import initCNThemeConfig from './config.cn'
 import initENThemeConfig from './config.en'
+import { LOCALE } from './theme/config/locale'
 
 // 社交链接配置（导航栏右侧）
 const socialLinks = [
@@ -18,14 +19,14 @@ const socialLinks = [
 export default {
   locales: {
     '/': {
-      lang: 'zh-CN',
+      lang: LOCALE.ZH_CN,
       title: 'Sonic',
       titleTemplate: 'Sonic - 开源云真机平台',
       description:
         'For You, For Free, Forever. 免费开源的云真机平台，用心打造更好的使用体验。 Made with 🧡 by SonicCloudOrg.'
     },
     '/en/': {
-      lang: 'en-US',
+      lang: LOCALE.EN_US,
       title: 'Sonic',
       titleTemplate: 'Sonic - Open source cloud virtual machine platform',
       description:

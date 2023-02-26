@@ -35,7 +35,7 @@ const nav = [
   },
   {
     text: '版本记录',
-    link: '/version-record'
+    link: '/en/version-record'
   },
   {
     text: '关于',
