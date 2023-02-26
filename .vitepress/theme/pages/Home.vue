@@ -244,7 +244,6 @@
 </template>
 
 <script setup lang="ts">
-import { useI18n } from 'vue-i18n'
 import SectionBox from '../components/SectionBox.vue'
 
 // 图片资源
@@ -323,7 +322,6 @@ const open = (url: string): void => {
 }
 
 const router = useRouter()
-const { t: $t } = useI18n()
 </script>
 
 <style scoped lang="scss">
@@ -337,10 +335,12 @@ const { t: $t } = useI18n()
   left: 0;
   /* 减去顶部导航栏高度 */
   height: calc(100vh - 72px);
-  padding: 120px 0;
+  padding: 120px 100px;
   overflow-x: hidden;
 
   &__left {
+    flex: 1;
+    min-width: 580px;
     margin-right: 50px;
     text-align: center;
   }

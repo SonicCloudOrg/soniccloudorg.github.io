@@ -50,7 +50,7 @@ export default {
     [
       'meta',
       {
-        'http-equiv': 'pragram',
+        'http-equiv': 'pragma',
         content: 'no-cache'
       }
     ],
