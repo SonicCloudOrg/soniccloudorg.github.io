@@ -20,11 +20,27 @@
 </template>
 
 <script setup>
+import { watch } from 'vue'
 import DefaultTheme from 'vitepress/theme'
+import { useData } from 'vitepress'
+import { updateI18nLanguage } from '../locales/useLocale'
 import ContributorList from '../components/ContributorList.vue'
 import DocAsideSponsors from '../components/DocAsideSponsors.vue'
 import DocAsideADs from '../components/DocAsideADs.vue'
 import QuestionFloat from '../components/QuestionFloat.vue'
 
 const { Layout } = DefaultTheme
+
+const { lang } = useData()
+
+// 监听语言切换
+watch(
+  lang,
+  (newLang) => {
+    updateI18nLanguage(newLang)
+  },
+  {
+    immediate: true
+  }
+)
 </script>

@@ -25,6 +25,7 @@ import Layout from './pages/Layout.vue'
 import NotFound from './pages/NotFound.vue'
 import ContributorList from './components/ContributorList.vue'
 
+import { setupI18n } from './locales/setupI18n'
 import './styles/index.css'
 
 const theme: Theme = {
@@ -51,6 +52,8 @@ const theme: Theme = {
     app.use(ElProgress)
     // 自定义组件
     app.component('ContributorList', ContributorList)
+    // 国际化
+    setupI18n(app)
   }
 } as Theme
 
