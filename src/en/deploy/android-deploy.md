@@ -1,103 +1,103 @@
 ---
 contributors:
-  - 'ZhouYixun'
-  - 'wuxiangin'
-  - 'lanlanz'
-  - 'shinyvince'
+- 'ZhouYixun'
+- 'wuxiangin'
+- 'lanlanz'
+- 'shinyvince'
 ---
 
-# 安卓设备接入
+# Android device access
 
-本文将介绍安卓设备接入 Sonic 相关内容。
+This article will introduce the related content of connecting Android devices to Sonic.
 
-## 通用接入步骤
+## General access steps
 
-所有设备都需要按照这个步骤接入。
+All devices need to be connected according to this step.
 
-1. 将 usb 线一端插入 Agent，另一端插入手机
-2. 进入手机【设置】页面
-3. 进入【关于手机】页面
-4. 点击多次【版本号】（不同品牌的差异请往下查找），直到开启开发者选项
-5. 进入开发者选项
-6. 打开 usb 调试
-7. 保持设备竖放或平放
+1. Plug one end of the usb cable into the Agent and the other end into the phone
+2. Enter the [Settings] page of the mobile phone
+3. Go to the [About Phone] page
+4. Click [Version Number] multiple times (please look down for differences between different brands) until the developer option is enabled
+5. Go to developer options
+6. Turn on usb debugging
+7. Keep the device upright or flat
 
 ::: tip TIP
 
-如果需要进行性能信息采集，可以额外打开如下选项
-1. 开发者选项中点击【GPU呈现模式分析】（部分机型叫【HWUI呈现模式分析】）
-2. 在【GPU呈现模式分析】中，点击选中【在adb shell dumpsys gfxinfo中】
+If you need to collect performance information, you can additionally open the following options
+1. Click [GPU rendering mode analysis] in the developer options (some models are called [HWUI rendering mode analysis])
+2. In [GPU rendering mode analysis], click to select [in adb shell dumpsys gfxinfo]
 
-若升级Sonic后，Sonic 插件、uiautomator2、uiautomator2-test 的版本有更新，手机可能会还原相关电源优化。
-故需要重新检查一遍，确保Sonic 插件、uiautomator2、uiautomator2-test 电量优化关配置正确
+If the versions of Sonic plug-in, uiautomator2, and uiautomator2-test are updated after upgrading Sonic, the phone may restore related power optimization.
+Therefore, you need to check again to ensure that the Sonic plug-in, uiautomator2, and uiautomator2-test battery optimization are configured correctly.
 
 :::
 
-各品牌不同内容可往下翻阅 👇
+Different content of each brand can be read down 👇
 
-## 华为
+## HUAWEI
 
-1. 进入【设置】->【关于手机】->【版本号】多次点击开启开发者选项
-2. 进入开发者选项，关闭【监控 ADB 安装应用】
-3. 进入【系统和更新】->【语言和输入法】关闭安全键盘
+1. Go to [Settings] -> [About Phone] -> [Version Number] and click multiple times to open the developer options
+2. Enter the developer options, close [Monitor ADB installed applications]
+3. Go to【System and Update】->【Language and Input Method】to close the secure keyboard
 
-## 小米
+## XiaoMi
 
-1. 进入【设置】->【我的设备】->【全部参数】->【MIUI 版本】多次点击开启开发者选项
-2. 打开开发者页面，【USB 安装】和【USB 调试（安全模式）】打开，部分选项需要插入 SIM 卡，可以配置完成后拔出。
-3. 开发者最底下【MIUI 优化】关闭
-4. 前往手机管家，打开【应用管理】
-5. 点击【权限】
-6. 点击右上角设置 icon
-7. 关闭权限监控与 USB 安装监控
-8. 【语言与输入法】关闭安全键盘
-9. 【设置】->【省电与电池】右上角设置icon->【应用智能省电】
-10. 找到sonic、uiautomator2、uiautomator2-test -> 【无限制】
+1. Enter【Settings】->【My Device】->【All Parameters】->【MIUI Version】Multiple clicks to enable developer options
+2. Open the developer page, [USB installation] and [USB debugging (safe mode)] are turned on, and some options need to insert a SIM card, which can be pulled out after the configuration is completed.
+3. [MIUI Optimization] at the bottom of the developer is off
+4. Go to the phone manager and open [Application Management]
+5. Click [Permissions]
+6. Click the setting icon in the upper right corner
+7. Turn off permission monitoring and USB installation monitoring
+8. 【Language and input method】Turn off the safe keyboard
+9. [Settings] -> [Power Saving and Battery] Settings icon in the upper right corner -> [Application Smart Power Saving]
+10. Find sonic, uiautomator2, uiautomator2-test -> [unlimited]
 
 ## OPPO
 
-1. 进入【设置】->【系统管理】->【关于手机】->【版本信息】->【软件版本】多次点击开启开发者选项
-2. 进入开发者选项，开启最下方【禁止权限监控】，关闭【USB 验证应用】
-3. 打开系统电量设置
-4. 将 Sonic 插件、uiautomator2、uiautomator2-test 的电量优化关闭
-5. 【其他】->【键盘与输入法】关闭安全键盘
+1. Enter【Settings】->【System Management】->【About Phone】->【Version Information】->【Software Version】Multiple clicks to enable developer options
+2. Enter the developer options, open the bottom [Disable permission monitoring], close [USB verification application]
+3. Open the system power settings
+4. Turn off the power optimization of Sonic plug-in, uiautomator2, uiautomator2-test
+5. [Others] -> [Keyboard and Input Method] Close the safe keyboard
 
 ## vivo
 
-1. 进入【设置】->【系统管理】->【关于手机】->【版本信息】->【软件版本】多次点击开启开发者选项
-2. 进入开发者选项，开启【安全权限】与【USB 模拟点击】
-3. 【其他】->【键盘与输入法】关闭安全键盘
-4. 将 Sonic 插件、uiautomator2、uiautomator2-test 的电量优化关闭
+1. Enter【Settings】->【System Management】->【About Phone】->【Version Information】->【Software Version】Multiple clicks to enable developer options
+2. Enter the developer options, enable [Security Permissions] and [USB Simulate Click]
+3. [Others] -> [Keyboard and Input Method] Close the safe keyboard
+4. Turn off the power optimization of Sonic plug-in, uiautomator2, uiautomator2-test
 
 ## OnePlus
 
-1. 进入【设置】->【关于手机】->【版本号】多次点击开启开发者选项
-2. 进入【设置】->【系统】->【开发者选项】，开启【USB 调试】
-3. 进入【设置】->【系统】->【开发者选项】->【默认 USB 配置】选择文件传输
-4. 进入【设置】->【电池】->【电池优化】，将 Sonic 插件、uiautomator2、uiautomator2-test 的电量优化关闭（如果找不到，需要先进行第五步）
-5. 部分 OnePlus 需要开启【禁止权限监控】
+1. Go to [Settings] -> [About Phone] -> [Version Number] and click multiple times to open the developer options
+2. Go to [Settings] -> [System] -> [Developer Options] and enable [USB Debugging]
+3. Go to [Settings] -> [System] -> [Developer Options] -> [Default USB Configuration] to select file transfer
+4. Go to [Settings] -> [Battery] -> [Battery Optimization], turn off the power optimization of Sonic plug-in, uiautomator2, uiautomator2-test (if you can’t find it, you need to go to the fifth step first)
+5. Some OnePlus devices need to enable 【Prohibit Permission Monitoring】
 
-## 魅族
+## Meizu
 
-1. 打开【手机管家】->【设置】->【Flyme 支付保护】，将其关闭。
+1. Open [Mobile Manager] -> [Settings] -> [Flyme Payment Protection] and turn it off.
 
-## 常见问题（Q&A）
+## Frequently Asked Questions (Q&A)
 
-Q1: 远控后出现【Driver 初始化失败！】之类的提示
+Q1: [Driver initialization failed! 】Prompts such as
 
-A1: 查看日志会有多种情况：
+A1: There are many situations when viewing logs:
 
-1. 如果出现 apksigner 的字样，请确认安卓 SDK 的 built-tool 正确以及 platform-tool 下有 apksigner.jar
-2. 如果出现 shell 指令出错的字样，一般是设备权限没打开。
+1. If the word apksigner appears, please confirm that the built-tool of Android SDK is correct and there is apksigner.jar under platform-tool
+2. If the words "shell command error" appear, it is usually because the device permission is not enabled.
 
 ---
 
-Q2: OPPO 手机出现 requires:android.permission.WRITE_SECURE_SETTINGS 类似的提示
+Q2: The OPPO phone shows a prompt similar to requires:android.permission.WRITE_SECURE_SETTINGS
 
-A2: 一般是设备没有在开发者选项最下方开启【禁止权限监控】
+A2: Generally, the device has not enabled [Prohibit permission monitoring] at the bottom of the developer options.
 
 ---
 
 ::: tip
-更多疑问可前往 👉[社区](https://sonic-cloud.wiki)👈 交流
+For more questions, please go to 👉[Community](https://sonic-cloud.wiki)👈 to communicate
 :::

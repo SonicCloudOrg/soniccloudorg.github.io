@@ -1,31 +1,31 @@
 ---
 contributors:
-  - 'ZhouYixun'
-  - 'soniclei'
-  - 'shinyvince'
+- 'ZhouYixun'
+- 'soniclei'
+- 'shinyvince'
 ---
 
-# Agent 端部署
+# Agent side deployment
 
-本文将介绍如何部署 Agent 端。
+This article will introduce how to deploy the Agent side.
 
-::: tip 注意
-谨记一个主机只能部署一个 Agent 端，每个 Agent 的 Key 不能重复使用，多台设备可接入同一 Agent。
+::: tip note
+Remember that only one Agent can be deployed on one host, the Key of each Agent cannot be reused, and multiple devices can be connected to the same Agent.
 
-为了能正常使用，请保持与server版本一致。
+In order to use it normally, please keep it consistent with the server version.
 
-考虑到远控时带宽消耗以及数据传输速度等场景，建议 Agent 优先使用有线网络环境而不是无线网络。
+Considering scenarios such as bandwidth consumption and data transmission speed during remote control, it is recommended that the Agent use a wired network environment instead of a wireless network.
 :::
 
-## jar 方式部署
+## jar deployment
 
-该方式将以本地 jar 包部署 Agent 端、Appium 等等环境。
+This method will deploy Agent, Appium and other environments with local jar packages.
 
-1. **已知部分 JDK 出现不兼容的问题，Sonic 官方推荐使用 JDK15**，可以前往 [这里](https://docs.aws.amazon.com/corretto/latest/corretto-15-ug/downloads-list.html) 安装下载。
-2. 从部署好的前端界面【设备中心】的【Agent 中心】新增 Agent，记录 Agent 的 Key。
-3. （如不需要接入安卓设备可跳过）将安卓 SDK 设置到系统环境变量，命名为 ANDROID_HOME。打开 SDKManager，下载 **platform-tools**。确保 platform-tools 目录存在，adb 指令可用。
-4. 将 ANDROID_HOME、ANDROID_HOME/platform-tools 添加到系统 PATH 中。
-5. 选择 **PC 对应的平台 zip** 下载并解压到任意目录（标记为 **工作目录** ，**如以下加速链接失效**，请自行前往 <a href="https://github.com/SonicCloudOrg/sonic-agent/releases" target="_blank">这里</a> 下载）
+1. **Some JDKs are known to be incompatible. Sonic officially recommends using JDK15**, you can go [here](https://docs.aws.amazon.com/corretto/latest/corretto-15-ug/downloads-list.html) to install the downloads.
+2. Add an Agent from the [Agent Center] of the deployed front-end interface [Device Center], and record the Key of the Agent.
+3. (Skip if you do not need to connect to the Android device) Set the Android SDK to the system environment variable and name it ANDROID_HOME. Open SDKManager and download **platform-tools**. Make sure the platform-tools directory exists and the adb command is available.
+4. Add ANDROID_HOME, ANDROID_HOME/platform-tools to the system PATH.
+5. Select **PC corresponding platform zip** to download and unzip to any directory (marked as **working directory**, **if the following acceleration link fails**, please go to <a href="https://github.com/SonicCloudOrg/sonic-agent/releases" target="_blank">here</a> download)
 
 ::: info Linux
 
@@ -53,13 +53,13 @@ contributors:
 
 :::
 
-6. 赋予 **工作目录** 所有权限，然后确保解压后的 mini、config、plugins 文件夹与 jar 同级
+6. Grant all permissions to the **working directory**, and then make sure that the decompressed mini, config, plugins folders are at the same level as the jar
 
 ```bash
 $ sudo chmod -R 777 xxxxx
 ```
 
-然后可以列出文件夹检查一下。
+You can then list the folders to check.
 
 ```bash
 $ cd xxxxx
@@ -68,82 +68,82 @@ $ tree
 # ├─sonic-agent-xxxx.jar
 # │
 # ├─config
-# │   ├─application-sonic-agent.yml
+# │ ├─application-sonic-agent.yml
 # ├─plugins
 # ├─mini
 ```
 
-7. 修改 config 文件夹中 **application-sonic-agent.yml** 的配置信息，保存。
-8. 在 **工作目录** 路径下执行以下指令。
+7. Modify the configuration information of **application-sonic-agent.yml** in the config folder and save it.
+8. Execute the following commands under the path of **Working Directory**.
 
 ::: tip
-注意！如果你是 windows 用户，请先在控制台输入 `chcp 65001` 并回车，再输入以下指令
+Notice! If you are a windows user, please enter `chcp 65001` in the console and press Enter, and then enter the following command
 :::
 
 ```bash
 java -Dfile.encoding=utf-8 -jar sonic-agent-xxxx.jar
 ```
 
-9. 部署完毕！自行插入设备即可（设备请竖直放置或平摊放置，左右旋转放置有可能影响坐标定位）。
+9. Deployment complete! Just insert the device by yourself (please place the device vertically or flatly, and rotate it left and right may affect the coordinate positioning).
 
-## Docker 部署
+## Docker deployment
 
-::: danger 警告
-Docker部署仅 Ubuntu 可用！仅 Ubuntu 可用！仅 Ubuntu 可用！
+::: danger warning
+Docker deployment is only available for Ubuntu! Only available for Ubuntu! Only available for Ubuntu!
 
-非Ubuntu系统请使用上方 **jar方式部署**！
+For non-Ubuntu systems, please use the above **jar method to deploy**!
 :::
 
-该方式将一次性部署 Agent 端以及所需环境。
+This method will deploy the Agent and the required environment at one time.
 
-准备工作：Docker，Sonic 前后端部署完毕
+Preparatory work: Docker, Sonic front and back ends are deployed
 
-1. 从部署好的前端界面【设备中心】的【Agent 中心】新增 Agent，记录 Agent 的 Key。
-2. [点击这里](https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.3.2/docker-compose.yml) 下载最新的docker-compose.yml，参考注释修改里面的内容。（如加速链接失效，请自行前往 <a href="https://github.com/SonicCloudOrg/sonic-agent/releases" target="_black">这里</a> 下载）
-3. 执行以下指令（自行根据提示更改参数）。
+1. Add an Agent from the [Agent Center] of the deployed front-end interface [Device Center], and record the Key of the Agent.
+2. [Click here](https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.3.2/docker-compose.yml) to download the latest docker-compose. yml, refer to the comments to modify the content inside. (If the acceleration link fails, please go to <a href="https://github.com/SonicCloudOrg/sonic-agent/releases" target="_black">here</a> to download)
+3. Execute the following instructions (change the parameters by yourself according to the prompts).
 
 ```bash
 docker-compose up -d
 ```
-::: tip 如果您为中国大陆用户，出现访问DockerHub较慢的情况，可以从以下两点选择一个进行操作：
-- 配置国内加速镜像源（推荐）
-- <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.3.2/docker-compose-zh.yml" target="_blank">点击这里</a> 下载docker-compose-zh.yml后执行以下指令直接使用加速镜像（不推荐，加速源可能出现不稳定或网络波动，后续down的时候需要docker-compose -f docker-compose-zh.yml down）
+::: tip If you are a user from mainland China and access to DockerHub is slow, you can choose one of the following two points:
+- Configure domestic accelerated image sources (recommended)
+- <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.3.2/docker-compose-zh.yml" target="_blank"> Click here</a> to download docker-compose-zh.yml and execute the following instructions to directly use the accelerated image (not recommended, the acceleration source may be unstable or the network fluctuates, and docker-compose -f docker-compose- zh.yml down)
 ```bash
 docker-compose -f docker-compose-zh.yml up -d
 ```
 :::
-4. 部署完毕！自行插入设备即可。
-5. (附) 如果您对Docker不熟悉，更推荐使用jar方式部署。
+4. Deployment is complete! Just plug in the device yourself.
+5. (Appendix) If you are not familiar with Docker, it is recommended to use jar deployment.
 
-## 常见问题（Q&A）
+## Frequently Asked Questions (Q&A)
 
-Q1: 明明配置好了 ANDROID_HOME，并且 adb 可用，为什么还是检测不到 ANDROID_HOME？
+Q1: Obviously configured ANDROID_HOME, and adb is available, why is it still not detected ANDROID_HOME?
 
-A1: 需要配置好 ANDROID_HOME 之后，PATH 里面也需要配置好。确认 `echo %ANDROID_HOME%` (win) 或 `echo $ANDROID_HOME` (mac 或 linux) 输出正确。
-
----
-
-Q2: 查看日志发现与 Server 没有连上，该怎么解决？
-
-A2: 主要分为多种情况:
-
-1. Key 配置不正确，一个 Key 只能一个 Agent 使用。
-2. 所有 ip 不能使用 localhost、127.0.0.1 之类的配置。
+A1: After configuring ANDROID_HOME, PATH also needs to be configured. Verify that `echo %ANDROID_HOME%` (win) or `echo $ANDROID_HOME` (mac or linux) outputs correctly.
 
 ---
 
-Q3: 查看日志发现时区不对，宿主机的时区没有问题，该怎么解决？
+Q2: Check the log and find that it is not connected to the server, how to solve it?
 
-A3: 可以参考 [这个帖子](https://sonic-cloud.wiki/d/2297)
+A2: Mainly divided into a variety of situations:
+
+1. The Key configuration is incorrect, and a Key can only be used by one Agent.
+2. All ip cannot use localhost, 127.0.0.1 and other configurations.
 
 ---
 
-Q4: Mac上启动会有sonic-android-supply或其他插件安全弹窗？
+Q3: Check the logs and find that the time zone is incorrect, and the time zone of the host machine is correct. How to solve it?
 
-A4: Mac：系统偏好设置 -> 安全性与隐私 -> 通用，点击信任或仍要打开。
+A3: You can refer to [this post](https://sonic-cloud.wiki/d/2297)
+
+---
+
+Q4: There will be sonic-android-supply or other plug-in security pop-up windows when starting on Mac?
+
+A4: Mac: System Preferences -> Security & Privacy -> General, click Trust or Open anyway.
 
 ---
 
 ::: tip
-更多疑问可前往 👉[社区](https://sonic-cloud.wiki)👈 交流
+For more questions, please go to 👉[Community](https://sonic-cloud.wiki)👈 to communicate
 :::

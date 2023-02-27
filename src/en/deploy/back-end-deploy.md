@@ -50,49 +50,49 @@ docker-compose -f docker-compose-zh.yml up -d
 | MYSQL_PORT             | MySQL service port (default 3306）                                                                                                         | 3306                     |
 | MYSQL_DATABASE         | Data to be used by the Sonic service                                                                                                      | sonic                    |
 | MYSQL_USERNAME         | MySQL database user name                                                                                                                  | root                     |
-| MYSQL_PASSWORD         | MySQL password                                                                                                                            | Sonic!@#123              |
-| SECRET_KEY             | token 加密密钥（为提高安全性，不建议使用默认值，可以更改为其他任意字符串）                                                                                                  | sonic                    |
-| EXPIRE_DAY             | token 有效天数                                                                                                                                | 14                       |
-| PERMISSION_ENABLE      | 是否开启权限配置                                                                                                                                  | true                     |
-| PERMISSION_SUPER_ADMIN | 超管用户名                                                                                                                                     | sonic                    |
-| REGISTER_ENABLE        | 是否开启用户注册                                                                                                                                  | true                     |
-| NORMAL_USER_ENABLE     | 是否开启普通用户登录                                                                                                                                | true                     |
-| LDAP_USER_ENABLE       | 是否开启 LDAP 用户登录                                                                                                                            | true                     |
-| LDAP_USER_ID           | LDAP user id 搜索字段                                                                                                                         | cn                       |
-| LDAP_BASE_DN           | LDAP user 搜索用户组                                                                                                                           | users                    |
+| MYSQL_PASSWORD         | MySQL password                                                                                                                            | Sonic!Hello              |
+| SECRET_KEY             | Token secret key（To improve security, it is not recommended to use the default value, which can be changed to any other string）           | sonic                    |
+| EXPIRE_DAY             | Token expire day                                                                                                                          | 14                       |
+| PERMISSION_ENABLE      | Enable permission module                                                                                                                  | true                     |
+| PERMISSION_SUPER_ADMIN | Super admin user name                                                                                                                     | sonic                    |
+| REGISTER_ENABLE        | Enable register module                                                                                                                    | true                     |
+| NORMAL_USER_ENABLE     | Enable normal user login                                                                                                                  | true                     |
+| LDAP_USER_ENABLE       | Enable LDAP user login                                                                                                                    | true                     |
+| LDAP_USER_ID           | LDAP user id search                                                                                                                       | cn                       |
+| LDAP_BASE_DN           | LDAP user base dn                                                                                                                         | users                    |
 | LDAP_BASE              | LDAP Base DN                                                                                                                              | ou=system                |
-| LDAP_USERNAME          | LDAP Base DN 管理员用户名                                                                                                                       | uid=admin,ou=system      |
-| LDAP_PASSWORD          | LDAP Base DN 管理员密码                                                                                                                        | Sonic!@#123              |
-| LDAP_URL               | LDAP 服务 URL                                                                                                                               | ldap://192.168.0.1:10389 |
-| LDAP_OBJECT_CLASS      | LDAP 筛选 class，默认为 person                                                                                                                  | person                   |
+| LDAP_USERNAME          | LDAP Base DN admin username                                                                                                               | uid=admin,ou=system      |
+| LDAP_PASSWORD          | LDAP Base DN admin pwd                                                                                                                    | Sonic!@#123              |
+| LDAP_URL               | LDAP service URL                                                                                                                          | ldap://192.168.0.1:10389 |
+| LDAP_OBJECT_CLASS      | LDAP filter class, default person                                                                                                         | person                   |
 
-## 使用自己的 Eureka
+## Use your own Eureka
 
-如果您自己有 Eureka 服务，可以查看本小节。
+If you have your own Eureka service, you can view this section.
 
-1. 将 **docker-compose.yml** 文件去掉 Eureka 服务。
-2. 将 **docker-compose.yml** 的 SONIC_EUREKA_HOST 填写为自己 Eureka 服务的 host。
-3. 将.env 中的配置修改为自己 Eureka 服务的信息。
-4. 完成！
+1. Remove Eureka service from **docker-compose.yml** .
+2. Replace SONIC_EUREKA_HOST to your own Eureka service from **docker-compose.yml** .
+3. Replace your own Eureka service info form .env .
+4. Done!
 
-## 在 docker-compose.yml 中内置 MySQL（不推荐）
+## Built-in MySQL in docker-compose.yml（Not recommended）
 
-因 Docker 挂载时如果出现操作不当或数据迁移时的风险会引起 MySQL 容易数据丢失，因此 docker-compose.yml 默认没有附带 MySQL 镜像。
+Because MySQL is prone to data loss due to improper operation or data migration risks during Docker mounting, so docker-compose.yml does not come with a MySQL image by default.
 
-::: warning 警告
-该方式不一定兼容所有 Docker 版本与 Linux 系统与 Mysql 版本，操作前应当备份当前数据。而且更新时会导致 MySQL 容器停止与删除，因此推荐 MySQL 单独部署或使用已有 MySQL 服务。
+::: warning
+This method is not necessarily compatible with all Docker versions, Linux systems and Mysql versions, and the current data should be backed up before operation. Moreover, the MySQL container will be stopped and deleted during the update, so it is recommended to deploy MySQL alone or use the existing MySQL service.
 :::
 
-如果想 MySQL 随着 sonic 一同启动，你可以进行如下操作：
+If you want MySQL to start with sonic, you can do the following:
 
-1. 当前目录下创建`mysql`文件夹
+1. Create the `mysql` folder in the current directory
 
 ```shell
 mkdir -p mysql/log mysql/data mysql/conf
 ```
 
-2. 将.env 中的`MYSQL_HOST`改为`sonic-mysql`
-3. 在 docker-compose.yml 中加入以下 **注释部分** 的内容
+2. Change `MYSQL_HOST` in .env to `sonic-mysql`
+3. Add the following **comment section** to docker-compose.yml
 
 ```
 version: '3'
@@ -138,46 +138,46 @@ networks:
     driver: bridge
 ```
 
-4. 执行 `docker-compose up -d` 即可。
+4. Just execute `docker-compose up -d`.
 
-## 常见问题（Q&A）
+## Frequently Asked Questions（Q&A）
 
-Q1: 浏览器访问前端无误，但是注册时出现【系统出错了】或【发生未知异常】。
+Q1: The browser accesses the front end without errors, but 【system error】 or 【unknown exception occurred】 appears during registration.
 
-A1: 解决方案可参考 [这个帖子](https://sonic-cloud.wiki/d/35-sonic)
-
----
-
-Q2: 查看日志发现是 MySQL 没有连上，该怎么解决？
-
-A2: 主要分为多种情况:
-
-- MySQL 没有开启远程访问权限。
-- 因为采用 Docker 容器部署，127.0.0.1 或 localhost 这种 ip 地址是无效的。
-- 公司网络限制等等特殊情况。
-
-解决方案可参考 [这个帖子](https://sonic-cloud.wiki/d/33-mysql)。
+A1: The solution can refer to [this post](https://sonic-cloud.wiki/d/35-sonic)
 
 ---
 
-Q3: 目前文件挂载在 Docker 默认目录，怎样才能挂载到自定义的文件目录呢？
+Q2: Check the log and find that MySQL is not connected, how to solve it?
 
-A3: 解决方案可参考 [这个帖子](https://sonic-cloud.wiki/d/120-sonic)。
+A2: Mainly divided into a variety of situations:
+
+- MySQL does not have remote access permissions enabled.
+- Due to the deployment of Docker containers, ip addresses such as 127.0.0.1 or localhost are invalid.
+- Special circumstances such as corporate network restrictions.
+
+The solution can refer to [this post](https://sonic-cloud.wiki/d/33-mysql).
 
 ---
 
-Q4: Mac 系统解压后没看到.env 文件，怎么解决呢？
+Q3: At present, the files are mounted in the default directory of Docker, how can they be mounted to a custom file directory?
 
-A4: 解决方案可参考 [这个帖子](https://sonic-cloud.wiki/d/707-mac)
+A3: The solution can refer to [this post](https://sonic-cloud.wiki/d/120-sonic).
 
 ---
 
-Q5: Linux 系统解压后没看到.env 文件，怎么解决呢？
+Q4: The Mac system does not see the .env file after decompression, how to solve it?
 
-A5: 可以使用 ls -a 指令查看隐藏文件
+A4: The solution can refer to [this post](https://sonic-cloud.wiki/d/707-mac)
+
+---
+
+Q5: I don't see the .env file after decompressing the Linux system, how to solve it?
+
+A5: You can use the ls -a command to view hidden files
 
 ---
 
 ::: tip
-更多疑问可前往 👉[社区](https://sonic-cloud.wiki)👈 交流
+For more questions, please go to 👉[Community](https://sonic-cloud.wiki)👈 to communicate
 :::

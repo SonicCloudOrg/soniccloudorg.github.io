@@ -5,7 +5,7 @@ const nav = [
       {
         items: [
           { text: 'Deploy', link: '/en/deploy/back-end-deploy' },
-          { text: '使用文档', link: '/doc/doc-use' },
+          { text: 'Document', link: '/en/doc/doc-use' },
           { text: '开发文档', link: '/contribute/con-re' },
           { text: '企业案例', link: 'https://sonic-cloud.wiki/t/user' }
         ]
@@ -64,7 +64,7 @@ const sidebar = {
           text: 'Front and back end deploy',
           link: '/en/deploy/back-end-deploy'
         },
-        { text: 'Agent-side deployment', link: '/en/deploy/agent-deploy' },
+        { text: 'Agent deployment', link: '/en/deploy/agent-deploy' },
         { text: 'Version migration guide', link: '/en/deploy/upgrade-deploy' }
       ]
     },
@@ -76,71 +76,71 @@ const sidebar = {
       ]
     }
   ],
-  '/doc/': [
+  '/en/doc/': [
     {
-      text: '开始',
+      text: 'Start',
       items: [
-        { text: '快速上手', link: '/doc/doc-use' },
-        { text: '进阶教学', link: '/doc/doc-high' }
+        { text: 'Get started quickly', link: '/en/doc/doc-use' },
+        { text: 'Advanced Teaching', link: '/en/doc/doc-high' }
       ]
     },
     {
-      text: '远程控制相关',
+      text: 'Remote control related',
       items: [
-        { text: '控制面板', link: '/doc/doc-control' },
-        { text: '应用列表', link: '/doc/doc-app-list' },
-        { text: 'WebView/H5调试', link: '/doc/doc-webview' },
-        { text: '快速截图', link: '/doc/doc-quick-cap' },
-        { text: 'Terminal', link: '/doc/doc-terminal' },
-        { text: '网络抓包', link: '/doc/doc-proxy' },
-        { text: '控件获取', link: '/doc/doc-element' },
-        { text: '运行UI测试', link: '/doc/doc-run' },
-        { text: '性能监控', link: '/doc/doc-perfmon' },
-        { text: 'Agent中心', link: '/doc/doc-agent' },
-        { text: '设备中心', link: '/doc/doc-device' },
-        { text: '自动与强制解除占用', link: '/doc/doc-stop-debug' }
+        { text: 'Control Panel', link: '/en/doc/doc-control' },
+        { text: 'Application List', link: '/en/doc/doc-app-list' },
+        { text: 'WebView/H5 Debug', link: '/en/doc/doc-webview' },
+        { text: 'Quick screenshot', link: '/en/doc/doc-quick-cap' },
+        { text: 'Terminal', link: '/en/doc/doc-terminal' },
+        { text: 'Network capture', link: '/en/doc/doc-proxy' },
+        { text: 'Element capture', link: '/en/doc/doc-element' },
+        { text: 'Run UI tests', link: '/en/doc/doc-run' },
+        { text: 'Performance monitoring', link: '/en/doc/doc-perfmon' },
+        { text: 'Agent center', link: '/en/doc/doc-agent' },
+        { text: 'Device Center', link: '/en/doc/doc-device' },
+        { text: 'Automatic and Forced Unoccupied', link: '/en/doc/doc-stop-debug' }
       ]
     },
     {
-      text: '测试步骤相关',
+      text: 'Test step related',
       items: [
-        { text: '自定义脚本', link: '/doc/doc-script' },
-        { text: 'POCO控件', link: '/doc/doc-poco' },
-        { text: '切换WebView', link: '/doc/doc-to-webview' },
-        { text: 'Sonic输入法输入', link: '/doc/doc-keyboard' },
-        { text: '图像识别类', link: '/doc/doc-sift' },
-        { text: '迭代控件列表', link: '/doc/doc-iterator' }
+        { text: 'Custom script', link: '/en/doc/doc-script' },
+        { text: 'POCO Element', link: '/en/doc/doc-poco' },
+        { text: 'Switch WebView', link: '/en/doc/doc-to-webview' },
+        { text: 'Sonic Input', link: '/en/doc/doc-keyboard' },
+        { text: 'Image recognition', link: '/en/doc/doc-sift' },
+        { text: 'Iterate list of elements', link: '/en/doc/doc-iterator' }
       ]
     },
     {
-      text: '测试管理相关',
+      text: 'Test management related',
       items: [
-        { text: '控件元素', link: '/doc/doc-element-manage' },
-        { text: '测试用例', link: '/doc/doc-cases' },
-        { text: '测试步骤', link: '/doc/doc-steps' },
-        { text: '公共步骤', link: '/doc/doc-pub' },
-        { text: '全局参数', link: '/doc/doc-global' },
-        { text: '测试套件', link: '/doc/doc-suite' },
-        { text: '定时任务', link: '/doc/doc-quartz' },
-        { text: '测试结果', link: '/doc/doc-result' }
+        { text: 'Elements', link: '/en/doc/doc-element-manage' },
+        { text: 'Test case', link: '/en/doc/doc-cases' },
+        { text: 'Test step', link: '/en/doc/doc-steps' },
+        { text: 'Public step', link: '/en/doc/doc-pub' },
+        { text: 'Global parameters', link: '/en/doc/doc-global' },
+        { text: 'Test suite', link: '/en/doc/doc-suite' },
+        { text: 'Timed task', link: '/en/doc/doc-quartz' },
+        { text: 'Test result', link: '/en/doc/doc-result' }
       ]
     },
     {
-      text: '项目管理相关',
+      text: 'Project management related',
       items: [
-        { text: '项目管理', link: '/doc/doc-project' },
-        { text: '通知机器人', link: '/doc/doc-robot' },
-        { text: '版本管理', link: '/doc/doc-version' },
-        { text: '模块管理', link: '/doc/doc-module' }
+        { text: 'Project management', link: '/en/doc/doc-project' },
+        { text: 'Notify bot', link: '/en/doc/doc-robot' },
+        { text: 'Version management', link: '/en/doc/doc-version' },
+        { text: 'Module management', link: '/en/doc/doc-module' }
       ]
     },
     {
-      text: '后台管理中心',
+      text: 'Background management center',
       items: [
-        { text: '资源管理', link: '/doc/doc-resource' },
-        { text: '角色管理', link: '/doc/doc-role' },
-        { text: '用户配置', link: '/doc/doc-user' },
-        { text: '系统定时任务', link: '/doc/doc-sys-job' }
+        { text: 'Resource management', link: '/en/doc/doc-resource' },
+        { text: 'Role management', link: '/en/doc/doc-role' },
+        { text: 'User management', link: '/en/doc/doc-user' },
+        { text: 'System timing task', link: '/en/doc/doc-sys-job' }
       ]
     }
   ],

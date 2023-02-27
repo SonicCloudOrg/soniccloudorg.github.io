@@ -1,80 +1,80 @@
 ---
 contributors:
-  - 'ZhouYixun'
-  - 'soniclei'
-  - 'shinyvince'
+- 'ZhouYixun'
+- 'soniclei'
+- 'shinyvince'
 ---
 
-# iOS 设备接入
+# iOS device access
 
-本文将介绍 iOS 设备接入 Sonic 的准备工作。
+This article will introduce the preparations for connecting iOS devices to Sonic.
 
-## 接入通用配置
+## Access common configuration
 
-1. 将设备使用 USB 连接电脑
-2. 点击【信任】电脑
-3. 将 WebDriverAgent 构建到设备中（首次连接需要，可参考下方构建教学）
-4. 网页调试相关设置：设置 → Safari浏览器 → 高级 → 打开【网页检查器】
-5. 关闭手机锁屏密码：设置 → 面容ID与密码 → 关闭密码（不关闭可能出现远程使用时sonic一直显示连接中且手机阻塞在输入密码页）
+1. Connect the device to the computer via USB
+2. Click【Trust】Computer
+3. Build WebDriverAgent into the device (required for the first connection, please refer to the construction tutorial below)
+4. Settings related to webpage debugging: Settings → Safari → Advanced → Open [Webpage Inspector]
+5. Turn off the phone lock screen password: Settings → Face ID and password → turn off the password (if it is not turned off, the sonic may always display the connection and the phone is blocked on the password input page when using it remotely)
 
-## iOS16 特殊配置
+## iOS16 special configuration
 
-iOS16 需要手动开启开发者选项。
+iOS16 needs to manually enable the developer options.
 
-1. 打开设置，进入【隐私与安全性】。
-2. 点击【开发者模式】。
-3. 如果出现提示重启弹窗，点击重启。
-4. 如果启动后询问是否打开开发者模式，点击打开。
+1. Open Settings and enter [Privacy and Security].
+2. Click [Developer Mode].
+3. If a pop-up prompting to restart appears, click Restart.
+4. If you are asked whether to enable the developer mode after startup, click Open.
 
-## 构建 WebDriverAgent 到设备中
+## Build WebDriverAgent into the device
 
-构建 wda 到你的 iOS 设备中。
-::: tip 注意
-构建成功后即可脱离 Mac，在 Windows 或 Linux 的 Agent 上也可以使用 iOS 设备。准备个人免费证书（7 天过期），最好还是使用开发者账户。
+Build wda to your iOS device.
+::: tip note
+After the build is successful, it can be separated from the Mac, and the iOS device can also be used on the Agent of Windows or Linux. Prepare a personal free certificate (expires in 7 days), preferably with a developer account.
 :::
-准备工作：Mac、Xcode、开发者账户。
+Preparations: Mac, Xcode, developer account.
 
-1. 拉取 WebDriverAgent 项目。
+1. Pull the WebDriverAgent project.
 
 ```bash
 git clone https://github.com/appium/WebDriverAgent
-# 或
+# or
 git clone https://github.com/SonicCloudOrg/sonic-ios-wda.git
 ```
 
-2. 修改 **WebDriverAgentLib** 和 **WebDriverAgentRunner** 中的 Signing Team 为自己的开发者账号。
+2. Change the Signing Team in **WebDriverAgentLib** and **WebDriverAgentRunner** to your own developer account.
 
 ![ios1](./images/ios1.png)
 
-3. 修改 **WebDriverAgentRunner** 中 Build Settings 中的 **Product Bundle Identifier**
-   为自己的自定义包名（最好保留 WebDriverAgentRunner 结尾）
+3. Modify **Product Bundle Identifier** in Build Settings in **WebDriverAgentRunner**
+   For your own custom package name (preferably keep the end of WebDriverAgentRunner)
 
 ![ios2](./images/ios2.png)
 
-::: warning 注意
-部分 Xcode 版本在修改包名后会重置签名的 Team，需重新更改第二步中的签名
+::: warning note
+Some Xcode versions will reset the signed Team after modifying the package name, and the signature in the second step needs to be changed again
 :::
 
-4. Scheme 选择 **WebDriverAgentRunner** 作为构建目标，右侧选择目标设备。然后选择 Product -> Build 即可构建。如果想测试
-   WebDriverAgent 是否能正常运行，也可以选择 Product -> Test 查看运行日志。
+4. Select **WebDriverAgentRunner** as the build target for Scheme, and select the target device on the right. Then select Product -> Build to build. if you want to test
+   Whether WebDriverAgent can run normally, you can also select Product -> Test to view the operation log.
 
 ![ios3](./images/ios3.png)
 
-::: warning 注意
-如果构建到手机上有错误，可能是因为没有信任证书引起的。请连接网络后，在设置--通用--描述文件与管理里面信任即可。
+::: warning note
+If there is an error building to the phone, it may be caused by not having a trusted certificate. After connecting to the network, please trust it in Settings--General--Description File and Management.
 :::
 
-5. 构建完成！可以前往 Agent 端 config 文件夹的 yml 文件中配置对应的自定义 BundleId 即可。
+5. Build complete! You can configure the corresponding custom BundleId in the yml file in the config folder on the Agent side.
 
-::: tip 注意
-接入完成后，后续可以脱离 Mac 来使用 iOS（Windows 需要安装 iTunes），如果证书过期，需要重新使用 Mac 安装证书
+::: tip note
+After the access is completed, you can use iOS without the Mac (Windows needs to install iTunes). If the certificate expires, you need to re-use the Mac to install the certificate
 :::
 
-## 构建 ipa 文件
+## Build the ipa file
 
-如果只想构建一次，然后打包成 wda.ipa 共享给其他设备，可以参考这个方式。
+If you only want to build it once and then package it into wda.ipa to share with other devices, you can refer to this method.
 
-手机 udId 必须在开发者账号下。
+The phone udId must be under the developer account.
 
 ```bash
 $ xcodebuild build-for-testing -scheme WebDriverAgentRunner -sdk iphoneos -configuration Release -derivedDataPath /tmp/derivedDataPath
@@ -86,23 +86,23 @@ $ sib app install WDA.ipa
 ```
 
 ::: tip
-关于 sib 的使用，可前往周边生态。
+For the use of sib, you can go to the surrounding ecology.
 :::
 
-## 常见问题（Q&A）
+## Frequently Asked Questions (Q&A)
 
-Q1: 打包 wda 后启动失败。
+Q1: Failed to start after packaging wda.
 
-A1: 请检查 yml 中配置的 bundleId 是否一致、设备是否信任了证书、设备是否信任了电脑。
+A1: Please check whether the bundleId configured in yml is consistent, whether the device trusts the certificate, and whether the device trusts the computer.
 
 ---
 
-Q2: 使用后没有出现画面，但是按键操作正常。
+Q2: No screen appears after use, but the key operation is normal.
 
-A1: 解决方案可参考 [这个帖子](https://sonic-cloud.wiki/d/27-ios)。
+A1: The solution can refer to [this post](https://sonic-cloud.wiki/d/27-ios).
 
 ---
 
 ::: tip
-更多疑问可前往 👉[社区](https://sonic-cloud.wiki)👈 交流
+For more questions, please go to 👉[Community](https://sonic-cloud.wiki)👈 to communicate
 :::
