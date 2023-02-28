@@ -47,4 +47,4 @@ The middle area is the hierarchical structure of the real-time element tree. You
 
 ## Right area
 
-The right area is the detailed information of the element. If the project is associated in [UI Automation] or here, the element information can be saved to the project, and then directly referenced in the automation. If it needs to be used for image recognition, you can use [Control Snapshot] to save it directly.
+The right area is the detailed information of the element. If the project is associated in [UI Automation] or here, the element information can be saved to the project, and then directly referenced in the automation. If it needs to be used for image recognition, you can use [Snapshot] to save it directly.
