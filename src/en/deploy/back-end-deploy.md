@@ -43,8 +43,8 @@ docker-compose -f docker-compose-zh.yml up -d
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|--------------------------|
 | SONIC_SERVER_HOST      | localhost or 127.0.0.1 cannot be used as the ipv4 address of the machine where the sonic-server is deployed. **can use domain names.**    | 192.168.0.1              |
 | SONIC_SERVER_PORT      | The whole server is exposed to external ports. The default port is 3000. **can use 80**                                                   | 3000                     |
-| SONIC_EUREKA_USERNAME  | User name for Eureka (For security purposes, the default value is not recommended, but can be changed to any other string, excluding `@`) | sonic                    |
-| SONIC_EUREKA_PASSWORD  | Eureka password (For security purposes, the default value is not recommended. You can change it to any other string, excluding `@`)       | sonic                    |
+| SONIC_EUREKA_USERNAME  | User name for Eureka (For security purposes, the default value is not recommended, but can be changed to any other string, excluding `@` and `%`) | sonic                    |
+| SONIC_EUREKA_PASSWORD  | Eureka password (For security purposes, the default value is not recommended. You can change it to any other string, excluding `@` and `%`)       | sonic                    |
 | SONIC_EUREKA_PORT      | Eureka start port (usually no change is required）                                                                                         | 9090                     |
 | MYSQL_HOST             | The host of the MySQL service cannot be localhost or 127.0.0.1.                                                                           | 192.168.0.1              |
 | MYSQL_PORT             | MySQL service port (default 3306）                                                                                                         | 3306                     |
