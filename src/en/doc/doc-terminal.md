@@ -3,7 +3,7 @@ contributors:
 - 'ZhouYixun'
 ---
 
-#Terminal
+# Terminal
 
 Here is an introduction to how to use Terminal.
 
