@@ -208,7 +208,8 @@ export default [
       },
       {
         title: "修复sonic-ios-bridge -e参数多个“=”时会被分割掉的问题",
-        url: "https://sonic-cloud.wiki/d/2714-sonic-ios-bridge-e"
+        url: "https://sonic-cloud.wiki/d/2714-sonic-ios-bridge-e",
+        done: true
       },
       {
         title:"优化安卓应用包名不存在时激活APP的错误提示",
