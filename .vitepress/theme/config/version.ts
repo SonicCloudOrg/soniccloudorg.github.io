@@ -177,6 +177,10 @@ export default [
         title: "单个测试步骤新增开关按钮，关闭后将忽略其运行",
         url: "https://github.com/SonicCloudOrg/sonic-server/issues/58"
       },
+      {
+        title: "针对项目级别添加角色相关权限配置",
+        url: "https://sonic-cloud.wiki/d/958"
+      }
     ],
     fix: [
       {
@@ -193,6 +197,14 @@ export default [
         title: "修复测试套件执行异常时，上报了2次结果状态的问题",
         url: "https://github.com/SonicCloudOrg/sonic-agent/pull/311",
         done: true
+      },
+      {
+        title: "修复执行多个公共步骤时出现最后公共步骤执行失败报IGNORE异常的问题",
+        url: "https://sonic-cloud.wiki/d/2708-v232-ignore"
+      },
+      {
+        title: "修复sonic-ios-bridge -e参数多个“=”时会被分割掉的问题",
+        url: "https://sonic-cloud.wiki/d/2714-sonic-ios-bridge-e"
       }
     ],
     con: getCon("ZhouYixun", "chenyan-master")
