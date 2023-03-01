@@ -204,7 +204,7 @@ export default [
       },
       {
         title: "修复执行多个公共步骤时出现最后公共步骤执行失败报IGNORE异常的问题",
-        url: "https://sonic-cloud.wiki/d/2708-v232-ignore"
+        url: "https://sonic-cloud.wiki/d/2708"
       },
       {
         title: "修复sonic-ios-bridge run xctest -e参数多个“=”时会被分割掉的问题",
