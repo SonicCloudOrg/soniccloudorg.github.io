@@ -207,7 +207,7 @@ export default [
         url: "https://sonic-cloud.wiki/d/2708-v232-ignore"
       },
       {
-        title: "修复sonic-ios-bridge -e参数多个“=”时会被分割掉的问题",
+        title: "修复sonic-ios-bridge run xctest -e参数多个“=”时会被分割掉的问题",
         url: "https://sonic-cloud.wiki/d/2714-sonic-ios-bridge-e",
         done: true
       },
