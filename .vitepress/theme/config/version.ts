@@ -134,6 +134,10 @@ const cons: Cons = [
   {
     name: 'stephenwang1011',
     avatar: "3350356"
+  },
+   {
+    name: 'jacksonhou',
+    avatar: "4811022"
   }
 ]
 
@@ -205,9 +209,14 @@ export default [
       {
         title: "修复sonic-ios-bridge -e参数多个“=”时会被分割掉的问题",
         url: "https://sonic-cloud.wiki/d/2714-sonic-ios-bridge-e"
+      },
+      {
+        title:"优化安卓应用包名不存在时激活APP的错误提示",
+        url: "https://sonic-cloud.wiki/d/2618",
+        done: true
       }
     ],
-    con: getCon("ZhouYixun", "chenyan-master")
+    con: getCon("ZhouYixun", "chenyan-master","jacksonhou")
   },
   {
     version: "v2.3.2",
