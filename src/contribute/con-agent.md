@@ -25,7 +25,7 @@ contributors:
 
 1. Fork [sonic-agent](https://github.com/SonicCloudOrg/sonic-agent) 仓库。
 2. 执行git clone指令，将您的仓库代码克隆到本地。
-3. 根据注释修改config的application-sonic-agent.yml，开发环境时，**sonic.server.port** 填写为gateway服务端口。如果是开发环境的Agent连接生产环境的Server，还需将`pom.xml`中的`releaseMode`改为 **true**。
+3. 根据注释修改config的application-sonic-agent.yml，开发环境时，**sonic.server.port** 填写为gateway服务端口（默认为8094）。如果是开发环境的Agent连接生产环境的Server，还需将`pom.xml`中的`releaseMode`改为 **true**。
 ::: tip TIPS: 如果是v2.1.2以下版本
 需要去掉 **org/cloud/sonic/agent/transport/TransportConnectionThread.java** 与 **org/cloud/sonic/agent/tools/file/UploadTools.java** url中的 **/server**
 ::: 
