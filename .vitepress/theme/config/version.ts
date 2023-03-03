@@ -191,7 +191,9 @@ export default [
         title: "优化本地开发环境部署方式，使其更便捷"
       },
       {
-        title: "优化测试报告查找逻辑，使其更响应迅速"
+        title: "优化测试报告查找逻辑，使其更响应迅速",
+        url: "https://github.com/SonicCloudOrg/sonic-client-web/pull/236",
+        done: true
       },
       {
         title: "修复安卓性能数据中System Network记录不正确的问题",
@@ -217,7 +219,7 @@ export default [
         done: true
       }
     ],
-    con: getCon("ZhouYixun", "chenyan-master","jacksonhou")
+    con: getCon("ZhouYixun", "yaming116","chenyan-master","jacksonhou")
   },
   {
     version: "v2.3.2",
