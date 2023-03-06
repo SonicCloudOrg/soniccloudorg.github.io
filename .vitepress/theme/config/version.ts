@@ -135,9 +135,13 @@ const cons: Cons = [
     name: 'stephenwang1011',
     avatar: "3350356"
   },
-   {
+  {
     name: 'jacksonhou',
     avatar: "4811022"
+  },
+  {
+    name: 'upengfei',
+    avatar: "18410330"
   }
 ]
 
@@ -184,6 +188,10 @@ export default [
       {
         title: "针对项目级别添加角色相关权限配置",
         url: "https://sonic-cloud.wiki/d/958"
+      },
+      {
+        title: "安卓与iOS新增步骤：从屏幕中心指定方向滑动",
+        url: "https://github.com/SonicCloudOrg/sonic-agent/pull/315"
       }
     ],
     fix: [
@@ -214,12 +222,22 @@ export default [
         done: true
       },
       {
-        title:"优化安卓应用包名不存在时激活APP的错误提示",
+        title: "优化安卓应用包名不存在时激活APP的错误提示",
         url: "https://sonic-cloud.wiki/d/2618",
+        done: true
+      },
+      {
+        title: "调整安卓控件长按时，从控件左上角更改为长按控件中心位置",
+        url: "https://github.com/SonicCloudOrg/sonic-agent/pull/315",
+        done: true
+      },
+      {
+        title: "调整iOSDriver请求超时从1分钟延长为5分钟",
+        url: "https://sonic-cloud.wiki/d/2747",
         done: true
       }
     ],
-    con: getCon("ZhouYixun", "yaming116","chenyan-master","jacksonhou")
+    con: getCon("ZhouYixun", "yaming116", "chenyan-master", "jacksonhou", "upengfei")
   },
   {
     version: "v2.3.2",
