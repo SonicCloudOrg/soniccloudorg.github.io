@@ -60,7 +60,8 @@ contributors:
 2. 进入开发者选项，开启最下方【禁止权限监控】，关闭【USB 验证应用】
 3. 打开系统电量设置
 4. 将 Sonic 插件、uiautomator2、uiautomator2-test 的电量优化关闭
-5. 【其他】->【键盘与输入法】关闭安全键盘
+5. 将 Sonic插件、uiautomator2、uiautomator2-test耗电行为设置为【完全允许后台行为】
+6. 【其他】->【键盘与输入法】关闭安全键盘
 
 ## vivo
 
@@ -68,6 +69,7 @@ contributors:
 2. 进入开发者选项，开启【安全权限】与【USB 模拟点击】
 3. 【其他】->【键盘与输入法】关闭安全键盘
 4. 将 Sonic 插件、uiautomator2、uiautomator2-test 的电量优化关闭
+5. 将 Sonic插件、uiautomator2、uiautomator2-test耗电行为设置为【完全允许后台行为】
 
 ## OnePlus
 
@@ -75,7 +77,8 @@ contributors:
 2. 进入【设置】->【系统】->【开发者选项】，开启【USB 调试】
 3. 进入【设置】->【系统】->【开发者选项】->【默认 USB 配置】选择文件传输
 4. 进入【设置】->【电池】->【电池优化】，将 Sonic 插件、uiautomator2、uiautomator2-test 的电量优化关闭（如果找不到，需要先进行第五步）
-5. 部分 OnePlus 需要开启【禁止权限监控】
+5. 将 Sonic插件、uiautomator2、uiautomator2-test耗电行为设置为【完全允许后台行为】
+6. 部分 OnePlus 需要开启【禁止权限监控】
 
 ## 魅族
 
