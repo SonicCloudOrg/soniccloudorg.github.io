@@ -191,7 +191,13 @@ export default [
       },
       {
         title: "安卓与iOS新增步骤：从屏幕中心指定方向滑动",
-        url: "https://github.com/SonicCloudOrg/sonic-agent/pull/315"
+        url: "https://github.com/SonicCloudOrg/sonic-agent/pull/315"，
+        done: true
+      },
+      {
+        title: "WebView新增步骤：滑动至页面顶部",
+        url: "https://github.com/SonicCloudOrg/sonic-agent/pull/315"，
+        done: true
       }
     ],
     fix: [
