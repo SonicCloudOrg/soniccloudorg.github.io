@@ -23,6 +23,10 @@ contributors:
 
 **准备工作**：**jdk15**、Idea
 
+::: warning 
+自v2.4.0起，jdk最低要求变更至jdk19
+:::
+
 1. Fork [sonic-server](https://github.com/SonicCloudOrg/sonic-server) 仓库。
 2. 执行git clone指令，将您的仓库代码克隆到本地。
 3. 根据注释修改/sonic-server-common下resources的yml，特别是mysql的配置，开发环境还需将application-sonic-server-folder.yml文件内的url的 **/server** 暂时隐藏。
