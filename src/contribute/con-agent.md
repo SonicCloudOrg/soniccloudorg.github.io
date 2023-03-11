@@ -23,6 +23,10 @@ contributors:
 
 **准备工作**：**jdk15**、Idea
 
+::: warning 
+自v2.4.0起，jdk最低要求变更至jdk19
+:::
+
 1. Fork [sonic-agent](https://github.com/SonicCloudOrg/sonic-agent) 仓库。
 2. 执行git clone指令，将您的仓库代码克隆到本地。
 3. 根据注释修改config的application-sonic-agent.yml，开发环境时，**sonic.server.port** 填写为gateway服务端口（默认为8094）。如果是开发环境的Agent连接生产环境的Server，还需将`pom.xml`中的`releaseMode`改为 **true**。
