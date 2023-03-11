@@ -169,9 +169,6 @@ export default [
         title: "sonic-vision-core服务迁移至server，减少Agent端图像处理压力，减少包体"
       },
       {
-        title: "新增WebView控件查找策略步骤"
-      },
-      {
         title: "补充测试报告的国际化建设"
       },
       {
@@ -179,7 +176,7 @@ export default [
         url: "https://sonic-cloud.wiki/d/1674"
       },
       {
-        title: "SpringBoot组件升级至3.x版本，解决低版本安全性问题",
+        title: "Server与Agent的最低jdk版本升级至jdk17，SpringBoot组件升级至3.x版本，解决低版本安全性问题",
         done: true
       },
       {
@@ -194,6 +191,9 @@ export default [
         title: "安卓与iOS新增步骤：从屏幕中心指定方向滑动",
         url: "https://github.com/SonicCloudOrg/sonic-agent/pull/315",
         done: true
+      },
+      {
+        title: "WebView新增步骤：设置WebView控件查找策略步骤"
       },
       {
         title: "WebView新增步骤：滑动至页面顶部",
@@ -212,7 +212,8 @@ export default [
       },
       {
         title: "修复安卓性能数据中System Network记录不正确的问题",
-        url: "https://sonic-cloud.wiki/d/2692"
+        url: "https://sonic-cloud.wiki/d/2692",
+        done: true
       },
       {
         title: "修复测试套件执行异常时，上报了2次结果状态的问题",
@@ -241,6 +242,21 @@ export default [
       {
         title: "调整iOSDriver请求超时从1分钟延长为5分钟",
         url: "https://sonic-cloud.wiki/d/2747",
+        done: true
+      },
+      {
+        title: "修复v2.3.2版本无法使用安卓远程音频的问题",
+        url: "https://sonic-cloud.wiki/d/2749",
+        done: true
+      },
+      {
+        title: "修复iOS运行步骤时无法从安装包列表安装ipa的问题",
+        url: "https://sonic-cloud.wiki/d/2697",
+        done: true
+      },
+      {
+        title: "优化原生控件、WebView控件、POCO控件同类型步骤的展示区分，减少用户选错步骤类型的场景",
+        url: "https://sonic-cloud.wiki/d/2483",
         done: true
       }
     ],
