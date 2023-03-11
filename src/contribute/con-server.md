@@ -24,7 +24,7 @@ contributors:
 **准备工作**：**jdk15**、Idea
 
 ::: warning 
-自v2.4.0起，jdk最低要求变更至jdk19
+自v2.4.0起，jdk最低要求变更至`jdk17`
 :::
 
 1. Fork [sonic-server](https://github.com/SonicCloudOrg/sonic-server) 仓库。

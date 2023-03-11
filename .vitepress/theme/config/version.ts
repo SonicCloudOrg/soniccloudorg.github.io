@@ -179,7 +179,8 @@ export default [
         url: "https://sonic-cloud.wiki/d/1674"
       },
       {
-        title: "SpringBoot组件升级至3.x版本，解决低版本安全性问题"
+        title: "SpringBoot组件升级至3.x版本，解决低版本安全性问题",
+        done: true
       },
       {
         title: "单个测试步骤新增开关按钮，关闭后将忽略其运行",
