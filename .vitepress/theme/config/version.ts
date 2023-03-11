@@ -206,7 +206,7 @@ export default [
         title: "优化本地开发环境部署方式，使其更便捷"
       },
       {
-        title: "优化测试报告查找逻辑，使其更响应迅速",
+        title: "优化测试报告页面性能信息图表渲染逻辑、减少卡顿，使其更响应迅速",
         url: "https://github.com/SonicCloudOrg/sonic-client-web/pull/236",
         done: true
       },
