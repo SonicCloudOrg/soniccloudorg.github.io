@@ -258,6 +258,10 @@ export default [
         title: "优化原生控件、WebView控件、POCO控件同类型步骤的展示区分，减少用户选错步骤类型的场景",
         url: "https://sonic-cloud.wiki/d/2483",
         done: true
+      },
+      {
+        title: "美化自定义脚本步骤在测试报告中的展示",
+        done: true
       }
     ],
     con: getCon("ZhouYixun", "yaming116", "chenyan-master", "jacksonhou", "upengfei")
