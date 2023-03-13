@@ -142,6 +142,10 @@ const cons: Cons = [
   {
     name: 'upengfei',
     avatar: "18410330"
+  },
+  {
+    name: 'shuaimiaoya',
+    avatar: "61032978"
   }
 ]
 
@@ -198,6 +202,11 @@ export default [
       {
         title: "WebView新增步骤：滑动至页面顶部",
         url: "https://github.com/SonicCloudOrg/sonic-agent/pull/315",
+        done: true
+      },
+      {
+        title: "自定义脚本在步骤列表页展示脚本备注",
+        url: "https://github.com/SonicCloudOrg/sonic-client-web/pull/237",
         done: true
       }
     ],
@@ -264,7 +273,7 @@ export default [
         done: true
       }
     ],
-    con: getCon("ZhouYixun", "yaming116", "chenyan-master", "jacksonhou", "upengfei")
+    con: getCon("ZhouYixun", "yaming116", "chenyan-master", "jacksonhou", "upengfei", "shuaimiaoya")
   },
   {
     version: "v2.3.2",
