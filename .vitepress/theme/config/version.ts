@@ -155,29 +155,14 @@ export default [
     time: "unknown",
     feat: [
       {
-        title: "支持Windows自动化与远控（初版）"
-      },
-      {
-        title: "支持创建UI监控者处理系统弹窗",
-        url: "https://sonic-cloud.wiki/d/531"
-      },
-      {
-        title: "支持项目配置多个通知机器人",
-        url: "https://sonic-cloud.wiki/d/2533"
-      },
-      {
         title: "iOS原生控件获取与属性断言补充value属性值",
-        url: "https://sonic-cloud.wiki/d/2676"
-      },
-      {
-        title: "sonic-vision-core服务迁移至server，减少Agent端图像处理压力，减少包体"
-      },
-      {
-        title: "补充测试报告的国际化建设"
+        url: "https://sonic-cloud.wiki/d/2676",
+        done: true
       },
       {
         title: "安卓与iOS远控页面应用程序列表新增停止单个应用功能",
-        url: "https://sonic-cloud.wiki/d/1674"
+        url: "https://sonic-cloud.wiki/d/1674",
+        done: true
       },
       {
         title: "Server与Agent的最低jdk版本升级至jdk17，SpringBoot组件升级至3.x版本，解决低版本安全性问题",
@@ -188,16 +173,13 @@ export default [
         url: "https://github.com/SonicCloudOrg/sonic-server/issues/58"
       },
       {
-        title: "针对项目级别添加角色相关权限配置",
-        url: "https://sonic-cloud.wiki/d/958"
-      },
-      {
         title: "安卓与iOS新增步骤：从屏幕中心指定方向滑动",
         url: "https://github.com/SonicCloudOrg/sonic-agent/pull/315",
         done: true
       },
       {
-        title: "WebView新增步骤：设置WebView控件查找策略步骤"
+        title: "WebView新增步骤：设置WebView控件查找策略步骤",
+        done: true
       },
       {
         title: "WebView新增步骤：滑动至页面顶部",
@@ -212,7 +194,8 @@ export default [
     ],
     fix: [
       {
-        title: "优化本地开发环境部署方式，使其更便捷"
+        title: "优化本地开发环境部署方式，使其更便捷",
+        done: true
       },
       {
         title: "优化测试报告页面性能信息图表渲染逻辑、减少卡顿，使其更响应迅速",
@@ -228,10 +211,6 @@ export default [
         title: "修复测试套件执行异常时，上报了2次结果状态的问题",
         url: "https://github.com/SonicCloudOrg/sonic-agent/pull/311",
         done: true
-      },
-      {
-        title: "修复执行多个公共步骤时出现最后公共步骤执行失败报IGNORE异常的问题",
-        url: "https://sonic-cloud.wiki/d/2708"
       },
       {
         title: "修复sonic-ios-bridge run xctest -e参数多个“=”时会被分割掉的问题",
