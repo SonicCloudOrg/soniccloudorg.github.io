@@ -21,11 +21,33 @@ contributors:
 
 ## 搭建步骤
 
-**准备工作**：**jdk15**、Idea
+### v2.4.0后版本
 
-::: warning 
-自v2.4.0起，jdk最低要求变更至`jdk17`
+**准备工作**：**jdk17**、Idea
+
+1. Fork [sonic-agent](https://github.com/SonicCloudOrg/sonic-agent) 仓库。
+2. 执行git clone指令，将您的仓库代码克隆到本地。
+3. 根据注释修改config的application-sonic-agent.yml，主要更改server和Agent的host。
+4. 默认plugins目录下缺少sonic-ios-bridge、sonic-android-supply和sonic-go-mitmproxy二进制文件，或者存在但是跟您开发环境的平台不一致，可以根据您的开发系统去仓库下载对应的包。
+::: tip 注意
+版本要对应resources/application.yml下的版本哦，如果不想下载，将application-sonic-agent.yml的ios、use-sas和sgm的enable改为false。
 :::
+5. 如果idea启动，记得更改pom.xml中properties.platform的平台。（旧版本代码只需idea选择对应profile）
+6. 启动AgentApplication。
+7. 恭喜，搭建完毕！
+8. 开发完毕后，push到自己的仓库，然后可以给Sonic原仓库提起pr哦！（建议贡献前先开启issue讨论，防止跟组织计划进度有冲突哦）
+
+#### 打包
+
+1. 更改pom.xml中properties.platform的平台。platform为您的平台，可选为 windows-x86, windows-x86_64, macosx-arm64, macosx-x86_64, linux-arm64, linux-x86, linux-x86_64
+2. 执行命令
+```bash
+mvn package
+```
+
+### v2.4.0前版本
+
+**准备工作**：**jdk15**、Idea
 
 1. Fork [sonic-agent](https://github.com/SonicCloudOrg/sonic-agent) 仓库。
 2. 执行git clone指令，将您的仓库代码克隆到本地。
@@ -42,7 +64,7 @@ contributors:
 7. 恭喜，搭建完毕！
 8. 开发完毕后，push到自己的仓库，然后可以给Sonic原仓库提起pr哦！（建议贡献前先开启issue讨论，防止跟组织计划进度有冲突哦）
 
-## 打包
+#### 打包
 
 1. 更改pom.xml中properties.platform的平台。platform为您的平台，可选为 windows-x86, windows-x86_64, macosx-arm64, macosx-x86_64, linux-arm64, linux-x86, linux-x86_64
 2. 执行命令
