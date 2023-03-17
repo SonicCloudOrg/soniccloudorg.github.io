@@ -32,7 +32,7 @@ npm install
 ```bash
 npm run dev
 ```
-5. 完成！浏览器打开 [localhost:3000](http://localhost:3000)
+5. 完成！浏览器打开 [localhost:3000](http://localhost:3000) 。（v2.4.0开始，本地端口更改为3002）
 6. 开发完毕后，push到自己的仓库，然后可以给Sonic原仓库提起pr哦！（建议贡献前先开启issue讨论，防止跟组织计划进度有冲突哦）
 
 ## 二次开发部署
