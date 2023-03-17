@@ -152,7 +152,7 @@ const cons: Cons = [
 export default [
   {
     version: "v2.4.0",
-    time: "unknown",
+    time: "2023/3/18",
     feat: [
       {
         title: "iOS原生控件获取与属性断言补充value属性值",
@@ -250,7 +250,10 @@ export default [
       {
         title: "美化自定义脚本步骤在测试报告中的展示",
         done: true
-      }
+      },
+      {
+        title: "修复iOS使用图像识别点击时坐标不正确导致无效的问题"
+      },
     ],
     con: getCon("ZhouYixun", "yaming116", "chenyan-master", "jacksonhou", "upengfei", "shuaimiaoya")
   },

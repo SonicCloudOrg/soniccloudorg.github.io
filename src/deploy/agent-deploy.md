@@ -21,7 +21,7 @@ contributors:
 
 该方式将以本地 jar 包部署 Agent 端、Appium 等等环境。
 
-1. **已知部分 JDK 出现不兼容的问题，Sonic 官方推荐使用 JDK15**，可以前往 [这里](https://docs.aws.amazon.com/corretto/latest/corretto-15-ug/downloads-list.html) 安装下载。
+1. **最低启动要求为JDK17**，可以前往 [这里](https://docs.aws.amazon.com/corretto/latest/corretto-17-ug/downloads-list.html) 安装下载。
 2. 从部署好的前端界面【设备中心】的【Agent 中心】新增 Agent，记录 Agent 的 Key。
 3. （如不需要接入安卓设备可跳过）将安卓 SDK 设置到系统环境变量，命名为 ANDROID_HOME。打开 SDKManager，下载 **platform-tools**。确保 platform-tools 目录存在，adb 指令可用。
 4. 将 ANDROID_HOME、ANDROID_HOME/platform-tools 添加到系统 PATH 中。

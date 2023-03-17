@@ -38,8 +38,8 @@ docker-compose -f docker-compose-zh.yml up -d
 |------------------------|------------------------------------------------------------------|--------------------------|
 | SONIC_SERVER_HOST      | 部署 sonic-server 机器的 ipv4 地址，不能使用 localhost、127.0.0.1。**可以使用域名。** | 192.168.0.1              |
 | SONIC_SERVER_PORT      | 整个服务端对外暴露端口，默认 3000。**可以使用 80**                                  | 3000                     |
-| SONIC_EUREKA_USERNAME  | Eureka 的用户名（为提高安全性，不建议使用默认值，可以更改为其他任意字符串，不能含`@`和`%`）                        | sonic                    |
-| SONIC_EUREKA_PASSWORD  | Eureka 的密码（为提高安全性，不建议使用默认值，可以更改为其他任意字符串，不能含`@`和`%`）                         | sonic                    |
+| SONIC_EUREKA_USERNAME  | Eureka 的用户名（为提高安全性，不建议使用默认值，可以更改为其他任意字符串，不能含`@`和`%`）             | sonic                    |
+| SONIC_EUREKA_PASSWORD  | Eureka 的密码（为提高安全性，不建议使用默认值，可以更改为其他任意字符串，不能含`@`和`%`）              | sonic                    |
 | SONIC_EUREKA_PORT      | Eureka 启动端口（一般不需要改动）                                             | 9090                     |
 | MYSQL_HOST             | MySQL 服务的 host，不能使用 localhost、127.0.0.1.                         | 192.168.0.1              |
 | MYSQL_PORT             | MySQL 服务的端口（一般默认为 3306）                                          | 3306                     |
