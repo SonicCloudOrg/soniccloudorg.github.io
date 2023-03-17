@@ -101,14 +101,14 @@ jobs:
           sch_old_ver_sub=${sch_old_ver:4}
           sed -i "s/${sch_old_ver}/sch_${sch_new_ver}/g" version.json
           sed -i "s/${sch_old_ver_sub}/${sch_new_ver}/g" src/sch/re-sch.md
-#      - name: replace server
-#        run: |
-#          ser_new_ver=${{ steps.ser-latest-tag.outputs.tag }}
-#          ser_old_ver=${{ env.test_ser }}
-#          ser_old_ver_sub=${ser_old_ver:4}
-#          sed -i "s/${ser_old_ver}/ser_${ser_new_ver}/g" version.json
-#          sed -i "s/${ser_old_ver_sub}/${ser_new_ver}/g" src/deploy/agent-deploy.md
-#          sed -i "s/${ser_old_ver_sub}/${ser_new_ver}/g" src/deploy/back-end-deploy.md
+      - name: replace server
+        run: |
+          ser_new_ver=${{ steps.ser-latest-tag.outputs.tag }}
+          ser_old_ver=${{ env.test_ser }}
+          ser_old_ver_sub=${ser_old_ver:4}
+          sed -i "s/${ser_old_ver}/ser_${ser_new_ver}/g" version.json
+          sed -i "s/${ser_old_ver_sub}/${ser_new_ver}/g" src/deploy/agent-deploy.md
+          sed -i "s/${ser_old_ver_sub}/${ser_new_ver}/g" src/deploy/back-end-deploy.md
       - name: Use Node.js 16.x
         uses: actions/setup-node@v2
         with:
