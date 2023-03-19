@@ -15,7 +15,7 @@ In this mode, the front and back ends are deployed at one time.
 preparatory work: docker-compose, Docker, MySQL
 
 1. Create a MySQL database. The database name can be customized. Note that the character set is utf8 and the collation rule is utf8_general_ci. If you want MySQL to start with Sonic (not recommended), refer to the `Built-in MySQL in docker-compose.yml` section at the bottom of this page.
-2. [Click here](https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-server/releases/download/v2.3.2/sonic-server-v2.3.2.zip) Download the latest version of the **zip** file to any directory. (If the accelerator link fails, please go by yourself <a href="https://github.com/SonicCloudOrg/sonic-server/releases" target="_black">here</a> download)
+2. [Click here](https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-server/releases/download/v2.4.0/sonic-server-v2.4.0.zip) Download the latest version of the **zip** file to any directory. (If the accelerator link fails, please go by yourself <a href="https://github.com/SonicCloudOrg/sonic-server/releases" target="_black">here</a> download)
 3. Unzip and change the information in.env. Do not modify docker-compose.yml file. For details about the env configuration item, see the following table. If your system does not display.env, see the solution at the bottom of the page under FAQs)
 4. Run the following command in the current directory
 
@@ -39,32 +39,32 @@ docker-compose -f docker-compose-zh.yml up -d
 
 ## .env configuration item description
 
-| params                 | description                                                                                                                               | example                  |
-|------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|--------------------------|
-| SONIC_SERVER_HOST      | localhost or 127.0.0.1 cannot be used as the ipv4 address of the machine where the sonic-server is deployed. **can use domain names.**    | 192.168.0.1              |
-| SONIC_SERVER_PORT      | The whole server is exposed to external ports. The default port is 3000. **can use 80**                                                   | 3000                     |
+| params                 | description                                                                                                                                       | example                  |
+|------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------|
+| SONIC_SERVER_HOST      | localhost or 127.0.0.1 cannot be used as the ipv4 address of the machine where the sonic-server is deployed. **can use domain names.**            | 192.168.0.1              |
+| SONIC_SERVER_PORT      | The whole server is exposed to external ports. The default port is 3000. **can use 80**                                                           | 3000                     |
 | SONIC_EUREKA_USERNAME  | User name for Eureka (For security purposes, the default value is not recommended, but can be changed to any other string, excluding `@` and `%`) | sonic                    |
 | SONIC_EUREKA_PASSWORD  | Eureka password (For security purposes, the default value is not recommended. You can change it to any other string, excluding `@` and `%`)       | sonic                    |
-| SONIC_EUREKA_PORT      | Eureka start port (usually no change is required）                                                                                         | 9090                     |
-| MYSQL_HOST             | The host of the MySQL service cannot be localhost or 127.0.0.1.                                                                           | 192.168.0.1              |
-| MYSQL_PORT             | MySQL service port (default 3306）                                                                                                         | 3306                     |
-| MYSQL_DATABASE         | Data to be used by the Sonic service                                                                                                      | sonic                    |
-| MYSQL_USERNAME         | MySQL database user name                                                                                                                  | root                     |
-| MYSQL_PASSWORD         | MySQL password                                                                                                                            | Sonic!Hello              |
-| SECRET_KEY             | Token secret key（To improve security, it is not recommended to use the default value, which can be changed to any other string）           | sonic                    |
-| EXPIRE_DAY             | Token expire day                                                                                                                          | 14                       |
-| PERMISSION_ENABLE      | Enable permission module                                                                                                                  | true                     |
-| PERMISSION_SUPER_ADMIN | Super admin user name                                                                                                                     | sonic                    |
-| REGISTER_ENABLE        | Enable register module                                                                                                                    | true                     |
-| NORMAL_USER_ENABLE     | Enable normal user login                                                                                                                  | true                     |
-| LDAP_USER_ENABLE       | Enable LDAP user login                                                                                                                    | true                     |
-| LDAP_USER_ID           | LDAP user id search                                                                                                                       | cn                       |
-| LDAP_BASE_DN           | LDAP user base dn                                                                                                                         | users                    |
-| LDAP_BASE              | LDAP Base DN                                                                                                                              | ou=system                |
-| LDAP_USERNAME          | LDAP Base DN admin username                                                                                                               | uid=admin,ou=system      |
-| LDAP_PASSWORD          | LDAP Base DN admin pwd                                                                                                                    | Sonic!@#123              |
-| LDAP_URL               | LDAP service URL                                                                                                                          | ldap://192.168.0.1:10389 |
-| LDAP_OBJECT_CLASS      | LDAP filter class, default person                                                                                                         | person                   |
+| SONIC_EUREKA_PORT      | Eureka start port (usually no change is required）                                                                                                 | 9090                     |
+| MYSQL_HOST             | The host of the MySQL service cannot be localhost or 127.0.0.1.                                                                                   | 192.168.0.1              |
+| MYSQL_PORT             | MySQL service port (default 3306）                                                                                                                 | 3306                     |
+| MYSQL_DATABASE         | Data to be used by the Sonic service                                                                                                              | sonic                    |
+| MYSQL_USERNAME         | MySQL database user name                                                                                                                          | root                     |
+| MYSQL_PASSWORD         | MySQL password                                                                                                                                    | Sonic!Hello              |
+| SECRET_KEY             | Token secret key（To improve security, it is not recommended to use the default value, which can be changed to any other string）                   | sonic                    |
+| EXPIRE_DAY             | Token expire day                                                                                                                                  | 14                       |
+| PERMISSION_ENABLE      | Enable permission module                                                                                                                          | true                     |
+| PERMISSION_SUPER_ADMIN | Super admin user name                                                                                                                             | sonic                    |
+| REGISTER_ENABLE        | Enable register module                                                                                                                            | true                     |
+| NORMAL_USER_ENABLE     | Enable normal user login                                                                                                                          | true                     |
+| LDAP_USER_ENABLE       | Enable LDAP user login                                                                                                                            | true                     |
+| LDAP_USER_ID           | LDAP user id search                                                                                                                               | cn                       |
+| LDAP_BASE_DN           | LDAP user base dn                                                                                                                                 | users                    |
+| LDAP_BASE              | LDAP Base DN                                                                                                                                      | ou=system                |
+| LDAP_USERNAME          | LDAP Base DN admin username                                                                                                                       | uid=admin,ou=system      |
+| LDAP_PASSWORD          | LDAP Base DN admin pwd                                                                                                                            | Sonic!@#123              |
+| LDAP_URL               | LDAP service URL                                                                                                                                  | ldap://192.168.0.1:10389 |
+| LDAP_OBJECT_CLASS      | LDAP filter class, default person                                                                                                                 | person                   |
 
 ## Use your own Eureka
 

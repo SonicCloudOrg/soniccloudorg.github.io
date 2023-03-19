@@ -109,6 +109,8 @@ jobs:
           sed -i "s/${ser_old_ver}/ser_${ser_new_ver}/g" version.json
           sed -i "s/${ser_old_ver_sub}/${ser_new_ver}/g" src/deploy/agent-deploy.md
           sed -i "s/${ser_old_ver_sub}/${ser_new_ver}/g" src/deploy/back-end-deploy.md
+          sed -i "s/${ser_old_ver_sub}/${ser_new_ver}/g" src/en/deploy/agent-deploy.md
+          sed -i "s/${ser_old_ver_sub}/${ser_new_ver}/g" src/en/deploy/back-end-deploy.md
       - name: Use Node.js 16.x
         uses: actions/setup-node@v2
         with:

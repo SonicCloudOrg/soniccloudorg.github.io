@@ -26,6 +26,12 @@ If there are bugs after `v2.1.0` goes online, then the next version will be `v2.
 
 For example, the previous version of `v2.2.0` is `v2.1.15`, then `v2.1.15` is the most stable version of `v2.1.x`
 
+## Upgrade from v2.0.x ~ v2.3.x to v2.4.0
+1. Back up the Mysql database before upgrading.
+2. Go directly to <a href="https://sonic-cloud.cn/deploy/back-end-deploy.html" target="_blank">here</a> to download the latest version zip, down cluster and then up again That's it. If the deployment directory is changed, the contents of the `keepFiles`, `imageFiles`, `recordFiles`, and `packageFiles` folders in the old directory should also be synchronized to the new directory (deployment documents include Chinese mainland accelerated image deployment methods)
+3. The jdk deployed by Agent jar requires upgrading to **jdk17**, you can go to <a href="https://sonic-cloud.cn/deploy/agent-deploy.html" target="_blank">here</ a> Download the zip and decompress it. The old version plugins folder and jar file need to be replaced for the update. The Docker version of Agent is the same as the server, just go to <a href="https://sonic-cloud.cn/deploy/agent-deploy.html" target="_blank">here</a> and re-download the image for deployment. (Deployment documents include accelerated image deployment methods in mainland China)
+4. Eureka default port changed from 9090 to 8761
+
 ## Upgrade from v1.4.1-release or above to v2.0.x ~ v2.3.x
 1. Back up the Mysql database before upgrading.
 2. Go directly to <a href="https://sonic-cloud.cn/deploy/back-end-deploy.html" target="_blank">here</a> to download the latest version zip, down cluster and then up again That's it. If the deployment directory is changed, the contents of the `keepFiles`, `imageFiles`, `recordFiles`, and `packageFiles` folders in the old directory should also be synchronized to the new directory (deployment documents include Chinese mainland accelerated image deployment methods)
