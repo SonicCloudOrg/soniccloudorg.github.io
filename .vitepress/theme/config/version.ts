@@ -156,7 +156,7 @@ export default [
     fix: [
       {
         title: "修复v2.4.0在新数据库部署时自动建表失效的问题",
-        url: "https://sonic-cloud.wiki/d/2813-sonic240"
+        url: "https://sonic-cloud.wiki/d/2813"
       },
       {
         title: "修复部分筛选搜索框搜索失效的问题"
