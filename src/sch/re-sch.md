@@ -39,7 +39,7 @@ contributors:
 1. 点击下载链接。如 **加速链接失效** 或 **想查找旧版本**，请前往 <a href="https://github.com/jenkinsci/sonic-ci-helper-plugin/releases" target="_blank">这里</a> 下载
 
 ::: info 下载地址
-👉<a href="https://download.fastgit.org/jenkinsci/sonic-ci-helper-plugin/releases/download/sonic-ci-helper-1.0.4/sonic-ci-helper.hpi" target="_blank">sonic-ci-helper-1.0.4.hpi</a>
+👉<a href="https://sg.mirror.servanamanaged.com/jenkins/plugins/sonic-ci-helper/1.0.4/sonic-ci-helper.hpi" target="_blank">sonic-ci-helper-1.0.4.hpi</a>
 :::
 
 2. 前往 Jenkins 的插件管理页面，选择手动安装插件，将 hpi 文件上传即可。  
