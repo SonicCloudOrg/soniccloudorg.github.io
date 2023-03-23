@@ -146,10 +146,34 @@ const cons: Cons = [
   {
     name: 'shuaimiaoya',
     avatar: "61032978"
+  },
+  {
+    name: "mmagi",
+    avatar: "3122149"
   }
 ]
 
 export default [
+  {
+    version: "v2.4.2",
+    time: "unknown",
+    fix: [
+      {
+        title: "修复2.4.x版本切换WebView会失败的问题",
+        url: "https://sonic-cloud.wiki/d/2824"
+      },
+      {
+        title: "修复2.4.x版本REST API文档加载失效的问题",
+        url: "https://github.com/SonicCloudOrg/sonic-server/issues/323"
+      },
+      {
+        title: "修复2.4.x版本LDAP登陆时的安全问题",
+        url: "https://github.com/SonicCloudOrg/sonic-server/pull/325",
+        done: true
+      }
+    ],
+    con: getCon("ZhouYixun", "mmagi")
+  },
   {
     version: "v2.4.1",
     time: "2023/3/20",
@@ -160,6 +184,9 @@ export default [
       },
       {
         title: "修复部分筛选搜索框搜索失效的问题"
+      },
+      {
+        title: "修复部分打包编码问题"
       }
     ],
     con: getCon("ZhouYixun")
