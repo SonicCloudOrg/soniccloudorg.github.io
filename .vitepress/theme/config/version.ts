@@ -160,7 +160,8 @@ export default [
     fix: [
       {
         title: "修复2.4.x版本切换WebView会失败的问题",
-        url: "https://sonic-cloud.wiki/d/2824"
+        url: "https://sonic-cloud.wiki/d/2824",
+        done: true
       },
       {
         title: "修复2.4.x版本REST API文档加载失效的问题",
@@ -170,6 +171,14 @@ export default [
         title: "修复2.4.x版本LDAP登陆时的安全问题",
         url: "https://github.com/SonicCloudOrg/sonic-server/pull/325",
         done: true
+      },
+      {
+        title: "再次修复2.4.x版本部分筛选搜索框搜索失效的问题",
+        url: "https://sonic-cloud.wiki/d/2856"
+      },
+      {
+        title: "修复执行多个公共步骤时，最后公共步骤执行失败报IGNORE异常的问题",
+        url: "https://sonic-cloud.wiki/d/2708"
       }
     ],
     con: getCon("ZhouYixun", "mmagi")
