@@ -178,7 +178,8 @@ export default [
       },
       {
         title: "修复执行多个公共步骤时，最后公共步骤执行失败报IGNORE异常的问题",
-        url: "https://sonic-cloud.wiki/d/2708"
+        url: "https://sonic-cloud.wiki/d/2708",
+        done: true
       }
     ],
     con: getCon("ZhouYixun", "mmagi")
