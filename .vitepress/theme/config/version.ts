@@ -174,15 +174,20 @@ export default [
       },
       {
         title: "再次修复2.4.x版本部分筛选搜索框搜索失效的问题",
-        url: "https://sonic-cloud.wiki/d/2856"
+        url: "https://sonic-cloud.wiki/d/2856",
+        done: true
       },
       {
         title: "修复执行多个公共步骤时，最后公共步骤执行失败报IGNORE异常的问题",
         url: "https://sonic-cloud.wiki/d/2708",
         done: true
+      },
+      {
+        title: "修复sib perfmon部分采样参数对GPU和FPS不生效问题",
+        done: true
       }
     ],
-    con: getCon("ZhouYixun", "mmagi")
+    con: getCon("ZhouYixun", "mmagi", "aoliaoaoaojiao")
   },
   {
     version: "v2.4.1",
