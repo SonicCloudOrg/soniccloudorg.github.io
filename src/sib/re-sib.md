@@ -40,7 +40,7 @@ usbmux的作用是实现跨平台与iOS设备服务的通信。
 
 ## 注意事项
 
-已知设备部分功能需要 **挂载开发者镜像**，又因为执行xctest（包括wda）时检查挂载镜像会造成**阻塞**问题，所以sib在 **1.3.8版本开始** 不再自动检查挂载状态与自动挂载。因此部分功能单独使用前需要手动挂载开发者镜像，可以使用 <a href="https://sonic-cloud.cn/sib/sib-mount.html" target="_blank">这个指令</a> 自行挂载。
+已知设备部分功能需要 **挂载开发者镜像**，又因为执行xctest（包括wda）时检查挂载镜像会造成**阻塞**问题，所以sib在 **1.3.9版本开始** 不再自动检查挂载状态与自动挂载。因此部分功能单独使用前需要手动挂载开发者镜像，可以使用 <a href="https://sonic-cloud.cn/sib/sib-mount.html" target="_blank">这个指令</a> 自行挂载。
 
 目前已知挂载状态变更如下：
 1. 设备 **首次使用** 或 **重启** 后，挂载状态会被重置。
@@ -54,29 +54,29 @@ usbmux的作用是实现跨平台与iOS设备服务的通信。
 
 ::: info Linux:
 
-👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.3.8/sonic-ios-bridge_1.3.8_linux_arm64.tar.gz" target="_blank">sonic-ios-bridge_1.3.8_linux_arm64.tar.gz</a>
+👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.3.9/sonic-ios-bridge_1.3.9_linux_arm64.tar.gz" target="_blank">sonic-ios-bridge_1.3.9_linux_arm64.tar.gz</a>
 
-👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.3.8/sonic-ios-bridge_1.3.8_linux_x86.tar.gz" target="_blank">sonic-ios-bridge_1.3.8_linux_x86.tar.gz</a>
+👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.3.9/sonic-ios-bridge_1.3.9_linux_x86.tar.gz" target="_blank">sonic-ios-bridge_1.3.9_linux_x86.tar.gz</a>
 
-👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.3.8/sonic-ios-bridge_1.3.8_linux_x86_64.tar.gz" target="_blank">sonic-ios-bridge_1.3.8_linux_x86_64.tar.gz</a>
+👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.3.9/sonic-ios-bridge_1.3.9_linux_x86_64.tar.gz" target="_blank">sonic-ios-bridge_1.3.9_linux_x86_64.tar.gz</a>
 
 :::
 
 ::: info Macosx:
 
-👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.3.8/sonic-ios-bridge_1.3.8_macosx_arm64.tar.gz" target="_blank">sonic-ios-bridge_1.3.8_macosx_arm64.tar.gz</a>
+👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.3.9/sonic-ios-bridge_1.3.9_macosx_arm64.tar.gz" target="_blank">sonic-ios-bridge_1.3.9_macosx_arm64.tar.gz</a>
 
-👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.3.8/sonic-ios-bridge_1.3.8_macosx_x86_64.tar.gz" target="_blank">sonic-ios-bridge_1.3.8_macosx_x86_64.tar.gz</a>
+👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.3.9/sonic-ios-bridge_1.3.9_macosx_x86_64.tar.gz" target="_blank">sonic-ios-bridge_1.3.9_macosx_x86_64.tar.gz</a>
 
 :::
 
 ::: info Windows:
 
-👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.3.8/sonic-ios-bridge_1.3.8_windows_arm64.tar.gz" target="_blank">sonic-ios-bridge_1.3.8_windows_arm64.tar.gz</a>
+👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.3.9/sonic-ios-bridge_1.3.9_windows_arm64.tar.gz" target="_blank">sonic-ios-bridge_1.3.9_windows_arm64.tar.gz</a>
 
-👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.3.8/sonic-ios-bridge_1.3.8_windows_x86.tar.gz" target="_blank">sonic-ios-bridge_1.3.8_windows_x86.tar.gz</a>
+👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.3.9/sonic-ios-bridge_1.3.9_windows_x86.tar.gz" target="_blank">sonic-ios-bridge_1.3.9_windows_x86.tar.gz</a>
 
-👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.3.8/sonic-ios-bridge_1.3.8_windows_x86_64.tar.gz" target="_blank">sonic-ios-bridge_1.3.8_windows_x86_64.tar.gz</a>
+👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.3.9/sonic-ios-bridge_1.3.9_windows_x86_64.tar.gz" target="_blank">sonic-ios-bridge_1.3.9_windows_x86_64.tar.gz</a>
 
 :::
 
