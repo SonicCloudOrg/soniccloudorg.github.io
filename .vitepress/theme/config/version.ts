@@ -185,7 +185,16 @@ export default [
       {
         title: "修复sib perfmon部分采样参数对GPU和FPS不生效问题",
         done: true
-      }
+      },
+      {
+        title: "修复2.4.x版本特殊情况下设备远控会出现 [udId must not be blank] 的问题",
+        url: "https://sonic-cloud.wiki/d/2874",
+        done: true
+      },
+      {
+        title: "修复安卓性能数据采样RSS与VSS参数不准确的问题",
+        done: true
+      },
     ],
     con: getCon("ZhouYixun", "mmagi", "aoliaoaoaojiao")
   },
