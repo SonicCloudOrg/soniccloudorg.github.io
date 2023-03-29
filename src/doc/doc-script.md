@@ -1,6 +1,7 @@
 ---
 contributors:
 - 'ZhouYixun'
+- 'mmagi'
 ---
 
 # 自定义脚本

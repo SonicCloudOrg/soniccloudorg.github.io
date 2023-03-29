@@ -68,5 +68,11 @@ export default [
     link: 'https://github.com/stephenwang1011',
     avatar:
       'https://avatars.githubusercontent.com/u/3350356?v=4'
+  },
+  {
+    name: 'mmagi',
+    link: 'https://github.com/mmagi',
+    avatar:
+      'https://avatars.githubusercontent.com/u/3122149?v=4'
   }
 ] as Contributor[]

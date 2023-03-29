@@ -1,6 +1,7 @@
 ---
 contributors:
 - 'ZhouYixun'
+- 'mmagi'
 ---
 
 # custom script

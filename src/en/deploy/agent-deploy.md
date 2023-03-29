@@ -3,6 +3,7 @@ contributors:
 - 'ZhouYixun'
 - 'soniclei'
 - 'shinyvince'
+- 'mmagi'
 ---
 
 # Agent side deployment
