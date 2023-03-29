@@ -29,29 +29,29 @@ contributors:
 
 ::: info Linux:
 
-👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-android-supply/releases/download/v0.1.7/sonic-android-supply_0.1.7_linux_arm64.tar.gz" target="_blank">sonic-android-supply_0.1.7_linux_arm64.tar.gz</a>
+👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-android-supply/releases/download/v0.1.8/sonic-android-supply_0.1.8_linux_arm64.tar.gz" target="_blank">sonic-android-supply_0.1.8_linux_arm64.tar.gz</a>
 
-👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-android-supply/releases/download/v0.1.7/sonic-android-supply_0.1.7_linux_x86.tar.gz" target="_blank">sonic-android-supply_0.1.7_linux_x86.tar.gz</a>
+👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-android-supply/releases/download/v0.1.8/sonic-android-supply_0.1.8_linux_x86.tar.gz" target="_blank">sonic-android-supply_0.1.8_linux_x86.tar.gz</a>
 
-👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-android-supply/releases/download/v0.1.7/sonic-android-supply_0.1.7_linux_x86_64.tar.gz" target="_blank">sonic-android-supply_0.1.7_linux_x86_64.tar.gz</a>
+👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-android-supply/releases/download/v0.1.8/sonic-android-supply_0.1.8_linux_x86_64.tar.gz" target="_blank">sonic-android-supply_0.1.8_linux_x86_64.tar.gz</a>
 
 :::
 
 ::: info Macosx:
 
-👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-android-supply/releases/download/v0.1.7/sonic-android-supply_0.1.7_macosx_arm64.tar.gz" target="_blank">sonic-android-supply_0.1.7_macosx_arm64.tar.gz</a>
+👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-android-supply/releases/download/v0.1.8/sonic-android-supply_0.1.8_macosx_arm64.tar.gz" target="_blank">sonic-android-supply_0.1.8_macosx_arm64.tar.gz</a>
 
-👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-android-supply/releases/download/v0.1.7/sonic-android-supply_0.1.7_macosx_x86_64.tar.gz" target="_blank">sonic-android-supply_0.1.7_macosx_x86_64.tar.gz</a>
+👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-android-supply/releases/download/v0.1.8/sonic-android-supply_0.1.8_macosx_x86_64.tar.gz" target="_blank">sonic-android-supply_0.1.8_macosx_x86_64.tar.gz</a>
 
 :::
 
 ::: info Windows:
 
-👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-android-supply/releases/download/v0.1.7/sonic-android-supply_0.1.7_windows_arm64.tar.gz" target="_blank">sonic-android-supply_0.1.7_windows_arm64.tar.gz</a>
+👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-android-supply/releases/download/v0.1.8/sonic-android-supply_0.1.8_windows_arm64.tar.gz" target="_blank">sonic-android-supply_0.1.8_windows_arm64.tar.gz</a>
 
-👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-android-supply/releases/download/v0.1.7/sonic-android-supply_0.1.7_windows_x86.tar.gz" target="_blank">sonic-android-supply_0.1.7_windows_x86.tar.gz</a>
+👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-android-supply/releases/download/v0.1.8/sonic-android-supply_0.1.8_windows_x86.tar.gz" target="_blank">sonic-android-supply_0.1.8_windows_x86.tar.gz</a>
 
-👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-android-supply/releases/download/v0.1.7/sonic-android-supply_0.1.7_windows_x86_64.tar.gz" target="_blank">sonic-android-supply_0.1.7_windows_x86_64.tar.gz</a>
+👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-android-supply/releases/download/v0.1.8/sonic-android-supply_0.1.8_windows_x86_64.tar.gz" target="_blank">sonic-android-supply_0.1.8_windows_x86_64.tar.gz</a>
 
 :::
 
