@@ -339,7 +339,11 @@ Python cannot be used as the built-in engine of the Agent, so the built-in metho
 Python environment, pip environment.
 
 ::: tip
-Note! If Agent running on Windows system, make sure to set the Python output charset to UTF-8 to avoid garbled output from scripts. For example, execute `set PYTHONIOENCODING=UTF-8` to set an environment variable for the Python before starting the agent.
+Note! If Agent running on Windows system, make sure to set the Python output charset to UTF-8 to avoid garbled output from scripts. Execute 
+```bash
+set PYTHONIOENCODING=UTF-8
+```
+to set an environment variable for the Python before starting the Agent.
 :::
 
 ### Available parameters
