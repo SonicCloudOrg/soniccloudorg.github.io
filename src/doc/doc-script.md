@@ -337,6 +337,10 @@ Python不能作为Agent内置引擎，因此不可使用Agent内置的方法与�
 
 Python环境、pip环境。
 
+::: tip
+注意！如果Agent部署在Windows系统，注意设置Python环境输出字符集为UTF-8以避免脚本输出内容乱码。例如在启动agent前执行 `set PYTHONIOENCODING=UTF-8` 为Python环境设置环境变量。
+:::
+
 ### 可用参数
 
 无论安卓还是iOS，Sonic会传递三个参数到Python脚本中，arg依次分别为：

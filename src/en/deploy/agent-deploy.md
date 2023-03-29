@@ -78,6 +78,8 @@ $ tree
 
 ::: tip
 Notice! If you are a windows user, please enter `chcp 65001` in the console and press Enter, and then enter the following command
+
+In addition, if you need to use the Python custom script function, you also need to enter `set PYTHONIOENCODING=UTF-8` in the command prompt before entering the following command to avoid garbled output from the Python script.
 :::
 
 ```bash

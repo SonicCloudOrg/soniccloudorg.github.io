@@ -78,6 +78,8 @@ $ tree
 
 ::: tip
 注意！如果你是 windows 用户，请先在控制台输入 `chcp 65001` 并回车，再输入以下指令
+
+此外，如需使用Python自定义脚本功能，还请 **再** 输入 `set PYTHONIOENCODING=UTF-8` 并回车，以避免Python脚本输出内容乱码
 :::
 
 ```bash
