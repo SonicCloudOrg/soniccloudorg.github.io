@@ -15,7 +15,7 @@ In this mode, the front and back ends are deployed at one time.
 preparatory work: docker-compose, Docker, MySQL
 
 1. Create a MySQL database. The database name can be customized. Note that the character set is utf8 and the collation rule is utf8_general_ci. If you want MySQL to start with Sonic (not recommended), refer to the `Built-in MySQL in docker-compose.yml` section at the bottom of this page.
-2. [Click here](https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-server/releases/download/v2.4.1/sonic-server-v2.4.1.zip) Download the latest version of the **zip** file to any directory. (If the accelerator link fails, please go by yourself <a href="https://github.com/SonicCloudOrg/sonic-server/releases" target="_black">here</a> download)
+2. [Click here](https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-server/releases/download/v2.4.2/sonic-server-v2.4.2.zip) Download the latest version of the **zip** file to any directory. (If the accelerator link fails, please go by yourself <a href="https://github.com/SonicCloudOrg/sonic-server/releases" target="_black">here</a> download)
 3. Unzip and change the information in.env. Do not modify docker-compose.yml file. For details about the env configuration item, see the following table. If your system does not display.env, see the solution at the bottom of the page under FAQs)
 4. Run the following command in the current directory
 
