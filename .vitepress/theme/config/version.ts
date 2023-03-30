@@ -156,7 +156,7 @@ const cons: Cons = [
 export default [
   {
     version: "v2.4.2",
-    time: "unknown",
+    time: "2023/3/30",
     fix: [
       {
         title: "修复2.4.x版本切换WebView会失败的问题",
@@ -164,8 +164,9 @@ export default [
         done: true
       },
       {
-        title: "修复2.4.x版本REST API文档加载失效的问题",
-        url: "https://github.com/SonicCloudOrg/sonic-server/issues/323"
+        title: "修复2.4.x版本REST API文档加载失效的问题，新用法可查看使用文档",
+        url: "https://github.com/SonicCloudOrg/sonic-server/issues/323",
+        done: true
       },
       {
         title: "修复2.4.x版本LDAP登陆时的安全问题",
@@ -195,6 +196,15 @@ export default [
         title: "修复安卓性能数据采样RSS与VSS参数不准确的问题",
         done: true
       },
+      {
+        title: "优化中止测试或强制停止测试时，自定义脚本仍继续运行的场景",
+        url: "https://sonic-cloud.wiki/d/2880",
+        done: true
+      },
+      {
+        title: "修复Gateway网关层的越权安全漏洞",
+        done: true
+      }
     ],
     con: getCon("ZhouYixun", "mmagi", "aoliaoaoaojiao")
   },

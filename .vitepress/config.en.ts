@@ -135,12 +135,13 @@ const sidebar = {
       ]
     },
     {
-      text: 'Background management center',
+      text: 'Background management center & Other',
       items: [
         { text: 'Resource management', link: '/en/doc/doc-resource' },
         { text: 'Role management', link: '/en/doc/doc-role' },
         { text: 'User management', link: '/en/doc/doc-user' },
-        { text: 'System timing task', link: '/en/doc/doc-sys-job' }
+        { text: 'System timing task', link: '/en/doc/doc-sys-job' },
+        { text: 'REST API', link: '/en/doc/doc-rest' }
       ]
     }
   ],

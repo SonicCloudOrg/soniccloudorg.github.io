@@ -132,12 +132,13 @@ const sidebar = {
       ]
     },
     {
-      text: '后台管理中心',
+      text: '后台管理中心和其他',
       items: [
         { text: '资源管理', link: '/doc/doc-resource' },
         { text: '角色管理', link: '/doc/doc-role' },
         { text: '用户配置', link: '/doc/doc-user' },
-        { text: '系统定时任务', link: '/doc/doc-sys-job' }
+        { text: '系统定时任务', link: '/doc/doc-sys-job' },
+        { text: 'REST API', link: '/doc/doc-rest' }
       ]
     }
   ],
