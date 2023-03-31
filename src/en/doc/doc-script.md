@@ -30,6 +30,16 @@ including but not limited to:
 4. Global parameters, you can access the global parameters
 5. Sonic's custom steps can be reused directly
 6. Others, including PocoDriver, device information, etc.
+
+The basic StepHandler passed into Groovy engine has different variable name on Android platform and iOS platform. If you need to write platform-independent common scripts, you can refer to the following example:
+
+```groovy
+def log = binding.hasVariable("iosStepHandler") ? iosStepHandler.log : androidStepHandler.log
+def params = binding.hasVariable("iosStepHandler") ? iosStepHandler.globalParams : androidStepHandler.globalParams
+params.put("platform", binding.hasVariable("iosStepHandler") ? "ios" : "android")
+log.sendStepLog(1, "I am a multi-platform reusable script", "I can manipulate global variable, plat=" + params.getString("platform"))
+```
+
 ::: tip More built-in methods can be viewed
    [AndroidStepHandler](https://github.com/SonicCloudOrg/sonic-agent/blob/main/src/main/java/org/cloud/sonic/agent/tests/handlers/AndroidStepHandler.java)
 

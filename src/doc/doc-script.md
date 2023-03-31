@@ -30,6 +30,16 @@ contributors:
 4. 全局参数，可以对全局参数进行存取
 5. Sonic的自定义步骤，可以直接复用
 6. 其他，包括PocoDriver、设备信息等等
+
+Android和iOS平台传入的基础StepHandler变量名不同，如需编写平台无关的公共脚本可以参考如下示例
+
+```groovy
+def log = binding.hasVariable("iosStepHandler") ? iosStepHandler.log : androidStepHandler.log
+def params = binding.hasVariable("iosStepHandler") ? iosStepHandler.globalParams : androidStepHandler.globalParams
+params.put("platform", binding.hasVariable("iosStepHandler") ? "ios" : "android")
+log.sendStepLog(1, "我是多平台复用脚本", "我可以操作全局变量plat=" + params.getString("platform"))
+```
+
 ::: tip 更多内置方法可查看
 [AndroidStepHandler](https://github.com/SonicCloudOrg/sonic-agent/blob/main/src/main/java/org/cloud/sonic/agent/tests/handlers/AndroidStepHandler.java)
 
