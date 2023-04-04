@@ -28,7 +28,8 @@ contributors:
 1. Fork [sonic-agent](https://github.com/SonicCloudOrg/sonic-agent) 仓库。
 2. 执行git clone指令，将您的仓库代码克隆到本地。
 3. 根据注释修改config的application-sonic-agent.yml，主要更改server和Agent的`host`即可。
-4. 默认plugins目录下缺少sonic-ios-bridge、sonic-android-supply和sonic-go-mitmproxy二进制文件，或者存在但是跟您开发环境的平台不一致，可以根据您的开发系统去仓库下载对应的包。
+4. 默认plugins目录下缺少sonic-ios-bridge、sonic-android-supply和sonic-go-mitmproxy二进制文件，或者存在但是跟您开发环境的平台不一致，可以根据您的开发系统去仓库下载对应的包然后 **重命名** 为对应的名称。
+
 ::: tip 注意
 版本要对应resources/application.yml下的版本哦，如果不想下载，将application-sonic-agent.yml的ios、use-sas和sgm的enable改为false。
 :::
@@ -55,7 +56,7 @@ mvn package
 ::: tip TIPS: 如果是v2.1.2以下版本
 需要去掉 **org/cloud/sonic/agent/transport/TransportConnectionThread.java** 与 **org/cloud/sonic/agent/tools/file/UploadTools.java** url中的 **/server**
 ::: 
-4. 默认plugins目录下缺少sonic-ios-bridge、sonic-android-supply和sonic-go-mitmproxy二进制文件，或者存在但是跟您开发环境的平台不一致，可以根据您的开发系统去仓库下载对应的包。
+4. 默认plugins目录下缺少sonic-ios-bridge、sonic-android-supply和sonic-go-mitmproxy二进制文件，或者存在但是跟您开发环境的平台不一致，可以根据您的开发系统去仓库下载对应的包然后 **重命名** 为对应的名称。
 ::: tip 注意
 版本要对应resources/application.yml下的版本哦，如果不想下载，将application-sonic-agent.yml的ios、use-sas和sgm的enable改为false。
 :::
