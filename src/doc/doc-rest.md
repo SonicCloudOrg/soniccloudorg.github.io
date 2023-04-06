@@ -37,4 +37,4 @@ adb connect xxx.xxx.xxx.xxx:xxxxx
 sib remote connect --host xxx.xxx.xxx.xxx --port xxxxx
 ```
 3. 完成！
-4. 请求后，设备将进入`占用中`状态，请求完毕记得再次发起 **释放设备** 的请求哦
+4. 请求后，设备将进入`占用中`状态，使用完毕记得再次发起 **释放设备** 的请求哦
