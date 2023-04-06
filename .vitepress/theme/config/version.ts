@@ -150,10 +150,44 @@ const cons: Cons = [
   {
     name: "mmagi",
     avatar: "3122149"
+  },
+  {
+    name: "caofengbin",
+    avatar: "15340677"
   }
 ]
 
 export default [
+  {
+    version: "v2.5.0",
+    time: "unknown",
+    feat: [
+      {
+        title: "Sonic新生态发布（暂时保密）"
+      },
+      {
+        title: "通知机器人改版，支持更加丰富的自定义定制",
+        url: "https://sonic-cloud.wiki/d/2876"
+      },
+      {
+        title: "添加通过REST API占用设备、释放设备以及获取设备远程连接地址的功能",
+        url: "https://github.com/SonicCloudOrg/sonic-agent/issues/104"
+      }
+    ],
+    fix: [
+      {
+        title: "优化删除单个步骤时，同步删除steps_elements存储的关联记录",
+        url: "https://sonic-cloud.wiki/d/2899-steps-elements",
+        done: true
+      },
+      {
+        title: "优化Groovy脚本输入无return时，测试报告中的Log展示",
+        url: "https://github.com/SonicCloudOrg/sonic-agent/pull/327",
+        done: true
+      }
+    ],
+    con: getCon("ZhouYixun", "Lewage59", "mmagi", "caofengbin")
+  },
   {
     version: "v2.4.2",
     time: "2023/3/30",
