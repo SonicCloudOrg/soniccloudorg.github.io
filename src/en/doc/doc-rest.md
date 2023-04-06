@@ -37,4 +37,4 @@ adb connect xxx.xxx.xxx.xxx:xxxxx
 sib remote connect --host xxx.xxx.xxx.xxx --port xxxxx
 ```
 3. Done!
-4. After the request, the device will enter the `occupied` state, remember to initiate the **release device** request again after the request is completed.
+4. After the request, the device will enter the `occupied` state, remember to initiate the **release device** request again after use.
