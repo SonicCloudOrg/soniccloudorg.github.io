@@ -184,7 +184,11 @@ export default [
         title: "优化Groovy脚本输入无return时，测试报告中的Log展示",
         url: "https://github.com/SonicCloudOrg/sonic-agent/pull/327",
         done: true
-      }
+      },
+      {
+        title: "优化Agent远控相关ScheduledExecutorService线程处理，减少内存溢出风险",
+        done: true
+      },
     ],
     con: getCon("ZhouYixun", "Lewage59", "mmagi", "caofengbin")
   },
