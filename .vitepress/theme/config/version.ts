@@ -171,7 +171,8 @@ export default [
       },
       {
         title: "添加通过REST API占用设备、释放设备以及获取设备远程连接地址的功能",
-        url: "https://github.com/SonicCloudOrg/sonic-agent/issues/104"
+        url: "https://github.com/SonicCloudOrg/sonic-agent/issues/104",
+        done: true
       }
     ],
     fix: [
