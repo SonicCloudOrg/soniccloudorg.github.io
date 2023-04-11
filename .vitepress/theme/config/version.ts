@@ -190,8 +190,13 @@ export default [
         title: "优化Agent远控相关ScheduledExecutorService线程处理，减少内存溢出风险",
         done: true
       },
+      {
+        title: "修复v2.3.2版本开始多层if嵌套下的公共步骤不执行的问题",
+        url : "https://sonic-cloud.wiki/d/2744",
+        done: true
+      },
     ],
-    con: getCon("ZhouYixun", "Lewage59", "mmagi", "caofengbin")
+    con: getCon("ZhouYixun", "Lewage59", "mmagi", "caofengbin", "dongyi0412")
   },
   {
     version: "v2.4.2",
