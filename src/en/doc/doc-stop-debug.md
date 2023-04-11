@@ -11,7 +11,7 @@ This function needs to be upgraded to v2.3.0
 
 ## Automatically unoccupied
 
-1. You can go to the background management center to configure the timeout period (the default is 480 minutes, which is eight hours), **does not affect the device under test, only affects the remote control device**.
+1. You can go to the background management center to configure the timeout period (the default is 480 minutes, which is eight hours), **does not affect the device under test, affects only remote-controlled devices and devices occupied via the REST API**.
 
 ![tem](./images/debug-1.png)
 

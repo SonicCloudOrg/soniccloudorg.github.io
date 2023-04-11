@@ -173,7 +173,12 @@ export default [
         title: "添加通过REST API占用设备、释放设备以及获取设备远程连接地址的功能",
         url: "https://github.com/SonicCloudOrg/sonic-agent/issues/104",
         done: true
-      }
+      },
+      {
+        title: "新增v55-v69的较旧Chrome内核Webview的chromedriver支持",
+        url : "https://sonic-cloud.wiki/d/2934",
+        done: true
+      },
     ],
     fix: [
       {
