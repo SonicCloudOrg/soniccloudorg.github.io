@@ -200,6 +200,10 @@ export default [
         url : "https://sonic-cloud.wiki/d/2744",
         done: true
       },
+      {
+        title: "修复v2.4.x版本REST API接口文档使用在线调试接口功能时baseUrl不正确引起请求异常的问题",
+        done: true
+      },
     ],
     con: getCon("ZhouYixun", "Lewage59", "mmagi", "caofengbin", "dongyi0412")
   },
