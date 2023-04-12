@@ -62,7 +62,7 @@
         alignment="stretch"
         style="margin: 20px 15px 0px 15px"
       >
-        <a :href="t.url" target="_blank">
+        <a :href="t.url" target="_blank" class="cabinet-avatar">
           <el-avatar
             shape="square"
             style="margin-top: 20px;border-radius: 24px; box-shadow: 4px 4px 10px #606266"
