@@ -4,7 +4,7 @@
     <div class="os-bg-base os-bg1"></div>
     <div class="os-bg-base os-bg2"></div>
 
-    <h1 class="brand-slogan-cabinet">PAWAO 真机集群硬件解决方案</h1>
+    <h1 class="brand-slogan-cabinet">PAWAO 真机集群全套硬件方案</h1>
     <h4 class="brand-desc-cabinet">
       全套完整一体化硬件方案，为您提供企业级使用体验
     </h4>
@@ -68,6 +68,7 @@
             style="margin-top: 20px;border-radius: 24px; box-shadow: 4px 4px 10px #606266"
             :src="t.src"
             :size="100"
+            fit="contain"
           />
         </a>
       </el-space>
@@ -168,6 +169,7 @@ import th4 from '../assets/cabinet/th4.png'
 import th5 from '../assets/cabinet/th5.png'
 import th6 from '../assets/cabinet/th6.jpg'
 import th7 from '../assets/cabinet/th7.png'
+import th8 from '../assets/cabinet/th8.png'
 import user from '../assets/cabinet/user.png'
 import you from '../assets/cabinet/you.png'
 import xinyang from '../assets/cabinet/xinyang.jpg'
@@ -305,13 +307,17 @@ const ths = ref([
   {
     url: 'https://www.eeo.cn/cn/',
     src: th7
+  },
+  {
+    url: 'http://www.galasports.net/home.html',
+    src: th8
   }
 ])
 const talk = ref([
   {
     ava: you,
     name: '友空间团队测试专家',
-    msg: '使用下来体验非常不错，设备鼓包率大大下降，长时间测试与使用能保持电池健康的温度。手机管理，监控，使用变得更快捷，更有效！'
+    msg: 'PAWAO全套硬件方案考虑非常全面，整体体验很不错，与Sonic平台契合度也很高。使用下来设备鼓包率大大下降，长时间测试与使用能保持电池健康的温度。手机管理，监控，使用变得更快捷，更有效！'
   },
   {
     ava: xinyang,
@@ -332,7 +338,12 @@ const talk = ref([
     ava: user,
     name: '东田测试团队',
     msg: '为测试设备的运行提供了一个稳定的环境，可以更加高效的对测试设备进行管理，可以实时查看设备的状态以及各种信息，对温度指标设置监控警报，提升了测试设备的使用寿命。'
-  }
+  },
+  {
+    ava: th8,
+    name: '望尘科技测试部负责人',
+    msg: 'PAWAO提供的一站式硬件套餐与Sonic开源平台配合，让中小企业能快速搭建属于自己的云真机基础平台，解决了公司测试机多管理难/使用效率低等痛点。其中散热/控温/断电功能也解决了设备长期使用电池鼓包甚至起火的后顾之忧。'
+  },
 ])
 </script>
 
