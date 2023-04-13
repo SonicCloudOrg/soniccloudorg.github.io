@@ -16,7 +16,7 @@
           <client-only>
             <el-tooltip :content="item.tipContent" placement="top">
               <a :href="item.linkUrl" class="statistics-link" target="_blank">
-                <img :src="item.img" />
+                <img :src="item.img"/>
               </a>
             </el-tooltip>
           </client-only>
@@ -52,7 +52,7 @@
       <h5 class="footmark">Made with 🧡 by SonicCloudOrg</h5>
     </div>
     <div class="hero__right">
-      <video width="800" controls :src="demo" />
+      <video width="800" controls :src="demo"/>
     </div>
   </section>
 
@@ -91,9 +91,13 @@
     <!--    </section-box>-->
 
     <section-box title="Sonic荣誉及认证">
-      <div class="honor-wall">🎉 MTSC 2022年度最佳开源项目评选第一名</div>
-      <div class="honor-wall" style="margin-top: 20px">
-        🎉 开源中国GVP - Gitee最有价值开源项目
+      <div class="honor-card">
+        <el-card v-for="d in honor" class="honor-card-wrapper" shadow="hover">
+          <div class="honor-card-content" @click="open(d.url)">
+            <img class="honor-img" :src="d.img"/>
+            <h4 class="honor-name">{{ d.name }}</h4>
+          </div>
+        </el-card>
       </div>
     </section-box>
 
@@ -111,7 +115,7 @@
           shadow="hover"
           v-for="item in devices"
         >
-          <img width="50" :src="item.image" />
+          <img width="50" :src="item.image"/>
           <p>{{ item.name }}</p>
         </el-card>
       </div>
@@ -119,49 +123,49 @@
     <section-box title="为什么使用Sonic？">
       <div class="use-case">
         <el-card class="case-content" shadow="hover">
-          <img :src="team4" width="40" />
+          <img :src="team4" width="40"/>
           <h3>0编码UI自动化</h3>
           <p>积木式创建步骤</p>
           <p>一键分发多设备任务</p>
         </el-card>
         <el-card class="case-content" shadow="hover">
-          <img :src="team" width="40" />
+          <img :src="team" width="40"/>
           <h3>在线代理抓包</h3>
           <p>一键连接代理抓包</p>
           <p>团队协作轻松快捷</p>
         </el-card>
         <el-card class="case-content" shadow="hover">
-          <img :src="team2" width="40" />
+          <img :src="team2" width="40"/>
           <h3>设备分布式集群</h3>
           <p>支持跨网段多机房</p>
           <p>支持Windows、Mac、Linux平台</p>
         </el-card>
         <el-card class="case-content" shadow="hover">
-          <img :src="team3" width="40" />
+          <img :src="team3" width="40"/>
           <h3>优秀周边生态</h3>
           <p>安卓Apk、iOS调试工具</p>
           <p>Jenkins插件、在线抓包工具</p>
         </el-card>
         <el-card class="case-content" shadow="hover">
-          <img :src="team5" width="40" />
+          <img :src="team5" width="40"/>
           <h3>低成本维护</h3>
           <p>拖拽式排序交互</p>
           <p>使用简单便捷</p>
         </el-card>
         <el-card class="case-content" shadow="hover">
-          <img :src="team6" width="40" />
+          <img :src="team6" width="40"/>
           <h3>在线WebView</h3>
           <p>提供在线调试WebView</p>
           <p>一键便利连接devtools</p>
         </el-card>
         <el-card class="case-content" shadow="hover">
-          <img :src="team7" width="40" />
+          <img :src="team7" width="40"/>
           <h3>可视化报表</h3>
           <p>测试截图、日志、录像</p>
           <p>图表展示项目运行情况</p>
         </el-card>
         <el-card class="case-content" shadow="hover">
-          <img :src="team8" width="40" />
+          <img :src="team8" width="40"/>
           <h3>轻松部署维护</h3>
           <p>Docker一键去中心化分布式</p>
           <p>扩容缩容不再繁琐</p>
@@ -170,7 +174,7 @@
     </section-box>
     <section-box title="Sonic的价值与产出">
       <div class="capacity-wrapper">
-        <img class="capacity-img" :src="msg" />
+        <img class="capacity-img" :src="msg"/>
         <el-timeline class="capacity-list" style="text-align: left">
           <el-timeline-item type="primary" :hollow="true">
             Sonic提供图像识别，支持获取poco控件，助力游戏公司测试效率。
@@ -248,6 +252,8 @@ import SectionBox from '../components/SectionBox.vue'
 
 // 图片资源
 import demo from '../assets/video/demo.mp4'
+import mtsc from '../assets/mtsc.png'
+import gvp from '../assets/gvp.png'
 
 // 支持设备
 import a1 from '../assets/ANDROID.jpg'
@@ -265,7 +271,20 @@ import team7 from '../assets/team7.png'
 import team8 from '../assets/docker.png'
 // 价值与产出
 import msg from '../assets/msg.png'
-import { useRouter } from 'vitepress'
+import {useRouter} from 'vitepress'
+
+const honor = [
+  {
+    name: "MTSC 2022年度最佳开源项目评选第一名",
+    img: mtsc,
+    url: "https://sonic-cloud.wiki/d/1471-sonicmtsc-2022"
+  },
+  {
+    name: "开源中国GVP - Gitee最有价值开源项目",
+    img: gvp,
+    url: "https://sonic-cloud.wiki/d/2955-sonicgvp-gitee"
+  },
+]
 
 // 品牌数据统计
 const statisticsData = [
@@ -489,13 +508,50 @@ const router = useRouter()
 
 .card-content {
   border-radius: 25px;
+
   img {
     display: block;
   }
+
   p {
     font-weight: bold;
     margin: 0;
   }
+}
+
+.honor-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.honor-img {
+  height: 240px;
+  object-fit: contain;
+}
+
+.honor-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.honor-card-wrapper {
+  cursor: pointer;
+  width: 260px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.honor-card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 /* 使用场景 */
@@ -510,14 +566,17 @@ const router = useRouter()
   margin-bottom: 20px;
   border-radius: 25px;
   text-align: center;
+
   img {
     display: inline-block;
   }
+
   h3 {
     margin: 18px 0;
     font-size: 1.17em;
     font-weight: bold;
   }
+
   p {
     margin: 16px 0;
     font-size: 15px;
@@ -547,11 +606,13 @@ const router = useRouter()
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   &__list {
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
   a {
     display: inline-block;
   }
