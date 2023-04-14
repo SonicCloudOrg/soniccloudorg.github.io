@@ -154,6 +154,10 @@ const cons: Cons = [
   {
     name: "caofengbin",
     avatar: "15340677"
+  },
+  {
+    name: "844817946",
+    avatar: "74577492"
   }
 ]
 
@@ -176,7 +180,12 @@ export default [
       },
       {
         title: "新增v55-v69的较旧Chrome内核Webview的chromedriver支持",
-        url : "https://sonic-cloud.wiki/d/2934",
+        url: "https://sonic-cloud.wiki/d/2934",
+        done: true
+      },
+      {
+        title: "新增支持配置远程控制闲置超时时长，超时后将自动退出占用",
+        url: "https://github.com/SonicCloudOrg/sonic-client-web/pull/242",
         done: true
       },
     ],
@@ -197,7 +206,7 @@ export default [
       },
       {
         title: "修复v2.3.2版本开始多层if嵌套下的公共步骤不执行的问题",
-        url : "https://sonic-cloud.wiki/d/2744",
+        url: "https://sonic-cloud.wiki/d/2744",
         done: true
       },
       {
@@ -205,7 +214,7 @@ export default [
         done: true
       },
     ],
-    con: getCon("ZhouYixun", "Lewage59", "mmagi", "caofengbin", "dongyi0412")
+    con: getCon("ZhouYixun", "Lewage59", "mmagi", "caofengbin", "dongyi0412", "844817946")
   },
   {
     version: "v2.4.2",
