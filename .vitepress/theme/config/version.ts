@@ -221,7 +221,7 @@ export default [
         done: true
       },
     ],
-    con: getCon("ZhouYixun", "Lewage59", "mmagi", "caofengbin", "dongyi0412", "844817946")
+    con: getCon("ZhouYixun", "Lewage59", "mmagi", "caofengbin", "dongyi0412", "844817946", "wzasd")
   },
   {
     version: "v2.4.2",
