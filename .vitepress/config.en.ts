@@ -203,6 +203,7 @@ const sidebar = {
       text: '功能列表',
       items: [
         { text: '实时输入法', link: '/saa/saa-keyboard' },
+        { text: '剪切板操作', link: '/saa/saa-clipper' },
         { text: 'App列表获取', link: '/saa/saa-app' },
         { text: '远程音频传输', link: '/saa/saa-audio' },
         { text: '屏幕旋转方向', link: '/saa/saa-orientation' },

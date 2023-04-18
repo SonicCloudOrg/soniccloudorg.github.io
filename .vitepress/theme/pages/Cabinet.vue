@@ -130,7 +130,7 @@
     <el-footer style="margin-top: 75px">
       <el-divider></el-divider>
       <div style="font-size: 10px; color: #909399">
-        上述硬件产品不影响Sonic平台正常使用，仅为搭建硬件环境提供采购选择，Sonic平台仍然保持永久开源、免费。
+        上述硬件产品（部分含专利）不影响Sonic平台正常使用，仅为搭建硬件环境提供采购选择，Sonic平台仍然保持永久开源、免费。
       </div>
       <div style="margin-top: 5px">
         <el-link
@@ -182,6 +182,7 @@ import p4 from '../assets/cabinet/p4.jpg'
 import p5 from '../assets/cabinet/p5.jpg'
 import p6 from '../assets/cabinet/p6.jpg'
 import p7 from '../assets/cabinet/p7.jpg'
+import p8 from '../assets/cabinet/p8.png'
 import code1 from '../assets/cabinet/code1.png'
 import code2 from '../assets/cabinet/code2.png'
 import code3 from '../assets/cabinet/code3.png'
@@ -189,6 +190,7 @@ import code4 from '../assets/cabinet/code4.png'
 import code5 from '../assets/cabinet/code5.png'
 import code6 from '../assets/cabinet/code6.png'
 import code7 from '../assets/cabinet/code7.png'
+import code8 from '../assets/cabinet/code8.png'
 import cabinetVideo from '../assets/video/cabinet.mp4'
 import hubVideo from '../assets/video/hub.mp4'
 
@@ -199,14 +201,14 @@ const videoOptions = ref({
   controlBtns: ['audioTrack', 'quality', 'volume', 'fullScreen', 'speedRate']
 })
 const cabinetDes = ref([
-  '采用工业级静电喷塑铝板',
-  '3C级防爆钢化玻璃，安全美观',
+  '荣获多项国家认证专利，安全省心',
+  '采用工业级静电喷塑铝板，3C级防爆钢化玻璃',
   '特殊定制铝合金门锁，开关存放方便',
   '空间设计合理，摆放井井有续',
   '内置8块抽拉托盘，可存放80部手机',
   '便捷手机支架，适合多种款式机型',
   '满足不同充电口充电需求',
-  '安全充电，管理方便，配备3c标准插排和品牌千兆交换机',
+  '安全充电，管理方便，配备3C标准插排和品牌千兆交换机',
   '内置高速静音散热风扇，静音降温，保证柜内温度',
   '底部配有带刹车万向轮，方便移动柜体'
 ])
@@ -222,6 +224,14 @@ const hubDes = ref([
   'USB连接，一插即用，无需额外硬件接口与驱动'
 ])
 const product = ref([
+  {
+    pic: p8,
+    title: 'PAWAO 硬件方案组合套餐',
+    des: '省心搭配，组合套装',
+    des2: '含大、中、小规格，按需升级',
+    url: 'https://item.taobao.com/item.htm?ft=t&id=695200226411',
+    code: code8
+  },
   {
     pic: p1,
     title: 'PAWAO 1.0 散热式机柜',
@@ -242,7 +252,7 @@ const product = ref([
     pic: p3,
     title: 'PAWAO 1.0 智能数据线',
     des: '智能芯片助力充电口降温',
-    des2: '支持Type-c、苹果数据线',
+    des2: '支持Type-C、苹果、micro接口',
     url: 'https://item.taobao.com/item.htm?ft=t&id=693483194887',
     code: code3
   },
@@ -255,14 +265,6 @@ const product = ref([
     code: code4
   },
   {
-    pic: p5,
-    title: 'PAWAO 六类网线',
-    des: 'CAT6A成品网线、路由器网线',
-    des2: '可自由选择长度',
-    url: 'https://item.taobao.com/item.htm?ft=t&id=691859752465',
-    code: code5
-  },
-  {
     pic: p6,
     title: 'PAWAO UPS电源',
     des: '外置电池主机',
@@ -271,13 +273,21 @@ const product = ref([
     code: code6
   },
   {
+    pic: p5,
+    title: 'PAWAO 六类网线',
+    des: 'CAT6A成品网线、路由器网线',
+    des2: '可自由选择长度',
+    url: 'https://item.taobao.com/item.htm?ft=t&id=691859752465',
+    code: code5
+  },
+  {
     pic: p7,
     title: 'PAWAO 无线路由器',
     des: '超强覆盖，信号稳定',
     des2: '高速率、超频宽、更疾速',
     url: 'https://item.taobao.com/item.htm?ft=t&id=696702703783',
     code: code7
-  }
+  },
 ])
 const ths = ref([
   {

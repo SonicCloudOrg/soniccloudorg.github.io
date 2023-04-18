@@ -19,7 +19,7 @@ adb shell ime set org.cloud.sonic.android/.keyboard.SonicKeyboard
 ## 直接使用
 
 ```bash
-adb shell am broadcast -a SONIC_KEYBOARD --es msg "xxxxx"
+adb shell am broadcast -a SONIC_KEYBOARD --es msg "'xxxxx'"
 ```
 
 输入时有特殊用法，如果输入内容为以下字符，会有不同效果:

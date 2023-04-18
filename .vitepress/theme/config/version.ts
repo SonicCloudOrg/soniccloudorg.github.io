@@ -188,6 +188,13 @@ export default [
         url: "https://github.com/SonicCloudOrg/sonic-client-web/pull/242",
         done: true
       },
+      {
+        title: "安卓远程控制页新增支持快捷剪切板获取与设置（支持所有安卓版本）",
+      },
+      {
+        title: "安卓新增步骤：剪切板获取、剪切板设置（支持所有安卓版本）",
+        url: "https://sonic-cloud.wiki/d/2963"
+      },
     ],
     fix: [
       {
