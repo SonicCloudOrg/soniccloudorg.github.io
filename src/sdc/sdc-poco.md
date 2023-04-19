@@ -5,7 +5,7 @@ contributors:
 
 # PocoDriver
 
-本文是PocoDriver文档。 API文档可前往：👉[Java Doc](https://s01.oss.sonatype.org/service/local/repositories/releases/archive/io/github/soniccloudorg/sonic-driver-core/1.1.21/sonic-driver-core-1.1.21-javadoc.jar/!/index.html)
+本文是PocoDriver文档。 API文档可前往：👉[Java Doc](https://s01.oss.sonatype.org/service/local/repositories/releases/archive/io/github/soniccloudorg/sonic-driver-core/1.1.22/sonic-driver-core-1.1.22-javadoc.jar/!/index.html)
 
 ## 设备前置配置
 
