@@ -190,10 +190,12 @@ export default [
       },
       {
         title: "安卓远程控制页新增支持快捷剪切板获取与设置（支持所有安卓版本）",
+        done: true,
       },
       {
         title: "安卓新增步骤：剪切板获取、剪切板设置（支持所有安卓版本）",
-        url: "https://sonic-cloud.wiki/d/2963"
+        url: "https://sonic-cloud.wiki/d/2963",
+        done: true
       },
     ],
     fix: [
@@ -220,6 +222,16 @@ export default [
         title: "修复v2.4.x版本REST API接口文档使用在线调试接口功能时baseUrl不正确引起请求异常的问题",
         done: true
       },
+      {
+        title: "更正安卓性能监控图表的Process Memory的纵轴单位 b 为 kb",
+        url: "https://sonic-cloud.wiki/d/2993",
+        done: true
+      },
+      {
+        title: "优化安卓远控退出时体验，如果为横屏状态将恢复为桌面",
+        url: "https://sonic-cloud.wiki/d/2992",
+        done: true
+      }
     ],
     con: getCon("ZhouYixun", "Lewage59", "mmagi", "caofengbin", "dongyi0412", "844817946", "wzasd")
   },
