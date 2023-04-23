@@ -167,7 +167,7 @@ export default [
     time: "unknown",
     feat: [
       {
-        title: "Sonic新生态发布（暂时保密）"
+        title: "全新代码编辑器Sonic IDE来临 - Sonic新生态发布"
       },
       {
         title: "通知机器人改版，支持更加丰富的自定义定制",
