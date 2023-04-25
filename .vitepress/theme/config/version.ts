@@ -231,9 +231,19 @@ export default [
         title: "优化安卓远控退出时体验，如果为横屏状态将恢复为桌面",
         url: "https://sonic-cloud.wiki/d/2992",
         done: true
+      },
+      {
+        title: "修复iOS16.4系统无法挂载导致接入失败的问题",
+        url:"https://sonic-cloud.wiki/d/3023",
+        done: true
+      },
+      {
+        title: "修复POCO控件名称含括号时使用数组下标定位失败的问题",
+        url:"https://sonic-cloud.wiki/d/3030",
+        done: true
       }
     ],
-    con: getCon("ZhouYixun", "Lewage59", "mmagi", "caofengbin", "dongyi0412", "844817946", "wzasd")
+    con: getCon("ZhouYixun", "Lewage59", "mmagi", "caofengbin", "dongyi0412", "844817946", "wzasd", "dwqdaiwenqi")
   },
   {
     version: "v2.4.2",
