@@ -197,8 +197,18 @@ export default [
         url: "https://sonic-cloud.wiki/d/2963",
         done: true
       },
+      {
+        title: "远控设备页面应用程序面板增加安装【安装包管理】中已有安装包的能力",
+        url: "https://github.com/SonicCloudOrg/sonic-server/pull/350",
+        done: true
+      },
     ],
     fix: [
+      {
+        title: "优化设备中心页面搜索框支持模糊搜索【设备备注】",
+        url: "https://sonic-cloud.wiki/d/3065",
+        done: true
+      },
       {
         title: "优化删除单个步骤时，同步删除steps_elements存储的关联记录",
         url: "https://sonic-cloud.wiki/d/2899-steps-elements",
