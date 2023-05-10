@@ -82,7 +82,7 @@ $ cd /tmp/derivedDataPath
 $ cd Build/Products/Release-iphoneos
 $ mkdir Payload && mv *.app Payload
 $ zip -r WDA.ipa Payload
-$ sib app install WDA.ipa
+$ sib app install -p WDA.ipa
 ```
 
 ::: tip
