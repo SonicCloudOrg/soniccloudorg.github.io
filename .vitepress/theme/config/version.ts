@@ -220,6 +220,10 @@ export default [
         done: true
       },
       {
+        title: "修复公共步骤的子步骤为空时在公共步骤列表会出现前端异常报错的问题",
+        done: true
+      },
+      {
         title: "优化部分模块删除后的数据库脏数据处理",
         url: "https://github.com/SonicCloudOrg/sonic-server/pull/352",
         done: true
