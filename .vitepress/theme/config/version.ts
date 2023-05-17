@@ -202,8 +202,33 @@ export default [
         url: "https://github.com/SonicCloudOrg/sonic-server/pull/350",
         done: true
       },
+      {
+        title: "新增支持远控安卓设备时通过快捷按钮将content-desc属性添加到控件元素信息",
+        url: "https://github.com/SonicCloudOrg/sonic-client-web/pull/245",
+        done: true
+      },
+      {
+        title: "新增断言类型【不相等】",
+        url: "https://sonic-cloud.wiki/d/2689",
+        done: true
+      },
     ],
     fix: [
+      {
+        title: "修复重复执行用例时偶现的java.util.ConcurrentModificationException异常",
+        url: "https://sonic-cloud.wiki/d/3108",
+        done: true
+      },
+      {
+        title: "优化部分模块删除后的数据库脏数据处理",
+        url: "https://github.com/SonicCloudOrg/sonic-server/pull/352",
+        done: true
+      },
+      {
+        title: "修复Chrome内核大于等于111版本的WebView/H5上下文切换失败问题",
+        url: "https://github.com/SonicCloudOrg/sonic-agent/pull/341",
+        done: true
+      },
       {
         title: "优化设备中心页面搜索框支持模糊搜索【设备备注】",
         url: "https://sonic-cloud.wiki/d/3065",
