@@ -88,7 +88,7 @@
 import data from '../config/version'
 import {ref} from "vue";
 
-const day = ref(50)
+const day = ref(60)
 
 const open = (url) => {
   window.open(url, '_blank')
