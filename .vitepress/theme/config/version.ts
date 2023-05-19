@@ -215,6 +215,20 @@ export default [
     ],
     fix: [
       {
+        title: "修复公共步骤的子步骤在列表排序与编辑时排序不一致的问题",
+        url: "https://sonic-cloud.wiki/d/3104-bug",
+        done: true
+      },
+      {
+        title: "修复公共步骤禁用后测试报告仍然出现在运行的问题",
+        done: true
+      },
+      {
+        title: "修复特殊情况下删除控件元素时出现的未知异常",
+        url: "https://sonic-cloud.wiki/d/2494",
+        done: true
+      },
+      {
         title: "修复重复执行用例时偶现的java.util.ConcurrentModificationException异常",
         url: "https://sonic-cloud.wiki/d/3108",
         done: true
