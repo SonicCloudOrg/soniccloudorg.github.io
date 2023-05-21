@@ -162,7 +162,7 @@ const sidebar = {
       text: '快速入门',
       items: [
         { text: 'IDE介绍与下载', link: '/ide/re-ide' },
-        { text: '基础Demo教学', link: '/ide/ide-demo' }
+        { text: '基础教学', link: '/ide/ide-demo' }
       ]
     },
   ],
