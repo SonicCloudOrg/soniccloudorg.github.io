@@ -164,14 +164,14 @@ const cons: Cons = [
 export default [
   {
     version: "v2.5.0",
-    time: "unknown",
+    time: "2023/5/21",
     feat: [
       {
         title: "全新代码编辑器Sonic IDE来临 - Sonic新生态发布"
       },
       {
-        title: "通知机器人改版，支持更加丰富的自定义定制",
-        url: "https://sonic-cloud.wiki/d/2876"
+        title: "新增步骤：支持断言控件元素个数",
+        url: "https://sonic-cloud.wiki/d/3137"
       },
       {
         title: "添加通过REST API占用设备、释放设备以及获取设备远程连接地址的功能",
