@@ -55,7 +55,11 @@ Q1: 为什么Mac arm64使用会报已损坏不可使用？
 
 ![error](./images/error.png)
 
-A1: 部分arm64架构不适用，可以尝试更换x64架构的dmg安装包
+A1: 可以尝试执行这个指令
+```shell
+sudo xattr -d com.apple.quarantine /Applications/Sonic\ IDE.app
+```
+如果没能解决，可能是部分arm64架构不适用，可以尝试更换x64架构的dmg安装包
 
 ---
 
