@@ -163,6 +163,39 @@ const cons: Cons = [
 
 export default [
   {
+    version: "v2.5.1",
+    time: "unknown",
+    feat: [
+     {
+       title: "丰富断言文本步骤，允许指定比较方式为等于，不等于，包含，不包含四种模式",
+       url: "https://github.com/SonicCloudOrg/sonic-agent/pull/348",
+       done: true
+     },
+     {
+       title: "iOS获取控件支持设置自定义最大查找遍历深度",
+       url: "https://sonic-cloud.wiki/d/3157"
+     },
+     {
+        title: "IDE设备列表添加筛选框与搜索按钮",
+        done: true
+     },
+     {
+        title: "IDE新增POCO控件信息获取"
+     }
+    ],
+    fix: [
+     {
+        title: "修复IDE在Windows系统下顶部导航栏难以点击的问题",
+        done: true
+     },
+     {
+        title: "修复IDE调试窗口无法使用的问题，暂时关闭入口",
+        done: true
+     },
+    ],
+    con: getCon("ZhouYixun", "caofengbin")
+  },
+  {
     version: "v2.5.0",
     time: "2023/5/21",
     feat: [
