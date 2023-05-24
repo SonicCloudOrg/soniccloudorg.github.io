@@ -37,15 +37,15 @@ contributors:
 
 ::: info Macosx:
 
-👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-ide/releases/download/v0.0.1/Sonic.IDE-0.0.2-arm64.dmg" target="_blank">Sonic.IDE-0.0.2-arm64.dmg</a>
+👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-ide/releases/download/v0.0.2/Sonic.IDE-0.0.2-arm64.dmg" target="_blank">Sonic.IDE-0.0.2-arm64.dmg</a>
 
-👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-ide/releases/download/v0.0.1/Sonic.IDE-0.0.2-x64.dmg" target="_blank">Sonic.IDE-0.0.2-x64.dmg</a>
+👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-ide/releases/download/v0.0.2/Sonic.IDE-0.0.2-x64.dmg" target="_blank">Sonic.IDE-0.0.2-x64.dmg</a>
 
 :::
 
 ::: info Windows:
 
-👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-ide/releases/download/v0.0.1/Sonic.IDE-0.0.2.exe" target="_blank">Sonic.IDE-0.0.2.exe</a>
+👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-ide/releases/download/v0.0.2/Sonic.IDE-0.0.2.exe" target="_blank">Sonic.IDE-0.0.2.exe</a>
 
 :::
 
