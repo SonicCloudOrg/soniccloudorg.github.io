@@ -164,34 +164,43 @@ const cons: Cons = [
 export default [
   {
     version: "v2.5.1",
-    time: "unknown",
+    time: "2023/5/26",
     feat: [
-     {
-       title: "丰富断言文本步骤，允许指定比较方式为等于，不等于，包含，不包含四种模式",
-       url: "https://github.com/SonicCloudOrg/sonic-agent/pull/348",
-       done: true
-     },
-     {
-       title: "iOS获取控件支持设置自定义最大查找遍历深度",
-       url: "https://sonic-cloud.wiki/d/3157"
-     },
-     {
+      {
+        title: "丰富断言文本步骤，允许指定比较方式为等于，不等于，包含，不包含四种模式",
+        url: "https://github.com/SonicCloudOrg/sonic-agent/pull/348",
+        done: true
+      },
+      {
+        title: "iOS获取控件支持设置自定义最大查找遍历深度",
+        url: "https://sonic-cloud.wiki/d/3157"
+      },
+      {
+        title: "iOS新增步骤：设置自定义最大查找遍历深度",
+        url: "https://sonic-cloud.wiki/d/3157"
+      },
+      {
         title: "IDE设备列表添加筛选框与搜索按钮",
         done: true
-     },
-     {
+      },
+      {
         title: "IDE新增POCO控件信息获取"
-     }
+      }
     ],
     fix: [
-     {
+      {
+        title: "修复v2.5.0升级后REST API文档无法打开的问题",
+        url: "https://sonic-cloud.wiki/d/3187",
+        done: true
+      },
+      {
         title: "修复IDE在Windows系统下顶部导航栏难以点击的问题",
         done: true
-     },
-     {
+      },
+      {
         title: "修复IDE调试窗口无法使用的问题，暂时关闭入口",
         done: true
-     },
+      },
     ],
     con: getCon("ZhouYixun", "caofengbin")
   },
@@ -320,12 +329,12 @@ export default [
       },
       {
         title: "修复iOS16.4系统无法挂载导致接入失败的问题",
-        url:"https://sonic-cloud.wiki/d/3023",
+        url: "https://sonic-cloud.wiki/d/3023",
         done: true
       },
       {
         title: "修复POCO控件名称含括号时使用数组下标定位失败的问题",
-        url:"https://sonic-cloud.wiki/d/3030",
+        url: "https://sonic-cloud.wiki/d/3030",
         done: true
       }
     ],
