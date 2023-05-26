@@ -31,7 +31,7 @@ contributors:
 2. 请求后，设备将进入`占用中`状态，可占用时长会受后台管理中心的最大占用时长影响，使用完毕记得再次发起 **释放设备** 的请求哦。
 3. 可以使用返回的结果进行远程adb连接、远程wda连接等。
 
-> ${baseURL}/api/controller/devices/occupy
+> ${baseURL}/server/api/controller/devices/occupy
 
 | Body字段              | 字段解析                                                                       | 例子      |
 |---------------------|----------------------------------------------------------------------------|---------|
@@ -47,5 +47,5 @@ contributors:
 该功能需升级至Sonic v2.5.0，与 `通过REST API占用设备并获取远程调试信息` 接口配合使用。
 :::
 1. 参考REST API的文档发起对应HTTP请求
-> ${baseURL}/api/controller/devices/release?udId=xxxx
+> ${baseURL}/server/api/controller/devices/release?udId=xxxx
 2. 请求后，设备将进入解除`占用中`状态，并且占用期间的sas、sib、uia2、wda等服务也会一并释放资源。
