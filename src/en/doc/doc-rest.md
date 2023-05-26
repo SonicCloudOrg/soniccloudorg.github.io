@@ -31,6 +31,8 @@ This function needs to be upgraded to Sonic v2.5.0
 2. After the request, the device will enter the `occupied` state, and the available time will be affected by the maximum occupied time of the background management center. Remember to initiate the **release device** request again after use.
 3. You can use the returned results for remote adb connection, remote wda connection, etc.
 
+> ${baseURL}/server/api/controller/devices/occupy
+
 | Body field          | Field analysis                                                                                                                                                                                                                       | Example |
 |---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|
 | udId                | device udId (required)                                                                                                                                                                                                               | abcdefg |
@@ -45,4 +47,5 @@ This function needs to be upgraded to Sonic v2.5.0
 This function needs to be upgraded to Sonic v2.5.0, and used in conjunction with `Occupy the device and obtain remote debugging information through the REST API`.
 :::
 1. Refer to the documentation of the REST API to initiate the corresponding HTTP request
+> ${baseURL}/server/api/controller/devices/release?udId=xxxx
 2. After the request is made, the device will enter the state of unoccupied, and services such as sas, sib, uia2, and wda during the occupation period will also release resources.
