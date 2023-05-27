@@ -163,6 +163,26 @@ const cons: Cons = [
 
 export default [
   {
+    version: "v2.5.2",
+    time: "2023/5/27",
+    fix: [
+      {
+        title: "再次修复v2.5.x升级后REST API文档无法打开的问题",
+        url: "https://sonic-cloud.wiki/d/3187",
+        done: true
+      },
+      {
+        title: "优化补充部分可断言POCO控件属性和原生控件属性",
+        url: "https://sonic-cloud.wiki/d/3165",
+      },
+      {
+        title: "优化控件选择框的渲染效果和展示布局",
+        url: "https://sonic-cloud.wiki/d/3093-dbug"
+      },
+    ],
+    con: getCon("ZhouYixun", "mmagi")
+  },
+  {
     version: "v2.5.1",
     time: "2023/5/26",
     feat: [
