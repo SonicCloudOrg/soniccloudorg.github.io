@@ -77,10 +77,12 @@ $ tree
 7. Modify the configuration information of **application-sonic-agent.yml** in the config folder and save it.
 8. Execute the following commands under the path of **Working Directory**.
 
-::: tip
-Notice! If you are a windows user, please enter `chcp 65001` in the console and press Enter, and then enter the following command
+::: tip Notice
+1. If you are a windows user, please enter `chcp 65001` in the console and press Enter, and then enter the following command
 
 In addition, if you need to use the Python custom script function, you also need to enter `set PYTHONIOENCODING=UTF-8` in the command prompt before entering the following command to avoid garbled output from the Python script.
+
+2. If you are a Macosx user, please check the common question Q1 below for configuration before continuing with the following instructions
 :::
 
 ```bash
@@ -120,30 +122,42 @@ docker-compose -f docker-compose-zh.yml up -d
 
 ## Frequently Asked Questions (Q&A)
 
-Q1: Obviously configured ANDROID_HOME, and adb is available, why is it still not detected ANDROID_HOME?
+Q1: Are there any precautions for deploying on Mac?
 
-A1: After configuring ANDROID_HOME, PATH also needs to be configured. Verify that `echo %ANDROID_HOME%` (win) or `echo $ANDROID_HOME` (mac or linux) outputs correctly.
+A1: You need to trust the source of Sonic, otherwise some plugins will not start properly.
+1. Terminal input
+```
+sudo spctl --master-disable
+```
+2. [Security and Privacy] Release any source permissions.
+![eve](./images/eve.jpg)
 
 ---
 
-Q2: Check the log and find that it is not connected to the server, how to solve it?
+Q2: Obviously configured ANDROID_HOME, and adb is available, why is it still not detected ANDROID_HOME?
 
-A2: Mainly divided into a variety of situations:
+A2: After configuring ANDROID_HOME, PATH also needs to be configured. Verify that `echo %ANDROID_HOME%` (win) or `echo $ANDROID_HOME` (mac or linux) outputs correctly.
+
+---
+
+Q3: Check the log and find that it is not connected to the server, how to solve it?
+
+A3: Mainly divided into a variety of situations:
 
 1. The Key configuration is incorrect, and a Key can only be used by one Agent.
 2. All ip cannot use localhost, 127.0.0.1 and other configurations.
 
 ---
 
-Q3: Check the logs and find that the time zone is incorrect, and the time zone of the host machine is correct. How to solve it?
+Q4: Check the logs and find that the time zone is incorrect, and the time zone of the host machine is correct. How to solve it?
 
-A3: You can refer to [this post](https://sonic-cloud.wiki/d/2297)
+A4: You can refer to [this post](https://sonic-cloud.wiki/d/2297)
 
 ---
 
-Q4: There will be sonic-android-supply or other plug-in security pop-up windows when starting on Mac?
+Q5: There will be sonic-android-supply or other plug-in security pop-up windows when starting on Mac?
 
-A4: Mac: System Preferences -> Security & Privacy -> General, click Trust or Open anyway.
+A5: Mac: System Preferences -> Security & Privacy -> General, click Trust or Open anyway.
 
 ---
 
