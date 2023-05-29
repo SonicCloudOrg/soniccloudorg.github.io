@@ -157,7 +157,7 @@ A4: You can refer to [this post](https://sonic-cloud.wiki/d/2297)
 
 Q5: There will be sonic-android-supply or other plug-in security pop-up windows when starting on Mac?
 
-A5: Mac: System Preferences -> Security & Privacy -> General, click Trust or Open anyway.
+A5: It is recommended to follow the answer in Q1 above for the best solution, otherwise it can be solved in this way. Mac: System Preferences -> Security & Privacy -> General, click Trust or Open anyway.
 
 ---
 
