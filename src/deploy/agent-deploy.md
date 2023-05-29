@@ -77,10 +77,12 @@ $ tree
 7. 修改 config 文件夹中 **application-sonic-agent.yml** 的配置信息，保存。
 8. 在 **工作目录** 路径下执行以下指令。
 
-::: tip
-注意！如果你是 windows 用户，请先在控制台输入 `chcp 65001` 并回车，再输入以下指令
+::: tip 注意
+1. 如果你是 windows 用户，请先在控制台输入 `chcp 65001` 并回车，再输入以下指令
 
 此外，如需使用Python自定义脚本功能，还请 **再** 输入 `set PYTHONIOENCODING=UTF-8` 并回车，以避免Python脚本输出内容乱码
+
+2. 如果你是 Macosx 用户，请查看下方常见问题Q1进行配置后再继续执行下方指令
 :::
 
 ```bash
@@ -120,30 +122,42 @@ docker-compose -f docker-compose-zh.yml up -d
 
 ## 常见问题（Q&A）
 
-Q1: 明明配置好了 ANDROID_HOME，并且 adb 可用，为什么还是检测不到 ANDROID_HOME？
+Q1: Mac上部署有什么注意的吗？
 
-A1: 需要配置好 ANDROID_HOME 之后，PATH 里面也需要配置好。确认 `echo %ANDROID_HOME%` (win) 或 `echo $ANDROID_HOME` (mac 或 linux) 输出正确。
+A1: 需要信任Sonic的来源，不然部分插件无法正常启动。
+1. 终端输入
+```
+sudo spctl --master-disable
+```
+2. 【安全性与隐私】将任何来源权限放开。
+![eve](./images/eve.jpg)
 
 ---
 
-Q2: 查看日志发现与 Server 没有连上，该怎么解决？
+Q2: 明明配置好了 ANDROID_HOME，并且 adb 可用，为什么还是检测不到 ANDROID_HOME？
 
-A2: 主要分为多种情况:
+A2: 需要配置好 ANDROID_HOME 之后，PATH 里面也需要配置好。确认 `echo %ANDROID_HOME%` (win) 或 `echo $ANDROID_HOME` (mac 或 linux) 输出正确。
+
+---
+
+Q3: 查看日志发现与 Server 没有连上，该怎么解决？
+
+A3: 主要分为多种情况:
 
 1. Key 配置不正确，一个 Key 只能一个 Agent 使用。
 2. 所有 ip 不能使用 localhost、127.0.0.1 之类的配置。
 
 ---
 
-Q3: 查看日志发现时区不对，宿主机的时区没有问题，该怎么解决？
+Q4: 查看日志发现时区不对，宿主机的时区没有问题，该怎么解决？
 
-A3: 可以参考 [这个帖子](https://sonic-cloud.wiki/d/2297)
+A4: 可以参考 [这个帖子](https://sonic-cloud.wiki/d/2297)
 
 ---
 
-Q4: Mac上启动会有sonic-android-supply或其他插件安全弹窗？
+Q5: Mac上启动会有sonic-android-supply或其他插件安全弹窗？
 
-A4: Mac：系统偏好设置 -> 安全性与隐私 -> 通用，点击信任或仍要打开。
+A5: 建议还是按照上方Q1的解答解决最佳，除此之外可以这样解决 Mac：系统偏好设置 -> 安全性与隐私 -> 通用，点击信任或仍要打开。
 
 ---
 
