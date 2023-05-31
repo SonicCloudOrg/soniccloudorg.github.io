@@ -163,6 +163,21 @@ const cons: Cons = [
 
 export default [
   {
+    version: "v2.5.3",
+    time: "unknown",
+    fix: [
+      {
+        title: "简化Agent部署，提供默认adb程序，可无需配置ANDROID_HOME",
+        done: true
+      },
+      {
+        title: "优化Agent启动时的资源文件检查",
+        done: true
+      }
+    ],
+    con: getCon("ZhouYixun")
+  },
+  {
     version: "v2.5.2",
     time: "2023/5/27",
     fix: [

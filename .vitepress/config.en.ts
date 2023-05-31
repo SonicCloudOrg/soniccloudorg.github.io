@@ -17,6 +17,7 @@ const nav = [
     items: [
       {
         items: [
+          { text: 'Sonic IDE 🔥', link: '/ide/re-ide' },
           { text: 'sonic-ios-bridge', link: '/sib/re-sib' },
           { text: 'sonic-android-apk', link: '/saa/re-saa' },
           { text: 'sonic-driver-core', link: '/sdc/re-sdc' },
@@ -158,6 +159,15 @@ const sidebar = {
         { text: 'Agent端', link: '/contribute/con-agent' }
       ]
     }
+  ],
+  '/ide/': [
+    {
+      text: '快速入门',
+      items: [
+        { text: 'IDE介绍与下载', link: '/ide/re-ide' },
+        { text: '基础教学', link: '/ide/ide-demo' }
+      ]
+    },
   ],
   '/sib/': [
     {
