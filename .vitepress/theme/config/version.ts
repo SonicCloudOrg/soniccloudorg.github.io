@@ -173,9 +173,13 @@ export default [
       {
         title: "优化Agent启动时的资源文件检查",
         done: true
+      },
+      {
+        title: "通知机器人改版与更多自定义扩展",
+        url: "https://sonic-cloud.wiki/d/2876"
       }
     ],
-    con: getCon("ZhouYixun")
+    con: getCon("ZhouYixun", "mmagi")
   },
   {
     version: "v2.5.2",
