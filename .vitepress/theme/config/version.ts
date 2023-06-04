@@ -203,7 +203,7 @@ export default [
         done: true
       },
       {
-        title: "Python自定义脚本新增第四个传递参数为远程uia2-server地址",
+        title: "Python自定义脚本新增第四个传递参数为远程uia2-server和wda-server地址",
         done: true
       }
     ],
