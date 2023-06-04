@@ -158,6 +158,10 @@ const cons: Cons = [
   {
     name: "844817946",
     avatar: "74577492"
+  },
+  {
+    name: "lihuacai168",
+    avatar: "11568297"
   }
 ]
 
@@ -165,7 +169,17 @@ export default [
   {
     version: "v2.5.3",
     time: "unknown",
+    feat: [
+      {
+        title: "Sonic新生态sonic-uiautomator2-python-client发布",
+        done: true
+      }
+    ],
     fix: [
+      {
+        title: "补充IDE的Example项目的Python Demo脚本",
+        done: true
+      },
       {
         title: "简化Agent部署，提供默认adb程序，可无需配置ANDROID_HOME",
         done: true
@@ -177,9 +191,23 @@ export default [
       {
         title: "通知机器人改版与更多自定义扩展",
         url: "https://sonic-cloud.wiki/d/2876"
+      },
+      {
+        title: "修复webElementScrollToView步骤获取控件信息传参错误导致的元素无法找到的问题",
+        url: "https://github.com/SonicCloudOrg/sonic-agent/pull/355",
+        done: true
+      },
+      {
+        title: "补充iOS与H5先获取焦点再输入的步骤（类Android的输入Actions）",
+        url: "https://github.com/SonicCloudOrg/sonic-client-web/pull/255",
+        done: true
+      },
+      {
+        title: "Python自定义脚本新增第四个传递参数为远程uia2-server地址",
+        done: true
       }
     ],
-    con: getCon("ZhouYixun", "mmagi")
+    con: getCon("ZhouYixun", "mmagi", "caofengbin", "upengfei", "lihuacai168")
   },
   {
     version: "v2.5.2",
