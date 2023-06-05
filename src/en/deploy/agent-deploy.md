@@ -24,9 +24,16 @@ This method will deploy Agent, Appium and other environments with local jar pack
 
 1. **Some JDKs are known to be incompatible. Sonic officially recommends using JDK17**, you can go [here](https://docs.aws.amazon.com/corretto/latest/corretto-17-ug/downloads-list.html) to install the downloads.
 2. Add an Agent from the [Agent Center] of the deployed front-end interface [Device Center], and record the Key of the Agent.
-3. (Skip if you do not need to connect to the Android device) Set the Android SDK to the system environment variable and name it ANDROID_HOME. Open SDKManager and download **platform-tools**. Make sure the platform-tools directory exists and the adb command is available.
-4. Add ANDROID_HOME, ANDROID_HOME/platform-tools to the system PATH.
-5. Select **PC corresponding platform zip** to download and unzip to any directory (marked as **working directory**, **if the following acceleration link fails**, please go to <a href="https://github.com/SonicCloudOrg/sonic-agent/releases" target="_blank">here</a> download)
+
+::: tip
+From `v2.5.3`, in order to reduce user deployment costs, Agent has built-in adb under the `plugins` folder.
+
+However, it is known that multiple adb-servers working at the same time will cause preemption problems, so if you have other adb-servers working locally and want to use your existing adb or the version is lower than v2.5.3, you need to add these two steps:
+1. Set the Android SDK to the system environment variable, named ANDROID_HOME. Open SDKManager and download **platform-tools**. Make sure the platform-tools directory exists and the adb command is available.
+2. Add ANDROID_HOME, ANDROID_HOME/platform-tools to the system PATH.
+:::
+
+3. Select **PC corresponding platform zip** to download and unzip to any directory (marked as **working directory**, **if the following acceleration link fails**, please go to <a href="https://github.com/SonicCloudOrg/sonic-agent/releases" target="_blank">here</a> download)
 
 ::: info Linux
 
@@ -54,42 +61,28 @@ This method will deploy Agent, Appium and other environments with local jar pack
 
 :::
 
-6. Grant all permissions to the **working directory**, and then make sure that the decompressed mini, config, plugins folders are at the same level as the jar
+4. Grant all permissions to the **working directory**, and then make sure that the decompressed mini, config, plugins folders are at the same level as the jar
 
 ```bash
 $ sudo chmod -R 777 xxxxx
 ```
 
-You can then list the folders to check.
+5. Modify the configuration information of **application-sonic-agent.yml** in the config folder and save it.
+6. Execute the following commands under the path of **Working Directory**.
 
-```bash
-$ cd xxxxx
-$ tree
-
-# ├─sonic-agent-xxxx.jar
-# │
-# ├─config
-# │ ├─application-sonic-agent.yml
-# ├─plugins
-# ├─mini
-```
-
-7. Modify the configuration information of **application-sonic-agent.yml** in the config folder and save it.
-8. Execute the following commands under the path of **Working Directory**.
-
-::: tip Notice
-1. If you are a windows user, please enter `chcp 65001` in the console and press Enter, and then enter the following command
+::: tip 
+1. If you are a `Windows` user, please enter `chcp 65001` in the console and press Enter, and then enter the following command
 
 In addition, if you need to use the Python custom script function, you also need to enter `set PYTHONIOENCODING=UTF-8` in the command prompt before entering the following command to avoid garbled output from the Python script.
 
-2. If you are a Macosx user, please check the common question Q1 below for configuration before continuing with the following instructions
+2. If you are a `Macosx` user, please check the common question Q1 below for configuration before continuing with the following instructions
 :::
 
 ```bash
 java -Dfile.encoding=utf-8 -jar sonic-agent-xxxx.jar
 ```
 
-9. Deployment complete! Just insert the device by yourself (please place the device vertically or flatly, and rotate it left and right may affect the coordinate positioning).
+7. Deployment complete! You can go to the device to access document (please place the device vertically or flatly, and rotate it left and right may affect the coordinate positioning).
 
 ## Docker deployment
 
@@ -117,7 +110,7 @@ docker-compose up -d
 docker-compose -f docker-compose-zh.yml up -d
 ```
 :::
-4. Deployment is complete! Just plug in the device yourself.
+4. Deployment is complete! You can go to the device to access document .
 5. (Appendix) If you are not familiar with Docker, it is recommended to use jar deployment.
 
 ## Frequently Asked Questions (Q&A)
