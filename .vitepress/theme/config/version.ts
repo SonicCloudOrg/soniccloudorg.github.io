@@ -162,18 +162,26 @@ const cons: Cons = [
   {
     name: "lihuacai168",
     avatar: "11568297"
+  },
+  {
+    name: "EricJin-git",
+    avatar: "39985667"
   }
 ]
 
 export default [
   {
     version: "v2.5.3",
-    time: "unknown",
+    time: "2023/6/5",
     feat: [
       {
         title: "Sonic新生态sonic-uiautomator2-python-client发布",
         done: true
-      }
+      },
+      {
+        title: "通知机器人改版与更多自定义扩展，支持EL表达式",
+        url: "https://sonic-cloud.wiki/d/2876"
+      },
     ],
     fix: [
       {
@@ -189,10 +197,6 @@ export default [
         done: true
       },
       {
-        title: "通知机器人改版与更多自定义扩展",
-        url: "https://sonic-cloud.wiki/d/2876"
-      },
-      {
         title: "修复webElementScrollToView步骤获取控件信息传参错误导致的元素无法找到的问题",
         url: "https://github.com/SonicCloudOrg/sonic-agent/pull/355",
         done: true
@@ -205,9 +209,17 @@ export default [
       {
         title: "Python自定义脚本新增第四个传递参数为远程uia2-server和wda-server地址",
         done: true
+      },
+      {
+        title: "修复测试报告执行完成，但是在网页上的测试报告仍然显示running的问题",
+        url: "https://sonic-cloud.wiki/d/3217-test-suite-running"
+      },
+      {
+        title: "用例详情页步骤列表添加滚动条，方便步骤较多时添加/编辑",
+        url: "https://github.com/SonicCloudOrg/sonic-client-web/pull/254"
       }
     ],
-    con: getCon("ZhouYixun", "mmagi", "caofengbin", "upengfei", "lihuacai168")
+    con: getCon("ZhouYixun", "mmagi", "caofengbin", "upengfei", "lihuacai168", "EricJin-git")
   },
   {
     version: "v2.5.2",
