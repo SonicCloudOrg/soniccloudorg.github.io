@@ -171,6 +171,25 @@ const cons: Cons = [
 
 export default [
   {
+    version: "v2.5.4",
+    time: "2023/6/6",
+    fix: [
+      {
+        title: "修复v2.5.3版本钉钉机器人图片链接失效的问题",
+        done: true
+      },
+      {
+        title: "修复sib在间隔大于1s时部分性能数据缺失的问题",
+        done: true
+      },
+      {
+        title: "修复sonic-uiautomator2-python-client在使用时Driver引用UiaClient失效的问题",
+        done: true
+      }
+    ],
+    con: getCon("ZhouYixun", "mmagi")
+  },
+  {
     version: "v2.5.3",
     time: "2023/6/5",
     feat: [
