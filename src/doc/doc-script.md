@@ -374,8 +374,32 @@ os.system("adb -s {udId} am force-stop io.appium.uiautomator2.server.test".forma
 以下是打印Sonic传递的所有参数的示例脚本。
 ```python
 import sys
-argv = sys.argv[1:]
-print("args==argv==", argv)
+import os
+from common.models import AndroidSelector
+from uia2.driver import AndroidDriver
+
+
+def test_demo(adb_serial_num:str, uia_url:str):
+    package_name = "com.android.settings"
+
+    # launch App
+    os.system(
+        f"adb -s {adb_serial_num} shell monkey -p {package_name} -c android.intent.category.LAUNCHER 1")
+
+    # connect remote uia2 server
+    driver = AndroidDriver(uia_url)
+    p = driver.get_page_source()
+    print(p)
+    e = driver.find_element(AndroidSelector.XPATH, "//*[@text='设置']")
+    if e is not None:
+        print(e.get_text())
+        e.send_keys("Hello")
+
+
+if __name__ == '__main__':
+    session_id, adb_serial_num, global_pramas, uia_url = sys.argv[1:]
+    print(session_id, adb_serial_num, global_pramas, uia_url)
+    test_demo(adb_serial_num, uia_url)
 ```
 ::: tip 更多参考示例
 想参考更多脚本示例，可以前往 <a href="https://sonic-cloud.wiki/t/script" target="_blank">这里</a> 查看官方或用户分享的示例哦！
