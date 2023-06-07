@@ -2,6 +2,7 @@
 contributors:
 - 'ZhouYixun'
 - 'mmagi'
+- 'upengfei'
 ---
 
 # 自定义脚本
@@ -352,6 +353,7 @@ set PYTHONIOENCODING=UTF-8
 1. sessionId。安卓为uia2的sessionId，iOS为wda的sessionId。
 2. 设备udId。
 3. 全局参数Json字符串。
+4. 远程url地址（v2.5.3更新后可用）
 
 ### 退出Driver
 
@@ -397,6 +399,7 @@ def test_demo(adb_serial_num:str, uia_url:str):
 
 
 if __name__ == '__main__':
+    # uia_url 在 v2.5.3 更新后才有
     session_id, adb_serial_num, global_pramas, uia_url = sys.argv[1:]
     print(session_id, adb_serial_num, global_pramas, uia_url)
     test_demo(adb_serial_num, uia_url)
