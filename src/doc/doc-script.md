@@ -373,9 +373,76 @@ os.system("adb -s {udId} am force-stop io.appium.uiautomator2.server.test".forma
 
 以下是打印Sonic传递的所有参数的示例脚本。
 ```python
-import sys
-argv = sys.argv[1:]
-print("args==argv==", argv)
+import argparse
+import platform
+import applescript
+from subprocess import run
+
+from uia2.driver import AndroidDriver
+
+
+def server_on(udid: str, port: int) -> None:
+    c1 = f"adb -s {udid} shell am instrument -w io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner"
+    c2 = f"adb forward tcp:{port} tcp:{port}"
+    exec_cmd(c1)
+    exec_cmd(c2)
+
+
+def exec_cmd(c: str) -> None:
+    sys = platform.system().lower()
+    if sys == "windows":
+        run(f'start cmd /c {c}')
+    elif sys == "linux":
+        run(f"gnome-terminal -e {c}")
+    elif sys == 'darwin':
+        # 需要安装applescript模块
+        applescript.tell.app("Terminal", f'do script "{c}"')
+    else:
+        raise TypeError("unsupported system type!")
+
+
+def main(args: argparse.Namespace) -> None:
+    # 开启本地uiautomator服务
+    server_on(args.udid, args.port)
+    if all([not args.sessionid, not args.cap]):
+        raise ValueError("sessionid and cap cannot be None at the same time!")
+
+    # 以下为脚本实际流程
+    ad = AndroidDriver(url=args.url, cap=args.cap, session_id=args.sessionid)
+    print(ad.get_page_source())
+
+
+if __name__ == '__main__':
+
+    parser = argparse.ArgumentParser('运行脚本示例')
+
+    parser.add_argument('--udid', type=str, required=True, help="设备ID")
+    parser.add_argument('--sessionid', type=str, default=None, required=False,
+                        help="会话ID，安卓为uia2的sessionId，iOS为wda的sessionId")
+    parser.add_argument('--cap', type=str, required=False, default=None, help="全局参数Json字符串")
+    parser.add_argument('--url', type=str, required=True, help="本地起的driver的服务地址")
+    parser.add_argument('--port', type=int, required=True, default=6790, help="本地起的driver的服务端口号")
+
+    args = parser.parse_args()
+    print(args)
+
+    main(args)
+```
+```shell
+
+>>> python test01.py -h 
+
+usage: 运行脚本示例 [-h] --udid UDID [--sessionid SESSIONID] [--cap CAP] --url URL --port PORT
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --udid UDID           设备ID
+  --sessionid SESSIONID
+                        会话ID,安卓为uia2的sessionId,iOS为wda的sessionId
+  --cap CAP             全局参数Json字符串
+  --url URL             本地driver服务地址
+  --port PORT           本地driver服务端口号
+
 ```
 ::: tip 更多参考示例
 想参考更多脚本示例，可以前往 <a href="https://sonic-cloud.wiki/t/script" target="_blank">这里</a> 查看官方或用户分享的示例哦！
