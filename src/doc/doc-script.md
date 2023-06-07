@@ -371,9 +371,9 @@ os.system("adb -s {udId} am force-stop io.appium.uiautomator2.server.test".forma
 
 ### 示例脚本展示
 
-#### 打印传递参数示例
+#### 直接用Sonic已启动的appium-uiautomator2-server测试
 
-以下是打印Sonic传递的所有参数的示例脚本。
+以下是直接用Sonic已启动的appium-uiautomator2-server测试的示例脚本。
 ```python
 import sys
 import os
@@ -384,11 +384,11 @@ from uia2.driver import AndroidDriver
 def test_demo(adb_serial_num:str, uia_url:str):
     package_name = "com.android.settings"
 
-    # launch App
+    # 启动 App
     os.system(
         f"adb -s {adb_serial_num} shell monkey -p {package_name} -c android.intent.category.LAUNCHER 1")
 
-    # connect remote uia2 server
+    # 连接到已有 uia2 server
     driver = AndroidDriver(uia_url)
     p = driver.get_page_source()
     print(p)
