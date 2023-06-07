@@ -166,6 +166,10 @@ const cons: Cons = [
   {
     name: "EricJin-git",
     avatar: "39985667"
+  },
+  {
+    name: "forgetrelease",
+    avatar: "36836126"
   }
 ]
 
@@ -175,14 +179,29 @@ export default [
     time: "unknown",
     fix: [
       {
-        title: "调整通知机器人部分UI布局"
+        title: "调整通知机器人部分UI布局",
+        done: true
       },
       {
         title: "优化切换Handle时的目标判断为模糊匹配",
-        url: "https://sonic-cloud.wiki/d/3266-handleurl"
+        url: "https://sonic-cloud.wiki/d/3266-handleurl",
+        done: true
+      },
+      {
+        title: "优化iOS图片识别后根据坐标点击屏幕位置的准确度",
+        url: "https://github.com/SonicCloudOrg/sonic-agent/pull/356",
+        done: true
+      },
+      {
+        title: "修复v2.5.2起无所属模块的控件元素为空时控件下拉框无法下拉的问题",
+        url: "https://sonic-cloud.wiki/d/3272",
+        done: true
+      },
+      {
+        title: "修复v2.5.3起机器人改版后部分自定义hook无法使用的问题"
       }
     ],
-    con: getCon("ZhouYixun")
+    con: getCon("ZhouYixun", "mmagi", "forgetrelease")
   },
   {
     version: "v2.5.4",

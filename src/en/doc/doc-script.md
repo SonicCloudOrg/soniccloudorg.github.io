@@ -352,6 +352,7 @@ Regardless of Android or iOS, Sonic will pass three parameters to the Python scr
 1. sessionId. Android is the sessionId of uia2, and iOS is the sessionId of wda.
 2. Device udId.
 3. Global parameter Json string.
+4. Remote URL address (available after v2.5.3 update)
 
 ### Exit Driver
 
@@ -369,13 +370,38 @@ os.system("adb -s {udId} am force-stop io.appium.uiautomator2.server.test".forma
 
 ### Sample script display
 
-#### print example of passing parameters
+#### Test directly with Sonic's already started appium uiautomator2 server
 
-Below is an example script that prints all parameters passed by Sonic.
+The following is an example script for testing directly with Sonic's already started appium uiautomator2 server.
 ```python
 import sys
-argv = sys.argv[1:]
-print("args==argv=", argv)
+import os
+from common.models import AndroidSelector
+from uia2.driver import AndroidDriver
+
+
+def test_demo(adb_serial_num:str, uia_url:str):
+    package_name = "com.android.settings"
+
+    # Launch App
+    os.system(
+        f"adb -s {adb_serial_num} shell monkey -p {package_name} -c android.intent.category.LAUNCHER 1")
+
+    # Connect to uia2 server
+    driver = AndroidDriver(uia_url)
+    p = driver.get_page_source()
+    print(p)
+    e = driver.find_element(AndroidSelector.XPATH, "//*[@text='设置']")
+    if e is not None:
+        print(e.get_text())
+        e.send_keys("Hello")
+
+
+if __name__ == '__main__':
+    # uia_url available after v2.5.3 update
+    session_id, adb_serial_num, global_pramas, uia_url = sys.argv[1:]
+    print(session_id, adb_serial_num, global_pramas, uia_url)
+    test_demo(adb_serial_num, uia_url)
 ```
 ::: tip More reference examples
 If you want to refer to more script examples, you can go to <a href="https://sonic-cloud.wiki/t/script" target="_blank">here</a> to view official or user-shared examples!
