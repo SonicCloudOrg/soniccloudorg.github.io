@@ -171,6 +171,20 @@ const cons: Cons = [
 
 export default [
   {
+    version: "v2.5.5",
+    time: "unknown",
+    fix: [
+      {
+        title: "调整通知机器人部分UI布局"
+      },
+      {
+        title: "优化切换Handle时的目标判断为模糊匹配",
+        url: "https://sonic-cloud.wiki/d/3266-handleurl"
+      }
+    ],
+    con: getCon("ZhouYixun")
+  },
+  {
     version: "v2.5.4",
     time: "2023/6/6",
     fix: [
