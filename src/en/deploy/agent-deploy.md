@@ -26,9 +26,9 @@ This method will deploy Agent, Appium and other environments with local jar pack
 2. Add an Agent from the [Agent Center] of the deployed front-end interface [Device Center], and record the Key of the Agent.
 
 ::: tip
-From `v2.5.4`, in order to reduce user deployment costs, Agent has built-in adb under the `plugins` folder.
+From `v2.5.5`, in order to reduce user deployment costs, Agent has built-in adb under the `plugins` folder.
 
-However, it is known that multiple adb-servers working at the same time will cause preemption problems, so if you have other adb-servers working locally and want to use your existing adb or the version is lower than v2.5.4, you need to add these two steps:
+However, it is known that multiple adb-servers working at the same time will cause preemption problems, so if you have other adb-servers working locally and want to use your existing adb or the version is lower than v2.5.5, you need to add these two steps:
 1. Set the Android SDK to the system environment variable, named ANDROID_HOME. Open SDKManager and download **platform-tools**. Make sure the platform-tools directory exists and the adb command is available.
 2. Add ANDROID_HOME, ANDROID_HOME/platform-tools to the system PATH.
 :::
@@ -37,27 +37,27 @@ However, it is known that multiple adb-servers working at the same time will cau
 
 ::: info Linux
 
-👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.5.4/sonic-agent-v2.5.4-linux_x86.zip" target="_blank">sonic-agent-v2.5.4-linux_x86.zip</a>
+👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.5.5/sonic-agent-v2.5.5-linux_x86.zip" target="_blank">sonic-agent-v2.5.5-linux_x86.zip</a>
 
-👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.5.4/sonic-agent-v2.5.4-linux_x86_64.zip" target="_blank">sonic-agent-v2.5.4-linux_x86_64.zip</a>
+👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.5.5/sonic-agent-v2.5.5-linux_x86_64.zip" target="_blank">sonic-agent-v2.5.5-linux_x86_64.zip</a>
 
-👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.5.4/sonic-agent-v2.5.4-linux_arm64.zip" target="_blank">sonic-agent-v2.5.4-linux_arm64.zip</a>
+👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.5.5/sonic-agent-v2.5.5-linux_arm64.zip" target="_blank">sonic-agent-v2.5.5-linux_arm64.zip</a>
 
 :::
 
 ::: info Macosx
 
-👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.5.4/sonic-agent-v2.5.4-macosx_x86_64.zip" target="_blank">sonic-agent-v2.5.4-macosx_x86_64.zip</a>
+👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.5.5/sonic-agent-v2.5.5-macosx_x86_64.zip" target="_blank">sonic-agent-v2.5.5-macosx_x86_64.zip</a>
 
-👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.5.4/sonic-agent-v2.5.4-macosx_arm64.zip" target="_blank">sonic-agent-v2.5.4-macosx_arm64.zip</a>
+👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.5.5/sonic-agent-v2.5.5-macosx_arm64.zip" target="_blank">sonic-agent-v2.5.5-macosx_arm64.zip</a>
 
 :::
 
 ::: info Windows
 
-👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.5.4/sonic-agent-v2.5.4-windows_x86.zip" target="_blank">sonic-agent-v2.5.4-windows_x86.zip</a>
+👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.5.5/sonic-agent-v2.5.5-windows_x86.zip" target="_blank">sonic-agent-v2.5.5-windows_x86.zip</a>
 
-👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.5.4/sonic-agent-v2.5.4-windows_x86_64.zip" target="_blank">sonic-agent-v2.5.4-windows_x86_64.zip</a>
+👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.5.5/sonic-agent-v2.5.5-windows_x86_64.zip" target="_blank">sonic-agent-v2.5.5-windows_x86_64.zip</a>
 
 :::
 
@@ -97,7 +97,7 @@ This method will deploy the Agent and the required environment at one time.
 Preparatory work: Docker, Sonic front and back ends are deployed
 
 1. Add an Agent from the [Agent Center] of the deployed front-end interface [Device Center], and record the Key of the Agent.
-2. [Click here](https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.5.4/docker-compose.yml) to download the latest docker-compose. yml, refer to the comments to modify the content inside. (If the acceleration link fails, please go to <a href="https://github.com/SonicCloudOrg/sonic-agent/releases" target="_black">here</a> to download)
+2. [Click here](https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.5.5/docker-compose.yml) to download the latest docker-compose. yml, refer to the comments to modify the content inside. (If the acceleration link fails, please go to <a href="https://github.com/SonicCloudOrg/sonic-agent/releases" target="_black">here</a> to download)
 3. Execute the following instructions (change the parameters by yourself according to the prompts).
 
 ```bash
@@ -105,7 +105,7 @@ docker-compose up -d
 ```
 ::: tip If you are a user from mainland China and access to DockerHub is slow, you can choose one of the following two points:
 - Configure domestic accelerated image sources (recommended)
-- <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.5.4/docker-compose-zh.yml" target="_blank"> Click here</a> to download docker-compose-zh.yml and execute the following instructions to directly use the accelerated image (not recommended, the acceleration source may be unstable or the network fluctuates, and docker-compose -f docker-compose- zh.yml down)
+- <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.5.5/docker-compose-zh.yml" target="_blank"> Click here</a> to download docker-compose-zh.yml and execute the following instructions to directly use the accelerated image (not recommended, the acceleration source may be unstable or the network fluctuates, and docker-compose -f docker-compose- zh.yml down)
 ```bash
 docker-compose -f docker-compose-zh.yml up -d
 ```
