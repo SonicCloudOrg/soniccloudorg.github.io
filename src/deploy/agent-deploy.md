@@ -25,7 +25,7 @@ contributors:
 1. **最低启动要求为JDK17**，可以前往 [这里](https://docs.aws.amazon.com/corretto/latest/corretto-17-ug/downloads-list.html) 安装下载。
 2. 从部署好的前端界面【设备中心】的【Agent 中心】新增 Agent，记录 Agent 的 Key。
 ::: tip
-从`v2.5.5`起，为降低用户部署成本，Agent在`plugins`文件夹下内置adb。
+从`v2.5.3`起，为降低用户部署成本，Agent在`plugins`文件夹下内置adb。
 
 但是已知多个adb-server同时工作会出现抢占问题，因此如果你本地有其他adb-server正在工作，希望用自己已有的adb 或 版本低于v2.5.5时，需要加上这两步：
  1. 将安卓 SDK 设置到系统环境变量，命名为 ANDROID_HOME。打开 SDKManager，下载 **platform-tools**。确保 platform-tools 目录存在，adb 指令可用。

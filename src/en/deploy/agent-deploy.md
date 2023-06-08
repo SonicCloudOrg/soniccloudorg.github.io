@@ -26,7 +26,7 @@ This method will deploy Agent, Appium and other environments with local jar pack
 2. Add an Agent from the [Agent Center] of the deployed front-end interface [Device Center], and record the Key of the Agent.
 
 ::: tip
-From `v2.5.5`, in order to reduce user deployment costs, Agent has built-in adb under the `plugins` folder.
+From `v2.5.3`, in order to reduce user deployment costs, Agent has built-in adb under the `plugins` folder.
 
 However, it is known that multiple adb-servers working at the same time will cause preemption problems, so if you have other adb-servers working locally and want to use your existing adb or the version is lower than v2.5.5, you need to add these two steps:
 1. Set the Android SDK to the system environment variable, named ANDROID_HOME. Open SDKManager and download **platform-tools**. Make sure the platform-tools directory exists and the adb command is available.
