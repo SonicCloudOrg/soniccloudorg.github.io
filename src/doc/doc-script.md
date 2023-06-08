@@ -374,6 +374,10 @@ os.system("adb -s {udId} am force-stop io.appium.uiautomator2.server.test".forma
 #### 直接用Sonic已启动的appium-uiautomator2-server测试
 
 以下是直接用Sonic已启动的appium-uiautomator2-server测试的示例脚本。
+```
+pip install -U sonic-uia2-client
+```
+
 ```python
 import sys
 import os
