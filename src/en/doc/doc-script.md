@@ -373,6 +373,10 @@ os.system("adb -s {udId} am force-stop io.appium.uiautomator2.server.test".forma
 #### Test directly with Sonic's already started appium uiautomator2 server
 
 The following is an example script for testing directly with Sonic's already started appium uiautomator2 server.
+```
+pip install -U sonic-uia2-client
+```
+
 ```python
 import sys
 import os
