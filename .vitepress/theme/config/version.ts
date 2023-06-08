@@ -176,7 +176,7 @@ const cons: Cons = [
 export default [
   {
     version: "v2.5.5",
-    time: "unknown",
+    time: "2023/6/8",
     fix: [
       {
         title: "调整通知机器人部分UI布局",
@@ -199,6 +199,10 @@ export default [
       },
       {
         title: "修复v2.5.3起机器人改版后部分自定义hook无法使用的问题"
+      },
+      {
+        title: "优化sonic-uiautomator2-python-client引用依赖，使其兼容Python 3.11以下版本",
+        url: "https://sonic-cloud.wiki/d/3276"
       }
     ],
     con: getCon("ZhouYixun", "mmagi", "forgetrelease")
