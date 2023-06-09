@@ -349,7 +349,7 @@ set PYTHONIOENCODING=UTF-8
 
 ### 可用参数
 
-无论安卓还是iOS，Sonic会传递三个参数到Python脚本中，arg依次分别为：
+无论安卓还是iOS，Sonic会传递四个参数到Python脚本中，arg依次分别为：
 1. sessionId。安卓为uia2的sessionId，iOS为wda的sessionId。
 2. 设备udId。
 3. 全局参数Json字符串。
