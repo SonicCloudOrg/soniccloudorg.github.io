@@ -348,7 +348,7 @@ to set an environment variable for the Python before starting the Agent.
 
 ### Available parameters
 
-Regardless of Android or iOS, Sonic will pass three parameters to the Python script, arg depends on times are:
+Regardless of Android or iOS, Sonic will pass four parameters to the Python script, arg depends on times are:
 1. sessionId. Android is the sessionId of uia2, and iOS is the sessionId of wda.
 2. Device udId.
 3. Global parameter Json string.
