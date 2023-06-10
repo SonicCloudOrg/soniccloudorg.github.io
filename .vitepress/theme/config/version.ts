@@ -175,6 +175,28 @@ const cons: Cons = [
 
 export default [
   {
+    version: "v2.5.6",
+    time: "2023/6/10",
+    fix: [
+      {
+        title: "修复自定义机器人传递参数失效问题",
+        url: "https://sonic-cloud.wiki/d/3259"
+      },
+      {
+        title: "优化sonic-uiautomator2-python-client部分枚举使用体验",
+        url: "https://sonic-cloud.wiki/d/3294"
+      },
+      {
+        title: "修复v2.5.5控件搜索框无法远程搜索的问题",
+        url: "https://sonic-cloud.wiki/d/3293"
+      },
+      {
+        title: "移除部分Agent中已弃用配置的检查"
+      }
+    ],
+    con: getCon("ZhouYixun", "mmagi")
+  },
+  {
     version: "v2.5.5",
     time: "2023/6/8",
     fix: [
