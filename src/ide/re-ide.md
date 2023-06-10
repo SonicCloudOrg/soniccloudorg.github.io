@@ -11,13 +11,10 @@ contributors:
 
 本文为Sonic IDE的介绍与下载。 👉[Github地址](https://github.com/SonicCloudOrg/sonic-ide)
 
-[//]: # (<div style="display: flex">)
-
-[//]: # (<img src="https://img.shields.io/github/stars/SonicCloudOrg/sonic-ide?style=social">)
-
-[//]: # (<img style="margin-left:10px" src="https://img.shields.io/github/downloads/SonicCloudOrg/sonic-ide/total">)
-
-[//]: # (</div>)
+<div style="display: flex">
+<img src="https://img.shields.io/github/stars/SonicCloudOrg/sonic-ide?style=social">
+<img style="margin-left:10px" src="https://img.shields.io/github/downloads/SonicCloudOrg/sonic-ide/total">
+</div>
 
 
 ## 介绍
