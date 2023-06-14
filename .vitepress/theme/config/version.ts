@@ -175,6 +175,30 @@ const cons: Cons = [
 
 export default [
   {
+    version: "v2.6.0",
+    time: "unknown",
+    feat: [
+      {
+        title: "Android与iOS端长列表的场景下，实现“滚动到指定元素”可见的能力",
+        url: "https://github.com/SonicCloudOrg/sonic-agent/pull/357",
+        done: true
+      },
+      {
+        title: "添加iOS类似Monkey能力的随机事件",
+        url: "https://sonic-cloud.wiki/d/2944",
+        done: true
+      }
+    ],
+    fix: [
+      {
+        title: "修复安卓部分机型获取到多个mCurrentFocus时，无法正确得到当前Activity的问题",
+        url: "https://github.com/SonicCloudOrg/sonic-agent/pull/359",
+        done: true
+      }
+    ],
+    con: getCon("ZhouYixun", "caofengbin")
+  },
+  {
     version: "v2.5.6",
     time: "2023/6/10",
     fix: [
