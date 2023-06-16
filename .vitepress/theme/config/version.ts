@@ -194,9 +194,14 @@ export default [
         title: "修复安卓部分机型获取到多个mCurrentFocus时，无法正确得到当前Activity的问题",
         url: "https://github.com/SonicCloudOrg/sonic-agent/pull/359",
         done: true
+      },
+      {
+        title: "修复v2.5.3以上飞书机器人默认模板错误的问题",
+        url: "https://sonic-cloud.wiki/d/3323",
+        done: true
       }
     ],
-    con: getCon("ZhouYixun", "caofengbin")
+    con: getCon("ZhouYixun", "caofengbin", "mmagi")
   },
   {
     version: "v2.5.6",
