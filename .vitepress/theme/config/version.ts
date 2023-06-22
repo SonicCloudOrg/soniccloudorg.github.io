@@ -187,7 +187,26 @@ export default [
         title: "添加iOS类似Monkey能力的随机事件",
         url: "https://sonic-cloud.wiki/d/2944",
         done: true
-      }
+      },
+      {
+        title: "增加卸载安装包方法的返回值校验，应用包名不存在或安装错误时，将标记失败",
+        url: "https://github.com/SonicCloudOrg/sonic-agent/pull/362",
+        done: true
+      },
+      {
+        title: "安卓步骤【切换触控模式】新增切换appium-uiautomator2-server模式",
+        url: "https://github.com/SonicCloudOrg/sonic-agent/pull/364",
+        done: true
+      },
+      {
+        title: "sonic-driver-core AndroidDriver新增tap、longPress、swipe触控方法",
+        url: "https://github.com/SonicCloudOrg/sonic-driver-core/pull/85",
+        done: true
+      },
+      {
+        title: "sonic-driver-core iOSDriver增加pressAndDragWithVelocity滑动方法，避免滑动过快触发的惯性滑动",
+        url: "https://github.com/SonicCloudOrg/sonic-driver-core/pull/88",
+      },
     ],
     fix: [
       {
@@ -198,6 +217,16 @@ export default [
       {
         title: "修复v2.5.3以上飞书机器人默认模板错误的问题",
         url: "https://sonic-cloud.wiki/d/3323",
+        done: true
+      },
+      {
+        title: "基于Sonic APK的滑动模式，实现线性滑动的效果，避免过渡太生硬",
+        url: "https://github.com/SonicCloudOrg/sonic-agent/pull/365",
+        done: true
+      },
+      {
+        title: "优化sonic-driver-core双端的findElementList逻辑，仅在查找到元素的时候退出while循环",
+        url: "https://github.com/SonicCloudOrg/sonic-driver-core/pull/90",
         done: true
       }
     ],
