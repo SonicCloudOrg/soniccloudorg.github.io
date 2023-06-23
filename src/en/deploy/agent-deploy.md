@@ -28,7 +28,7 @@ This method will deploy Agent, Appium and other environments with local jar pack
 ::: tip
 From `v2.5.3`, in order to reduce user deployment costs, Agent has built-in adb under the `plugins` folder.
 
-However, it is known that multiple adb-servers working at the same time will cause preemption problems, so if you have other adb-servers working locally and want to use your existing adb or the version is lower than v2.6.0, you need to add these two steps:
+However, it is known that multiple adb-servers working at the same time will cause preemption problems, so if you have other adb-servers working locally and want to use your existing adb or the version is lower than v2.5.3, you need to add these two steps:
 1. Set the Android SDK to the system environment variable, named ANDROID_HOME. Open SDKManager and download **platform-tools**. Make sure the platform-tools directory exists and the adb command is available.
 2. Add ANDROID_HOME, ANDROID_HOME/platform-tools to the system PATH.
 :::
