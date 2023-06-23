@@ -27,7 +27,7 @@ contributors:
 ::: tip
 从`v2.5.3`起，为降低用户部署成本，Agent在`plugins`文件夹下内置adb。
 
-但是已知多个adb-server同时工作会出现抢占问题，因此如果你本地有其他adb-server正在工作，希望用自己已有的adb 或 版本低于v2.6.0时，需要加上这两步：
+但是已知多个adb-server同时工作会出现抢占问题，因此如果你本地有其他adb-server正在工作，希望用自己已有的adb 或 版本低于v2.5.3时，需要加上这两步：
  1. 将安卓 SDK 设置到系统环境变量，命名为 ANDROID_HOME。打开 SDKManager，下载 **platform-tools**。确保 platform-tools 目录存在，adb 指令可用。
  2. 将 ANDROID_HOME、ANDROID_HOME/platform-tools 添加到系统 PATH 中。
 ::: 
