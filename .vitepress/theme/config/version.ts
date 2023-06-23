@@ -176,7 +176,7 @@ const cons: Cons = [
 export default [
   {
     version: "v2.6.0",
-    time: "unknown",
+    time: "2023/6/23",
     feat: [
       {
         title: "Android与iOS端长列表的场景下，实现“滚动到指定元素”可见的能力",
