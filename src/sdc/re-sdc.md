@@ -7,7 +7,7 @@ contributors:
 
 本文为Sonic UI自动化Driver核心sonic-driver-core的介绍与原理简述。 👉[Github地址](https://github.com/SonicCloudOrg/sonic-driver-core) 
 
-👉[Java Doc](https://s01.oss.sonatype.org/service/local/repositories/releases/archive/io/github/soniccloudorg/sonic-driver-core/1.1.27/sonic-driver-core-1.1.27-javadoc.jar/!/index.html)
+👉[Java Doc](https://s01.oss.sonatype.org/service/local/repositories/releases/archive/io/github/soniccloudorg/sonic-driver-core/1.1.28/sonic-driver-core-1.1.28-javadoc.jar/!/index.html)
 
 <div style="display: flex">
 <img src="https://img.shields.io/github/stars/SonicCloudOrg/sonic-driver-core?style=social">
@@ -30,7 +30,7 @@ sonic-driver-core是Sonic UI自动化核心，主要直接通过与
 
 通信达到自动化效果，减少通信过程中的时延与消耗。
 
-API文档可前往：👉[Java Doc](https://s01.oss.sonatype.org/service/local/repositories/releases/archive/io/github/soniccloudorg/sonic-driver-core/1.1.27/sonic-driver-core-1.1.27-javadoc.jar/!/index.html)
+API文档可前往：👉[Java Doc](https://s01.oss.sonatype.org/service/local/repositories/releases/archive/io/github/soniccloudorg/sonic-driver-core/1.1.28/sonic-driver-core-1.1.28-javadoc.jar/!/index.html)
 
 ## 快速使用
 
@@ -40,14 +40,14 @@ API文档可前往：👉[Java Doc](https://s01.oss.sonatype.org/service/local/r
 <dependency>
     <groupId>io.github.soniccloudorg</groupId>
     <artifactId>sonic-driver-core</artifactId>
-    <version>1.1.27</version>
+    <version>1.1.28</version>
 </dependency>
 ```
 
 ### Gradle
 
 ```groovy
-implementation 'io.github.soniccloudorg:sonic-driver-core:1.1.27'
+implementation 'io.github.soniccloudorg:sonic-driver-core:1.1.28'
 ```
 
 
