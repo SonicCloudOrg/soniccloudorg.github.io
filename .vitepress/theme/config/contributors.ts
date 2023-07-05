@@ -74,5 +74,11 @@ export default [
     link: 'https://github.com/mmagi',
     avatar:
       'https://avatars.githubusercontent.com/u/3122149?v=4'
+  },
+  {
+    name: 'lixf6',
+    link: 'https://github.com/lixf6',
+    avatar:
+      'https://avatars.githubusercontent.com/u/63722217?s=400&u=2a2ba757ef80f8027ac147dd35e57efd1ed8624d&v=4'
   }
 ] as Contributor[]
