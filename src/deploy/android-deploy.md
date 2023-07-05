@@ -4,6 +4,7 @@ contributors:
   - 'wuxiangin'
   - 'lanlanz'
   - 'shinyvince'
+  - 'lixf6'
 ---
 
 # 安卓设备接入
