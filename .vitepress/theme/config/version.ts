@@ -175,6 +175,38 @@ const cons: Cons = [
 
 export default [
   {
+    version: "v2.6.1",
+    time: "2023/7/10",
+    fix: [
+      {
+        title: "修复sonic-android-supply在采集应用过程中，应用强制退出后无法继续采集的问题"
+      },
+      {
+        title: "修复iOS类似Monkey能力的随机事件时报错",
+        url: "https://github.com/SonicCloudOrg/sonic-agent/pull/367"
+      },
+      {
+        title: "优化增加获取控件属性到自定义变量的能力",
+        url: "https://github.com/SonicCloudOrg/sonic-agent/pull/368"
+      },
+      {
+        title: "修复Android上滚动到元素可见操作，滑动过快的问题",
+        url: "https://github.com/SonicCloudOrg/sonic-agent/pull/370"
+      },
+      {
+        title: "优化sonic-driver-core双端的findElementList逻辑，仅在查找到元素的时候退出while循环"
+      },
+      {
+        title: "sonic-driver-core参考W3C规范在BaseElement中增加常用的isDisplayed方法"
+      },
+      {
+        title: "修复部分POCO引擎无法获取id问题",
+        url: "https://sonic-cloud.wiki/d/3356"
+      }
+    ],
+    con: getCon("ZhouYixun", "caofengbin", "aoliaoaoaojiao")
+  },
+  {
     version: "v2.6.0",
     time: "2023/6/23",
     feat: [
