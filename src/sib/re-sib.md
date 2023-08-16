@@ -54,29 +54,29 @@ usbmux的作用是实现跨平台与iOS设备服务的通信。
 
 ::: info Linux:
 
-👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.3.14/sonic-ios-bridge_1.3.14_linux_arm64.tar.gz" target="_blank">sonic-ios-bridge_1.3.14_linux_arm64.tar.gz</a>
+👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.3.15/sonic-ios-bridge_1.3.15_linux_arm64.tar.gz" target="_blank">sonic-ios-bridge_1.3.15_linux_arm64.tar.gz</a>
 
-👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.3.14/sonic-ios-bridge_1.3.14_linux_x86.tar.gz" target="_blank">sonic-ios-bridge_1.3.14_linux_x86.tar.gz</a>
+👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.3.15/sonic-ios-bridge_1.3.15_linux_x86.tar.gz" target="_blank">sonic-ios-bridge_1.3.15_linux_x86.tar.gz</a>
 
-👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.3.14/sonic-ios-bridge_1.3.14_linux_x86_64.tar.gz" target="_blank">sonic-ios-bridge_1.3.14_linux_x86_64.tar.gz</a>
+👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.3.15/sonic-ios-bridge_1.3.15_linux_x86_64.tar.gz" target="_blank">sonic-ios-bridge_1.3.15_linux_x86_64.tar.gz</a>
 
 :::
 
 ::: info Macosx:
 
-👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.3.14/sonic-ios-bridge_1.3.14_macosx_arm64.tar.gz" target="_blank">sonic-ios-bridge_1.3.14_macosx_arm64.tar.gz</a>
+👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.3.15/sonic-ios-bridge_1.3.15_macosx_arm64.tar.gz" target="_blank">sonic-ios-bridge_1.3.15_macosx_arm64.tar.gz</a>
 
-👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.3.14/sonic-ios-bridge_1.3.14_macosx_x86_64.tar.gz" target="_blank">sonic-ios-bridge_1.3.14_macosx_x86_64.tar.gz</a>
+👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.3.15/sonic-ios-bridge_1.3.15_macosx_x86_64.tar.gz" target="_blank">sonic-ios-bridge_1.3.15_macosx_x86_64.tar.gz</a>
 
 :::
 
 ::: info Windows:
 
-👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.3.14/sonic-ios-bridge_1.3.14_windows_arm64.tar.gz" target="_blank">sonic-ios-bridge_1.3.14_windows_arm64.tar.gz</a>
+👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.3.15/sonic-ios-bridge_1.3.15_windows_arm64.tar.gz" target="_blank">sonic-ios-bridge_1.3.15_windows_arm64.tar.gz</a>
 
-👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.3.14/sonic-ios-bridge_1.3.14_windows_x86.tar.gz" target="_blank">sonic-ios-bridge_1.3.14_windows_x86.tar.gz</a>
+👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.3.15/sonic-ios-bridge_1.3.15_windows_x86.tar.gz" target="_blank">sonic-ios-bridge_1.3.15_windows_x86.tar.gz</a>
 
-👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.3.14/sonic-ios-bridge_1.3.14_windows_x86_64.tar.gz" target="_blank">sonic-ios-bridge_1.3.14_windows_x86_64.tar.gz</a>
+👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-ios-bridge/releases/download/v1.3.15/sonic-ios-bridge_1.3.15_windows_x86_64.tar.gz" target="_blank">sonic-ios-bridge_1.3.15_windows_x86_64.tar.gz</a>
 
 :::
 
