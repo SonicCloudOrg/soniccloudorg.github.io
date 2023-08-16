@@ -5,7 +5,7 @@ contributors:
 
 # AndroidDriver
 
-本文是AndroidDriver文档。 API文档可前往：👉[Java Doc](https://s01.oss.sonatype.org/service/local/repositories/releases/archive/io/github/soniccloudorg/sonic-driver-core/1.1.28/sonic-driver-core-1.1.28-javadoc.jar/!/index.html)
+本文是AndroidDriver文档。 API文档可前往：👉[Java Doc](https://s01.oss.sonatype.org/service/local/repositories/releases/archive/io/github/soniccloudorg/sonic-driver-core/1.1.29/sonic-driver-core-1.1.29-javadoc.jar/!/index.html)
 
 ## 设备前置配置
 ::: tip 注意
