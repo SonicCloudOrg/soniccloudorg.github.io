@@ -170,10 +170,57 @@ const cons: Cons = [
   {
     name: "forgetrelease",
     avatar: "36836126"
+  },
+  {
+    name: "sam80180",
+    avatar: "13418452"
+  },
+  {
+    name: "Joycezhouktz",
+    avatar: "29685540"
   }
 ]
 
 export default [
+  {
+    version: "v2.6.2",
+    time: "2023/9/7",
+    feat: [
+      {
+        title: "支持从任意行添加或复制步骤",
+        url: "https://github.com/SonicCloudOrg/sonic-server/pull/379"
+      },
+      {
+        title: "Android新增步骤：自动授权应用",
+        url: "https://github.com/SonicCloudOrg/sonic-agent/pull/373"
+      },
+      {
+        title: "iOS端控件元素页面增加chassChain定位方式的录入",
+        url: "https://github.com/SonicCloudOrg/sonic-client-web/pull/262"
+      }
+    ],
+    fix: [
+      {
+        title: "修复m1系统webview版本小于87时无法下载chromeDriver的问题",
+        url: "https://github.com/SonicCloudOrg/sonic-agent/pull/376"
+      },
+      {
+        title: "补充步骤说明等文本的国际化翻译",
+        url: "https://github.com/SonicCloudOrg/sonic-client-web/pull/263"
+      },
+      {
+        title: "修复sib在设备列表输出遇到异常时会忽略剩下设备的问题",
+        url: "https://github.com/SonicCloudOrg/sonic-ios-bridge/pull/64"
+      },
+      {
+        title: "修复sib部分低iOS版本设备无法启动wda的问题"
+      },
+      {
+        title: "修复部分安卓性能数据遗漏问题"
+      }
+    ],
+    con: getCon("ZhouYixun", "sam80180", "Joycezhouktz", "caofengbin")
+  },
   {
     version: "v2.6.1",
     time: "2023/7/10",
