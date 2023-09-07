@@ -37,27 +37,27 @@ However, it is known that multiple adb-servers working at the same time will cau
 
 ::: info Linux
 
-👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.6.1/sonic-agent-v2.6.1-linux_x86.zip" target="_blank">sonic-agent-v2.6.1-linux_x86.zip</a>
+👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.6.2/sonic-agent-v2.6.2-linux_x86.zip" target="_blank">sonic-agent-v2.6.2-linux_x86.zip</a>
 
-👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.6.1/sonic-agent-v2.6.1-linux_x86_64.zip" target="_blank">sonic-agent-v2.6.1-linux_x86_64.zip</a>
+👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.6.2/sonic-agent-v2.6.2-linux_x86_64.zip" target="_blank">sonic-agent-v2.6.2-linux_x86_64.zip</a>
 
-👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.6.1/sonic-agent-v2.6.1-linux_arm64.zip" target="_blank">sonic-agent-v2.6.1-linux_arm64.zip</a>
+👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.6.2/sonic-agent-v2.6.2-linux_arm64.zip" target="_blank">sonic-agent-v2.6.2-linux_arm64.zip</a>
 
 :::
 
 ::: info Macosx
 
-👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.6.1/sonic-agent-v2.6.1-macosx_x86_64.zip" target="_blank">sonic-agent-v2.6.1-macosx_x86_64.zip</a>
+👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.6.2/sonic-agent-v2.6.2-macosx_x86_64.zip" target="_blank">sonic-agent-v2.6.2-macosx_x86_64.zip</a>
 
-👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.6.1/sonic-agent-v2.6.1-macosx_arm64.zip" target="_blank">sonic-agent-v2.6.1-macosx_arm64.zip</a>
+👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.6.2/sonic-agent-v2.6.2-macosx_arm64.zip" target="_blank">sonic-agent-v2.6.2-macosx_arm64.zip</a>
 
 :::
 
 ::: info Windows
 
-👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.6.1/sonic-agent-v2.6.1-windows_x86.zip" target="_blank">sonic-agent-v2.6.1-windows_x86.zip</a>
+👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.6.2/sonic-agent-v2.6.2-windows_x86.zip" target="_blank">sonic-agent-v2.6.2-windows_x86.zip</a>
 
-👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.6.1/sonic-agent-v2.6.1-windows_x86_64.zip" target="_blank">sonic-agent-v2.6.1-windows_x86_64.zip</a>
+👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.6.2/sonic-agent-v2.6.2-windows_x86_64.zip" target="_blank">sonic-agent-v2.6.2-windows_x86_64.zip</a>
 
 :::
 
@@ -97,7 +97,7 @@ This method will deploy the Agent and the required environment at one time.
 Preparatory work: Docker, Sonic front and back ends are deployed
 
 1. Add an Agent from the [Agent Center] of the deployed front-end interface [Device Center], and record the Key of the Agent.
-2. [Click here](https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.6.1/docker-compose.yml) to download the latest docker-compose. yml, refer to the comments to modify the content inside. (If the acceleration link fails, please go to <a href="https://github.com/SonicCloudOrg/sonic-agent/releases" target="_black">here</a> to download)
+2. [Click here](https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.6.2/docker-compose.yml) to download the latest docker-compose. yml, refer to the comments to modify the content inside. (If the acceleration link fails, please go to <a href="https://github.com/SonicCloudOrg/sonic-agent/releases" target="_black">here</a> to download)
 3. Execute the following instructions (change the parameters by yourself according to the prompts).
 
 ```bash
@@ -105,7 +105,7 @@ docker-compose up -d
 ```
 ::: tip If you are a user from mainland China and access to DockerHub is slow, you can choose one of the following two points:
 - Configure domestic accelerated image sources (recommended)
-- <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.6.1/docker-compose-zh.yml" target="_blank"> Click here</a> to download docker-compose-zh.yml and execute the following instructions to directly use the accelerated image (not recommended, the acceleration source may be unstable or the network fluctuates, and docker-compose -f docker-compose- zh.yml down)
+- <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-agent/releases/download/v2.6.2/docker-compose-zh.yml" target="_blank"> Click here</a> to download docker-compose-zh.yml and execute the following instructions to directly use the accelerated image (not recommended, the acceleration source may be unstable or the network fluctuates, and docker-compose -f docker-compose- zh.yml down)
 ```bash
 docker-compose -f docker-compose-zh.yml up -d
 ```
