@@ -42,7 +42,7 @@
           type="primary"
           size="large"
           round
-          @click="open('https://sonic-cloud.wiki/')"
+          @click="open('https://discord.gg/c9ZD6jSyTE')"
         >
           用户社区
         </el-button>
