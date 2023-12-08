@@ -6,8 +6,7 @@ const nav = [
         items: [
           {text: '部署文档', link: '/deploy/back-end-deploy'},
           {text: '使用文档', link: '/doc/doc-use'},
-          {text: '开发文档', link: '/contribute/con-re'},
-          {text: '企业案例', link: 'https://sonic-cloud.wiki/t/user'}
+          {text: '开发文档', link: '/contribute/con-re'}
         ]
       }
     ]
@@ -44,7 +43,7 @@ const nav = [
     items: [
       {
         items: [
-          {text: '用户社区', link: 'https://sonic-cloud.wiki'},
+          {text: '用户社区', link: 'https://discord.gg/c9ZD6jSyTE'},
           {text: '联系我们', link: 'https://sonic-cloud.wiki/p/1-contact'},
           {
             text: 'Open Collective',
