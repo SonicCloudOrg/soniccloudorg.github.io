@@ -44,7 +44,6 @@ const nav = [
       {
         items: [
           {text: '用户社区', link: 'https://discord.gg/c9ZD6jSyTE'},
-          {text: '联系我们', link: 'https://sonic-cloud.wiki/p/1-contact'},
           {
             text: 'Open Collective',
             link: 'https://opencollective.com/soniccloudorg'
