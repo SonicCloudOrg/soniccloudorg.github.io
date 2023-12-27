@@ -178,10 +178,73 @@ const cons: Cons = [
   {
     name: "Joycezhouktz",
     avatar: "29685540"
+  },
+  {
+    name: "wslyyy",
+    avatar: "43982942"
+  },
+  {
+    name: "iOrangeTea",
+    avatar: "19711751"
+  },
+  {
+    name: "lixf6",
+    avatar: "63722217"
   }
 ]
 
 export default [
+  {
+    version: "v2.6.3",
+    time: "2023/12/27",
+    feat: [
+      {
+        title: "sib支持开启iOS16以上机型开发者模式",
+        url: "https://github.com/SonicCloudOrg/sonic-gidevice/pull/3"
+      },
+      {
+        title: "新增支持chromeDriver版本为115到120之间版本的webview切换",
+        url: "https://github.com/SonicCloudOrg/sonic-agent/pull/394"
+      },
+      {
+        title: "增加最新系统版本筛选条件，包含Android14/鸿蒙4/苹果17",
+        url: "https://github.com/SonicCloudOrg/sonic-client-web/pull/269"
+      },
+      {
+        title: "用例支持按作者进行筛选的操作",
+        url: "https://github.com/SonicCloudOrg/sonic-server/pull/396"
+      },
+      {
+        title: "测试套件报告用例信息按照开始执行步骤进行排序",
+        url: "https://github.com/SonicCloudOrg/sonic-server/pull/385"
+      }
+    ],
+    fix:[
+      {
+        title: "修复sib启动WDA时XCTestOption的appOpt没有读入的问题",
+        url: "https://github.com/SonicCloudOrg/sonic-gidevice/pull/6"
+      },
+      {
+        title: "修复sib统计系统性能采集数据的部分错误",
+        url: "https://github.com/SonicCloudOrg/sonic-gidevice/pull/5"
+      },
+      {
+        title: "修复sas采集安卓性能数据时部分机型出现获取PID失败的问题"
+      },
+      {
+        title: "修复sas采集安卓Meminfo时部分系统获取失败的问题"
+      },
+      {
+        title: "防止禁用定时任务的下一个触发日期解析时错误",
+        url: "https://github.com/SonicCloudOrg/sonic-client-web/pull/266"
+      },
+      {
+        title: "修复设备筛选时部分条件没生效的问题",
+        url: "https://github.com/SonicCloudOrg/sonic-server/pull/398"
+      }
+    ],
+    con: getCon("ZhouYixun", "sam80180", "wslyyy", "caofengbin", "iOrangeTea", "aoliaoaoaojiao", "dongyi0412")
+  },
   {
     version: "v2.6.2",
     time: "2023/9/7",
