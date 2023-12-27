@@ -243,7 +243,7 @@ export default [
         url: "https://github.com/SonicCloudOrg/sonic-server/pull/398"
       }
     ],
-    con: getCon("ZhouYixun", "sam80180", "wslyyy", "caofengbin", "iOrangeTea", "aoliaoaoaojiao", "dongyi0412")
+    con: getCon("ZhouYixun", "sam80180", "wslyyy", "caofengbin", "iOrangeTea", "aoliaoaoaojiao", "dongyi0412", "lixf6")
   },
   {
     version: "v2.6.2",
