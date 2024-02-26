@@ -190,10 +190,38 @@ const cons: Cons = [
   {
     name: "lixf6",
     avatar: "63722217"
+  },
+  {
+    name: "hazmi-e205",
+    avatar: "12555465"
   }
 ]
 
 export default [
+  {
+    version: "v2.6.4",
+    time: "2024/2/26",
+    feat: [
+      {
+        title: "支持安卓14的远程控制页面时进行实时touch触控事件",
+        url: "https://github.com/SonicCloudOrg/sonic-android-apk/pull/75"
+      }
+    ],
+    fix: [
+      {
+        title: "新增兼容Apple M1系统等arm64架构机型部署sonic-server",
+        url: "https://github.com/SonicCloudOrg/sonic-dockerfile/pull/2"
+      },
+      {
+        title: "修复xcode15构建的wda在sib启动会出现 [Error while preparing for testing: (null)] 导致无法启动的问题"
+      },
+      {
+        title: "修复后台管理中心权限配置的三个tab不支持前端的分页参数请求的问题",
+        url: "https://github.com/SonicCloudOrg/sonic-server/pull/419"
+      }
+    ],
+    con: getCon("ZhouYixun", "caofengbin", "mmagi", "hazmi-e205")
+  },
   {
     version: "v2.6.3",
     time: "2023/12/27",
