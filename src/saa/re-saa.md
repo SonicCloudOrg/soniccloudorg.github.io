@@ -34,5 +34,5 @@ contributors:
 **一般Agent端已自带** ，您也可以选择单独下载。（如链接失效，请自行前往 <a href="https://github.com/SonicCloudOrg/sonic-android-apk/releases" target="_blank">这里</a> 下载）
 
 ::: info 下载地址
- 👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-android-apk/releases/download/v2.0.7/sonic-android-apk.apk" target="_blank">sonic-android-apk.apk</a>
+ 👉 <a href="https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-android-apk/releases/download/v2.0.8/sonic-android-apk.apk" target="_blank">sonic-android-apk.apk</a>
 :::  

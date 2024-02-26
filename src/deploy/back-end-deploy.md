@@ -15,7 +15,7 @@ contributors:
 准备工作：docker-compose、Docker、MySQL
 
 1. 创建一个MySQL数据库，数据库名可自定义，注意字符集为 utf8，排序规则为 utf8_general_ci。如果你想MySQL随着Sonic一同启动（不推荐），可以参考本页下方`在docker-compose.yml中内置MySQL`的内容。
-2. [点击这里](https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-server/releases/download/v2.6.3/sonic-server-v2.6.3.zip) 下载最新版本的 **zip** 文件到任意目录（如加速链接失效，请自行前往 <a href="https://github.com/SonicCloudOrg/sonic-server/releases" target="_black">这里</a> 下载）。
+2. [点击这里](https://ghproxy.com/https://github.com/SonicCloudOrg/sonic-server/releases/download/v2.6.4/sonic-server-v2.6.4.zip) 下载最新版本的 **zip** 文件到任意目录（如加速链接失效，请自行前往 <a href="https://github.com/SonicCloudOrg/sonic-server/releases" target="_black">这里</a> 下载）。
 3. 解压 zip，更改.env 中的信息。（无需改动 docker-compose.yml 文件。env 配置项内容可查看下方表格。如果您的系统没显示.env，在本页最下方【常见问题】查看解决方案）
 4. 当前目录下执行以下指令
 
