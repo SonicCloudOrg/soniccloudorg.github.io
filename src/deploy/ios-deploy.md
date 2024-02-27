@@ -34,11 +34,9 @@ iOS16 需要手动开启开发者选项。
 :::
 准备工作：Mac、Xcode、开发者账户。
 
-1. 拉取 WebDriverAgent 项目。
+1. 拉取 Sonic组织的WebDriverAgent 项目。（该项目对应为appium/WebDriverAgent的v6.1.1版本，因为7.x开始有部分触控API破坏性更新，因此Sonic组织暂时保留这个版本为基础）
 
 ```bash
-git clone https://github.com/appium/WebDriverAgent
-# 或
 git clone https://github.com/SonicCloudOrg/sonic-ios-wda.git
 ```
 
