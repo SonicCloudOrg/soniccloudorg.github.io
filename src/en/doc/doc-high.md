@@ -54,5 +54,5 @@ For details, please refer to [sonic-ci-helper-plugin documentation](https://soni
 The simple advanced teaching is here. For more interesting functions such as custom scripts, iterating control lists, switching WebViews, etc., you can go to [Test Steps Related] to view, and you can use them as needed. May Sonic bring you a friendly experience.
 
 ::: tip
-For more questions, please go to 👉[Community](https://sonic-cloud.wiki)👈 to communicate
+For more questions, please go to 👉[Community](https://discord.gg/c9ZD6jSyTE)👈 to communicate
 :::

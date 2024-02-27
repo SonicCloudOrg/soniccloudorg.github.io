@@ -104,5 +104,5 @@ A1: 解决方案可参考 [这个帖子](https://sonic-cloud.wiki/d/27-ios)。
 ---
 
 ::: tip
-更多疑问可前往 👉[社区](https://sonic-cloud.wiki)👈 交流
+更多疑问可前往 👉[社区](https://discord.gg/c9ZD6jSyTE)👈 交流
 :::

@@ -114,5 +114,5 @@ A2: 一般是设备没有在开发者选项最下方开启【禁止权限监控�
 ---
 
 ::: tip
-更多疑问可前往 👉[社区](https://sonic-cloud.wiki)👈 交流
+更多疑问可前往 👉[社区](https://discord.gg/c9ZD6jSyTE)👈 交流
 :::

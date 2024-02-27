@@ -134,5 +134,5 @@ A3: 旧版本是以单 Agent 内不可重复，后续考虑到用户会将同一
 ---
 
 ::: tip
-更多疑问可前往 👉[社区](https://sonic-cloud.wiki)👈 交流
+更多疑问可前往 👉[社区](https://discord.gg/c9ZD6jSyTE)👈 交流
 :::

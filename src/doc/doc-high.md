@@ -54,5 +54,5 @@ contributors:
 简单的进阶教学就到这里了。更多 自定义脚本、迭代控件列表、切换WebView 等等有趣的功能可以前往【测试步骤相关】查看，可以按需使用。愿Sonic能给你带来友好的使用体验。
 
 ::: tip
-更多疑问可前往 👉[社区](https://sonic-cloud.wiki)👈 交流
+更多疑问可前往 👉[社区](https://discord.gg/c9ZD6jSyTE)👈 交流
 :::

@@ -104,5 +104,5 @@ A1: The solution can refer to [this post](https://sonic-cloud.wiki/d/27-ios).
 ---
 
 ::: tip
-For more questions, please go to 👉[Community](https://sonic-cloud.wiki)👈 to communicate
+For more questions, please go to 👉[Community](https://discord.gg/c9ZD6jSyTE)👈 to communicate
 :::

@@ -51,5 +51,5 @@ A1: 可以查看 [设备接入文档](https://sonic-cloud.cn/deploy/android-depl
 ---
 
 ::: tip
-更多疑问可前往 👉[社区](https://sonic-cloud.wiki)👈 交流
+更多疑问可前往 👉[社区](https://discord.gg/c9ZD6jSyTE)👈 交流
 :::

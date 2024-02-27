@@ -99,5 +99,5 @@ A2: Generally, the device has not enabled [Prohibit permission monitoring] at th
 ---
 
 ::: tip
-For more questions, please go to 👉[Community](https://sonic-cloud.wiki)👈 to communicate
+For more questions, please go to 👉[Community](https://discord.gg/c9ZD6jSyTE)👈 to communicate
 :::

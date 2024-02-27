@@ -154,5 +154,5 @@ A5: 建议还是按照上方Q1的解答解决最佳，除此之外可以这样�
 ---
 
 ::: tip
-更多疑问可前往 👉[社区](https://sonic-cloud.wiki)👈 交流
+更多疑问可前往 👉[社区](https://discord.gg/c9ZD6jSyTE)👈 交流
 :::

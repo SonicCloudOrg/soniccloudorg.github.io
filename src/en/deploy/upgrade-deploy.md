@@ -134,5 +134,5 @@ A3: The old version is non-repeatable within a single Agent. In the future, cons
 ---
 
 ::: tip
-For more questions, please go to 👉[Community](https://sonic-cloud.wiki)👈 to communicate
+For more questions, please go to 👉[Community](https://discord.gg/c9ZD6jSyTE)👈 to communicate
 :::

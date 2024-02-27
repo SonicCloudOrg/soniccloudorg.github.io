@@ -11,7 +11,7 @@
           <div>
             1. 有疑问欢迎前往
             <a
-              href="https://sonic-cloud.wiki/"
+              href="https://discord.gg/c9ZD6jSyTE"
               target="_blank"
               style="text-decoration: none"
             >
@@ -22,7 +22,7 @@
           <div>
             2. 联系我们？可前往
             <a
-              href="https://sonic-cloud.wiki/p/1-contact"
+              href="https://discord.gg/c9ZD6jSyTE"
               target="_blank"
               style="text-decoration: none"
             >

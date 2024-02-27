@@ -89,7 +89,7 @@ A2: Mac：系统偏好设置 -> 安全性与隐私 -> 通用，点击信任或�
 ---
 
 ::: tip
-更多疑问可前往 👉[社区](https://sonic-cloud.wiki)👈 交流
+更多疑问可前往 👉[社区](https://discord.gg/c9ZD6jSyTE)👈 交流
 :::
 
 ## 鸣谢

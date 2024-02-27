@@ -179,5 +179,5 @@ A5: You can use the ls -a command to view hidden files
 ---
 
 ::: tip
-For more questions, please go to 👉[Community](https://sonic-cloud.wiki)👈 to communicate
+For more questions, please go to 👉[Community](https://discord.gg/c9ZD6jSyTE)👈 to communicate
 :::
