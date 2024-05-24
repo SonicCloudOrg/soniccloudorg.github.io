@@ -1,0 +1,14 @@
+import{_ as a,o as s,c as t,a as n}from"./app.57a3dbd1.js";const B=JSON.parse('{"title":"电池相关信息","description":"","frontmatter":{"contributors":["ZhouYixun"]},"headers":[{"level":2,"title":"获取电池信息","slug":"获取电池信息","link":"#获取电池信息","children":[]},{"level":2,"title":"可用选项","slug":"可用选项","link":"#可用选项","children":[]}],"relativePath":"sib/sib-battery.md","lastUpdated":1716537034000}'),e={name:"sib/sib-battery.md"},l=n(`<h1 id="电池相关信息" tabindex="-1">电池相关信息 <a class="header-anchor" href="#电池相关信息" aria-hidden="true">#</a></h1><p>获取设备电池信息。</p><h2 id="获取电池信息" tabindex="-1">获取电池信息 <a class="header-anchor" href="#获取电池信息" aria-hidden="true">#</a></h2><p>查看已插入设备的电池信息。</p><p>输入指令</p><div class="language-bash"><button title="Copy Code" class="copy"></button><span class="lang">bash</span><pre class="shiki material-palenight"><code><span class="line"><span style="color:#FFCB6B;">sib</span><span style="color:#A6ACCD;"> </span><span style="color:#C3E88D;">battery</span></span>
+<span class="line"></span></code></pre></div><p>您会获得类似的输出</p><div class="language-bash"><button title="Copy Code" class="copy"></button><span class="lang">bash</span><pre class="shiki material-palenight"><code><span class="line"><span style="color:#FFCB6B;">Serial:F8Y80344QPDHXRY90</span></span>
+<span class="line"><span style="color:#FFCB6B;">Temperature:21°C</span></span>
+<span class="line"><span style="color:#FFCB6B;">CycleCount:869</span></span>
+<span class="line"><span style="color:#FFCB6B;">NominalChargeCapacity:2322mAh</span></span>
+<span class="line"><span style="color:#FFCB6B;">DesignCapacity:2701mAh</span></span>
+<span class="line"><span style="color:#FFCB6B;">AbsoluteCapacity:2090mAh</span></span>
+<span class="line"><span style="color:#FFCB6B;">CurrentCapacity:91</span></span>
+<span class="line"><span style="color:#FFCB6B;">Voltage:4226mV</span></span>
+<span class="line"><span style="color:#FFCB6B;">BootVoltage:4229mV</span></span>
+<span class="line"><span style="color:#FFCB6B;">InstantAmperage:512mA</span></span>
+<span class="line"><span style="color:#FFCB6B;">AdapterDetailsVoltage:5000mV</span></span>
+<span class="line"><span style="color:#FFCB6B;">AdapterDetailsWatts:8W</span></span>
+<span class="line"></span></code></pre></div><h2 id="可用选项" tabindex="-1">可用选项 <a class="header-anchor" href="#可用选项" aria-hidden="true">#</a></h2><table><thead><tr><th>快捷使用</th><th>选项名</th><th>数据类型</th><th>描述信息</th></tr></thead><tbody><tr><td>-u</td><td>--udid</td><td>string</td><td>获取指定udid设备</td></tr><tr><td>-j</td><td>--json</td><td></td><td>json格式输出</td></tr><tr><td>-f</td><td>--format</td><td></td><td>格式化输出</td></tr><tr><td>-h</td><td>--help</td><td></td><td>获取帮助指南</td></tr></tbody></table>`,10),p=[l];function o(r,d,i,c,h,C){return s(),t("div",null,p)}const F=a(e,[["render",o]]);export{B as __pageData,F as default};

@@ -1,0 +1,1 @@
+import{_ as o,o as i,c as t,a as c}from"./app.57a3dbd1.js";const u=JSON.parse('{"title":"免责声明","description":"","frontmatter":{},"headers":[],"relativePath":"about/policy.md","lastUpdated":1716537034000}'),a={name:"about/policy.md"},e=c("",7),l=[e];function n(s,r,_,p,d,S){return i(),t("div",null,l)}const m=o(a,[["render",n]]);export{u as __pageData,m as default};
