@@ -312,7 +312,6 @@ const sidebar = {
 const initCNThemeConfig = {
   nav,
   sidebar,
-  //  页面右侧边栏标题
   outlineTitle: '本页目录',
   lastUpdatedText: '最近修改时间',
   // 页面编辑链接配置
