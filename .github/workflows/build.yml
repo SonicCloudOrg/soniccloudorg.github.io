@@ -1,0 +1,184 @@
+name: deploy to page
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - uses: oprypin/find-latest-tag@v1
+        id: sch-latest-tag
+        with:
+          repository: jenkinsci/sonic-ci-helper-plugin
+          sort-tags: false
+          prefix: 'sonic-ci-helper'
+      - uses: oprypin/find-latest-tag@v1
+        id: sas-latest-tag
+        with:
+          repository: SonicCloudOrg/sonic-android-supply
+          sort-tags: false
+      - uses: oprypin/find-latest-tag@v1
+        id: saa-latest-tag
+        with:
+          repository: SonicCloudOrg/sonic-android-apk
+          sort-tags: false
+      - uses: oprypin/find-latest-tag@v1
+        id: sib-latest-tag
+        with:
+          repository: SonicCloudOrg/sonic-ios-bridge
+          sort-tags: false
+      - uses: oprypin/find-latest-tag@v1
+        id: sgm-latest-tag
+        with:
+          repository: SonicCloudOrg/sonic-go-mitmproxy
+          sort-tags: false
+      - uses: oprypin/find-latest-tag@v1
+        id: sdc-latest-tag
+        with:
+          repository: SonicCloudOrg/sonic-driver-core
+          sort-tags: false
+      - uses: oprypin/find-latest-tag@v1
+        id: ser-latest-tag
+        with:
+          repository: SonicCloudOrg/sonic-server
+          sort-tags: false
+      - name: JSON to variables
+        uses: antifree/json-to-variables@v1.0.1
+        with:
+          filename: 'version.json'
+          prefix: test
+      - name: replace saa
+        run: |
+          saa_new_ver=${{ steps.saa-latest-tag.outputs.tag }}
+          saa_old_ver=${{ env.test_saa }}
+          saa_old_ver_sub=${saa_old_ver:4}
+          sed -i "s/${saa_old_ver}/saa_${saa_new_ver}/g" version.json
+          sed -i "s/${saa_old_ver_sub}/${saa_new_ver}/g" src/saa/re-saa.md
+      - name: replace sib
+        run: |
+          sib_new_ver=${{ steps.sib-latest-tag.outputs.tag }}
+          sib_new_ver_sub=${sib_new_ver:1}
+          sib_old_ver=${{ env.test_sib }}
+          sib_old_ver_sub=${sib_old_ver:4}
+          sed -i "s/${sib_old_ver}/sib_${sib_new_ver_sub}/g" version.json
+          sed -i "s/${sib_old_ver_sub}/${sib_new_ver_sub}/g" src/sib/re-sib.md
+      - name: replace sas
+        run: |
+          sas_new_ver=${{ steps.sas-latest-tag.outputs.tag }}
+          sas_new_ver_sub=${sas_new_ver:1}
+          sas_old_ver=${{ env.test_sas }}
+          sas_old_ver_sub=${sas_old_ver:4}
+          sed -i "s/${sas_old_ver}/sas_${sas_new_ver_sub}/g" version.json
+          sed -i "s/${sas_old_ver_sub}/${sas_new_ver_sub}/g" src/sas/re-sas.md
+      - name: replace sgm
+        run: |
+          sgm_new_ver=${{ steps.sgm-latest-tag.outputs.tag }}
+          sgm_new_ver_sub=${sgm_new_ver:1}
+          sgm_old_ver=${{ env.test_sgm }}
+          sgm_old_ver_sub=${sgm_old_ver:4}
+          sed -i "s/${sgm_old_ver}/sgm_${sgm_new_ver_sub}/g" version.json
+          sed -i "s/${sgm_old_ver_sub}/${sgm_new_ver_sub}/g" src/sgm/re-sgm.md
+      - name: replace sdc
+        run: |
+          sdc_new_ver=${{ steps.sdc-latest-tag.outputs.tag }}
+          sdc_old_ver=${{ env.test_sdc }}
+          sdc_old_ver_sub=${sdc_old_ver:4}
+          sed -i "s/${sdc_old_ver}/sdc_${sdc_new_ver}/g" version.json
+          sed -i "s/${sdc_old_ver_sub}/${sdc_new_ver}/g" src/sdc/re-sdc.md
+          sed -i "s/${sdc_old_ver_sub}/${sdc_new_ver}/g" src/sdc/sdc-android.md
+          sed -i "s/${sdc_old_ver_sub}/${sdc_new_ver}/g" src/sdc/sdc-ios.md
+          sed -i "s/${sdc_old_ver_sub}/${sdc_new_ver}/g" src/sdc/sdc-poco.md
+      - name: replace sch
+        run: |
+          sch_new_ver=${{ steps.sch-latest-tag.outputs.tag }}
+          sch_old_ver=${{ env.test_sch }}
+          sch_old_ver_sub=${sch_old_ver:4}
+          sed -i "s/${sch_old_ver}/sch_${sch_new_ver}/g" version.json
+          sed -i "s/${sch_old_ver_sub}/${sch_new_ver}/g" src/sch/re-sch.md
+      - name: replace server
+        run: |
+          ser_new_ver=${{ steps.ser-latest-tag.outputs.tag }}
+          ser_old_ver=${{ env.test_ser }}
+          ser_old_ver_sub=${ser_old_ver:4}
+          sed -i "s/${ser_old_ver}/ser_${ser_new_ver}/g" version.json
+          sed -i "s/${ser_old_ver_sub}/${ser_new_ver}/g" src/deploy/agent-deploy.md
+          sed -i "s/${ser_old_ver_sub}/${ser_new_ver}/g" src/deploy/back-end-deploy.md
+          sed -i "s/${ser_old_ver_sub}/${ser_new_ver}/g" src/en/deploy/agent-deploy.md
+          sed -i "s/${ser_old_ver_sub}/${ser_new_ver}/g" src/en/deploy/back-end-deploy.md
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16.x
+          cache: 'npm'
+      - run: npm install
+      - run: npm run build
+      - name: Create Pull Request
+        id: cpr
+        uses: peter-evans/create-pull-request@v4
+        with:
+          commit-message: Update doc files.
+          author: GitHub <noreply@github.com>
+          signoff: false
+          branch: deploy
+          base: main
+          labels: document
+          delete-branch: true
+          title: 'doc: update files and ready to deploy'
+          body: |
+            **在提出此拉取请求时，我确认了以下几点（保存后请点击复选框）：**
+
+            - [x] 标题为fix、feat或doc开头
+            - [x] 我已检查没有与此请求重复的拉取请求。
+            - [x] 我已经考虑过，并确认这份呈件对其他人很有价值。
+            - [x] 我接受此提交可能不会被使用，并根据维护人员的意愿关闭拉取请求。
+
+            **填写PR内容：**
+
+            - Update files to deploy by bot 🚀.
+
+          draft: false
+      - name: Auto approve
+        if: steps.cpr.outputs.pull-request-operation == 'created'
+        uses: juliangruber/approve-pull-request-action@v1
+        with:
+          github-token: ${{ secrets.PAT }}
+          number: ${{ steps.cpr.outputs.pull-request-number }}
+      - id: automerge
+        name: automerge
+        if: steps.cpr.outputs.pull-request-operation == 'created'
+        uses: "pascalgn/automerge-action@v0.15.3"
+        env:
+          MERGE_LABELS: "document"
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          PULL_REQUEST: ${{ steps.cpr.outputs.pull-request-number }}
+          MERGE_RETRIES: 18
+          MERGE_DELETE_BRANCH: true
+          MERGE_RETRY_SLEEP: 10000
+      - name: mv logo file
+        run: |
+          mv .vitepress/theme/assets/logo-full.png .vitepress/dist
+          mv .vitepress/theme/assets/public/favicon.ico .vitepress/dist
+          mv .vitepress/theme/assets/wechat.jpg .vitepress/dist
+          mv src/contribute/images/con*.jpg .vitepress/dist
+          mv .vitepress/theme/assets/ide.json .vitepress/dist
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .vitepress/dist
+
+  # Deployment job
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    needs: build
+    runs-on: ubuntu-latest
+    name: Deploy
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
