@@ -28,22 +28,22 @@ v2.0.0-release 起，Sonic 版本规则更改如下：
 
 ## 从 v2.5.x 升级到 v2.6.x
 1. 升级前先备份Mysql数据库。
-2. 直接前往 <a href="https://sonic-cloud.cn/deploy/back-end-deploy.html" target="_blank">这里</a> 下载最新版本zip，down集群后重新up即可。如果更换了部署目录，旧目录下的`keepFiles`、`imageFiles`、`recordFiles`、`packageFiles`文件夹的内容也要同步到新目录下（部署文档含中国大陆加速镜像部署方式）
-3. Agent可前往 <a href="https://sonic-cloud.cn/deploy/agent-deploy.html" target="_blank">这里</a> 下载zip后解压，更新需替换旧版本plugins文件夹与jar文件。Docker版Agent与server同理，前往 <a href="https://sonic-cloud.cn/deploy/agent-deploy.html" target="_blank">这里</a> 重新下载镜像部署即可。（部署文档含中国大陆加速镜像部署方式）
+2. 直接前往 <a href="https://soniccloudorg.github.io/deploy/back-end-deploy.html" target="_blank">这里</a> 下载最新版本zip，down集群后重新up即可。如果更换了部署目录，旧目录下的`keepFiles`、`imageFiles`、`recordFiles`、`packageFiles`文件夹的内容也要同步到新目录下（部署文档含中国大陆加速镜像部署方式）
+3. Agent可前往 <a href="https://soniccloudorg.github.io/deploy/agent-deploy.html" target="_blank">这里</a> 下载zip后解压，更新需替换旧版本plugins文件夹与jar文件。Docker版Agent与server同理，前往 <a href="https://soniccloudorg.github.io/deploy/agent-deploy.html" target="_blank">这里</a> 重新下载镜像部署即可。（部署文档含中国大陆加速镜像部署方式）
 
 ## 从 v2.3.x ~ v2.4.x 升级到 v2.5.x
 ::: tip
 升级至`v2.5.3`时，为了降低用户部署成本，在Agent中内置了adb程序，config配置难度也降低，可前往部署文档查看。
 :::
 1. 升级前先备份Mysql数据库。
-2. 直接前往 <a href="https://sonic-cloud.cn/deploy/back-end-deploy.html" target="_blank">这里</a> 下载最新版本zip，down集群后重新up即可。如果更换了部署目录，旧目录下的`keepFiles`、`imageFiles`、`recordFiles`、`packageFiles`文件夹的内容也要同步到新目录下（部署文档含中国大陆加速镜像部署方式）
-3. Agent jar部署的jdk要求提升至 **jdk17**，可前往 <a href="https://sonic-cloud.cn/deploy/agent-deploy.html" target="_blank">这里</a> 下载zip后解压，更新需替换旧版本plugins文件夹与jar文件。Docker版Agent与server同理，前往 <a href="https://sonic-cloud.cn/deploy/agent-deploy.html" target="_blank">这里</a> 重新下载镜像部署即可。（部署文档含中国大陆加速镜像部署方式）
+2. 直接前往 <a href="https://soniccloudorg.github.io/deploy/back-end-deploy.html" target="_blank">这里</a> 下载最新版本zip，down集群后重新up即可。如果更换了部署目录，旧目录下的`keepFiles`、`imageFiles`、`recordFiles`、`packageFiles`文件夹的内容也要同步到新目录下（部署文档含中国大陆加速镜像部署方式）
+3. Agent jar部署的jdk要求提升至 **jdk17**，可前往 <a href="https://soniccloudorg.github.io/deploy/agent-deploy.html" target="_blank">这里</a> 下载zip后解压，更新需替换旧版本plugins文件夹与jar文件。Docker版Agent与server同理，前往 <a href="https://soniccloudorg.github.io/deploy/agent-deploy.html" target="_blank">这里</a> 重新下载镜像部署即可。（部署文档含中国大陆加速镜像部署方式）
 4. Eureka默认端口从9090变更至8761
 
 ## 从 v1.4.1-release 以上版本 升级到 v2.0.x ~ v2.3.x
 1. 升级前先备份Mysql数据库。
-2. 直接前往 <a href="https://sonic-cloud.cn/deploy/back-end-deploy.html" target="_blank">这里</a> 下载最新版本zip，down集群后重新up即可。如果更换了部署目录，旧目录下的`keepFiles`、`imageFiles`、`recordFiles`、`packageFiles`文件夹的内容也要同步到新目录下（部署文档含中国大陆加速镜像部署方式）
-3. jar方式部署的Agent前往 <a href="https://sonic-cloud.cn/deploy/agent-deploy.html" target="_blank">这里</a> 下载zip后解压，更新需替换旧版本plugins文件夹与jar文件。Docker版Agent与server同理，前往 <a href="https://sonic-cloud.cn/deploy/agent-deploy.html" target="_blank">这里</a> 重新下载镜像部署即可。（部署文档含中国大陆加速镜像部署方式）
+2. 直接前往 <a href="https://soniccloudorg.github.io/deploy/back-end-deploy.html" target="_blank">这里</a> 下载最新版本zip，down集群后重新up即可。如果更换了部署目录，旧目录下的`keepFiles`、`imageFiles`、`recordFiles`、`packageFiles`文件夹的内容也要同步到新目录下（部署文档含中国大陆加速镜像部署方式）
+3. jar方式部署的Agent前往 <a href="https://soniccloudorg.github.io/deploy/agent-deploy.html" target="_blank">这里</a> 下载zip后解压，更新需替换旧版本plugins文件夹与jar文件。Docker版Agent与server同理，前往 <a href="https://soniccloudorg.github.io/deploy/agent-deploy.html" target="_blank">这里</a> 重新下载镜像部署即可。（部署文档含中国大陆加速镜像部署方式）
 
 ::: tip TIP
 ---

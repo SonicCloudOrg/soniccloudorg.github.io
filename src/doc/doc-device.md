@@ -10,7 +10,7 @@ contributors:
 对接入设备进行管理。
 
 ::: tip
-手机接入后没显示在设备中心？可前往 [设备接入指南](https://sonic-cloud.cn/deploy/android-deploy.html) 查看哦~
+手机接入后没显示在设备中心？可前往 [设备接入指南](https://soniccloudorg.github.io/deploy/android-deploy.html) 查看哦~
 :::
 
 ## 查看设备信息
@@ -46,7 +46,7 @@ contributors:
 
 Q1: 为什么手机插入Agent后，设备中心没出现对应设备？
 
-A1: 可以查看 [设备接入文档](https://sonic-cloud.cn/deploy/android-deploy.html) ，依然无效可以查看Agent的日志进行排查。
+A1: 可以查看 [设备接入文档](https://soniccloudorg.github.io/deploy/android-deploy.html) ，依然无效可以查看Agent的日志进行排查。
 
 ---
 

@@ -20,7 +20,7 @@ Create a project for your app under test.
 ## Start remote control
 
 ::: tip note
-If you don't know how to access the device, you can go to [deployment document](https://sonic-cloud.cn/deploy/android-deploy.html)
+If you don't know how to access the device, you can go to [deployment document](https://soniccloudorg.github.io/deploy/android-deploy.html)
 :::
 
 After accessing the device, click to use it immediately

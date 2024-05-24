@@ -6,7 +6,7 @@ contributors:
 
 # Role management
 
-Manage resource permissions corresponding to Sonic roles. The system has a built-in supermanagement role, which will skip all authentication checks. [Related information can be found in the deployment document](https://sonic-cloud.cn/deploy/back-end-deploy.html)
+Manage resource permissions corresponding to Sonic roles. The system has a built-in supermanagement role, which will skip all authentication checks. [Related information can be found in the deployment document](https://soniccloudorg.github.io/deploy/back-end-deploy.html)
 
 ## Add roles
 

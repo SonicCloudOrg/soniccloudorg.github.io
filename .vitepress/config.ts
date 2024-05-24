@@ -43,7 +43,7 @@ export default {
   lastUpdated: true, // 是否显示最后修改时间
   ignoreDeadLinks: true,
   head: [
-    ['link', { rel: 'icon', href: 'https://sonic-cloud.cn/favicon.ico' }],
+    ['link', { rel: 'icon', href: 'https://raw.githubusercontent.com/SonicCloudOrg/soniccloudorg.github.io/main/.vitepress/theme/assets/public/favicon.ico' }],
     ['meta', { name: 'baidu-site-verification', content: 'code-tUj7cN37g6' }],
     [
       'meta',
@@ -169,7 +169,7 @@ export default {
     },
 
     // 网站 logo & title
-    logo: 'https://sonic-cloud.cn/logo-full.png',
+    logo: 'https://raw.githubusercontent.com/SonicCloudOrg/soniccloudorg.github.io/main/.vitepress/theme/assets/logo-full.png',
     // 是否显示副标题
     siteTitle: false
   },

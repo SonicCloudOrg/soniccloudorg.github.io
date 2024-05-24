@@ -6,7 +6,7 @@ contributors:
 
 # 角色管理
 
-管理 Sonic 角色对应资源权限。系统内置了一个超管的角色，会跳过所有鉴权的检查，[相关信息可以访问部署文档](https://sonic-cloud.cn/deploy/back-end-deploy.html)
+管理 Sonic 角色对应资源权限。系统内置了一个超管的角色，会跳过所有鉴权的检查，[相关信息可以访问部署文档](https://soniccloudorg.github.io/deploy/back-end-deploy.html)
 
 ## 添加角色
 

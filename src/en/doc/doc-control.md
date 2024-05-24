@@ -38,7 +38,7 @@ When in minicap mode, black borders appear in the projection area of some Samsun
 
 The current version of Android touch has two modes, namely sonic-android-apk touch and adb native touch.
 
-By default, the Android projection touch uses [sonic-android-apk](https://sonic-cloud.cn/saa) to realize real-time touch, which solves the scenario that minitouch cannot be used in real time on Android 10 or higher. But in some special cases, when the sonic-android-apk is not available, you can click [Repair Touch] on the toolbar on the right side of the projection area to switch to adb native touch.
+By default, the Android projection touch uses [sonic-android-apk](https://soniccloudorg.github.io/saa) to realize real-time touch, which solves the scenario that minitouch cannot be used in real time on Android 10 or higher. But in some special cases, when the sonic-android-apk is not available, you can click [Repair Touch] on the toolbar on the right side of the projection area to switch to adb native touch.
 
 ### Remote ADB
 
@@ -74,11 +74,11 @@ When you need to scan a QR code, you can upload the QR code picture to the corre
 
 ### Reconnect UIAutomator Server
 
-When the default initialization fails, you need to adjust the corresponding settings, you can go to [here](https://sonic-cloud.cn/en/deploy/android-deploy.html) to check the configuration. Then click [Initialize UIAutomator2Server] until the Status is Connected.
+When the default initialization fails, you need to adjust the corresponding settings, you can go to [here](https://soniccloudorg.github.io/en/deploy/android-deploy.html) to check the configuration. Then click [Initialize UIAutomator2Server] until the Status is Connected.
 
 ### Remote Audio
 
-The remote audio function currently relies on [sonic-android-apk](https://sonic-cloud.cn/saa/re-saa.html) to realize real-time audio transmission. After opening, the real-time audio of the remote device can be played directly on the web page.
+The remote audio function currently relies on [sonic-android-apk](https://soniccloudorg.github.io/saa/re-saa.html) to realize real-time audio transmission. After opening, the real-time audio of the remote device can be played directly on the web page.
 
 If there is no audio after opening, you can check whether the device has enabled the notification bar permission of sonic-android-apk, etc., to ensure that sonic-android-apk has all permissions.
 

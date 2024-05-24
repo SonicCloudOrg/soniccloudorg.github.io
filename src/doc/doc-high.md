@@ -20,7 +20,7 @@ contributors:
 :::
 
 ::: tip 提示
-如果希望同一个参数名分发给不同设备时为不同的值，可以查看 [特殊用法](https://sonic-cloud.cn/doc/doc-global.html#%E7%89%B9%E6%AE%8A%E7%94%A8%E6%B3%95)
+如果希望同一个参数名分发给不同设备时为不同的值，可以查看 [特殊用法](https://soniccloudorg.github.io/doc/doc-global.html#%E7%89%B9%E6%AE%8A%E7%94%A8%E6%B3%95)
 
 目前全局参数可用于：
 - 控件信息
@@ -38,7 +38,7 @@ contributors:
 当我们多个用例含有重复的步骤，我们可以提取为公共步骤进行维护。
 
 ::: tip 提示
-详情可以查看 [公共步骤文档](https://sonic-cloud.cn/doc/doc-pub.html)
+详情可以查看 [公共步骤文档](https://soniccloudorg.github.io/doc/doc-pub.html)
 :::
 
 ## 配合Jenkins插件
@@ -46,7 +46,7 @@ contributors:
 如果希望Jenkins构建了apk或者ipa包之后，能自动上传到Sonic平台并进行批量安装、测试，可以使用 sonic-ci-helper-plugin
 
 ::: tip 提示
-详情可以查看 [sonic-ci-helper-plugin使用文档](https://sonic-cloud.cn/sch/re-sch.html)
+详情可以查看 [sonic-ci-helper-plugin使用文档](https://soniccloudorg.github.io/sch/re-sch.html)
 :::
 
 ## 结语

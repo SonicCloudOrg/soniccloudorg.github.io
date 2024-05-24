@@ -18,13 +18,13 @@
           <template #title>
             <div>
               更新前一定要查看版本迁移指南哦，可点击
-              <a href="https://sonic-cloud.cn/deploy?tag=upgrade" target="_blank">这里</a>
+              <a href="https://soniccloudorg.github.io/deploy?tag=upgrade" target="_blank">这里</a>
               查看！
             </div>
           </template>
         </el-alert>
         <el-button type="primary" plain v-if="d.time === 'unknown'" style="float: right"
-                   @click="open('https://sonic-cloud.cn/contribute/con-re.html')">我想参与该版本开发💪
+                   @click="open('https://soniccloudorg.github.io/contribute/con-re.html')">我想参与该版本开发💪
         </el-button>
         <span class="verh1">{{
             d.time === 'unknown' ? d.version + "（预计" +

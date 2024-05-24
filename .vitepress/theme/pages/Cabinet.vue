@@ -141,7 +141,7 @@
           官方邮箱
         </el-link>
         <el-link
-          href="https://sonic-cloud.cn/wechat.jpg"
+          href="https://soniccloudorg.github.io/wechat.jpg"
           target="_blank"
           type="primary"
           style="margin-left: 20px"

@@ -9,7 +9,7 @@ contributors:
 
 ## 设备前置配置
 
-使用POCO前需确认游戏应用引擎已经接入对应POCO-SDK，教程可以参考 [这里](https://sonic-cloud.cn/document?tag=poco) 。
+使用POCO前需确认游戏应用引擎已经接入对应POCO-SDK，教程可以参考 [这里](https://soniccloudorg.github.io/document?tag=poco) 。
 
 打包后，打开对应游戏引擎并转发Socket端口。 以安卓、Unity3D引擎为例：
 ```bash

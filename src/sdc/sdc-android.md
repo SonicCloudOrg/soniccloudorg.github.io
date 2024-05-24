@@ -41,7 +41,7 @@ androidDriver.setPasteboard(String contentType, String content);
 ```java
 androidDriver.getPasteboard(String contentType);
 ```
-如果需要获取安卓10以上设备，可以前往 [这里](https://sonic-cloud.cn/saa/saa-clipper.html#%E7%9B%B4%E6%8E%A5%E4%BD%BF%E7%94%A8)
+如果需要获取安卓10以上设备，可以前往 [这里](https://soniccloudorg.github.io/saa/saa-clipper.html#%E7%9B%B4%E6%8E%A5%E4%BD%BF%E7%94%A8)
 
 ## 更多文档建设中...
 

@@ -20,7 +20,7 @@ contributors:
 ## 开始远控
 
 ::: tip 注意
-如果不清楚如何接入设备，可以前往 [部署文档](https://sonic-cloud.cn/deploy/android-deploy.html)
+如果不清楚如何接入设备，可以前往 [部署文档](https://soniccloudorg.github.io/deploy/android-deploy.html)
 :::
 
 接入设备后，点击马上使用

@@ -20,7 +20,7 @@ When we deliver the test task, we will find that {{abc}} will be replaced with 1
 :::
 
 ::: tip tip
-If you want the same parameter name to have different values when distributed to different devices, you can check [Special Usage](https://sonic-cloud.cn/en/doc/doc-global.html#special-usage)
+If you want the same parameter name to have different values when distributed to different devices, you can check [Special Usage](https://soniccloudorg.github.io/en/doc/doc-global.html#special-usage)
 
 Currently global parameters are available for:
 - Control information
@@ -38,7 +38,7 @@ During the test, results such as [Get Text] can also be stored in temporary para
 When our multiple use cases contain repeated steps, we can extract them as common steps for maintenance.
 
 ::: tip tip
-For details, please refer to [Public Procedure Documentation](https://sonic-cloud.cn/en/doc/doc-pub.html)
+For details, please refer to [Public Procedure Documentation](https://soniccloudorg.github.io/en/doc/doc-pub.html)
 :::
 
 ## Cooperate with Jenkins plugin
@@ -46,7 +46,7 @@ For details, please refer to [Public Procedure Documentation](https://sonic-clou
 If you want Jenkins to build the apk or ipa package, it can be automatically uploaded to the Sonic platform for batch installation and testing, you can use sonic-ci-helper-plugin
 
 ::: tip tip
-For details, please refer to [sonic-ci-helper-plugin documentation](https://sonic-cloud.cn/sch/re-sch.html)
+For details, please refer to [sonic-ci-helper-plugin documentation](https://soniccloudorg.github.io/sch/re-sch.html)
 :::
 
 ## Conclusion

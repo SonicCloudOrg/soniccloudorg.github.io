@@ -43,13 +43,13 @@ Set the switch and interval of performance collection.
 ::: tip
 This feature is only available after v2.1.0
 :::
-iOS uses [sib perfmon](https://sonic-cloud.cn/sib/sib-perf.html) for performance collection.
+iOS uses [sib perfmon](https://soniccloudorg.github.io/sib/sib-perf.html) for performance collection.
 
 ### android
 ::: tip
 This feature is only available after v2.2.0
 :::
-Android uses [sas perfmon](https://sonic-cloud.cn/sas/re-sas.html) for performance collection.
+Android uses [sas perfmon](https://soniccloudorg.github.io/sas/re-sas.html) for performance collection.
 
 ## Robot Notifications
 

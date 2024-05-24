@@ -27,7 +27,7 @@ import ad2 from '../assets/ads/linux-ad2.jpg'
 
 const ads = [
   {
-    url: 'https://sonic-cloud.cn/cabinet.html',
+    url: 'https://soniccloudorg.github.io/cabinet.html',
     pic: ad2
   },
   {

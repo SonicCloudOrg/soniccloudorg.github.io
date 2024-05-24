@@ -10,7 +10,7 @@ contributors:
 Manage Agents.
 
 ::: tip
-Have questions about Agent deployment? You can go to [Agent deployment document](https://sonic-cloud.cn/en/deploy/agent-deploy.html) to view~
+Have questions about Agent deployment? You can go to [Agent deployment document](https://soniccloudorg.github.io/en/deploy/agent-deploy.html) to view~
 :::
 
 ## Add Agent

@@ -57,7 +57,7 @@ mvn test
 ### 关于远程adb地址和远程uia2地址的获取
 我们在调试过程中，IDE可以很方便获取adb远程连接或者uia2远程连接地址，但是我们在脱离IDE运行脚本过程中，怎么去获取这两个地址呢？
 
-可以调用Sonic的Rest API获取。可以查看 ➡️ [这里](https://sonic-cloud.cn/doc/doc-rest.html#%E9%80%9A%E8%BF%87rest-api%E5%8D%A0%E7%94%A8%E8%AE%BE%E5%A4%87%E5%B9%B6%E8%8E%B7%E5%8F%96%E8%BF%9C%E7%A8%8B%E8%B0%83%E8%AF%95%E4%BF%A1%E6%81%AF)
+可以调用Sonic的Rest API获取。可以查看 ➡️ [这里](https://soniccloudorg.github.io/doc/doc-rest.html#%E9%80%9A%E8%BF%87rest-api%E5%8D%A0%E7%94%A8%E8%AE%BE%E5%A4%87%E5%B9%B6%E8%8E%B7%E5%8F%96%E8%BF%9C%E7%A8%8B%E8%B0%83%E8%AF%95%E4%BF%A1%E6%81%AF)
 
 ## 常见问题
 

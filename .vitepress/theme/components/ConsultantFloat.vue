@@ -17,7 +17,7 @@
           邮箱咨询
         </el-link>
         <el-link
-          href="https://sonic-cloud.cn/wechat.jpg"
+          href="https://raw.githubusercontent.com/SonicCloudOrg/soniccloudorg.github.io/main/.vitepress/theme/assets/wechat.jpg"
           target="_blank"
           type="primary"
           style="margin-left: 20px"

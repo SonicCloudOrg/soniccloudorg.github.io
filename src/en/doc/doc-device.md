@@ -10,7 +10,7 @@ contributors:
 Manage access devices.
 
 ::: tip
-After the mobile phone is connected, it is not displayed in the device center? You can go to [Device Access Guide](https://sonic-cloud.cn/en/deploy/android-deploy.html) to view~
+After the mobile phone is connected, it is not displayed in the device center? You can go to [Device Access Guide](https://soniccloudorg.github.io/en/deploy/android-deploy.html) to view~
 :::
 
 ## View device information
@@ -46,7 +46,7 @@ The device can only be deleted when it is [Offline] or [Disconnected].
 
 Q1: Why is there no corresponding device in the device center after the mobile phone is plugged into the Agent?
 
-A1: You can check [Device Access Documentation](https://sonic-cloud.cn/en/deploy/android-deploy.html), if it still doesn’t work, you can check the Agent’s log for troubleshooting.
+A1: You can check [Device Access Documentation](https://soniccloudorg.github.io/en/deploy/android-deploy.html), if it still doesn’t work, you can check the Agent’s log for troubleshooting.
 
 ---
 

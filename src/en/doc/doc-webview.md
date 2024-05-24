@@ -27,7 +27,7 @@ webView.setWebContentsDebuggingEnabled(true);
 
 ## iOS
 
-The iOS web debugging webkit protocol receiver is under continuous maintenance, you can go to [here](https://sonic-cloud.cn/siwa/re-siwa.html) to learn more.
+The iOS web debugging webkit protocol receiver is under continuous maintenance, you can go to [here](https://soniccloudorg.github.io/siwa/re-siwa.html) to learn more.
 
 1. Go to System [Settings].
 2. Find the Safari browser in the application list.
