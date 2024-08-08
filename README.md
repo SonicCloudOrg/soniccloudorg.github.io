@@ -10,7 +10,7 @@
 </p>
 
 ### Official Website
-[Sonic Official Website](https://sonic-cloud.cn)
+[Sonic Official Website](https://soniccloudorg.github.io/)
 
 ## LICENSE
 
