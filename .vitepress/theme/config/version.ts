@@ -235,10 +235,6 @@ export default [
         url: "https://github.com/SonicCloudOrg/sonic-driver-core/pull/127"
       },
       {
-        title: "support W3C touch actions (for WDA version >= 7.0.0)",
-        url: "https://github.com/SonicCloudOrg/sonic-driver-core/pull/132"
-      },
-      {
         title: "适配chromeDriver121-126的版本，并替换下载地址链接",
         url: "https://github.com/SonicCloudOrg/sonic-agent/pull/439"
       },
