@@ -194,10 +194,82 @@ const cons: Cons = [
   {
     name: "hazmi-e205",
     avatar: "12555465"
+  },
+  {
+    name: "smaranchand",
+    avatar: "36672015"
+  },
+  {
+    name: "YeungHoiChiu",
+    avatar: "44832826"
+  },
+  {
+    name: "huang1988519",
+    avatar: "906799"
   }
 ]
 
 export default [
+  {
+    version: "v2.7.0",
+    time: "2024/8/9",
+    feat: [
+      {
+        title: "保存公共步骤时，判断下是否有子步骤引用了当前父步骤",
+        url: "https://github.com/SonicCloudOrg/sonic-server/pull/447"
+      },
+      {
+        title: "优化公共步骤页面的打开速度",
+        url: "https://github.com/SonicCloudOrg/sonic-server/pull/448"
+      },
+      {
+        title: "测试步骤可以从不同层级分组之间自由拖拽",
+        url: "https://github.com/SonicCloudOrg/sonic-client-web/pull/288"
+      },
+      {
+        title: "add doubleTap,rotate screen, active element",
+        url: "https://github.com/SonicCloudOrg/sonic-driver-core/pull/101"
+      },
+      {
+        title: "增加拖拽、以及三个touch操作（仅安卓）",
+        url: "https://github.com/SonicCloudOrg/sonic-driver-core/pull/127"
+      },
+      {
+        title: "support W3C touch actions (for WDA version >= 7.0.0)",
+        url: "https://github.com/SonicCloudOrg/sonic-driver-core/pull/132"
+      },
+      {
+        title: "适配chromeDriver121-126的版本，并替换下载地址链接",
+        url: "https://github.com/SonicCloudOrg/sonic-agent/pull/439"
+      },
+      {
+        title: "自动化步骤中坐标相关操作的控件元素也可以使用参数化&安卓获取控件属性时可直接获取中心坐标值",
+        url: "https://github.com/SonicCloudOrg/sonic-agent/pull/450"
+      },
+      {
+        title: "Android自动化测试步骤中新增拖拽操作以及拖拽动作拆分的三个独立事件操作",
+        url: "https://github.com/SonicCloudOrg/sonic-agent/pull/449"
+      },
+    ],
+    fix: [
+      {
+        title: "Fixing LFI",
+        url: "https://github.com/SonicCloudOrg/sonic-server/pull/435"
+      },
+      {
+        title: "validate cron expression to prevent server crash",
+        url: "https://github.com/SonicCloudOrg/sonic-server/pull/456"
+      },
+      {
+        title: "移除sib部分已弃用镜像下载地址",
+      },
+      {
+        title: "修复stepShow中部份步骤显示文字取值错误",
+         url: "https://github.com/SonicCloudOrg/sonic-client-web/pull/290"
+      }
+    ],
+    con: getCon("ZhouYixun", "caofengbin", "sam80180", "smaranchand", "YeungHoiChiu", "huang1988519")
+  },
   {
     version: "v2.6.4",
     time: "2024/2/26",
