@@ -28,14 +28,22 @@ iOS16 needs to manually enable the developer options.
 
 ## Support of iOS17 and above
 
-Currently, Sonic is not compatible with iOS17 and above devices on Windows and Linux platforms, so iOS17 and above machines must be connected to the Agent deployed on MacOS, and the Agent needs to install `iproxy` and `ideviceinstaller`
+::: tip Note
+This feature requires v2.7.1 and above
+:::
+
+Currently, Sonic is not compatible with iOS17 and above devices on Windows and Linux platforms, so iOS17 and above machines must be connected to the Agent deployed on MacOS.
+
+1. Agent needs to install `iproxy` and `ideviceinstaller`
 
 ```shell
 brew install usbmuxd
 brew install ideviceinstaller
 ```
 
-After completion, confirm that the WebDriverAgent can be built to the device for testing, and the preparation is complete.
+2. In Agent's `config/application-sonic-agent.yml`, configure `wda-xcode-project-path` to the WebDriverAgent.xcodeproj path
+
+After completion, confirm that WebDriverAgent can be built to the device for testing, and preparations are complete.
 
 ## Build WebDriverAgent into the device
 
