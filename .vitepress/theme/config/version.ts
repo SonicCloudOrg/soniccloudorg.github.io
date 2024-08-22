@@ -206,10 +206,46 @@ const cons: Cons = [
   {
     name: "huang1988519",
     avatar: "906799"
+  },
+  {
+    name: "blacklee123",
+    avatar: "13482158"
   }
 ]
 
 export default [
+  {
+    version: "v2.7.1",
+    time: "2024/8/22",
+    feat: [
+      {
+        title: "支持iOS17及以上设备远程控制和UI自动化（仅支持MacOS，详情请查看iOS接入指南）",
+        url: "https://github.com/SonicCloudOrg/sonic-agent/pull/460"
+      },
+      {
+        title: "SibTool增加判断手机ios系统是否>=17",
+        url: "https://github.com/SonicCloudOrg/sonic-agent/pull/458"
+      },
+      {
+        title: "新增支持安卓12 13 14 minicap投屏",
+        url: "https://github.com/SonicCloudOrg/sonic-agent/pull/459"
+      },
+      {
+        title: "新增安卓15、iOS18筛选条件",
+      }
+    ],
+    fix: [
+      {
+        title: "修复ios设备获取webview时报空指针错误",
+        url: "https://github.com/SonicCloudOrg/sonic-agent/pull/461"
+      },
+      {
+        title: "refactor: remove unnessary code",
+        url: "https://github.com/SonicCloudOrg/sonic-client-web/pull/292"
+      }
+    ],
+    con: getCon("ZhouYixun", "caofengbin", "YeungHoiChiu", "blacklee123")
+  },
   {
     version: "v2.7.0",
     time: "2024/8/9",

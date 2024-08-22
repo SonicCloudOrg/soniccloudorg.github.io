@@ -26,6 +26,17 @@ iOS16 需要手动开启开发者选项。
 3. 如果出现提示重启弹窗，点击重启。
 4. 如果启动后询问是否打开开发者模式，点击打开。
 
+## iOS17及以上版本的处理
+
+目前Sonic还未兼容Windows平台和Linux平台的iOS17及以上版本设备接入，因此iOS17及以上机器`必须`接入到部署在MacOS的Agent上，并且Agent需要安装`iproxy`和`ideviceinstaller`
+
+```shell
+brew install usbmuxd
+brew install ideviceinstaller
+```
+
+完成后，确认能构建WebDriverAgent到设备中进行Test，至此准备完毕。
+
 ## 构建 WebDriverAgent 到设备中
 
 构建 wda 到你的 iOS 设备中。

@@ -26,6 +26,17 @@ iOS16 needs to manually enable the developer options.
 3. If a pop-up prompting to restart appears, click Restart.
 4. If you are asked whether to enable the developer mode after startup, click Open.
 
+## Support of iOS17 and above
+
+Currently, Sonic is not compatible with iOS17 and above devices on Windows and Linux platforms, so iOS17 and above machines must be connected to the Agent deployed on MacOS, and the Agent needs to install `iproxy` and `ideviceinstaller`
+
+```shell
+brew install usbmuxd
+brew install ideviceinstaller
+```
+
+After completion, confirm that the WebDriverAgent can be built to the device for testing, and the preparation is complete.
+
 ## Build WebDriverAgent into the device
 
 Build wda to your iOS device.

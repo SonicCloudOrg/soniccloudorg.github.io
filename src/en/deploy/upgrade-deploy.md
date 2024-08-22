@@ -26,10 +26,11 @@ If there are bugs after `v2.1.0` goes online, then the next version will be `v2.
 
 For example, the previous version of `v2.2.0` is `v2.1.15`, then `v2.1.15` is the most stable version of `v2.1.x`
 
-## Upgrade from v2.5.x to v2.6.x
+## Upgrade from v2.5.x to v2.7.x
 1. Back up the Mysql database before upgrading.
 2. Go directly to <a href="https://soniccloudorg.github.io/deploy/back-end-deploy.html" target="_blank">here</a> to download the latest version zip, down cluster and then up again That's it. If the deployment directory is changed, the contents of the `keepFiles`, `imageFiles`, `recordFiles`, and `packageFiles` folders in the old directory should also be synchronized to the new directory (deployment documents include Chinese mainland accelerated image deployment methods)
 3. You can go to <a href="https://soniccloudorg.github.io/deploy/agent-deploy.html" target="_blank">here</a> Download the Agent zip and decompress it. The old version plugins folder and jar file need to be replaced for the update. The Docker version of Agent is the same as the server, just go to <a href="https://soniccloudorg.github.io/deploy/agent-deploy.html" target="_blank">here</a> and re-download the image for deployment. (Deployment documents include accelerated image deployment methods in mainland China)
+4. The `config/application-sonic-agent.yml` of `v2.7.1` Agent adds the `wda-xcode-project-path` configuration for compatibility with higher versions of iOS. Please refer to the iOS Access Guide for details.
 
 ## Upgrade from v2.3.x ~ v2.4.x to v2.5.x
 ::: tip
