@@ -43,7 +43,16 @@ brew install ideviceinstaller
 
 2. In Agent's `config/application-sonic-agent.yml`, configure `wda-xcode-project-path` to the WebDriverAgent.xcodeproj path
 
-After completion, confirm that WebDriverAgent can be built to the device for testing, and preparations are complete.
+After completion, confirm that WebDriverAgent can be built to the device for testing: 
+
+```shell
+
+# replace ${wda-xcode-project-path} to your xcodeproj path, replace ${device_udId} to your device udId
+
+xcodebuild -project ${wda-xcode-project-path} -scheme WebDriverAgentRunner -destination 'id=${device_udId}' test
+```
+
+Preparations are complete.
 
 ## Build WebDriverAgent into the device
 
