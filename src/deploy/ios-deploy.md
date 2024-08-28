@@ -43,7 +43,13 @@ brew install ideviceinstaller
 
 2. 在Agent的`config/application-sonic-agent.yml`中，将`wda-xcode-project-path`配置为WebDriverAgent.xcodeproj路径
 
-完成后，确认能构建WebDriverAgent到设备中进行Test，至此准备完毕。
+完成后，确认能构建WebDriverAgent到设备中进行Test:
+
+```shell
+xcodebuild -project 你上面填的路径 -scheme WebDriverAgentRunner -destination 'id=设备的序列号' test
+```
+
+至此准备完毕。
 
 ## 构建 WebDriverAgent 到设备中
 
