@@ -282,7 +282,7 @@ const honor = [
   {
     name: "开源中国GVP - Gitee最有价值开源项目",
     img: gvp,
-    url: "https://sonic-cloud.wiki/d/2955-sonicgvp-gitee"
+    url: "https://gitee.com/gvp/"
   },
 ]
 
