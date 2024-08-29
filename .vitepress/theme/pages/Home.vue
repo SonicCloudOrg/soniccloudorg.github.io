@@ -277,7 +277,7 @@ const honor = [
   {
     name: "MTSC 2022年度最佳开源项目评选第一名",
     img: mtsc,
-    url: "https://sonic-cloud.wiki/d/1471-sonicmtsc-2022"
+    url: "https://mp.weixin.qq.com/s/KDhKtRBvO6gtQ3Tg1z27-w"
   },
   {
     name: "开源中国GVP - Gitee最有价值开源项目",
