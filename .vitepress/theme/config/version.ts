@@ -210,10 +210,83 @@ const cons: Cons = [
   {
     name: "blacklee123",
     avatar: "13482158"
+  },
+  {
+    name: "bingosam",
+    avatar: "20456289"
+  },
+  {
+    name: "gzhtest",
+    avatar: "35422562"
+  },
+  {
+    name: "Coder-Huangzejia",
+    avatar: "88530164"
   }
 ]
 
 export default [
+  {
+    version: "v2.7.2",
+    time: "2024/11/4",
+    feat: [
+      {
+        title: "支持安卓15设备Minicap方式投屏",
+        url: "https://github.com/SonicCloudOrg/sonic-agent/commit/acae68d4abe2a5cf22db732368912446f2172a9e"
+      },
+      {
+        title: "Use W3C actions instead of MJSONWP touch actions and support multi finger touch (iOS)",
+        url: "https://github.com/SonicCloudOrg/sonic-driver-core/pull/143"
+      },
+      {
+        title: "在获取元素页面中快捷测试元素定位是否可以定位并点击",
+        url: "https://github.com/SonicCloudOrg/sonic-agent/pull/464"
+      },
+      {
+        title: "增加logcat日志下载保存，修改按钮的type",
+        url: "https://github.com/SonicCloudOrg/sonic-client-web/pull/294"
+      },
+    ],
+    fix: [
+      {
+        title: "sift图像算法优化",
+        url: "https://github.com/SonicCloudOrg/sonic-vision-core/pull/37"
+      },
+      {
+        title: "设备型号名称增加ipad10、ipad pro 11寸 4th，ipad pro 12.9寸 6th、iphone15系列",
+        url: "https://github.com/SonicCloudOrg/sonic-ios-bridge/pull/85"
+      },
+      {
+        title: "公共步骤悬浮窗显示过长导致页面菜单栏显示问题",
+        url: "https://github.com/SonicCloudOrg/sonic-client-web/pull/295"
+      },
+      {
+        title: "修复安卓性能图表卡顿bug",
+        url: "https://github.com/SonicCloudOrg/sonic-client-web/pull/297"
+      },
+      {
+        title: "修复刷新数据导致的zoom比例丢失问题",
+        url: "https://github.com/SonicCloudOrg/sonic-client-web/pull/298"
+      },
+      {
+        title: "整理代码并解决调用远程ADB持续发送命令会被阻塞的问题",
+        url: "https://github.com/SonicCloudOrg/sonic-agent/pull/462"
+      },
+      {
+        title: "修复了在启动agent服务检测环境时，如果项目路径或者相关依赖路径名称存在空格，则会报错的问题",
+        url: "https://github.com/SonicCloudOrg/sonic-agent/pull/465"
+      },
+      {
+        title: "修复无法停止性能监控",
+        url: "https://github.com/SonicCloudOrg/sonic-agent/pull/468"
+      },
+      {
+        title: "fix @bean should not return void",
+        url: "https://github.com/SonicCloudOrg/sonic-agent/pull/470"
+      },
+    ],
+    con: getCon("ZhouYixun", "aoliaoaoaojiao", "YeungHoiChiu", "bingosam", "gzhtest", "Coder-Huangzejia", "blacklee123")
+  },
   {
     version: "v2.7.1",
     time: "2024/8/22",
