@@ -62,7 +62,7 @@ After the build is successful, it can be separated from the Mac, and the iOS dev
 :::
 Preparations: Mac, Xcode, developer account.
 
-1. Pull the WebDriverAgent project of Sonic. (This project corresponds to the v6.1.1 version of appium/WebDriverAgent. Since 7.x has some destructive updates to the touch API, the Sonic organization temporarily retains this version as the basis.)
+1. Pull the WebDriverAgent project of Sonic. (This project is same as appium/WebDriverAgent.)
 
 ```bash
 git clone https://github.com/SonicCloudOrg/sonic-ios-wda.git
