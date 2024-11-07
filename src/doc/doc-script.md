@@ -393,7 +393,7 @@ def test_demo(adb_serial_num:str, uia_url:str):
         f"adb -s {adb_serial_num} shell monkey -p {package_name} -c android.intent.category.LAUNCHER 1")
 
     # 连接到已有 uia2 server
-    driver = AndroidDriver(uia_url)
+    driver = AndroidDriver(url=uia_url, session_id=session_id)
     p = driver.get_page_source()
     print(p)
     e = driver.find_element(AndroidSelector.XPATH, "//*[@text='设置']")
